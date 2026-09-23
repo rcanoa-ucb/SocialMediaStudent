@@ -1,8 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace SocialMedia.Infrastructure.Data;
-
+namespace SocialMedia.Core.Entities;
 public partial class User
 {
     public int Id { get; set; }
