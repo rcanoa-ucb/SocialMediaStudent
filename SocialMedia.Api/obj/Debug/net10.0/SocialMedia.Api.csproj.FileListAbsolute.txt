@@ -41,3 +41,15 @@ C:\Desarrollo\2026\SocialMedia-Est\SocialMedia.Api\obj\Debug\net10.0\refint\Soci
 C:\Desarrollo\2026\SocialMedia-Est\SocialMedia.Api\obj\Debug\net10.0\SocialMedia.Api.pdb
 C:\Desarrollo\2026\SocialMedia-Est\SocialMedia.Api\obj\Debug\net10.0\SocialMedia.Api.genruntimeconfig.cache
 C:\Desarrollo\2026\SocialMedia-Est\SocialMedia.Api\obj\Debug\net10.0\ref\SocialMedia.Api.dll
+C:\Users\Lenovo\source\repos\SocialMediaStudent\SocialMedia.Api\obj\Debug\net10.0\SocialMedia.Api.csproj.AssemblyReference.cache
+C:\Users\Lenovo\source\repos\SocialMediaStudent\SocialMedia.Api\obj\Debug\net10.0\rpswa.dswa.cache.json
+C:\Users\Lenovo\source\repos\SocialMediaStudent\SocialMedia.Api\obj\Debug\net10.0\SocialMedia.Api.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Lenovo\source\repos\SocialMediaStudent\SocialMedia.Api\obj\Debug\net10.0\SocialMedia.Api.AssemblyInfoInputs.cache
+C:\Users\Lenovo\source\repos\SocialMediaStudent\SocialMedia.Api\obj\Debug\net10.0\SocialMedia.Api.AssemblyInfo.cs
+C:\Users\Lenovo\source\repos\SocialMediaStudent\SocialMedia.Api\obj\Debug\net10.0\SocialMedia.Api.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\source\repos\SocialMediaStudent\SocialMedia.Api\obj\Debug\net10.0\SocialMedia.Api.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Lenovo\source\repos\SocialMediaStudent\SocialMedia.Api\obj\Debug\net10.0\SocialMedia.Api.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Lenovo\source\repos\SocialMediaStudent\SocialMedia.Api\obj\Debug\net10.0\SocialMedia.Api.sourcelink.json
+C:\Users\Lenovo\source\repos\SocialMediaStudent\SocialMedia.Api\obj\Debug\net10.0\SocialMedia.Api.dll
+C:\Users\Lenovo\source\repos\SocialMediaStudent\SocialMedia.Api\obj\Debug\net10.0\refint\SocialMedia.Api.dll
+C:\Users\Lenovo\source\repos\SocialMediaStudent\SocialMedia.Api\obj\Debug\net10.0\SocialMedia.Api.pdb
