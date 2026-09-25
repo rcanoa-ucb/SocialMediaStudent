@@ -8,7 +8,13 @@ namespace SocialMedia.Api
     {
         public static void Main(string[] args)
         {
-            var builder = WebApplication.CreateBuilder(args);
+            var builder = WebApplication.CreateBuilder(args); 
+
+            #region ConfigurarlaBDMySql
+            var connectionString = builder.Configuration.GetConnectionString("ConnectionMySql");
+            builder.Services.AddDbContext<SocialMediaContext>(options =>
+                options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString)));
+            #endregion
 
             #region Configurar la BD MySql
             var connectionString = builder.Configuration.GetConnectionString("ConnectionMySql");
