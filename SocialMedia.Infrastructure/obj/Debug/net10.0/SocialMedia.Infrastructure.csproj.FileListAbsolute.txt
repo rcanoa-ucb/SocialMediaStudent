@@ -15,3 +15,12 @@ C:\Desarrollo\2026\SocialMedia-Est\SocialMedia.Infrastructure\obj\Debug\net10.0\
 C:\Desarrollo\2026\SocialMedia-Est\SocialMedia.Infrastructure\obj\Debug\net10.0\SocialMedia.Infrastructure.pdb
 C:\Desarrollo\2026\SocialMedia-Est\SocialMedia.Infrastructure\obj\Debug\net10.0\SocialMedia.Infrastructure.genruntimeconfig.cache
 C:\Desarrollo\2026\SocialMedia-Est\SocialMedia.Infrastructure\obj\Debug\net10.0\ref\SocialMedia.Infrastructure.dll
+C:\Users\LURDES\SocialMediaStudent\SocialMedia.Infrastructure\obj\Debug\net10.0\SocialMedia.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\LURDES\SocialMediaStudent\SocialMedia.Infrastructure\obj\Debug\net10.0\SocialMedia.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\LURDES\SocialMediaStudent\SocialMedia.Infrastructure\obj\Debug\net10.0\SocialMedia.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\LURDES\SocialMediaStudent\SocialMedia.Infrastructure\obj\Debug\net10.0\SocialMedia.Infrastructure.AssemblyInfo.cs
+C:\Users\LURDES\SocialMediaStudent\SocialMedia.Infrastructure\obj\Debug\net10.0\SocialMedia.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\LURDES\SocialMediaStudent\SocialMedia.Infrastructure\obj\Debug\net10.0\SocialMedia.Infrastructure.sourcelink.json
+C:\Users\LURDES\SocialMediaStudent\SocialMedia.Infrastructure\obj\Debug\net10.0\SocialMedia.Infrastructure.dll
+C:\Users\LURDES\SocialMediaStudent\SocialMedia.Infrastructure\obj\Debug\net10.0\refint\SocialMedia.Infrastructure.dll
+C:\Users\LURDES\SocialMediaStudent\SocialMedia.Infrastructure\obj\Debug\net10.0\SocialMedia.Infrastructure.pdb

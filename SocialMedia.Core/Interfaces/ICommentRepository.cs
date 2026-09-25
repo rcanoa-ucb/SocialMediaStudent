@@ -1,0 +1,18 @@
+﻿using SocialMedia.Core.Entities;
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace SocialMedia.Core.Interfaces
+{
+ 
+        public interface ICommentRepository
+        {
+            Task<IEnumerable<Comment>> GetAllCommentsAsync();
+            Task<Comment> GetCommentsById(int id);
+            Task InsertComment(Comment comment);
+            Task UpdateComment(Comment comment);
+            Task DeLeteComment(Comment comment);
+        }
+    
+}

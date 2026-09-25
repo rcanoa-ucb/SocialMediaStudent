@@ -1,5 +1,7 @@
-﻿using SocialMedia.Core.Entities;
+﻿using Microsoft.EntityFrameworkCore;
+using SocialMedia.Core.Entities;
 using SocialMedia.Core.Interfaces;
+using SocialMedia.Infrastructure.Data;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -8,29 +10,45 @@ namespace SocialMedia.Infrastructure.Repositories
 {
     public class PostRepository : IPostRepository
     {
-        public Task DeletePost(Post post)
+        // una inyeccion de dependencia del contexto en el repo
+        private readonly SocialMediaContext _socialMediaContext;
+
+        public PostRepository(SocialMediaContext socialMediaContext)
         {
+            _socialMediaContext = socialMediaContext; //inyeccion de dependencia
+        }
+
+        public async Task<IEnumerable<Post>> GetAllPostsAsync()
+        {// cada Task necesita un await
+            var posts = await _socialMediaContext.Posts.ToListAsync(); // SELECTT * FROM Post
+            return posts;
+        }// context = base de datos
+
+        public async Task<Post> GetPostByIdAsync(int id)
+        {
+            var post = await _socialMediaContext.Posts.FirstOrDefaultAsync(x => x.Id == id);// <- expresion lambda
+            // search all list, till first same id and send that back;
+            return post;
             throw new NotImplementedException();
         }
 
-        public Task<IEnumerable<Post>> GetAllPostsAsync()
+        public  async Task InsertPost(Post post) // task without <> means void
         {
-            throw new NotImplementedException();
+            _socialMediaContext.Posts.Add(post);// insertar una bala
+            await _socialMediaContext.SaveChangesAsync();// disparas
+            // await _socialMediaContext.Posts.AddAsync(post) automatically saves (no need second line), BUT no chance for rollback
         }
 
-        public Task<Post> GetPostByIdAsync(int id)
+        public async Task DeletePost(Post post)
         {
-            throw new NotImplementedException();
+            _socialMediaContext.Posts.Remove(post);
+            await _socialMediaContext.SaveChangesAsync();
         }
 
-        public Task InsertPost(Post post)
+        public async Task UpdatePost(Post post)
         {
-            throw new NotImplementedException();
-        }
-
-        public Task UpdatePost(Post post)
-        {
-            throw new NotImplementedException();
+            _socialMediaContext.Posts.Update(post);
+            await _socialMediaContext.SaveChangesAsync();
         }
     }
 }
