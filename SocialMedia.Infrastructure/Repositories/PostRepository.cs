@@ -1,36 +1,49 @@
-﻿using SocialMedia.Core.Entities;
+﻿using Microsoft.EntityFrameworkCore;
+using SocialMedia.Core.Entities;
 using SocialMedia.Core.Interfaces;
+using SocialMedia.Infrastructure.Data;
 using System;
 using System.Collections.Generic;
-using System.Text;
-
+using System.Threading.Tasks;
 namespace SocialMedia.Infrastructure.Repositories
 {
     public class PostRepository : IPostRepository  // INYECCION DE DEPOENCIDAS EN EL CONTROLADOR O CONTRATO
     {
-        public Task DeletePost(Post post)
+        private readonly SocialMediaContext _socialMediaContext;//empieza en minuscula  inyectar con _
+        public PostRepository(SocialMediaContext socialMediaContext)  // QUITAR _
         {
-            throw new NotImplementedException();
+            _socialMediaContext = socialMediaContext;
+        }
+        public async Task<IEnumerable<Post>> GetAllPostsAsync() //task es un proceso asincrono 
+        {
+            // variable significable  // llamara a la base de datos y a la tabla
+            var posts = await _socialMediaContext.Posts.ToListAsync(); //var acepta cuakqueir tipo de dato, 
+            return posts;
         }
 
-        public Task<IEnumerable<Post>> GetAllPostsAsync()
-        {
-            throw new NotImplementedException();
+        public async Task<Post> GetPostByIdAsync(int id)
+
+        {                                             // primer valor que se muetrsar en la condicion 
+            var post = await _socialMediaContext.Posts.FirstOrDefaultAsync
+                (x => x.Id == id); //variable temproal (x) expresion lambda    
+            return post;
         }
 
-        public Task<Post> GetPostByIdAsync(int id)
+        public async Task InsertPost(Post post) //task sin <> es void no devuelve nada 
         {
-            throw new NotImplementedException();
-        }
+            _socialMediaContext.Posts.Add(post); //trabsaccion es todo proceseodimeinto que afecta a la base da toas o cambia la estructura
+            await _socialMediaContext.SaveChangesAsync(); //SaveChangesAsync sinonimo de commit
+        }   // await esperar a que termine una operación asíncrona antes de continuar con la siguiente línea
 
-        public Task InsertPost(Post post)
+        public async Task UpdatePost(Post post) //siempre async antes del metodo
         {
-            throw new NotImplementedException();
+            _socialMediaContext.Posts.Update(post);
+            await _socialMediaContext.SaveChangesAsync();
         }
-
-        public Task UpdatePost(Post post)
+        public async Task DeletePost(Post post) // Se agregó 'async' aquí para corregir los errores
         {
-            throw new NotImplementedException();
+            _socialMediaContext.Posts.Remove(post);
+            await _socialMediaContext.SaveChangesAsync();
         }
     }
 }

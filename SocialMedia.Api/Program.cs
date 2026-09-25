@@ -1,6 +1,10 @@
 
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Query;
+using Microsoft.Extensions.Options;
+using SocialMedia.Core.Interfaces;
 using SocialMedia.Infrastructure.Data;
+using SocialMedia.Infrastructure.Repositories;
 
 namespace SocialMedia.Api
 {
@@ -17,6 +21,10 @@ namespace SocialMedia.Api
             #endregion
 
             // Add services to the container.
+
+            // insertar donde usamos inyeccion de depnedecia
+            builder.Services.AddTransient<IPostRepository, PostRepository>();  //inyectar repositoriao
+            builder.Services.AddTransient<ICommentRepository, CommentRepository>();
 
             builder.Services.AddControllers();
             // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi

@@ -15,3 +15,4 @@ C:\Users\JHANELY\Desktop\4TO SEMESTRE\Tecno Web 1\SocialMedia\SocialMedia.Infras
 C:\Users\JHANELY\Desktop\4TO SEMESTRE\Tecno Web 1\SocialMedia\SocialMedia.Infrastructure\obj\Debug\net10.0\SocialMedia.Infrastructure.pdb
 C:\Users\JHANELY\Desktop\4TO SEMESTRE\Tecno Web 1\SocialMedia\SocialMedia.Infrastructure\obj\Debug\net10.0\SocialMedia.Infrastructure.genruntimeconfig.cache
 C:\Users\JHANELY\Desktop\4TO SEMESTRE\Tecno Web 1\SocialMedia\SocialMedia.Infrastructure\obj\Debug\net10.0\ref\SocialMedia.Infrastructure.dll
+C:\Users\JHANELY\Desktop\4TO SEMESTRE\Tecno Web 1\SocialMedia\SocialMedia.Infrastructure\obj\Debug\net10.0\SocialMedia.Infrastructure.sourcelink.json
