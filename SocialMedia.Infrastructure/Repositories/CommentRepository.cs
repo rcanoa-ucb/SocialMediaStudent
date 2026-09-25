@@ -1,5 +1,7 @@
-﻿using SocialMedia.Core.Entities;
+﻿using Microsoft.EntityFrameworkCore;
+using SocialMedia.Core.Entities;
 using SocialMedia.Core.Interfaces;
+using SocialMedia.Infrastructure.Data;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -8,29 +10,40 @@ namespace SocialMedia.Infrastructure.Repositories
 {
     public class CommentRepository : ICommentRepository
     {
-        public Task DeleteComment(Comment comment)
+        private readonly SocialMediaContext _socialMediaContext;
+
+        public CommentRepository(SocialMediaContext socialMediaContext)
         {
-            throw new NotImplementedException();
+            _socialMediaContext = socialMediaContext;
         }
 
-        public Task<IEnumerable<Comment>> GetAllCommentsAsync()
+        public async Task<IEnumerable<Comment>> GetAllCommentsAsync()
         {
-            throw new NotImplementedException();
+            var comments = await _socialMediaContext.Comments.ToListAsync();
+            return comments;
         }
 
-        public Task<Comment> GetCommentByIdAsync(int id)
+        public async Task<Comment> GetCommentByIdAsync(int id)
         {
-            throw new NotImplementedException();
+            var comment = await _socialMediaContext.Comments.FirstOrDefaultAsync(y => y.Id == id);
+            return comment;
         }
 
-        public Task InsertComment(Comment comment)
+        public async Task InsertComment(Comment comment)
         {
-            throw new NotImplementedException();
+            _socialMediaContext.Comments.Add(comment);
+            await _socialMediaContext.SaveChangesAsync();
         }
 
-        public Task UpdateComment(Comment comment)
+        public async Task UpdateComment(Comment comment)
         {
-            throw new NotImplementedException();
+            _socialMediaContext.Comments.Update(comment);
+            await _socialMediaContext.SaveChangesAsync();
+        }
+        public async Task DeleteComment(Comment comment)
+        {
+            _socialMediaContext.Comments.Remove(comment);
+            await _socialMediaContext.SaveChangesAsync();
         }
     }
 }

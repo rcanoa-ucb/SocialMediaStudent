@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "RZMjuj+dT/A=",
+  "dgSpecHash": "wD8kAPn7Fek=",
   "success": true,
   "projectFilePath": "C:\\Gabriela\\Universidad Catolica\\4to semestre\\tecnologias web 1\\SocialMediaStudent\\SocialMedia.Api\\SocialMedia.Api.csproj",
   "expectedPackageFiles": [
@@ -8,7 +8,7 @@
     "C:\\Users\\ASUS\\.nuget\\packages\\microsoft.entityframeworkcore\\9.0.20\\microsoft.entityframeworkcore.9.0.20.nupkg.sha512",
     "C:\\Users\\ASUS\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\9.0.20\\microsoft.entityframeworkcore.abstractions.9.0.20.nupkg.sha512",
     "C:\\Users\\ASUS\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\9.0.20\\microsoft.entityframeworkcore.analyzers.9.0.20.nupkg.sha512",
-    "C:\\Users\\ASUS\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\9.0.0\\microsoft.entityframeworkcore.relational.9.0.0.nupkg.sha512",
+    "C:\\Users\\ASUS\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\9.0.20\\microsoft.entityframeworkcore.relational.9.0.20.nupkg.sha512",
     "C:\\Users\\ASUS\\.nuget\\packages\\microsoft.openapi\\2.0.0\\microsoft.openapi.2.0.0.nupkg.sha512",
     "C:\\Users\\ASUS\\.nuget\\packages\\mysqlconnector\\2.4.0\\mysqlconnector.2.4.0.nupkg.sha512",
     "C:\\Users\\ASUS\\.nuget\\packages\\pomelo.entityframeworkcore.mysql\\9.0.0\\pomelo.entityframeworkcore.mysql.9.0.0.nupkg.sha512"

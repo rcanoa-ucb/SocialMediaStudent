@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Gabriela\\Universidad Catolica\\4to semestre\\tecnologias web 1\\SocialMediaStudent\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{08E8FC0D-B3CB-C9BF-1FDE-B0B7B0A7000D}|SocialMedia.Infrastructure\\SocialMedia.Infrastructure.csproj|c:\\gabriela\\universidad catolica\\4to semestre\\tecnologias web 1\\socialmediastudent\\socialmedia.infrastructure\\data\\socialmediacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{08E8FC0D-B3CB-C9BF-1FDE-B0B7B0A7000D}|SocialMedia.Infrastructure\\SocialMedia.Infrastructure.csproj|solutionrelative:socialmedia.infrastructure\\data\\socialmediacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{20DE5FD1-E331-7142-A93A-F6E553560140}|SocialMedia.Api\\SocialMedia.Api.csproj|c:\\gabriela\\universidad catolica\\4to semestre\\tecnologias web 1\\socialmediastudent\\socialmedia.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20DE5FD1-E331-7142-A93A-F6E553560140}|SocialMedia.Api\\SocialMedia.Api.csproj|solutionrelative:socialmedia.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{08E8FC0D-B3CB-C9BF-1FDE-B0B7B0A7000D}|SocialMedia.Infrastructure\\SocialMedia.Infrastructure.csproj|c:\\gabriela\\universidad catolica\\4to semestre\\tecnologias web 1\\socialmediastudent\\socialmedia.infrastructure\\repositories\\postrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{08E8FC0D-B3CB-C9BF-1FDE-B0B7B0A7000D}|SocialMedia.Infrastructure\\SocialMedia.Infrastructure.csproj|solutionrelative:socialmedia.infrastructure\\repositories\\postrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{20DE5FD1-E331-7142-A93A-F6E553560140}|SocialMedia.Api\\SocialMedia.Api.csproj|c:\\gabriela\\universidad catolica\\4to semestre\\tecnologias web 1\\socialmediastudent\\socialmedia.api\\controllers\\commentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20DE5FD1-E331-7142-A93A-F6E553560140}|SocialMedia.Api\\SocialMedia.Api.csproj|solutionrelative:socialmedia.api\\controllers\\commentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{08E8FC0D-B3CB-C9BF-1FDE-B0B7B0A7000D}|SocialMedia.Infrastructure\\SocialMedia.Infrastructure.csproj|c:\\gabriela\\universidad catolica\\4to semestre\\tecnologias web 1\\socialmediastudent\\socialmedia.infrastructure\\repositories\\commentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{08E8FC0D-B3CB-C9BF-1FDE-B0B7B0A7000D}|SocialMedia.Infrastructure\\SocialMedia.Infrastructure.csproj|solutionrelative:socialmedia.infrastructure\\repositories\\commentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{20DE5FD1-E331-7142-A93A-F6E553560140}|SocialMedia.Api\\SocialMedia.Api.csproj|c:\\gabriela\\universidad catolica\\4to semestre\\tecnologias web 1\\socialmediastudent\\socialmedia.api\\controllers\\postcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20DE5FD1-E331-7142-A93A-F6E553560140}|SocialMedia.Api\\SocialMedia.Api.csproj|solutionrelative:socialmedia.api\\controllers\\postcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1B087032-18E0-426B-F231-576BAD73AC2B}|SocialMedia.Core\\SocialMedia.Core.csproj|c:\\gabriela\\universidad catolica\\4to semestre\\tecnologias web 1\\socialmediastudent\\socialmedia.core\\interfaces\\icommentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -21,6 +21,30 @@
     {
       "AbsoluteMoniker": "D:0:0:{1B087032-18E0-426B-F231-576BAD73AC2B}|SocialMedia.Core\\SocialMedia.Core.csproj|c:\\gabriela\\universidad catolica\\4to semestre\\tecnologias web 1\\socialmediastudent\\socialmedia.core\\interfaces\\ipostrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1B087032-18E0-426B-F231-576BAD73AC2B}|SocialMedia.Core\\SocialMedia.Core.csproj|solutionrelative:socialmedia.core\\interfaces\\ipostrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08E8FC0D-B3CB-C9BF-1FDE-B0B7B0A7000D}|SocialMedia.Infrastructure\\SocialMedia.Infrastructure.csproj|c:\\gabriela\\universidad catolica\\4to semestre\\tecnologias web 1\\socialmediastudent\\socialmedia.infrastructure\\data\\socialmediacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08E8FC0D-B3CB-C9BF-1FDE-B0B7B0A7000D}|SocialMedia.Infrastructure\\SocialMedia.Infrastructure.csproj|solutionrelative:socialmedia.infrastructure\\data\\socialmediacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08E8FC0D-B3CB-C9BF-1FDE-B0B7B0A7000D}|SocialMedia.Infrastructure\\SocialMedia.Infrastructure.csproj|c:\\gabriela\\universidad catolica\\4to semestre\\tecnologias web 1\\socialmediastudent\\socialmedia.infrastructure\\repositories\\commentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08E8FC0D-B3CB-C9BF-1FDE-B0B7B0A7000D}|SocialMedia.Infrastructure\\SocialMedia.Infrastructure.csproj|solutionrelative:socialmedia.infrastructure\\repositories\\commentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08E8FC0D-B3CB-C9BF-1FDE-B0B7B0A7000D}|SocialMedia.Infrastructure\\SocialMedia.Infrastructure.csproj|c:\\gabriela\\universidad catolica\\4to semestre\\tecnologias web 1\\socialmediastudent\\socialmedia.infrastructure\\repositories\\postrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08E8FC0D-B3CB-C9BF-1FDE-B0B7B0A7000D}|SocialMedia.Infrastructure\\SocialMedia.Infrastructure.csproj|solutionrelative:socialmedia.infrastructure\\repositories\\postrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08E8FC0D-B3CB-C9BF-1FDE-B0B7B0A7000D}|SocialMedia.Infrastructure\\SocialMedia.Infrastructure.csproj|c:\\gabriela\\universidad catolica\\4to semestre\\tecnologias web 1\\socialmediastudent\\socialmedia.infrastructure\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08E8FC0D-B3CB-C9BF-1FDE-B0B7B0A7000D}|SocialMedia.Infrastructure\\SocialMedia.Infrastructure.csproj|solutionrelative:socialmedia.infrastructure\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08E8FC0D-B3CB-C9BF-1FDE-B0B7B0A7000D}|SocialMedia.Infrastructure\\SocialMedia.Infrastructure.csproj|c:\\gabriela\\universidad catolica\\4to semestre\\tecnologias web 1\\socialmediastudent\\socialmedia.infrastructure\\data\\configurations\\userconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08E8FC0D-B3CB-C9BF-1FDE-B0B7B0A7000D}|SocialMedia.Infrastructure\\SocialMedia.Infrastructure.csproj|solutionrelative:socialmedia.infrastructure\\data\\configurations\\userconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08E8FC0D-B3CB-C9BF-1FDE-B0B7B0A7000D}|SocialMedia.Infrastructure\\SocialMedia.Infrastructure.csproj|c:\\gabriela\\universidad catolica\\4to semestre\\tecnologias web 1\\socialmediastudent\\socialmedia.infrastructure\\data\\configurations\\postconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08E8FC0D-B3CB-C9BF-1FDE-B0B7B0A7000D}|SocialMedia.Infrastructure\\SocialMedia.Infrastructure.csproj|solutionrelative:socialmedia.infrastructure\\data\\configurations\\postconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1B087032-18E0-426B-F231-576BAD73AC2B}|SocialMedia.Core\\SocialMedia.Core.csproj|c:\\gabriela\\universidad catolica\\4to semestre\\tecnologias web 1\\socialmediastudent\\socialmedia.core\\entities\\comment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -35,24 +59,12 @@
       "RelativeMoniker": "D:0:0:{08E8FC0D-B3CB-C9BF-1FDE-B0B7B0A7000D}|SocialMedia.Infrastructure\\SocialMedia.Infrastructure.csproj|solutionrelative:socialmedia.infrastructure\\socialmedia.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{20DE5FD1-E331-7142-A93A-F6E553560140}|SocialMedia.Api\\SocialMedia.Api.csproj|c:\\gabriela\\universidad catolica\\4to semestre\\tecnologias web 1\\socialmediastudent\\socialmedia.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{20DE5FD1-E331-7142-A93A-F6E553560140}|SocialMedia.Api\\SocialMedia.Api.csproj|solutionrelative:socialmedia.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{20DE5FD1-E331-7142-A93A-F6E553560140}|SocialMedia.Api\\SocialMedia.Api.csproj|c:\\gabriela\\universidad catolica\\4to semestre\\tecnologias web 1\\socialmediastudent\\socialmedia.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{20DE5FD1-E331-7142-A93A-F6E553560140}|SocialMedia.Api\\SocialMedia.Api.csproj|solutionrelative:socialmedia.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{08E8FC0D-B3CB-C9BF-1FDE-B0B7B0A7000D}|SocialMedia.Infrastructure\\SocialMedia.Infrastructure.csproj|c:\\gabriela\\universidad catolica\\4to semestre\\tecnologias web 1\\socialmediastudent\\socialmedia.infrastructure\\data\\configurations\\commentconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{08E8FC0D-B3CB-C9BF-1FDE-B0B7B0A7000D}|SocialMedia.Infrastructure\\SocialMedia.Infrastructure.csproj|solutionrelative:socialmedia.infrastructure\\data\\configurations\\commentconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{08E8FC0D-B3CB-C9BF-1FDE-B0B7B0A7000D}|SocialMedia.Infrastructure\\SocialMedia.Infrastructure.csproj|c:\\gabriela\\universidad catolica\\4to semestre\\tecnologias web 1\\socialmediastudent\\socialmedia.infrastructure\\data\\configurations\\userconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{08E8FC0D-B3CB-C9BF-1FDE-B0B7B0A7000D}|SocialMedia.Infrastructure\\SocialMedia.Infrastructure.csproj|solutionrelative:socialmedia.infrastructure\\data\\configurations\\userconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{08E8FC0D-B3CB-C9BF-1FDE-B0B7B0A7000D}|SocialMedia.Infrastructure\\SocialMedia.Infrastructure.csproj|c:\\gabriela\\universidad catolica\\4to semestre\\tecnologias web 1\\socialmediastudent\\socialmedia.infrastructure\\data\\configurations\\postconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{08E8FC0D-B3CB-C9BF-1FDE-B0B7B0A7000D}|SocialMedia.Infrastructure\\SocialMedia.Infrastructure.csproj|solutionrelative:socialmedia.infrastructure\\data\\configurations\\postconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1B087032-18E0-426B-F231-576BAD73AC2B}|SocialMedia.Core\\SocialMedia.Core.csproj|c:\\gabriela\\universidad catolica\\4to semestre\\tecnologias web 1\\socialmediastudent\\socialmedia.core\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -63,10 +75,6 @@
       "RelativeMoniker": "D:0:0:{1B087032-18E0-426B-F231-576BAD73AC2B}|SocialMedia.Core\\SocialMedia.Core.csproj|solutionrelative:socialmedia.core\\entities\\post.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{08E8FC0D-B3CB-C9BF-1FDE-B0B7B0A7000D}|SocialMedia.Infrastructure\\SocialMedia.Infrastructure.csproj|c:\\gabriela\\universidad catolica\\4to semestre\\tecnologias web 1\\socialmediastudent\\socialmedia.infrastructure\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{08E8FC0D-B3CB-C9BF-1FDE-B0B7B0A7000D}|SocialMedia.Infrastructure\\SocialMedia.Infrastructure.csproj|solutionrelative:socialmedia.infrastructure\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{1B087032-18E0-426B-F231-576BAD73AC2B}|SocialMedia.Core\\SocialMedia.Core.csproj|c:\\gabriela\\universidad catolica\\4to semestre\\tecnologias web 1\\socialmediastudent\\socialmedia.core\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1B087032-18E0-426B-F231-576BAD73AC2B}|SocialMedia.Core\\SocialMedia.Core.csproj|solutionrelative:socialmedia.core\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -74,11 +82,11 @@
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
-      "VerticalTabListWidth": 112,
+      "VerticalTabListWidth": 100,
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 19,
+          "SelectedChildIndex": 14,
           "Children": [
             {
               "$type": "Bookmark",
@@ -87,6 +95,36 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CommentController.cs",
+              "DocumentMoniker": "C:\\Gabriela\\Universidad Catolica\\4to semestre\\tecnologias web 1\\SocialMediaStudent\\SocialMedia.Api\\Controllers\\CommentController.cs",
+              "RelativeDocumentMoniker": "SocialMedia.Api\\Controllers\\CommentController.cs",
+              "ToolTip": "C:\\Gabriela\\Universidad Catolica\\4to semestre\\tecnologias web 1\\SocialMediaStudent\\SocialMedia.Api\\Controllers\\CommentController.cs*",
+              "RelativeToolTip": "SocialMedia.Api\\Controllers\\CommentController.cs*",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAwDIAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-25T22:09:29.488Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PostController.cs",
+              "DocumentMoniker": "C:\\Gabriela\\Universidad Catolica\\4to semestre\\tecnologias web 1\\SocialMediaStudent\\SocialMedia.Api\\Controllers\\PostController.cs",
+              "RelativeDocumentMoniker": "SocialMedia.Api\\Controllers\\PostController.cs",
+              "ToolTip": "C:\\Gabriela\\Universidad Catolica\\4to semestre\\tecnologias web 1\\SocialMediaStudent\\SocialMedia.Api\\Controllers\\PostController.cs",
+              "RelativeToolTip": "SocialMedia.Api\\Controllers\\PostController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-25T20:59:26.276Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{c9c0ae26-aa77-11d2-b3f0-0000f87570ee}"
             },
             {
               "$type": "Bookmark",
@@ -102,13 +140,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "CommentRepository.cs",
               "DocumentMoniker": "C:\\Gabriela\\Universidad Catolica\\4to semestre\\tecnologias web 1\\SocialMediaStudent\\SocialMedia.Infrastructure\\Repositories\\CommentRepository.cs",
               "RelativeDocumentMoniker": "SocialMedia.Infrastructure\\Repositories\\CommentRepository.cs",
-              "ToolTip": "C:\\Gabriela\\Universidad Catolica\\4to semestre\\tecnologias web 1\\SocialMediaStudent\\SocialMedia.Infrastructure\\Repositories\\CommentRepository.cs",
-              "RelativeToolTip": "SocialMedia.Infrastructure\\Repositories\\CommentRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA2AAAAAAAAAA==",
+              "ToolTip": "C:\\Gabriela\\Universidad Catolica\\4to semestre\\tecnologias web 1\\SocialMediaStudent\\SocialMedia.Infrastructure\\Repositories\\CommentRepository.cs*",
+              "RelativeToolTip": "SocialMedia.Infrastructure\\Repositories\\CommentRepository.cs*",
+              "ViewState": "AgIAABkAAAAAAAAAAAA5wDAAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-09-24T23:50:53.411Z",
               "EditorCaption": ""
@@ -128,13 +166,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 7,
               "Title": "PostRepository.cs",
               "DocumentMoniker": "C:\\Gabriela\\Universidad Catolica\\4to semestre\\tecnologias web 1\\SocialMediaStudent\\SocialMedia.Infrastructure\\Repositories\\PostRepository.cs",
               "RelativeDocumentMoniker": "SocialMedia.Infrastructure\\Repositories\\PostRepository.cs",
               "ToolTip": "C:\\Gabriela\\Universidad Catolica\\4to semestre\\tecnologias web 1\\SocialMediaStudent\\SocialMedia.Infrastructure\\Repositories\\PostRepository.cs",
               "RelativeToolTip": "SocialMedia.Infrastructure\\Repositories\\PostRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAnAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACwAAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-09-23T21:27:59.197Z",
               "EditorCaption": ""
@@ -154,7 +192,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 12,
               "Title": "SocialMedia.Core.csproj",
               "DocumentMoniker": "C:\\Gabriela\\Universidad Catolica\\4to semestre\\tecnologias web 1\\SocialMediaStudent\\SocialMedia.Core\\SocialMedia.Core.csproj",
               "RelativeDocumentMoniker": "SocialMedia.Core\\SocialMedia.Core.csproj",
@@ -162,35 +200,38 @@
               "RelativeToolTip": "SocialMedia.Core\\SocialMedia.Core.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-09-23T21:07:17.233Z"
+              "WhenOpened": "2026-09-23T21:07:17.233Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 13,
               "Title": "SocialMedia.Infrastructure.csproj",
               "DocumentMoniker": "C:\\Gabriela\\Universidad Catolica\\4to semestre\\tecnologias web 1\\SocialMediaStudent\\SocialMedia.Infrastructure\\SocialMedia.Infrastructure.csproj",
               "RelativeDocumentMoniker": "SocialMedia.Infrastructure\\SocialMedia.Infrastructure.csproj",
-              "ToolTip": "C:\\Gabriela\\Universidad Catolica\\4to semestre\\tecnologias web 1\\SocialMediaStudent\\SocialMedia.Infrastructure\\SocialMedia.Infrastructure.csproj",
-              "RelativeToolTip": "SocialMedia.Infrastructure\\SocialMedia.Infrastructure.csproj",
+              "ToolTip": "C:\\Gabriela\\Universidad Catolica\\4to semestre\\tecnologias web 1\\SocialMediaStudent\\SocialMedia.Infrastructure\\SocialMedia.Infrastructure.csproj*",
+              "RelativeToolTip": "SocialMedia.Infrastructure\\SocialMedia.Infrastructure.csproj*",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-09-23T21:06:51.13Z"
+              "WhenOpened": "2026-09-23T21:06:51.13Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Gabriela\\Universidad Catolica\\4to semestre\\tecnologias web 1\\SocialMediaStudent\\SocialMedia.Api\\Program.cs",
               "RelativeDocumentMoniker": "SocialMedia.Api\\Program.cs",
               "ToolTip": "C:\\Gabriela\\Universidad Catolica\\4to semestre\\tecnologias web 1\\SocialMediaStudent\\SocialMedia.Api\\Program.cs",
               "RelativeToolTip": "SocialMedia.Api\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAqAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAABTAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-23T20:59:46.891Z"
+              "WhenOpened": "2026-09-23T20:59:46.891Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 14,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Gabriela\\Universidad Catolica\\4to semestre\\tecnologias web 1\\SocialMediaStudent\\SocialMedia.Api\\appsettings.json",
               "RelativeDocumentMoniker": "SocialMedia.Api\\appsettings.json",
@@ -202,7 +243,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 15,
               "Title": "CommentConfiguration.cs",
               "DocumentMoniker": "C:\\Gabriela\\Universidad Catolica\\4to semestre\\tecnologias web 1\\SocialMediaStudent\\SocialMedia.Infrastructure\\Data\\Configurations\\CommentConfiguration.cs",
               "RelativeDocumentMoniker": "SocialMedia.Infrastructure\\Data\\Configurations\\CommentConfiguration.cs",
@@ -214,7 +255,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 9,
               "Title": "UserConfiguration.cs",
               "DocumentMoniker": "C:\\Gabriela\\Universidad Catolica\\4to semestre\\tecnologias web 1\\SocialMediaStudent\\SocialMedia.Infrastructure\\Data\\Configurations\\UserConfiguration.cs",
               "RelativeDocumentMoniker": "SocialMedia.Infrastructure\\Data\\Configurations\\UserConfiguration.cs",
@@ -222,11 +263,12 @@
               "RelativeToolTip": "SocialMedia.Infrastructure\\Data\\Configurations\\UserConfiguration.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-23T20:31:10.837Z"
+              "WhenOpened": "2026-09-23T20:31:10.837Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 10,
               "Title": "PostConfiguration.cs",
               "DocumentMoniker": "C:\\Gabriela\\Universidad Catolica\\4to semestre\\tecnologias web 1\\SocialMediaStudent\\SocialMedia.Infrastructure\\Data\\Configurations\\PostConfiguration.cs",
               "RelativeDocumentMoniker": "SocialMedia.Infrastructure\\Data\\Configurations\\PostConfiguration.cs",
@@ -234,11 +276,12 @@
               "RelativeToolTip": "SocialMedia.Infrastructure\\Data\\Configurations\\PostConfiguration.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-23T20:30:45.469Z"
+              "WhenOpened": "2026-09-23T20:30:45.469Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 16,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\Gabriela\\Universidad Catolica\\4to semestre\\tecnologias web 1\\SocialMediaStudent\\SocialMedia.Core\\Entities\\User.cs",
               "RelativeDocumentMoniker": "SocialMedia.Core\\Entities\\User.cs",
@@ -250,7 +293,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 17,
               "Title": "Post.cs",
               "DocumentMoniker": "C:\\Gabriela\\Universidad Catolica\\4to semestre\\tecnologias web 1\\SocialMediaStudent\\SocialMedia.Core\\Entities\\Post.cs",
               "RelativeDocumentMoniker": "SocialMedia.Core\\Entities\\Post.cs",
@@ -262,7 +305,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 11,
               "Title": "Comment.cs",
               "DocumentMoniker": "C:\\Gabriela\\Universidad Catolica\\4to semestre\\tecnologias web 1\\SocialMediaStudent\\SocialMedia.Core\\Entities\\Comment.cs",
               "RelativeDocumentMoniker": "SocialMedia.Core\\Entities\\Comment.cs",
@@ -270,25 +313,24 @@
               "RelativeToolTip": "SocialMedia.Core\\Entities\\Comment.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-23T20:23:02.668Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-23T20:23:02.668Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
               "Title": "SocialMediaContext.cs",
               "DocumentMoniker": "C:\\Gabriela\\Universidad Catolica\\4to semestre\\tecnologias web 1\\SocialMediaStudent\\SocialMedia.Infrastructure\\Data\\SocialMediaContext.cs",
               "RelativeDocumentMoniker": "SocialMedia.Infrastructure\\Data\\SocialMediaContext.cs",
               "ToolTip": "C:\\Gabriela\\Universidad Catolica\\4to semestre\\tecnologias web 1\\SocialMediaStudent\\SocialMedia.Infrastructure\\Data\\SocialMediaContext.cs",
               "RelativeToolTip": "SocialMedia.Infrastructure\\Data\\SocialMediaContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAABtAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAABDAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-09-23T20:12:41.027Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 18,
               "Title": "Class1.cs",
               "DocumentMoniker": "C:\\Gabriela\\Universidad Catolica\\4to semestre\\tecnologias web 1\\SocialMediaStudent\\SocialMedia.Core\\Class1.cs",
               "RelativeDocumentMoniker": "SocialMedia.Core\\Class1.cs",
@@ -300,7 +342,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 8,
               "Title": "Class1.cs",
               "DocumentMoniker": "C:\\Gabriela\\Universidad Catolica\\4to semestre\\tecnologias web 1\\SocialMediaStudent\\SocialMedia.Infrastructure\\Class1.cs",
               "RelativeDocumentMoniker": "SocialMedia.Infrastructure\\Class1.cs",
@@ -308,7 +350,8 @@
               "RelativeToolTip": "SocialMedia.Infrastructure\\Class1.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-16T20:49:50.071Z"
+              "WhenOpened": "2026-09-16T20:49:50.071Z",
+              "EditorCaption": ""
             }
           ]
         }
