@@ -20,7 +20,7 @@ public partial class SocialMediaContext : DbContext
 
     public virtual DbSet<Comment> Comments { get; set; }
 
-    public virtual DbSet<Post> Posts { get; set; }
+    public virtual DbSet<Post> Posts { get; set; }                          //SON LAS TABLAS PARA HACER
 
     public virtual DbSet<User> Users { get; set; }
 

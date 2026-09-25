@@ -9,3 +9,16 @@ C:\Desarrollo\2026\SocialMedia-Est\SocialMedia.Core\obj\Debug\net10.0\SocialMedi
 C:\Desarrollo\2026\SocialMedia-Est\SocialMedia.Core\obj\Debug\net10.0\refint\SocialMedia.Core.dll
 C:\Desarrollo\2026\SocialMedia-Est\SocialMedia.Core\obj\Debug\net10.0\SocialMedia.Core.pdb
 C:\Desarrollo\2026\SocialMedia-Est\SocialMedia.Core\obj\Debug\net10.0\ref\SocialMedia.Core.dll
+D:\Escritorio\0 UNIVERSIDAD ACTUAL\TECNOLOGIAS WEB\ASP.NET CORE PRACTICA\SocialMediaStudent\SocialMedia.Core\bin\Debug\net10.0\SocialMedia.Core.deps.json
+D:\Escritorio\0 UNIVERSIDAD ACTUAL\TECNOLOGIAS WEB\ASP.NET CORE PRACTICA\SocialMediaStudent\SocialMedia.Core\bin\Debug\net10.0\SocialMedia.Core.dll
+D:\Escritorio\0 UNIVERSIDAD ACTUAL\TECNOLOGIAS WEB\ASP.NET CORE PRACTICA\SocialMediaStudent\SocialMedia.Core\bin\Debug\net10.0\SocialMedia.Core.pdb
+D:\Escritorio\0 UNIVERSIDAD ACTUAL\TECNOLOGIAS WEB\ASP.NET CORE PRACTICA\SocialMediaStudent\SocialMedia.Core\obj\Debug\net10.0\SocialMedia.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\Escritorio\0 UNIVERSIDAD ACTUAL\TECNOLOGIAS WEB\ASP.NET CORE PRACTICA\SocialMediaStudent\SocialMedia.Core\obj\Debug\net10.0\SocialMedia.Core.AssemblyInfoInputs.cache
+D:\Escritorio\0 UNIVERSIDAD ACTUAL\TECNOLOGIAS WEB\ASP.NET CORE PRACTICA\SocialMediaStudent\SocialMedia.Core\obj\Debug\net10.0\SocialMedia.Core.AssemblyInfo.cs
+D:\Escritorio\0 UNIVERSIDAD ACTUAL\TECNOLOGIAS WEB\ASP.NET CORE PRACTICA\SocialMediaStudent\SocialMedia.Core\obj\Debug\net10.0\SocialMedia.Core.csproj.CoreCompileInputs.cache
+D:\Escritorio\0 UNIVERSIDAD ACTUAL\TECNOLOGIAS WEB\ASP.NET CORE PRACTICA\SocialMediaStudent\SocialMedia.Core\obj\Debug\net10.0\SocialMedia.Core.sourcelink.json
+D:\Escritorio\0 UNIVERSIDAD ACTUAL\TECNOLOGIAS WEB\ASP.NET CORE PRACTICA\SocialMediaStudent\SocialMedia.Core\obj\Debug\net10.0\SocialMedia.Core.dll
+D:\Escritorio\0 UNIVERSIDAD ACTUAL\TECNOLOGIAS WEB\ASP.NET CORE PRACTICA\SocialMediaStudent\SocialMedia.Core\obj\Debug\net10.0\refint\SocialMedia.Core.dll
+D:\Escritorio\0 UNIVERSIDAD ACTUAL\TECNOLOGIAS WEB\ASP.NET CORE PRACTICA\SocialMediaStudent\SocialMedia.Core\obj\Debug\net10.0\SocialMedia.Core.pdb
+D:\Escritorio\0 UNIVERSIDAD ACTUAL\TECNOLOGIAS WEB\ASP.NET CORE PRACTICA\SocialMediaStudent\SocialMedia.Core\obj\Debug\net10.0\ref\SocialMedia.Core.dll
+D:\Escritorio\0 UNIVERSIDAD ACTUAL\TECNOLOGIAS WEB\ASP.NET CORE PRACTICA\SocialMediaStudent\SocialMedia.Core\obj\Debug\net10.0\SocialMe.C39D1699.Up2Date

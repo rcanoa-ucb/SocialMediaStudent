@@ -9,6 +9,7 @@
       "SocialMedia.Api/1.0.0": {
         "dependencies": {
           "Microsoft.AspNetCore.OpenApi": "10.0.10",
+          "Microsoft.EntityFrameworkCore.Relational": "9.0.20",
           "SocialMedia.Core": "1.0.0",
           "SocialMedia.Infrastructure": "1.0.0"
         },
@@ -46,14 +47,14 @@
           }
         }
       },
-      "Microsoft.EntityFrameworkCore.Relational/9.0.0": {
+      "Microsoft.EntityFrameworkCore.Relational/9.0.20": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "9.0.20"
         },
         "runtime": {
           "lib/net8.0/Microsoft.EntityFrameworkCore.Relational.dll": {
-            "assemblyVersion": "9.0.0.0",
-            "fileVersion": "9.0.24.52902"
+            "assemblyVersion": "9.0.20.0",
+            "fileVersion": "9.0.2026.41306"
           }
         }
       },
@@ -75,7 +76,7 @@
       },
       "Pomelo.EntityFrameworkCore.MySql/9.0.0": {
         "dependencies": {
-          "Microsoft.EntityFrameworkCore.Relational": "9.0.0",
+          "Microsoft.EntityFrameworkCore.Relational": "9.0.20",
           "MySqlConnector": "2.4.0"
         },
         "runtime": {
@@ -135,12 +136,12 @@
       "path": "microsoft.entityframeworkcore.abstractions/9.0.20",
       "hashPath": "microsoft.entityframeworkcore.abstractions.9.0.20.nupkg.sha512"
     },
-    "Microsoft.EntityFrameworkCore.Relational/9.0.0": {
+    "Microsoft.EntityFrameworkCore.Relational/9.0.20": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-j+msw6fWgAE9M3Q/5B9Uhv7pdAdAQUvFPJAiBJmoy+OXvehVbfbCE8ftMAa51Uo2ZeiqVnHShhnv4Y4UJJmUzA==",
-      "path": "microsoft.entityframeworkcore.relational/9.0.0",
-      "hashPath": "microsoft.entityframeworkcore.relational.9.0.0.nupkg.sha512"
+      "sha512": "sha512-84oLYJjAA8hSrwPfkq0cm9dBdf3uFbBwqJVYjmS4zEoKJ87cj/Knyp1iYAHe95ToJHeo8APAPG0OlA6S4GUUlw==",
+      "path": "microsoft.entityframeworkcore.relational/9.0.20",
+      "hashPath": "microsoft.entityframeworkcore.relational.9.0.20.nupkg.sha512"
     },
     "Microsoft.OpenApi/2.0.0": {
       "type": "package",
