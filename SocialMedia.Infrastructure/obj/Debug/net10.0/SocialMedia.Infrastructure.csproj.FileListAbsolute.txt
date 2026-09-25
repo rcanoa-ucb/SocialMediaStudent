@@ -15,3 +15,21 @@ C:\Desarrollo\2026\SocialMedia-Est\SocialMedia.Infrastructure\obj\Debug\net10.0\
 C:\Desarrollo\2026\SocialMedia-Est\SocialMedia.Infrastructure\obj\Debug\net10.0\SocialMedia.Infrastructure.pdb
 C:\Desarrollo\2026\SocialMedia-Est\SocialMedia.Infrastructure\obj\Debug\net10.0\SocialMedia.Infrastructure.genruntimeconfig.cache
 C:\Desarrollo\2026\SocialMedia-Est\SocialMedia.Infrastructure\obj\Debug\net10.0\ref\SocialMedia.Infrastructure.dll
+D:\Escritorio\Sistemas\MATERIAL PASADO DE SEMESTRES\4 SEMESTRE\TECNOLOGIAS WEB\SEGUNDO ELEMENTO\SocialMediaStudent\SocialMedia.Infrastructure\bin\Debug\net10.0\SocialMedia.Infrastructure.deps.json
+D:\Escritorio\Sistemas\MATERIAL PASADO DE SEMESTRES\4 SEMESTRE\TECNOLOGIAS WEB\SEGUNDO ELEMENTO\SocialMediaStudent\SocialMedia.Infrastructure\bin\Debug\net10.0\SocialMedia.Infrastructure.runtimeconfig.json
+D:\Escritorio\Sistemas\MATERIAL PASADO DE SEMESTRES\4 SEMESTRE\TECNOLOGIAS WEB\SEGUNDO ELEMENTO\SocialMediaStudent\SocialMedia.Infrastructure\bin\Debug\net10.0\SocialMedia.Infrastructure.dll
+D:\Escritorio\Sistemas\MATERIAL PASADO DE SEMESTRES\4 SEMESTRE\TECNOLOGIAS WEB\SEGUNDO ELEMENTO\SocialMediaStudent\SocialMedia.Infrastructure\bin\Debug\net10.0\SocialMedia.Infrastructure.pdb
+D:\Escritorio\Sistemas\MATERIAL PASADO DE SEMESTRES\4 SEMESTRE\TECNOLOGIAS WEB\SEGUNDO ELEMENTO\SocialMediaStudent\SocialMedia.Infrastructure\bin\Debug\net10.0\SocialMedia.Core.dll
+D:\Escritorio\Sistemas\MATERIAL PASADO DE SEMESTRES\4 SEMESTRE\TECNOLOGIAS WEB\SEGUNDO ELEMENTO\SocialMediaStudent\SocialMedia.Infrastructure\bin\Debug\net10.0\SocialMedia.Core.pdb
+D:\Escritorio\Sistemas\MATERIAL PASADO DE SEMESTRES\4 SEMESTRE\TECNOLOGIAS WEB\SEGUNDO ELEMENTO\SocialMediaStudent\SocialMedia.Infrastructure\obj\Debug\net10.0\SocialMedia.Infrastructure.csproj.AssemblyReference.cache
+D:\Escritorio\Sistemas\MATERIAL PASADO DE SEMESTRES\4 SEMESTRE\TECNOLOGIAS WEB\SEGUNDO ELEMENTO\SocialMediaStudent\SocialMedia.Infrastructure\obj\Debug\net10.0\SocialMedia.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+D:\Escritorio\Sistemas\MATERIAL PASADO DE SEMESTRES\4 SEMESTRE\TECNOLOGIAS WEB\SEGUNDO ELEMENTO\SocialMediaStudent\SocialMedia.Infrastructure\obj\Debug\net10.0\SocialMedia.Infrastructure.AssemblyInfoInputs.cache
+D:\Escritorio\Sistemas\MATERIAL PASADO DE SEMESTRES\4 SEMESTRE\TECNOLOGIAS WEB\SEGUNDO ELEMENTO\SocialMediaStudent\SocialMedia.Infrastructure\obj\Debug\net10.0\SocialMedia.Infrastructure.AssemblyInfo.cs
+D:\Escritorio\Sistemas\MATERIAL PASADO DE SEMESTRES\4 SEMESTRE\TECNOLOGIAS WEB\SEGUNDO ELEMENTO\SocialMediaStudent\SocialMedia.Infrastructure\obj\Debug\net10.0\SocialMedia.Infrastructure.csproj.CoreCompileInputs.cache
+D:\Escritorio\Sistemas\MATERIAL PASADO DE SEMESTRES\4 SEMESTRE\TECNOLOGIAS WEB\SEGUNDO ELEMENTO\SocialMediaStudent\SocialMedia.Infrastructure\obj\Debug\net10.0\SocialMedia.Infrastructure.sourcelink.json
+D:\Escritorio\Sistemas\MATERIAL PASADO DE SEMESTRES\4 SEMESTRE\TECNOLOGIAS WEB\SEGUNDO ELEMENTO\SocialMediaStudent\SocialMedia.Infrastructure\obj\Debug\net10.0\SocialMe.BDF3DEF8.Up2Date
+D:\Escritorio\Sistemas\MATERIAL PASADO DE SEMESTRES\4 SEMESTRE\TECNOLOGIAS WEB\SEGUNDO ELEMENTO\SocialMediaStudent\SocialMedia.Infrastructure\obj\Debug\net10.0\SocialMedia.Infrastructure.dll
+D:\Escritorio\Sistemas\MATERIAL PASADO DE SEMESTRES\4 SEMESTRE\TECNOLOGIAS WEB\SEGUNDO ELEMENTO\SocialMediaStudent\SocialMedia.Infrastructure\obj\Debug\net10.0\refint\SocialMedia.Infrastructure.dll
+D:\Escritorio\Sistemas\MATERIAL PASADO DE SEMESTRES\4 SEMESTRE\TECNOLOGIAS WEB\SEGUNDO ELEMENTO\SocialMediaStudent\SocialMedia.Infrastructure\obj\Debug\net10.0\SocialMedia.Infrastructure.pdb
+D:\Escritorio\Sistemas\MATERIAL PASADO DE SEMESTRES\4 SEMESTRE\TECNOLOGIAS WEB\SEGUNDO ELEMENTO\SocialMediaStudent\SocialMedia.Infrastructure\obj\Debug\net10.0\SocialMedia.Infrastructure.genruntimeconfig.cache
+D:\Escritorio\Sistemas\MATERIAL PASADO DE SEMESTRES\4 SEMESTRE\TECNOLOGIAS WEB\SEGUNDO ELEMENTO\SocialMediaStudent\SocialMedia.Infrastructure\obj\Debug\net10.0\ref\SocialMedia.Infrastructure.dll
