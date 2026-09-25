@@ -15,3 +15,4 @@ C:\Desarrollo\2026\SocialMedia-Est\SocialMedia.Infrastructure\obj\Debug\net10.0\
 C:\Desarrollo\2026\SocialMedia-Est\SocialMedia.Infrastructure\obj\Debug\net10.0\SocialMedia.Infrastructure.pdb
 C:\Desarrollo\2026\SocialMedia-Est\SocialMedia.Infrastructure\obj\Debug\net10.0\SocialMedia.Infrastructure.genruntimeconfig.cache
 C:\Desarrollo\2026\SocialMedia-Est\SocialMedia.Infrastructure\obj\Debug\net10.0\ref\SocialMedia.Infrastructure.dll
+C:\Desarrollo\2026\SocialMedia-Est\SocialMedia.Infrastructure\obj\Debug\net10.0\SocialMedia.Infrastructure.sourcelink.json
