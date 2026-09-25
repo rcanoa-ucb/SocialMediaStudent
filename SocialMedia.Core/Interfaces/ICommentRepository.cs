@@ -12,6 +12,6 @@ namespace SocialMedia.Core.Interfaces
         Task<Comment> GetCommentByIdAsync(int id);
         Task InsertComment(Comment comment);
         Task UpdateComment(Comment comment);
-        Task DeleteComment(int id);
+        Task DeleteComment(Comment comment);
     }
 }

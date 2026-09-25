@@ -1,36 +1,51 @@
-﻿using SocialMedia.Core.Entities;
+﻿using Microsoft.EntityFrameworkCore;
+using SocialMedia.Core.Entities;
 using SocialMedia.Core.Interfaces;
+using SocialMedia.Infrastructure.Data;
 using System;
 using System.Collections.Generic;
-using System.Text;
+using System.Threading.Tasks;
 
-namespace SocialMedia.Infrastructure.Repositories
+namespace SocialMedia.Infrastructure.Repositories //la clase que se conecta con los datos
 {
     public class PostRepository : IPostRepository
-    {
-        public Task DeletePost(Post post)
+    { //Nomenclatura directrices //inyercion de dependencias
+        private readonly SocialMediaContext _socialMediaContext;
+        public PostRepository(SocialMediaContext socialMediaContext) //que tipo de dato quiero inyectar
         {
-            throw new NotImplementedException();
+            _socialMediaContext  = socialMediaContext;
+        }
+        
+        public async Task<IEnumerable<Post>> GetAllPostsAsync()
+        {
+            var posts = await _socialMediaContext.Posts.ToListAsync();
+            return posts; 
         }
 
-        public Task<IEnumerable<Post>> GetAllPostsAsync()
+        public async Task<Post> GetPostByIdAsync(int id)
         {
-            throw new NotImplementedException();
+            //var acepta cualquier tipo de dato 
+            var posts = await _socialMediaContext.Posts. //await que metodo va llamar
+                FirstOrDefaultAsync(x => x.Id == id); //expresion Landa
+            return posts;
         }
 
-        public Task<Post> GetPostByIdAsync(int id)
-        {
-            throw new NotImplementedException();
+        public async Task InsertPost(Post post) //cuando no es <> el metodo no devuelve nada(void)
+        { //transaccion cada modificacion que se hace en el registro 
+            _socialMediaContext.Posts.Add(post); //insertar una bala a la pistola pero sin disparar
+            await _socialMediaContext.SaveChangesAsync();//await dispara
         }
 
-        public Task InsertPost(Post post)
+        public async Task UpdatePost(Post post) //async asincrono
         {
-            throw new NotImplementedException();
+            _socialMediaContext.Posts.Update(post);
+            await _socialMediaContext.SaveChangesAsync();
+        }
+        public async Task DeletePost(Post post)
+        {
+            _socialMediaContext.Posts.Remove(post);
+            await _socialMediaContext.SaveChangesAsync();
         }
 
-        public Task UpdatePost(Post post)
-        {
-            throw new NotImplementedException();
-        }
     }
 }
