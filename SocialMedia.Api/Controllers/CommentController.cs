@@ -36,7 +36,7 @@ namespace SocialMedia.Api.Controllers
         public async Task<IActionResult> InsertComment(Comment newComment)
         {
             await _commentRepository.InsertComment(newComment);
-            return Created($"api/comment/{newComment.Id}", newComment); // mostrar el id que creó
+            return Created($"api/comment/{newComment.Id}", newComment); // mostrar el id que creo
         }
 
         [HttpPut]
