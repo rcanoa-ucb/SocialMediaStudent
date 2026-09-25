@@ -9,3 +9,15 @@ C:\Desarrollo\2026\SocialMedia-Est\SocialMedia.Core\obj\Debug\net10.0\SocialMedi
 C:\Desarrollo\2026\SocialMedia-Est\SocialMedia.Core\obj\Debug\net10.0\refint\SocialMedia.Core.dll
 C:\Desarrollo\2026\SocialMedia-Est\SocialMedia.Core\obj\Debug\net10.0\SocialMedia.Core.pdb
 C:\Desarrollo\2026\SocialMedia-Est\SocialMedia.Core\obj\Debug\net10.0\ref\SocialMedia.Core.dll
+C:\Users\HP I3 DOCEAVA\source\repos\SocialMediaStudent\SocialMedia.Core\bin\Debug\net10.0\SocialMedia.Core.deps.json
+C:\Users\HP I3 DOCEAVA\source\repos\SocialMediaStudent\SocialMedia.Core\bin\Debug\net10.0\SocialMedia.Core.dll
+C:\Users\HP I3 DOCEAVA\source\repos\SocialMediaStudent\SocialMedia.Core\bin\Debug\net10.0\SocialMedia.Core.pdb
+C:\Users\HP I3 DOCEAVA\source\repos\SocialMediaStudent\SocialMedia.Core\obj\Debug\net10.0\SocialMedia.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HP I3 DOCEAVA\source\repos\SocialMediaStudent\SocialMedia.Core\obj\Debug\net10.0\SocialMedia.Core.AssemblyInfoInputs.cache
+C:\Users\HP I3 DOCEAVA\source\repos\SocialMediaStudent\SocialMedia.Core\obj\Debug\net10.0\SocialMedia.Core.AssemblyInfo.cs
+C:\Users\HP I3 DOCEAVA\source\repos\SocialMediaStudent\SocialMedia.Core\obj\Debug\net10.0\SocialMedia.Core.csproj.CoreCompileInputs.cache
+C:\Users\HP I3 DOCEAVA\source\repos\SocialMediaStudent\SocialMedia.Core\obj\Debug\net10.0\SocialMedia.Core.sourcelink.json
+C:\Users\HP I3 DOCEAVA\source\repos\SocialMediaStudent\SocialMedia.Core\obj\Debug\net10.0\SocialMedia.Core.dll
+C:\Users\HP I3 DOCEAVA\source\repos\SocialMediaStudent\SocialMedia.Core\obj\Debug\net10.0\refint\SocialMedia.Core.dll
+C:\Users\HP I3 DOCEAVA\source\repos\SocialMediaStudent\SocialMedia.Core\obj\Debug\net10.0\SocialMedia.Core.pdb
+C:\Users\HP I3 DOCEAVA\source\repos\SocialMediaStudent\SocialMedia.Core\obj\Debug\net10.0\ref\SocialMedia.Core.dll

@@ -10,6 +10,7 @@
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "9.0.20",
           "Microsoft.EntityFrameworkCore.Design": "9.0.20",
+          "Microsoft.EntityFrameworkCore.Relational": "9.0.20",
           "Pomelo.EntityFrameworkCore.MySql": "9.0.0",
           "SocialMedia.Core": "1.0.0"
         },

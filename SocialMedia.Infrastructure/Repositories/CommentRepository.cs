@@ -1,7 +1,10 @@
 ﻿using SocialMedia.Core.Entities;
 using SocialMedia.Core.Interafaces;
+using SocialMedia.Infrastructure.Data;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
+using System.Net.WebSockets;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -9,29 +12,40 @@ namespace SocialMedia.Infrastructure.Repositories
 {
     public class CommentRepository : ICommentRepository
     {
-        public Task<IEnumerable<Comment>> GetAllCommentsAsync()
+        private readonly SocialMediaContext _socialMediaContext;
+        public CommentRepository(SocialMediaContext socialMediaContext)
         {
-            throw new NotImplementedException();
+            _socialMediaContext = socialMediaContext;
         }
 
-        public Task<Comment> GetCommentByIdAsync(int id)
+        public async Task<IEnumerable<Comment>> GetAllCommentsAsync()
         {
-            throw new NotImplementedException();
+            var comments = await _socialMediaContext.Comments.ToListAsync();
+            return comments;
         }
 
-        public Task InsertComment(Comment comment)
+        public async Task<Comment> GetCommentByIdAsync(int id)
         {
-            throw new NotImplementedException();
+           var comment = await _socialMediaContext.Comments.FirstOrDefaultAsync(x =>x.Id == id);
+           return comment;
+        }
+
+        public async Task InsertComment(Comment comment)
+        {
+            _socialMediaContext.Comments.Add(comment);
+            await _socialMediaContext.SaveChangesAsync();
         }
 
         public Task UpdateComment(Comment comment)
         {
-            throw new NotImplementedException();
+           _socialMediaContext.Comments.Update(comment);
+            return _socialMediaContext.SaveChangesAsync();
         }
 
         public Task DeleteComment(Comment comment)
         {
-            throw new NotImplementedException();
+            _socialMediaContext.Comments.Remove(comment);
+            return _socialMediaContext.SaveChangesAsync();
         }
     }
 }

@@ -1,6 +1,8 @@
 
 using Microsoft.EntityFrameworkCore;
+using SocialMedia.Core.Interafaces;
 using SocialMedia.Infrastructure.Data;
+using SocialMedia.Infrastructure.Repositories;
 
 namespace SocialMedia.Api
 {
@@ -15,6 +17,8 @@ namespace SocialMedia.Api
             builder.Services.AddDbContext<SocialMediaContext>(options =>
                 options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString)));
             #endregion
+            builder.Services.AddTransient<IPostRepository,PostRepository>();
+            builder.Services.AddTransient<ICommentRepository,CommentRepository>();
             // Add services to the container.
 
             builder.Services.AddControllers();
