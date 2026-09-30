@@ -1,6 +1,8 @@
 
 using Microsoft.EntityFrameworkCore;
+using SocialMedia.Core.Interfaces;
 using SocialMedia.Infrastructure.Data;
+using SocialMedia.Infrastructure.Repositories;
 
 namespace SocialMedia.Api
 {
@@ -16,9 +18,11 @@ namespace SocialMedia.Api
                 options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString)));
             #endregion
 
-            
+
 
             // Add services to the container.
+            //inyeccion por dependencia en el main
+            builder.Services.AddTransient<IPostRepository, PostRepository>();
 
             builder.Services.AddControllers();
             // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
