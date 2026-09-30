@@ -1,36 +1,49 @@
-﻿using SocialMedia.Core.Entities;
+﻿using Microsoft.EntityFrameworkCore;
+using SocialMedia.Core.Entities;
 using SocialMedia.Core.Interfaces;
+using SocialMedia.Infrastructure.Data;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace SocialMedia.Infrastructure.Repositories
 {
     public class PostRepository : IPostRepository
     {
-        public Task DeletePost(Post post)
+        private readonly SocialMediaContext _socialMediaContext;
+
+        public PostRepository(SocialMediaContext socialMediaContext)
         {
-            throw new NotImplementedException();
+            _socialMediaContext = socialMediaContext;
         }
 
-        public Task<IEnumerable<Post>> GetAllPostsAsync()
+        public async Task<IEnumerable<Post>> GetAllPostsAsync()
         {
-            throw new NotImplementedException();
+            var posts = await _socialMediaContext.Posts.ToListAsync();
+            return posts;
+        }
+        public async Task<Post> GetPostByIdAsync(int id)
+        {
+            var post = await _socialMediaContext.Posts.FirstOrDefaultAsync(x => x.Id == id);
+            return post;
         }
 
-        public Task<Post> GetPostByIdAsync(int id)
+        public async Task InsertPost(Post post)
         {
-            throw new NotImplementedException();
+            _socialMediaContext.Posts.Add(post);
+            await _socialMediaContext.SaveChangesAsync();
+        }
+        public async Task UpdatePost(Post post)
+        {
+            _socialMediaContext.Posts.Update(post);
+            await _socialMediaContext.SaveChangesAsync();
+        }
+        public async Task DeletePost(Post post)
+        {
+            _socialMediaContext.Posts.Remove(post);
+            await _socialMediaContext.SaveChangesAsync();
         }
 
-        public Task InsertPost(Post post)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Task UpdatePost(Post post)
-        {
-            throw new NotImplementedException();
-        }
     }
 }
