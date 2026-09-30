@@ -9,10 +9,10 @@ C:\Desarrollo\2026\SocialMedia-Est\SocialMedia.Infrastructure\obj\Debug\net10.0\
 C:\Desarrollo\2026\SocialMedia-Est\SocialMedia.Infrastructure\obj\Debug\net10.0\SocialMedia.Infrastructure.AssemblyInfoInputs.cache
 C:\Desarrollo\2026\SocialMedia-Est\SocialMedia.Infrastructure\obj\Debug\net10.0\SocialMedia.Infrastructure.AssemblyInfo.cs
 C:\Desarrollo\2026\SocialMedia-Est\SocialMedia.Infrastructure\obj\Debug\net10.0\SocialMedia.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Desarrollo\2026\SocialMedia-Est\SocialMedia.Infrastructure\obj\Debug\net10.0\SocialMedia.Infrastructure.sourcelink.json
 C:\Desarrollo\2026\SocialMedia-Est\SocialMedia.Infrastructure\obj\Debug\net10.0\SocialMe.BDF3DEF8.Up2Date
 C:\Desarrollo\2026\SocialMedia-Est\SocialMedia.Infrastructure\obj\Debug\net10.0\SocialMedia.Infrastructure.dll
 C:\Desarrollo\2026\SocialMedia-Est\SocialMedia.Infrastructure\obj\Debug\net10.0\refint\SocialMedia.Infrastructure.dll
 C:\Desarrollo\2026\SocialMedia-Est\SocialMedia.Infrastructure\obj\Debug\net10.0\SocialMedia.Infrastructure.pdb
 C:\Desarrollo\2026\SocialMedia-Est\SocialMedia.Infrastructure\obj\Debug\net10.0\SocialMedia.Infrastructure.genruntimeconfig.cache
 C:\Desarrollo\2026\SocialMedia-Est\SocialMedia.Infrastructure\obj\Debug\net10.0\ref\SocialMedia.Infrastructure.dll
-C:\Desarrollo\2026\SocialMedia-Est\SocialMedia.Infrastructure\obj\Debug\net10.0\SocialMedia.Infrastructure.sourcelink.json

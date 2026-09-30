@@ -25,6 +25,7 @@ C:\Desarrollo\2026\SocialMedia-Est\SocialMedia.Api\obj\Debug\net10.0\SocialMedia
 C:\Desarrollo\2026\SocialMedia-Est\SocialMedia.Api\obj\Debug\net10.0\SocialMedia.Api.csproj.CoreCompileInputs.cache
 C:\Desarrollo\2026\SocialMedia-Est\SocialMedia.Api\obj\Debug\net10.0\SocialMedia.Api.MvcApplicationPartsAssemblyInfo.cs
 C:\Desarrollo\2026\SocialMedia-Est\SocialMedia.Api\obj\Debug\net10.0\SocialMedia.Api.MvcApplicationPartsAssemblyInfo.cache
+C:\Desarrollo\2026\SocialMedia-Est\SocialMedia.Api\obj\Debug\net10.0\SocialMedia.Api.sourcelink.json
 C:\Desarrollo\2026\SocialMedia-Est\SocialMedia.Api\obj\Debug\net10.0\rjimswa.dswa.cache.json
 C:\Desarrollo\2026\SocialMedia-Est\SocialMedia.Api\obj\Debug\net10.0\rjsmrazor.dswa.cache.json
 C:\Desarrollo\2026\SocialMedia-Est\SocialMedia.Api\obj\Debug\net10.0\rjsmcshtml.dswa.cache.json
@@ -41,4 +42,3 @@ C:\Desarrollo\2026\SocialMedia-Est\SocialMedia.Api\obj\Debug\net10.0\refint\Soci
 C:\Desarrollo\2026\SocialMedia-Est\SocialMedia.Api\obj\Debug\net10.0\SocialMedia.Api.pdb
 C:\Desarrollo\2026\SocialMedia-Est\SocialMedia.Api\obj\Debug\net10.0\SocialMedia.Api.genruntimeconfig.cache
 C:\Desarrollo\2026\SocialMedia-Est\SocialMedia.Api\obj\Debug\net10.0\ref\SocialMedia.Api.dll
-C:\Desarrollo\2026\SocialMedia-Est\SocialMedia.Api\obj\Debug\net10.0\SocialMedia.Api.sourcelink.json
