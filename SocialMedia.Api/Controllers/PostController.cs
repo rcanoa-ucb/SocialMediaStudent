@@ -1,13 +1,7 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
-<<<<<<< HEAD
+﻿using Microsoft.AspNetCore.Mvc;
 using SocialMedia.Core.DTOs;
 using SocialMedia.Core.Entities;
-=======
->>>>>>> 725b8d6a87a8877474b87826442167d3c2f85f95
 using SocialMedia.Core.Interfaces;
-using SocialMedia.Infrastructure.Repositories;
-using SocialMedia.Core.Entities;
 
 namespace SocialMedia.Api.Controllers
 {
