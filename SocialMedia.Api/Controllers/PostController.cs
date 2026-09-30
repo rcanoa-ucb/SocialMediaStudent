@@ -1,9 +1,13 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+<<<<<<< HEAD
 using SocialMedia.Core.DTOs;
 using SocialMedia.Core.Entities;
+=======
+>>>>>>> 725b8d6a87a8877474b87826442167d3c2f85f95
 using SocialMedia.Core.Interfaces;
 using SocialMedia.Infrastructure.Repositories;
+using SocialMedia.Core.Entities;
 
 namespace SocialMedia.Api.Controllers
 {
@@ -12,6 +16,7 @@ namespace SocialMedia.Api.Controllers
     public class PostController : ControllerBase
     {
         private readonly IPostRepository _postRepository;
+
         public PostController(IPostRepository postRepository)
         {
             _postRepository = postRepository;
@@ -19,17 +24,16 @@ namespace SocialMedia.Api.Controllers
 
         #region Sin DTOs
         [HttpGet]
-        public async Task<IActionResult> GetPosts()
+        public async Task<ActionResult> GetPosts()
         {
             var posts = await _postRepository.GetAllPostsAsync();
             return Ok(posts);
         }
-
         [HttpGet("{id}")]
-        public async Task<IActionResult> GetPostById(int id)
+        public async Task<ActionResult> GetPostsById(int id)
         {
-            var post = await _postRepository.GetPostByIdAsync(id);
-            return Ok(post);
+            var posts = await _postRepository.GetPostByIdAsync(id);
+            return Ok(posts);
         }
 
         [HttpPost]
@@ -40,16 +44,16 @@ namespace SocialMedia.Api.Controllers
         }
 
         [HttpPut]
-        public async Task<IActionResult> UpdatePost(Post post)
+        public async Task<IActionResult> UpdatePost(Post Post)
         {
-            await _postRepository.UpdatePost(post);
+            await _postRepository.InsertPost(Post);
             return NoContent();
         }
 
         [HttpDelete]
-        public async Task<IActionResult> DeletePost(Post post)
+        public async Task<IActionResult> DeletePost(Post Post)
         {
-            await _postRepository.DeletePost(post);
+            await _postRepository.DeletePost(Post);
             return NoContent();
         }
         #endregion

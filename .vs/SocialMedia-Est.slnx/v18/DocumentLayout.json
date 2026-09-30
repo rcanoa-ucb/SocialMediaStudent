@@ -103,7 +103,8 @@
               "RelativeToolTip": "SocialMedia.Infrastructure\\Data\\Configurations\\UserConfiguration.cs",
               "ViewState": "AgIAAAcAAAAAAAAAAAAYwBIAAAA7AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-23T20:30:54.897Z"
+              "WhenOpened": "2026-09-23T20:30:54.897Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -113,9 +114,10 @@
               "RelativeDocumentMoniker": "SocialMedia.Infrastructure\\Data\\Configurations\\PostConfiguration.cs",
               "ToolTip": "C:\\Desarrollo\\2026\\SocialMedia-Est\\SocialMedia.Infrastructure\\Data\\Configurations\\PostConfiguration.cs",
               "RelativeToolTip": "SocialMedia.Infrastructure\\Data\\Configurations\\PostConfiguration.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAIBJwBcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-23T20:30:28.766Z"
+              "WhenOpened": "2026-09-23T20:30:28.766Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -127,7 +129,8 @@
               "RelativeToolTip": "SocialMedia.Infrastructure\\Data\\SocialMediaContext.cs",
               "ViewState": "AgIAAB0AAAAAAAAAAAAUwCAAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-23T17:47:58.526Z"
+              "WhenOpened": "2026-09-23T17:47:58.526Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -139,7 +142,8 @@
               "RelativeToolTip": "SocialMedia.Api\\Program.cs",
               "ViewState": "AgIAAAsAAAAAAAAAAAAAwBUAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-23T17:53:22.855Z"
+              "WhenOpened": "2026-09-23T17:53:22.855Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -149,7 +153,7 @@
               "RelativeDocumentMoniker": "SocialMedia.Api\\Controllers\\PostController.cs",
               "ToolTip": "C:\\Desarrollo\\2026\\SocialMedia-Est\\SocialMedia.Api\\Controllers\\PostController.cs",
               "RelativeToolTip": "SocialMedia.Api\\Controllers\\PostController.cs",
-              "ViewState": "AgIAADUAAAAAAAAAAAAAADcAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAADkAAAAAAAAAAAAAAEIAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-09-25T20:59:25.467Z",
               "EditorCaption": ""
@@ -214,7 +218,7 @@
               "RelativeDocumentMoniker": "SocialMedia.Infrastructure\\Repositories\\PostRepository.cs",
               "ToolTip": "C:\\Desarrollo\\2026\\SocialMedia-Est\\SocialMedia.Infrastructure\\Repositories\\PostRepository.cs",
               "RelativeToolTip": "SocialMedia.Infrastructure\\Repositories\\PostRepository.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAA8wCwAAAAvAAAAAAAAAA==",
+              "ViewState": "AgIAAA4AAAAAAAAAAAA8wCsAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-09-23T21:27:58.406Z",
               "EditorCaption": ""
@@ -229,7 +233,8 @@
               "RelativeToolTip": "SocialMedia.Api\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-09-23T20:16:00.713Z"
+              "WhenOpened": "2026-09-23T20:16:00.713Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -241,7 +246,8 @@
               "RelativeToolTip": "SocialMedia.Infrastructure\\Data\\Configurations\\CommentConfiguration.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-23T20:30:40.283Z"
+              "WhenOpened": "2026-09-23T20:30:40.283Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -253,7 +259,8 @@
               "RelativeToolTip": "SocialMedia.Core\\Entities\\Comment.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-23T20:22:42.239Z"
+              "WhenOpened": "2026-09-23T20:22:42.239Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -265,7 +272,8 @@
               "RelativeToolTip": "SocialMedia.Core\\Class1.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-16T20:50:42.232Z"
+              "WhenOpened": "2026-09-16T20:50:42.232Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -277,7 +285,8 @@
               "RelativeToolTip": "SocialMedia.Infrastructure\\Class1.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-16T20:49:50.071Z"
+              "WhenOpened": "2026-09-16T20:49:50.071Z",
+              "EditorCaption": ""
             }
           ]
         }
