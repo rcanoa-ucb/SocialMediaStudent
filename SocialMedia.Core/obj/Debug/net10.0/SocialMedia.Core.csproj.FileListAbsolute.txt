@@ -9,3 +9,4 @@ C:\Desarrollo\2026\SocialMedia-Est\SocialMedia.Core\obj\Debug\net10.0\SocialMedi
 C:\Desarrollo\2026\SocialMedia-Est\SocialMedia.Core\obj\Debug\net10.0\refint\SocialMedia.Core.dll
 C:\Desarrollo\2026\SocialMedia-Est\SocialMedia.Core\obj\Debug\net10.0\SocialMedia.Core.pdb
 C:\Desarrollo\2026\SocialMedia-Est\SocialMedia.Core\obj\Debug\net10.0\ref\SocialMedia.Core.dll
+C:\Desarrollo\2026\SocialMedia-Est\SocialMedia.Core\obj\Debug\net10.0\SocialMedia.Core.sourcelink.json
