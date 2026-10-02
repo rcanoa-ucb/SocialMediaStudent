@@ -1,7 +1,6 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
-using SocialMedia.Core.Entities;
+﻿using Microsoft.AspNetCore.Mvc;
 using SocialMedia.Core.Interfaces;
+using SocialMedia.Core.Entities;
 
 namespace SocialMedia.Api.Controllers
 {
@@ -10,20 +9,21 @@ namespace SocialMedia.Api.Controllers
     public class CommentController : ControllerBase
     {
         private readonly ICommentRepository _commentRepository;
+
         public CommentController(ICommentRepository commentRepository)
         {
             _commentRepository = commentRepository;
         }
 
         [HttpGet]
-        public async Task<IActionResult> GetComment()
+        public async Task<ActionResult> GetComments()
         {
-            var comment = await _commentRepository.GetAllCommentsAsync();
-            return Ok(comment);
+            var comments = await _commentRepository.GetAllCommentsAsync();
+            return Ok(comments);
         }
 
         [HttpGet("{id}")]
-        public async Task<IActionResult> GetCommentById(int id)
+        public async Task<ActionResult> GetCommentById(int id)
         {
             var comment = await _commentRepository.GetCommentByIDAsync(id);
             return Ok(comment);
@@ -33,7 +33,7 @@ namespace SocialMedia.Api.Controllers
         public async Task<IActionResult> InsertComment(Comment newComment)
         {
             await _commentRepository.InsertComment(newComment);
-            return Created($"api/post/{newComment.Id}", newComment);
+            return Created($"api/comment/{newComment.Id}", newComment);
         }
 
         [HttpPut]
