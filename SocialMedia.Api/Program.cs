@@ -1,8 +1,9 @@
 
 using Microsoft.EntityFrameworkCore;
-using SocialMedia.Core.Interafaces;
+using SocialMedia.Core.Interfaces;
 using SocialMedia.Infrastructure.Data;
 using SocialMedia.Infrastructure.Repositories;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace SocialMedia.Api
 {
@@ -26,6 +27,21 @@ namespace SocialMedia.Api
             builder.Services.AddOpenApi();
 
             var app = builder.Build();
+
+            // Asegurar que la base de datos exista al arrancar (crea la BD y tablas si no existen)
+            using (var scope = app.Services.CreateScope())
+            {
+                try
+                {
+                    var db = scope.ServiceProvider.GetRequiredService<SocialMediaContext>();
+                    db.Database.EnsureCreated();
+                }
+                catch (Exception ex)
+                {
+                    // Si ocurre un error, lo registramos en la consola para diagnóstico.
+                    Console.WriteLine($"Error asegurando la base de datos: {ex.Message}");
+                }
+            }
 
             // Configure the HTTP request pipeline.
             if (app.Environment.IsDevelopment())

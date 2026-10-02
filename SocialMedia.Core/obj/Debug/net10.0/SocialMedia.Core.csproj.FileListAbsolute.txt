@@ -21,3 +21,4 @@ C:\Users\HP I3 DOCEAVA\source\repos\SocialMediaStudent\SocialMedia.Core\obj\Debu
 C:\Users\HP I3 DOCEAVA\source\repos\SocialMediaStudent\SocialMedia.Core\obj\Debug\net10.0\refint\SocialMedia.Core.dll
 C:\Users\HP I3 DOCEAVA\source\repos\SocialMediaStudent\SocialMedia.Core\obj\Debug\net10.0\SocialMedia.Core.pdb
 C:\Users\HP I3 DOCEAVA\source\repos\SocialMediaStudent\SocialMedia.Core\obj\Debug\net10.0\ref\SocialMedia.Core.dll
+C:\Users\HP I3 DOCEAVA\source\repos\SocialMediaStudent\SocialMedia.Core\obj\Debug\net10.0\SocialMe.C39D1699.Up2Date

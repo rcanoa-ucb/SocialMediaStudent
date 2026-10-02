@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace SocialMedia.Core.Interafaces
+namespace SocialMedia.Core.Interfaces
 {
     public interface IPostRepository
     {   // para convertir a asincrono se coloca Tak es no recomendable porsi
@@ -12,7 +12,6 @@ namespace SocialMedia.Core.Interafaces
         Task InsertPost(Post post);// Método para insertar un nuevo post
         Task UpdatePost(Post post); // Método para actualizar un post existente
         Task DeletePost(Post post); //Metodo para eliminar un post
-
         // Definir los métodos que se van a utilizar para acceder a los datos de los posts
     }
 }

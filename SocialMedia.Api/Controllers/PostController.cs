@@ -1,8 +1,10 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using SocialMedia.Core.DTOs;
 using SocialMedia.Core.Entities;
-using SocialMedia.Core.Interafaces;
+using SocialMedia.Core.Interfaces;
 using SocialMedia.Infrastructure.Repositories;
+using System.Runtime.InteropServices;
 
 namespace SocialMedia.Api.Controllers
 {
@@ -16,6 +18,7 @@ namespace SocialMedia.Api.Controllers
         {
             _postRepository = postRepository;
         }
+        #region Sin DTOs
         [HttpGet]
         public async Task<IActionResult> GetAllPosts()// IActionResult es una interfaz que representa el resultado de una acción en un controlador. Es una forma de devolver diferentes tipos de respuestas HTTP desde un método de acción. Al usar IActionResult, puedes devolver diferentes tipos de resultados, como Ok(), NotFound(), BadRequest(), etc., dependiendo del resultado de la operación.
         {
@@ -50,5 +53,56 @@ namespace SocialMedia.Api.Controllers
             await _postRepository.DeletePost(post);
             return NoContent();
         }
+        #endregion
+        #region Con DTOs
+        [HttpGet("dto")]
+        public async Task<IActionResult> GetPostsDto()// IActionResult es una interfaz que representa el resultado de una acción en un controlador. Es una forma de devolver diferentes tipos de respuestas HTTP desde un método de acción. Al usar IActionResult, puedes devolver diferentes tipos de resultados, como Ok(), NotFound(), BadRequest(), etc., dependiendo del resultado de la operación.
+        {
+            var posts = await _postRepository.GetAllPostsAsync();
+            var postDto = posts.Select(p => new PostDto
+            {
+                Id = p.Id,
+                UserId = p.UserId,
+                Description = p.Description,
+                Imagen = p.Imagen
+            });
+            return Ok(postDto);
+        }
+        [HttpGet("dto/{id}")]//colocamos id para que se pueda obtener un post por su id, y el id se pasa como parámetro en la URL.
+        public async Task<IActionResult> GetPostDtoById(int id)
+        {
+            var post = await _postRepository.GetPostByIdAsync(id);
+            var postDto = new PostDto
+            {
+                Id = post.Id,
+                UserId = post.UserId,
+                Description = post.Description,
+                Imagen = post.Imagen
+            };
+            //if (post == null)
+            //{
+            //    return NotFound();
+            //}
+            return Ok(postDto);
+        }
+        [HttpPost("dto")]
+        public async Task<IActionResult> InsertPostDto(Post newPost)
+        {
+            await _postRepository.InsertPost(newPost);
+            return Created($"api/post/{newPost.Id}", newPost);//Created es un método que devuelve un resultado HTTP 201 (Created) indicando que el recurso se ha creado correctamente. El primer parámetro es la URL del recurso recién creado, y el segundo parámetro es el objeto que representa el recurso creado.
+        }
+        [HttpPut("dto")]
+        public async Task<IActionResult> UpdatePostDto(Post post)
+        {
+            await _postRepository.UpdatePost(post);
+            return NoContent();//NoContent es un método que devuelve un resultado HTTP 204 (No Content) indicando que la solicitud se ha procesado correctamente, pero no hay contenido para devolver en la respuesta.
+        }
+        [HttpDelete("dto")]
+        public async Task<IActionResult> DeletePostDto(Post post)
+        {
+            await _postRepository.DeletePost(post);
+            return NoContent();
+        }
+        #endregion
     }
 }
