@@ -85,3 +85,4 @@ C:\Users\HP I3 DOCEAVA\source\repos\SocialMediaStudent\SocialMedia.Api\obj\Debug
 C:\Users\HP I3 DOCEAVA\source\repos\SocialMediaStudent\SocialMedia.Api\obj\Debug\net10.0\SocialMedia.Api.pdb
 C:\Users\HP I3 DOCEAVA\source\repos\SocialMediaStudent\SocialMedia.Api\obj\Debug\net10.0\SocialMedia.Api.genruntimeconfig.cache
 C:\Users\HP I3 DOCEAVA\source\repos\SocialMediaStudent\SocialMedia.Api\obj\Debug\net10.0\ref\SocialMedia.Api.dll
+C:\Users\HP I3 DOCEAVA\source\repos\SocialMediaStudent\SocialMedia.Api\bin\Debug\net10.0\AutoMapper.dll

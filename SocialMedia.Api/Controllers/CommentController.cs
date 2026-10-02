@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using AutoMapper;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Diagnostics.HealthChecks;
 using SocialMedia.Core.DTOs;
@@ -13,6 +14,12 @@ namespace SocialMedia.Api.Controllers
     public class CommentController : ControllerBase
     {
         private readonly ICommentRepository _commentRepository;
+        public readonly IMapper _mapper;
+        public CommentController(IMapper mapper, ICommentRepository commentRepository)
+        {
+            _commentRepository = commentRepository;
+            _mapper = mapper;
+        }
         public CommentController(ICommentRepository commentRepository)
         {
             _commentRepository = commentRepository;
@@ -86,20 +93,77 @@ namespace SocialMedia.Api.Controllers
         [HttpPost("dto")]
         public async Task<IActionResult> InsertCommentDto(Comment newComment)
         {
-            await _commentRepository.InsertComment(newComment);
-            return Created($"api/post/{newComment.Id}", newComment);
+            var comment = new Comment
+            {
+                Id = newComment.Id,
+                PostId = newComment.PostId,
+                UserId = newComment.UserId,
+                Description = newComment.Description,
+                Date = DateTime.Now,
+                IsActive = newComment.IsActive,
+            };
+
+            await _commentRepository.InsertComment(comment);
+            return Created($"api/post/{newComment.Id}",newComment);
         }
         [HttpPut("dto")]
-        public async Task<IActionResult> UpdateCommentDto(Comment comment)
+        public async Task<IActionResult> UpdateCommenttDto(int id, [FromBody] CommentDto commentDto)
         {
+            if (id != commentDto.Id)
+            {
+                return BadRequest("El id del post no coincide");
+            }
+
+            var comment = await _commentRepository.GetCommentByIdAsync(id);
+            if (comment == null)
+                return NotFound("Post no encontrado");
+
+            //Mapear valor DTO en la entidad
+            comment.UserId = commentDto.UserId;
+            comment.Date = commentDto.Date;
+            comment.Description = commentDto.Description;
+            comment.IsActive = commentDto.IsActive;
+
             await _commentRepository.UpdateComment(comment);
-            return NoContent();//NoContent es un método que devuelve un resultado HTTP 204 (No Content) indicando que la solicitud se ha procesado correctamente, pero no hay contenido para devolver en la respuesta.
+            return Ok(comment);
         }
-        [HttpDelete("dto")]
-        public async Task<IActionResult> DeleteCommentDto(Comment comment)
+        [HttpDelete("dto/{id}")]
+        public async Task<IActionResult> DeleteCommentDto(int id)
         {
+            var comment = await _commentRepository.GetCommentByIdAsync(id);
+            if (comment == null)
+                return NotFound("Post no encontrado.");
+
             await _commentRepository.DeleteComment(comment);
-            return NoContent();
+
+            return NoContent(); // 204 sin contenido
+        }
+        #endregion
+        #region Dto-AutoMapper
+        [HttpGet("dto/mapper")]
+        public async Task<IActionResult> GetCommentsDtoMapper()
+        {
+            var comments = await _commentRepository.GetAllCommentsAsync();
+            var commentDto = _mapper.Map<IEnumerable<CommentDto>>(comments);
+            //var postDto = posts.Select(p => new PostDto
+            //{
+            //    Id = p.Id,
+            //    UserId = p.UserId,
+            //    Date = p.Date,
+            //    Description = p.Description,
+            //    Imagen = p.Imagen
+            //});
+            return Ok(commentDto);
+        }
+        [HttpGet("dto/mapper{id}")]//colocamos id para que se pueda obtener un post por su id, y el id se pasa como parámetro en la URL.
+        public async Task<IActionResult> GetCommentByIdDtoMapper(int id)
+        {
+            var comment = await _commentRepository.GetCommentByIdAsync(id);
+            //if (post == null)
+            //{
+            //    return NotFound();
+            //}
+            return Ok(comment);
         }
         #endregion
     }

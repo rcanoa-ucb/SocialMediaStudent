@@ -3,16 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\HP I3 DOCEAVA\\source\\repos\\SocialMediaStudent\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{20DE5FD1-E331-7142-A93A-F6E553560140}|SocialMedia.Api\\SocialMedia.Api.csproj|c:\\users\\hp i3 doceava\\source\\repos\\socialmediastudent\\socialmedia.api\\controllers\\commentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20DE5FD1-E331-7142-A93A-F6E553560140}|SocialMedia.Api\\SocialMedia.Api.csproj|solutionrelative:socialmedia.api\\controllers\\commentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{20DE5FD1-E331-7142-A93A-F6E553560140}|SocialMedia.Api\\SocialMedia.Api.csproj|c:\\users\\hp i3 doceava\\source\\repos\\socialmediastudent\\socialmedia.api\\controllers\\postcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{20DE5FD1-E331-7142-A93A-F6E553560140}|SocialMedia.Api\\SocialMedia.Api.csproj|solutionrelative:socialmedia.api\\controllers\\postcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{20DE5FD1-E331-7142-A93A-F6E553560140}|SocialMedia.Api\\SocialMedia.Api.csproj|c:\\users\\hp i3 doceava\\source\\repos\\socialmediastudent\\socialmedia.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{20DE5FD1-E331-7142-A93A-F6E553560140}|SocialMedia.Api\\SocialMedia.Api.csproj|solutionrelative:socialmedia.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{08E8FC0D-B3CB-C9BF-1FDE-B0B7B0A7000D}|SocialMedia.Infrastructure\\SocialMedia.Infrastructure.csproj|c:\\users\\hp i3 doceava\\source\\repos\\socialmediastudent\\socialmedia.infrastructure\\mappings\\commentprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08E8FC0D-B3CB-C9BF-1FDE-B0B7B0A7000D}|SocialMedia.Infrastructure\\SocialMedia.Infrastructure.csproj|solutionrelative:socialmedia.infrastructure\\mappings\\commentprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{08E8FC0D-B3CB-C9BF-1FDE-B0B7B0A7000D}|SocialMedia.Infrastructure\\SocialMedia.Infrastructure.csproj|c:\\users\\hp i3 doceava\\source\\repos\\socialmediastudent\\socialmedia.infrastructure\\mappings\\postprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{08E8FC0D-B3CB-C9BF-1FDE-B0B7B0A7000D}|SocialMedia.Infrastructure\\SocialMedia.Infrastructure.csproj|solutionrelative:socialmedia.infrastructure\\mappings\\postprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20DE5FD1-E331-7142-A93A-F6E553560140}|SocialMedia.Api\\SocialMedia.Api.csproj|c:\\users\\hp i3 doceava\\source\\repos\\socialmediastudent\\socialmedia.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20DE5FD1-E331-7142-A93A-F6E553560140}|SocialMedia.Api\\SocialMedia.Api.csproj|solutionrelative:socialmedia.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{08E8FC0D-B3CB-C9BF-1FDE-B0B7B0A7000D}|SocialMedia.Infrastructure\\SocialMedia.Infrastructure.csproj|c:\\users\\hp i3 doceava\\source\\repos\\socialmediastudent\\socialmedia.infrastructure\\socialmedia.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
@@ -21,10 +29,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{08E8FC0D-B3CB-C9BF-1FDE-B0B7B0A7000D}|SocialMedia.Infrastructure\\SocialMedia.Infrastructure.csproj|c:\\users\\hp i3 doceava\\source\\repos\\socialmediastudent\\socialmedia.infrastructure\\repositories\\commentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{08E8FC0D-B3CB-C9BF-1FDE-B0B7B0A7000D}|SocialMedia.Infrastructure\\SocialMedia.Infrastructure.csproj|solutionrelative:socialmedia.infrastructure\\repositories\\commentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{20DE5FD1-E331-7142-A93A-F6E553560140}|SocialMedia.Api\\SocialMedia.Api.csproj|c:\\users\\hp i3 doceava\\source\\repos\\socialmediastudent\\socialmedia.api\\controllers\\commentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{20DE5FD1-E331-7142-A93A-F6E553560140}|SocialMedia.Api\\SocialMedia.Api.csproj|solutionrelative:socialmedia.api\\controllers\\commentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1B087032-18E0-426B-F231-576BAD73AC2B}|SocialMedia.Core\\SocialMedia.Core.csproj|c:\\users\\hp i3 doceava\\source\\repos\\socialmediastudent\\socialmedia.core\\entities\\comment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -114,33 +118,59 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "PostProfile.cs",
-              "DocumentMoniker": "C:\\Users\\HP I3 DOCEAVA\\source\\repos\\SocialMediaStudent\\SocialMedia.Infrastructure\\Mappings\\PostProfile.cs",
-              "RelativeDocumentMoniker": "SocialMedia.Infrastructure\\Mappings\\PostProfile.cs",
-              "ToolTip": "C:\\Users\\HP I3 DOCEAVA\\source\\repos\\SocialMediaStudent\\SocialMedia.Infrastructure\\Mappings\\PostProfile.cs",
-              "RelativeToolTip": "SocialMedia.Infrastructure\\Mappings\\PostProfile.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-02T21:32:55.782Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "PostController.cs",
               "DocumentMoniker": "C:\\Users\\HP I3 DOCEAVA\\source\\repos\\SocialMediaStudent\\SocialMedia.Api\\Controllers\\PostController.cs",
               "RelativeDocumentMoniker": "SocialMedia.Api\\Controllers\\PostController.cs",
               "ToolTip": "C:\\Users\\HP I3 DOCEAVA\\source\\repos\\SocialMediaStudent\\SocialMedia.Api\\Controllers\\PostController.cs",
               "RelativeToolTip": "SocialMedia.Api\\Controllers\\PostController.cs",
-              "ViewState": "AgIAAJcAAAAAAAAAAAAuwKwAAAAfAAAAAAAAAA==",
+              "ViewState": "AgIAABAAAAAAAAAAAAAQwKYAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-02T21:23:09.395Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 0,
+              "Title": "CommentController.cs",
+              "DocumentMoniker": "C:\\Users\\HP I3 DOCEAVA\\source\\repos\\SocialMediaStudent\\SocialMedia.Api\\Controllers\\CommentController.cs",
+              "RelativeDocumentMoniker": "SocialMedia.Api\\Controllers\\CommentController.cs",
+              "ToolTip": "C:\\Users\\HP I3 DOCEAVA\\source\\repos\\SocialMediaStudent\\SocialMedia.Api\\Controllers\\CommentController.cs",
+              "RelativeToolTip": "SocialMedia.Api\\Controllers\\CommentController.cs",
+              "ViewState": "AgIAAHgAAAAAAAAAAAAuwKgAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-25T22:11:18.584Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CommentProfile.cs",
+              "DocumentMoniker": "C:\\Users\\HP I3 DOCEAVA\\source\\repos\\SocialMediaStudent\\SocialMedia.Infrastructure\\Mappings\\CommentProfile.cs",
+              "RelativeDocumentMoniker": "SocialMedia.Infrastructure\\Mappings\\CommentProfile.cs",
+              "ToolTip": "C:\\Users\\HP I3 DOCEAVA\\source\\repos\\SocialMediaStudent\\SocialMedia.Infrastructure\\Mappings\\CommentProfile.cs",
+              "RelativeToolTip": "SocialMedia.Infrastructure\\Mappings\\CommentProfile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-02T21:58:31.746Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PostProfile.cs",
+              "DocumentMoniker": "C:\\Users\\HP I3 DOCEAVA\\source\\repos\\SocialMediaStudent\\SocialMedia.Infrastructure\\Mappings\\PostProfile.cs",
+              "RelativeDocumentMoniker": "SocialMedia.Infrastructure\\Mappings\\PostProfile.cs",
+              "ToolTip": "C:\\Users\\HP I3 DOCEAVA\\source\\repos\\SocialMediaStudent\\SocialMedia.Infrastructure\\Mappings\\PostProfile.cs",
+              "RelativeToolTip": "SocialMedia.Infrastructure\\Mappings\\PostProfile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-02T21:32:55.782Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "Comment.cs",
               "DocumentMoniker": "C:\\Users\\HP I3 DOCEAVA\\source\\repos\\SocialMediaStudent\\SocialMedia.Core\\Entities\\Comment.cs",
               "RelativeDocumentMoniker": "SocialMedia.Core\\Entities\\Comment.cs",
@@ -152,7 +182,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "PostDto.cs",
               "DocumentMoniker": "C:\\Users\\HP I3 DOCEAVA\\source\\repos\\SocialMediaStudent\\SocialMedia.Core\\DTOs\\PostDto.cs",
               "RelativeDocumentMoniker": "SocialMedia.Core\\DTOs\\PostDto.cs",
@@ -164,19 +194,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "CommentController.cs",
-              "DocumentMoniker": "C:\\Users\\HP I3 DOCEAVA\\source\\repos\\SocialMediaStudent\\SocialMedia.Api\\Controllers\\CommentController.cs",
-              "RelativeDocumentMoniker": "SocialMedia.Api\\Controllers\\CommentController.cs",
-              "ToolTip": "C:\\Users\\HP I3 DOCEAVA\\source\\repos\\SocialMediaStudent\\SocialMedia.Api\\Controllers\\CommentController.cs",
-              "RelativeToolTip": "SocialMedia.Api\\Controllers\\CommentController.cs",
-              "ViewState": "AgIAAEwAAAAAAAAAAAAswGYAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-25T22:11:18.584Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "PostRepository.cs",
               "DocumentMoniker": "C:\\Users\\HP I3 DOCEAVA\\source\\repos\\SocialMediaStudent\\SocialMedia.Infrastructure\\Repositories\\PostRepository.cs",
               "RelativeDocumentMoniker": "SocialMedia.Infrastructure\\Repositories\\PostRepository.cs",
@@ -188,7 +206,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "SocialMedia.Api.csproj",
               "DocumentMoniker": "C:\\Users\\HP I3 DOCEAVA\\source\\repos\\SocialMediaStudent\\SocialMedia.Api\\SocialMedia.Api.csproj",
               "RelativeDocumentMoniker": "SocialMedia.Api\\SocialMedia.Api.csproj",
@@ -196,12 +214,11 @@
               "RelativeToolTip": "SocialMedia.Api\\SocialMedia.Api.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-09-25T21:58:39.203Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-25T21:58:39.203Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "CommentRepository.cs",
               "DocumentMoniker": "C:\\Users\\HP I3 DOCEAVA\\source\\repos\\SocialMediaStudent\\SocialMedia.Infrastructure\\Repositories\\CommentRepository.cs",
               "RelativeDocumentMoniker": "SocialMedia.Infrastructure\\Repositories\\CommentRepository.cs",
@@ -209,12 +226,11 @@
               "RelativeToolTip": "SocialMedia.Infrastructure\\Repositories\\CommentRepository.cs",
               "ViewState": "AgIAADMAAAAAAAAAAAAAACAAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-24T17:34:56.223Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-24T17:34:56.223Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "IPostRepository.cs",
               "DocumentMoniker": "C:\\Users\\HP I3 DOCEAVA\\source\\repos\\SocialMediaStudent\\SocialMedia.Core\\Interfaces\\IPostRepository.cs",
               "RelativeDocumentMoniker": "SocialMedia.Core\\Interfaces\\IPostRepository.cs",
@@ -226,7 +242,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "ICommentRepository.cs",
               "DocumentMoniker": "C:\\Users\\HP I3 DOCEAVA\\source\\repos\\SocialMediaStudent\\SocialMedia.Core\\Interfaces\\ICommentRepository.cs",
               "RelativeDocumentMoniker": "SocialMedia.Core\\Interfaces\\ICommentRepository.cs",
@@ -238,7 +254,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "SocialMedia.Infrastructure.csproj",
               "DocumentMoniker": "C:\\Users\\HP I3 DOCEAVA\\source\\repos\\SocialMediaStudent\\SocialMedia.Infrastructure\\SocialMedia.Infrastructure.csproj",
               "RelativeDocumentMoniker": "SocialMedia.Infrastructure\\SocialMedia.Infrastructure.csproj",
@@ -246,12 +262,11 @@
               "RelativeToolTip": "SocialMedia.Infrastructure\\SocialMedia.Infrastructure.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-09-23T21:06:51.963Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-23T21:06:51.963Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\HP I3 DOCEAVA\\source\\repos\\SocialMediaStudent\\SocialMedia.Api\\Program.cs",
               "RelativeDocumentMoniker": "SocialMedia.Api\\Program.cs",
@@ -259,12 +274,11 @@
               "RelativeToolTip": "SocialMedia.Api\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-23T20:59:53.694Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-23T20:59:53.694Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "SocialMedia.Api.http",
               "DocumentMoniker": "C:\\Users\\HP I3 DOCEAVA\\source\\repos\\SocialMediaStudent\\SocialMedia.Api\\SocialMedia.Api.http",
               "RelativeDocumentMoniker": "SocialMedia.Api\\SocialMedia.Api.http",
@@ -276,7 +290,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\HP I3 DOCEAVA\\source\\repos\\SocialMediaStudent\\SocialMedia.Api\\appsettings.json",
               "RelativeDocumentMoniker": "SocialMedia.Api\\appsettings.json",
@@ -288,7 +302,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 21,
               "Title": "UserConfiguration.cs",
               "DocumentMoniker": "C:\\Users\\HP I3 DOCEAVA\\source\\repos\\SocialMediaStudent\\SocialMedia.Infrastructure\\Data\\Configurations\\UserConfiguration.cs",
               "RelativeDocumentMoniker": "SocialMedia.Infrastructure\\Data\\Configurations\\UserConfiguration.cs",
@@ -300,7 +314,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "CommentConfiguration.cs",
               "DocumentMoniker": "C:\\Users\\HP I3 DOCEAVA\\source\\repos\\SocialMediaStudent\\SocialMedia.Infrastructure\\Data\\Configurations\\CommentConfiguration.cs",
               "RelativeDocumentMoniker": "SocialMedia.Infrastructure\\Data\\Configurations\\CommentConfiguration.cs",
@@ -312,7 +326,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 22,
               "Title": "PostConfiguration.cs",
               "DocumentMoniker": "C:\\Users\\HP I3 DOCEAVA\\source\\repos\\SocialMediaStudent\\SocialMedia.Infrastructure\\Data\\Configurations\\PostConfiguration.cs",
               "RelativeDocumentMoniker": "SocialMedia.Infrastructure\\Data\\Configurations\\PostConfiguration.cs",
@@ -324,7 +338,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 20,
               "Title": "SocialMediaContext.cs",
               "DocumentMoniker": "C:\\Users\\HP I3 DOCEAVA\\source\\repos\\SocialMediaStudent\\SocialMedia.Infrastructure\\Data\\SocialMediaContext.cs",
               "RelativeDocumentMoniker": "SocialMedia.Infrastructure\\Data\\SocialMediaContext.cs",
@@ -336,7 +350,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\Users\\HP I3 DOCEAVA\\source\\repos\\SocialMediaStudent\\SocialMedia.Core\\Entities\\User.cs",
               "RelativeDocumentMoniker": "SocialMedia.Core\\Entities\\User.cs",
@@ -348,7 +362,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "Post.cs",
               "DocumentMoniker": "C:\\Users\\HP I3 DOCEAVA\\source\\repos\\SocialMediaStudent\\SocialMedia.Core\\Entities\\Post.cs",
               "RelativeDocumentMoniker": "SocialMedia.Core\\Entities\\Post.cs",
@@ -360,7 +374,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "SocialMedia.Core.csproj",
               "DocumentMoniker": "C:\\Users\\HP I3 DOCEAVA\\source\\repos\\SocialMediaStudent\\SocialMedia.Core\\SocialMedia.Core.csproj",
               "RelativeDocumentMoniker": "SocialMedia.Core\\SocialMedia.Core.csproj",
@@ -368,12 +382,11 @@
               "RelativeToolTip": "SocialMedia.Core\\SocialMedia.Core.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-09-23T20:22:06.989Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-23T20:22:06.989Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "Class1.cs",
               "DocumentMoniker": "C:\\Users\\HP I3 DOCEAVA\\source\\repos\\SocialMediaStudent\\SocialMedia.Core\\Class1.cs",
               "RelativeDocumentMoniker": "SocialMedia.Core\\Class1.cs",
@@ -385,7 +398,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 23,
               "Title": "Class1.cs",
               "DocumentMoniker": "C:\\Users\\HP I3 DOCEAVA\\source\\repos\\SocialMediaStudent\\SocialMedia.Infrastructure\\Class1.cs",
               "RelativeDocumentMoniker": "SocialMedia.Infrastructure\\Class1.cs",
