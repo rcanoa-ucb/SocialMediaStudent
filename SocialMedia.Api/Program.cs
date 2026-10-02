@@ -4,6 +4,7 @@ using SocialMedia.Core.Interfaces;
 using SocialMedia.Infrastructure.Data;
 using SocialMedia.Infrastructure.Repositories;
 using Microsoft.Extensions.DependencyInjection;
+using SocialMedia.Infrastructure.Mappings;
 
 namespace SocialMedia.Api
 {
@@ -25,6 +26,7 @@ namespace SocialMedia.Api
             builder.Services.AddControllers();
             // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
             builder.Services.AddOpenApi();
+            builder.Services.AddAutoMapper(typeof(PostProfile).Assembly);
 
             var app = builder.Build();
 
