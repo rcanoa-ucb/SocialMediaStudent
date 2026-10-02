@@ -1,6 +1,3 @@
-﻿using System;
-using System.Collections.Generic;
-
 namespace SocialMedia.Core.Entities;
 
 public partial class Post
@@ -17,5 +14,5 @@ public partial class Post
 
     public virtual ICollection<Comment> Comments { get; set; } = new List<Comment>();
 
-    public virtual User? User { get; set; } = null!;
+    public virtual User? User { get; set; }
 }

@@ -2,20 +2,22 @@ using System.ComponentModel.DataAnnotations;
 
 namespace SocialMedia.Core.DTOs
 {
-    public class PostDto
+    public class CommentDto
     {
         public int Id { get; set; }
+
+        [Range(1, int.MaxValue, ErrorMessage = "PostId debe ser mayor a 0")]
+        public int PostId { get; set; }
 
         [Range(1, int.MaxValue, ErrorMessage = "UserId debe ser mayor a 0")]
         public int UserId { get; set; }
 
-        public DateTime Date { get; set; }
-
         [Required]
-        [StringLength(1000)]
+        [StringLength(500)]
         public string Description { get; set; } = null!;
 
-        [StringLength(500)]
-        public string? Imagen { get; set; }
+        public DateTime Date { get; set; }
+
+        public bool IsActive { get; set; } = true;
     }
 }

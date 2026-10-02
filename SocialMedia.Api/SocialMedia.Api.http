@@ -1,6 +1,59 @@
 @SocialMedia.Api_HostAddress = http://localhost:5233
 
-GET {{SocialMedia.Api_HostAddress}}/weatherforecast/
+### ---------- POST ----------
+GET {{SocialMedia.Api_HostAddress}}/api/post
 Accept: application/json
 
 ###
+GET {{SocialMedia.Api_HostAddress}}/api/post/1
+
+###
+GET {{SocialMedia.Api_HostAddress}}/api/post/dto
+
+###
+GET {{SocialMedia.Api_HostAddress}}/api/post/dto/1
+
+###
+GET {{SocialMedia.Api_HostAddress}}/api/post/dto/mapper
+
+###
+GET {{SocialMedia.Api_HostAddress}}/api/post/dto/mapper/1
+
+### Debe responder 404
+GET {{SocialMedia.Api_HostAddress}}/api/post/dto/999999
+
+###
+POST {{SocialMedia.Api_HostAddress}}/api/post/dto
+Content-Type: application/json
+
+{ "userId": 1, "date": "2026-10-02T10:00:00", "description": "Mi primer post", "imagen": null }
+
+###
+PUT {{SocialMedia.Api_HostAddress}}/api/post/dto/1
+Content-Type: application/json
+
+{ "id": 1, "userId": 1, "date": "2026-10-02T10:00:00", "description": "Post editado", "imagen": null }
+
+###
+DELETE {{SocialMedia.Api_HostAddress}}/api/post/dto/1
+
+### ---------- COMMENT ----------
+GET {{SocialMedia.Api_HostAddress}}/api/comment
+
+###
+GET {{SocialMedia.Api_HostAddress}}/api/comment/1
+
+###
+POST {{SocialMedia.Api_HostAddress}}/api/comment
+Content-Type: application/json
+
+{ "postId": 1, "userId": 1, "description": "Buen post", "isActive": true }
+
+###
+PUT {{SocialMedia.Api_HostAddress}}/api/comment/1
+Content-Type: application/json
+
+{ "id": 1, "postId": 1, "userId": 1, "description": "Comentario editado", "date": "2026-10-02T10:00:00", "isActive": true }
+
+###
+DELETE {{SocialMedia.Api_HostAddress}}/api/comment/1

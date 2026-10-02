@@ -1,10 +1,7 @@
-﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 using SocialMedia.Core.Entities;
 using SocialMedia.Core.Interfaces;
 using SocialMedia.Infrastructure.Data;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace SocialMedia.Infrastructure.Repositories
 {
@@ -19,16 +16,12 @@ namespace SocialMedia.Infrastructure.Repositories
 
         public async Task<IEnumerable<Comment>> GetAllCommentsAsync()
         {
-            var comments = await _socialMediaContext.Comments.ToListAsync();
-            return comments;
+            return await _socialMediaContext.Comments.AsNoTracking().ToListAsync();
         }
 
-        public async Task<Comment> GetCommentByIdAsync(int id)
+        public async Task<Comment?> GetCommentByIdAsync(int id)
         {
-            var comment = await _socialMediaContext.Comments
-                .FirstOrDefaultAsync(x => x.Id == id);
-
-            return comment;
+            return await _socialMediaContext.Comments.FirstOrDefaultAsync(x => x.Id == id);
         }
 
         public async Task InsertComment(Comment comment)
