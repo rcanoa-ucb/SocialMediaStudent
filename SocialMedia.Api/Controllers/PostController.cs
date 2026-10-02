@@ -87,13 +87,22 @@ namespace SocialMedia.Api.Controllers
         }
 
         [HttpPost("dto")]
-        public async Task<IActionResult> InsertPostDto(Post newPost)
+        public async Task<IActionResult> InsertPostDto(PostDto newPost)
         {
-            await _postRepository.InsertPost(newPost);
+            var post = new Post
+            {
+                Id = newPost.Id,
+                UserId = newPost.UserId,
+                Date = newPost.Date,
+                Description = newPost.Description,
+                Imagen = newPost.Imagen
+            };
+
+            await _postRepository.InsertPost(post);
             return Created($"api/post/{newPost.Id}", newPost);
         }
 
-
+        [HttpPut("dto")]
         public async Task<IActionResult> UpdatePostDto(
             int id, [FromBody] PostDto postDto)
         {
@@ -129,38 +138,37 @@ namespace SocialMedia.Api.Controllers
         }
         #endregion
 
-        #region Dt0-AutoMapper
-
+        #region Dto-AutoMapper
         [HttpGet("dto/mapper")]
-        public async Task<IActionResult> GetPostDtoMapper()
+        public async Task<IActionResult> GetPostsDtoMapper()
         {
             var posts = await _postRepository.GetAllPostsAsync();
             var postDto = _mapper.Map<IEnumerable<PostDto>>(posts);
-            /*var postDto = posts.Select(p => new PostDto
-            {
-                Id = p.Id,
-                UserId = p.UserId,
-                Date = p.Date,
-                Description = p.Description,
-                Imagen = p.Imagen
-            });*/
+            //var postDto = posts.Select(p => new PostDto
+            //{
+            //    Id = p.Id,
+            //    UserId = p.UserId,
+            //    Date = p.Date,
+            //    Description = p.Description,
+            //    Imagen = p.Imagen
+            //});
             return Ok(postDto);
         }
 
         [HttpGet("dto/mapper/{id}")]
-        public async Task<IActionResult> GetPostsByIDtoMapper(int id)
+        public async Task<IActionResult> GetPostByIdDtoMapper(int id)
         {
-            var posts = await _postRepository.GetAllPostsAsync();
-            var postDto = _mapper.Map<PostDto>(posts);
-            /*var postDto = posts.Select(p => new PostDto
-            {
-                Id = p.Id,
-                UserId = p.UserId,
-                Date = p.Date,
-                Description = p.Description,
-                Imagen = p.Imagen
-            });*/
-            return Ok(postDto);
+            var post = await _postRepository.GetPostByIdAsync(id);
+            var postDto = _mapper.Map<PostDto>(post);
+            //var postDto = new PostDto
+            //{
+            //    Id = post.Id,
+            //    UserId = post.UserId,
+            //    Date = post.Date,
+            //    Description = post.Description,
+            //    Imagen = post.Imagen
+            //};
+            return Ok(post);
         }
         #endregion
     }
