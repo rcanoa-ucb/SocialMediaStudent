@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using SocialMedia.Core.Interfaces;
 using SocialMedia.Infrastructure.Data;
+using SocialMedia.Infrastructure.Mappings;
 using SocialMedia.Infrastructure.Repositories;
 
 namespace SocialMedia.Api
@@ -27,6 +28,8 @@ namespace SocialMedia.Api
             // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
             builder.Services.AddOpenApi();
 
+            builder.Services.AddAutoMapper(typeof(PostProfile).Assembly);
+            builder.Services.AddAutoMapper(typeof(CommentProfile).Assembly);
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
