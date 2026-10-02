@@ -4,31 +4,32 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace SocialMedia.Infrastructure.Data.Repositories
+namespace SocialMedia.Infrastructure.Repositories
 {
-    public class UserRepository : IUserRepository
+    public class CommentRepository : ICommentRepository
     {
-        public Task DeleteUser(User user)
+
+        public Task<IEnumerable<Comment>> GetAllCommentsAsync()
         {
             throw new NotImplementedException();
         }
 
-        public Task<IEnumerable<User>> GetAllUsersAsync()
+        public Task<Comment> GetCommentByIDAsync(int id)
         {
             throw new NotImplementedException();
         }
 
-        public Task<User> GetUserByIDAsync(int id)
+        public Task InsertComment(Comment comment)
         {
             throw new NotImplementedException();
         }
 
-        public Task InsertUser(User user)
+        public Task UpdateComment(Comment comment)
         {
             throw new NotImplementedException();
         }
 
-        public Task UpdateUser(User user)
+        public Task DeleteComment(Comment comment)
         {
             throw new NotImplementedException();
         }

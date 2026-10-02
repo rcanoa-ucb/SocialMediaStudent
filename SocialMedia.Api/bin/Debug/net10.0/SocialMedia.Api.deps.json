@@ -8,7 +8,8 @@
     ".NETCoreApp,Version=v10.0": {
       "SocialMedia.Api/1.0.0": {
         "dependencies": {
-          "Microsoft.AspNetCore.OpenApi": "10.0.10",
+          "Microsoft.AspNetCore.OpenApi": "9.0.20",
+          "Microsoft.EntityFrameworkCore.Relational": "9.0.20",
           "SocialMedia.Core": "1.0.0",
           "SocialMedia.Infrastructure": "1.0.0"
         },
@@ -16,14 +17,14 @@
           "SocialMedia.Api.dll": {}
         }
       },
-      "Microsoft.AspNetCore.OpenApi/10.0.10": {
+      "Microsoft.AspNetCore.OpenApi/9.0.20": {
         "dependencies": {
-          "Microsoft.OpenApi": "2.0.0"
+          "Microsoft.OpenApi": "1.6.30"
         },
         "runtime": {
-          "lib/net10.0/Microsoft.AspNetCore.OpenApi.dll": {
-            "assemblyVersion": "10.0.10.0",
-            "fileVersion": "10.0.1026.32716"
+          "lib/net9.0/Microsoft.AspNetCore.OpenApi.dll": {
+            "assemblyVersion": "9.0.20.0",
+            "fileVersion": "9.0.2026.41407"
           }
         }
       },
@@ -46,22 +47,22 @@
           }
         }
       },
-      "Microsoft.EntityFrameworkCore.Relational/9.0.0": {
+      "Microsoft.EntityFrameworkCore.Relational/9.0.20": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "9.0.20"
         },
         "runtime": {
           "lib/net8.0/Microsoft.EntityFrameworkCore.Relational.dll": {
-            "assemblyVersion": "9.0.0.0",
-            "fileVersion": "9.0.24.52902"
+            "assemblyVersion": "9.0.20.0",
+            "fileVersion": "9.0.2026.41306"
           }
         }
       },
-      "Microsoft.OpenApi/2.0.0": {
+      "Microsoft.OpenApi/1.6.30": {
         "runtime": {
-          "lib/net8.0/Microsoft.OpenApi.dll": {
-            "assemblyVersion": "2.0.0.0",
-            "fileVersion": "2.0.0.0"
+          "lib/netstandard2.0/Microsoft.OpenApi.dll": {
+            "assemblyVersion": "1.6.30.0",
+            "fileVersion": "1.6.30.0"
           }
         }
       },
@@ -75,7 +76,7 @@
       },
       "Pomelo.EntityFrameworkCore.MySql/9.0.0": {
         "dependencies": {
-          "Microsoft.EntityFrameworkCore.Relational": "9.0.0",
+          "Microsoft.EntityFrameworkCore.Relational": "9.0.20",
           "MySqlConnector": "2.4.0"
         },
         "runtime": {
@@ -114,12 +115,12 @@
       "serviceable": false,
       "sha512": ""
     },
-    "Microsoft.AspNetCore.OpenApi/10.0.10": {
+    "Microsoft.AspNetCore.OpenApi/9.0.20": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-d4Atx9IHq7JgX0F/h7Db+m9zAUzC+cKdI9k+OWnnyQIOUQtfvjIEuhvbjPigVMkAmPUgCbJ8Yp6M9ghUqHtJSQ==",
-      "path": "microsoft.aspnetcore.openapi/10.0.10",
-      "hashPath": "microsoft.aspnetcore.openapi.10.0.10.nupkg.sha512"
+      "sha512": "sha512-dJ+PafHe6aOIk+2qfi1w9w1GIYT1aDJIb8FKAtX6oEibQaPw+ASPHjBgiLH0rHEy5wYzrul6TW1qm2d8uuunMw==",
+      "path": "microsoft.aspnetcore.openapi/9.0.20",
+      "hashPath": "microsoft.aspnetcore.openapi.9.0.20.nupkg.sha512"
     },
     "Microsoft.EntityFrameworkCore/9.0.20": {
       "type": "package",
@@ -135,19 +136,19 @@
       "path": "microsoft.entityframeworkcore.abstractions/9.0.20",
       "hashPath": "microsoft.entityframeworkcore.abstractions.9.0.20.nupkg.sha512"
     },
-    "Microsoft.EntityFrameworkCore.Relational/9.0.0": {
+    "Microsoft.EntityFrameworkCore.Relational/9.0.20": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-j+msw6fWgAE9M3Q/5B9Uhv7pdAdAQUvFPJAiBJmoy+OXvehVbfbCE8ftMAa51Uo2ZeiqVnHShhnv4Y4UJJmUzA==",
-      "path": "microsoft.entityframeworkcore.relational/9.0.0",
-      "hashPath": "microsoft.entityframeworkcore.relational.9.0.0.nupkg.sha512"
+      "sha512": "sha512-84oLYJjAA8hSrwPfkq0cm9dBdf3uFbBwqJVYjmS4zEoKJ87cj/Knyp1iYAHe95ToJHeo8APAPG0OlA6S4GUUlw==",
+      "path": "microsoft.entityframeworkcore.relational/9.0.20",
+      "hashPath": "microsoft.entityframeworkcore.relational.9.0.20.nupkg.sha512"
     },
-    "Microsoft.OpenApi/2.0.0": {
+    "Microsoft.OpenApi/1.6.30": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-GGYLfzV/G/ct80OZ45JxnWP7NvMX1BCugn/lX7TH5o0lcVaviavsLMTxmFV2AybXWjbi3h6FF1vgZiTK6PXndw==",
-      "path": "microsoft.openapi/2.0.0",
-      "hashPath": "microsoft.openapi.2.0.0.nupkg.sha512"
+      "sha512": "sha512-GIxOTS4vUCdIRDt+BcnJQKdaKb9b+L14IJnzkbHOXlm7JTbIyp37DpA2SdpxjdTB1RPQ1jhPwbdoNcUWznHsrg==",
+      "path": "microsoft.openapi/1.6.30",
+      "hashPath": "microsoft.openapi.1.6.30.nupkg.sha512"
     },
     "MySqlConnector/2.4.0": {
       "type": "package",

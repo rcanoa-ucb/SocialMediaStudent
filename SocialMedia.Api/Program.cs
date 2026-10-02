@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using SocialMedia.Core.Interfaces;
 using SocialMedia.Infrastructure.Data;
-using SocialMedia.Infrastructure.Data.Repositories;
+using SocialMedia.Infrastructure.Repositories;
 
 namespace SocialMedia.Api
 {

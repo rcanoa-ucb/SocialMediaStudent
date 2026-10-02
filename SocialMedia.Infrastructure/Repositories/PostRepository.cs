@@ -1,11 +1,12 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using SocialMedia.Core.Entities;
 using SocialMedia.Core.Interfaces;
+using SocialMedia.Infrastructure.Data;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace SocialMedia.Infrastructure.Data.Repositories
+namespace SocialMedia.Infrastructure.Repositories
 {
     public class PostRepository : IPostRepository
     {
