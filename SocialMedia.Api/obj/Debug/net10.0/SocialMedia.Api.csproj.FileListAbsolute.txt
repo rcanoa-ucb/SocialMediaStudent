@@ -85,3 +85,4 @@ C:\Gabriela\Universidad Catolica\4to semestre\tecnologias web 1\SocialMediaStude
 C:\Gabriela\Universidad Catolica\4to semestre\tecnologias web 1\SocialMediaStudent\SocialMedia.Api\obj\Debug\net10.0\SocialMedia.Api.pdb
 C:\Gabriela\Universidad Catolica\4to semestre\tecnologias web 1\SocialMediaStudent\SocialMedia.Api\obj\Debug\net10.0\SocialMedia.Api.genruntimeconfig.cache
 C:\Gabriela\Universidad Catolica\4to semestre\tecnologias web 1\SocialMediaStudent\SocialMedia.Api\obj\Debug\net10.0\ref\SocialMedia.Api.dll
+C:\Gabriela\Universidad Catolica\4to semestre\tecnologias web 1\SocialMediaStudent\SocialMedia.Api\bin\Debug\net10.0\AutoMapper.dll

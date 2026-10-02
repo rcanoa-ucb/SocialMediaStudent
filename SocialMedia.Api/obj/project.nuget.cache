@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "wD8kAPn7Fek=",
+  "dgSpecHash": "azV/cW/sDZ0=",
   "success": true,
   "projectFilePath": "C:\\Gabriela\\Universidad Catolica\\4to semestre\\tecnologias web 1\\SocialMediaStudent\\SocialMedia.Api\\SocialMedia.Api.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\ASUS\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\ASUS\\.nuget\\packages\\microsoft.aspnetcore.openapi\\10.0.10\\microsoft.aspnetcore.openapi.10.0.10.nupkg.sha512",
     "C:\\Users\\ASUS\\.nuget\\packages\\microsoft.entityframeworkcore\\9.0.20\\microsoft.entityframeworkcore.9.0.20.nupkg.sha512",
     "C:\\Users\\ASUS\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\9.0.20\\microsoft.entityframeworkcore.abstractions.9.0.20.nupkg.sha512",
@@ -14,6 +15,18 @@
     "C:\\Users\\ASUS\\.nuget\\packages\\pomelo.entityframeworkcore.mysql\\9.0.0\\pomelo.entityframeworkcore.mysql.9.0.0.nupkg.sha512"
   ],
   "logs": [
+    {
+      "code": "NU1903",
+      "level": "Warning",
+      "message": "El paquete \"AutoMapper\" 13.0.1 tiene una vulnerabilidad de gravedad alta conocida, https://github.com/advisories/GHSA-rvv3-g6hj-g44x",
+      "projectPath": "C:\\Gabriela\\Universidad Catolica\\4to semestre\\tecnologias web 1\\SocialMediaStudent\\SocialMedia.Api\\SocialMedia.Api.csproj",
+      "warningLevel": 1,
+      "filePath": "C:\\Gabriela\\Universidad Catolica\\4to semestre\\tecnologias web 1\\SocialMediaStudent\\SocialMedia.Api\\SocialMedia.Api.csproj",
+      "libraryId": "AutoMapper",
+      "targetGraphs": [
+        "net10.0"
+      ]
+    },
     {
       "code": "NU1903",
       "level": "Warning",
