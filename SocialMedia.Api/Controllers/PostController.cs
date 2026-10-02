@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using SocialMedia.Core.DTOs;
 using SocialMedia.Core.Entities;
 using SocialMedia.Core.Interfaces;
 using System.Collections.Generic;
@@ -16,7 +17,8 @@ namespace SocialMedia.Api.Controllers
         {
             _postRepository = postRepository;
         }
-
+        //region para ocualtar cdogigo
+        #region Sin DTOs
         [HttpGet]
         public async Task<IActionResult> GetPosts()// async aisncrinonco con task //IActionResult TITNE LOS DATOS HTTP 
         {
@@ -30,13 +32,13 @@ namespace SocialMedia.Api.Controllers
             var post = await _postRepository.GetPostByIdAsync(id);
             return Ok(post);
         }
-        
+
 
         [HttpPost]
         public async Task<IActionResult> InsertPost(Post newPost)
         {
             await _postRepository.InsertPost(newPost);
-            return Created($"api/post/{newPost.Id}",newPost); // mostrar el id que creo //concatenacion de cadenas 
+            return Created($"api/post/{newPost.Id}", newPost); // mostrar el id que creo //concatenacion de cadenas 
         }
 
         [HttpPut]
@@ -52,5 +54,60 @@ namespace SocialMedia.Api.Controllers
             await _postRepository.DeletePost(post);
             return Ok(true);
         }
+        #endregion
+
+        #region Con DTOs
+        [HttpGet("dto")]
+        public async Task<IActionResult> GetPostsDto()// async aisncrinonco con task //IActionResult TITNE LOS DATOS HTTP 
+        {
+            var posts = await _postRepository.GetAllPostsAsync();
+            var postsDto = posts.Select(p => new PostDto
+            {
+                Id = p.Id,
+                UserId = p.UserId,
+                Date = p.Date,
+                Description = p.Description,
+                Imagen = p.Imagen,
+            });
+            return Ok(postsDto);
+        }
+
+        [HttpGet("dto/{id}")]
+        public async Task<IActionResult> GetPostDto(int id)
+        {
+            var post = await _postRepository.GetPostByIdAsync(id);
+            var postDto = new PostDto
+            {
+                Id = post.Id,
+                UserId = post.UserId,
+                Date = post.Date,
+                Description = post.Description,
+                Imagen = post.Imagen,
+            };
+            return Ok(postDto);
+        }
+
+
+        [HttpPost("dto")]
+        public async Task<IActionResult> InsertPostDto(Post newPost)
+        {
+            await _postRepository.InsertPost(newPost);
+            return Created($"api/post/{newPost.Id}", newPost); // mostrar el id que creo //concatenacion de cadenas 
+        }
+
+        [HttpPut("dto")]
+        public async Task<IActionResult> UpdatePostDto(Post post)
+        {
+            await _postRepository.UpdatePost(post);
+            return Ok(post);
+        }
+
+        [HttpDelete("dto")]
+        public async Task<IActionResult> DeletePostDto(Post post)
+        {
+            await _postRepository.DeletePost(post);
+            return Ok(true);
+        }
+        #endregion
     }
 }

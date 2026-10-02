@@ -402,7 +402,14 @@
             }
           },
           "user": {
-            "$ref": "#/components/schemas/User"
+            "oneOf": [
+              {
+                "type": "null"
+              },
+              {
+                "$ref": "#/components/schemas/User"
+              }
+            ]
           }
         }
       },
