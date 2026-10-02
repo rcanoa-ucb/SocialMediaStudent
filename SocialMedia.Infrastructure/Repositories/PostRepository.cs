@@ -10,14 +10,14 @@ using System.Threading.Tasks;
 namespace SocialMedia.Infrastructure.Repositories
 {
     public class PostRepository : IPostRepository
-    {
+    {   
         private readonly SocialMediaContext _socialMediaContext;
 
         public PostRepository(SocialMediaContext socialMediaContext)
         {
             _socialMediaContext = socialMediaContext;
         }
-
+                
         public async Task<IEnumerable<Post>> GetAllPostsAsync()
         {
             var posts = await _socialMediaContext.Posts.ToListAsync();

@@ -1,35 +1,30 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using System.Collections.Generic;
+using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
 using SocialMedia.Core.Entities;
 using SocialMedia.Core.Interfaces;
 using SocialMedia.Infrastructure.Data;
-using System;
-using System.Collections.Generic;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace SocialMedia.Infrastructure.Repositories
 {
-    public class CommetRepository : ICommentRepository
+    public class CommentRepository : ICommentRepository
     {
         private readonly SocialMediaContext _socialMediaContext;
 
-        public CommetRepository(SocialMediaContext socialMediaContext)
+        public CommentRepository(SocialMediaContext socialMediaContext)
         {
             _socialMediaContext = socialMediaContext;
         }
 
-        public async Task<IEnumerable<Comment>> GetAllCommentsAsync()
+        public async Task<IEnumerable<Comment>> GetComments()
         {
-            var comments = await _socialMediaContext.Comments.ToListAsync();
-            return comments;
+            return await _socialMediaContext.Comments.ToListAsync();
         }
 
-        public async Task<Comment> GetCommentByIdAsync(int id)
+        public async Task<Comment> GetComment(int id)
         {
-            var comment = await _socialMediaContext.Comments
+            return await _socialMediaContext.Comments
                 .FirstOrDefaultAsync(x => x.Id == id);
-
-            return comment;
         }
 
         public async Task InsertComment(Comment comment)
@@ -44,10 +39,17 @@ namespace SocialMedia.Infrastructure.Repositories
             await _socialMediaContext.SaveChangesAsync();
         }
 
-        public async Task DeleteComment(Comment comment)
+        public async Task<bool> DeleteComment(int id)
         {
-            _socialMediaContext.Comments.Remove(comment);
-            await _socialMediaContext.SaveChangesAsync();
+            var currentComment = await GetComment(id);
+            if (currentComment == null)
+            {
+                return false;
+            }
+
+            _socialMediaContext.Comments.Remove(currentComment);
+            int rows = await _socialMediaContext.SaveChangesAsync();
+            return rows > 0;
         }
     }
 }
