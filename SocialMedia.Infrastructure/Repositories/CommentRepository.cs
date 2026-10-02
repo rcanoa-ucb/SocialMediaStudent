@@ -10,7 +10,7 @@ namespace SocialMedia.Infrastructure.Repositories
 {
     public class CommentRepository : ICommentRepository
     {
-     
+
         private readonly SocialMediaContext _socialMediaContext;
 
         public CommentRepository(SocialMediaContext socialMediaContext)
@@ -39,10 +39,11 @@ namespace SocialMedia.Infrastructure.Repositories
             _socialMediaContext.Comments.Update(comment);
             await _socialMediaContext.SaveChangesAsync();
         }
-        public async Task DeLeteComment(Comment comment)
+        public async Task DeleteComment(Comment comment)
         {
             _socialMediaContext.Comments.Remove(comment);
             await _socialMediaContext.SaveChangesAsync();
         }
 
     }
+}

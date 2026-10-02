@@ -24,3 +24,12 @@ C:\Users\LURDES\SocialMediaStudent\SocialMedia.Infrastructure\obj\Debug\net10.0\
 C:\Users\LURDES\SocialMediaStudent\SocialMedia.Infrastructure\obj\Debug\net10.0\SocialMedia.Infrastructure.dll
 C:\Users\LURDES\SocialMediaStudent\SocialMedia.Infrastructure\obj\Debug\net10.0\refint\SocialMedia.Infrastructure.dll
 C:\Users\LURDES\SocialMediaStudent\SocialMedia.Infrastructure\obj\Debug\net10.0\SocialMedia.Infrastructure.pdb
+C:\Users\LURDES\SocialMediaStudent\SocialMedia.Infrastructure\bin\Debug\net10.0\SocialMedia.Infrastructure.deps.json
+C:\Users\LURDES\SocialMediaStudent\SocialMedia.Infrastructure\bin\Debug\net10.0\SocialMedia.Infrastructure.runtimeconfig.json
+C:\Users\LURDES\SocialMediaStudent\SocialMedia.Infrastructure\bin\Debug\net10.0\SocialMedia.Infrastructure.dll
+C:\Users\LURDES\SocialMediaStudent\SocialMedia.Infrastructure\bin\Debug\net10.0\SocialMedia.Infrastructure.pdb
+C:\Users\LURDES\SocialMediaStudent\SocialMedia.Infrastructure\bin\Debug\net10.0\SocialMedia.Core.dll
+C:\Users\LURDES\SocialMediaStudent\SocialMedia.Infrastructure\bin\Debug\net10.0\SocialMedia.Core.pdb
+C:\Users\LURDES\SocialMediaStudent\SocialMedia.Infrastructure\obj\Debug\net10.0\SocialMe.BDF3DEF8.Up2Date
+C:\Users\LURDES\SocialMediaStudent\SocialMedia.Infrastructure\obj\Debug\net10.0\SocialMedia.Infrastructure.genruntimeconfig.cache
+C:\Users\LURDES\SocialMediaStudent\SocialMedia.Infrastructure\obj\Debug\net10.0\ref\SocialMedia.Infrastructure.dll

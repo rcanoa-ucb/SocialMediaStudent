@@ -12,7 +12,7 @@ namespace SocialMedia.Core.Interfaces
             Task<Comment> GetCommentsById(int id);
             Task InsertComment(Comment comment);
             Task UpdateComment(Comment comment);
-            Task DeLeteComment(Comment comment);
+            Task DeleteComment(Comment comment);
         }
     
 }
