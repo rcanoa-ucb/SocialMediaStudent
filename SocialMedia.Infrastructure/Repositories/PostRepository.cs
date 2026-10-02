@@ -9,14 +9,14 @@ using System.Text;
 namespace SocialMedia.Infrastructure.Repositories
 {
     public class PostRepository : IPostRepository
-    {
+    {   
         private readonly SocialMediaContext _socialMediaContext;
 
         public PostRepository(SocialMediaContext socialMediaContext)
         {
             _socialMediaContext = socialMediaContext;
         }
-
+                
         public async Task<IEnumerable<Post>> GetAllPostsAsync()
         {
             var posts = await _socialMediaContext.Posts.ToListAsync();
@@ -41,7 +41,6 @@ namespace SocialMedia.Infrastructure.Repositories
             _socialMediaContext.Posts.Update(post);
             await _socialMediaContext.SaveChangesAsync();
         }
-
         public async Task DeletePost(Post post)
         {
             _socialMediaContext.Posts.Remove(post);
