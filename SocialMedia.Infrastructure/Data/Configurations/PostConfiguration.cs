@@ -1,13 +1,10 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using SocialMedia.Core.Entities;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace SocialMedia.Infrastructure.Data.Configurations
 {
-    public class CommentConfiguration :
+    public class PostConfiguration :
         IEntityTypeConfiguration<Post>
     {
         public void Configure(EntityTypeBuilder<Post> entity)
@@ -18,11 +15,17 @@ namespace SocialMedia.Infrastructure.Data.Configurations
 
             entity.HasIndex(e => e.UserId, "FK_Post_User");
 
-            entity.Property(e => e.Date).HasColumnType("datetime");
-            entity.Property(e => e.Description).HasMaxLength(1000);
-            entity.Property(e => e.Imagen).HasMaxLength(500);
+            entity.Property(e => e.Date)
+                .HasColumnType("datetime");
 
-            entity.HasOne(d => d.User).WithMany(p => p.Posts)
+            entity.Property(e => e.Description)
+                .HasMaxLength(1000);
+
+            entity.Property(e => e.Imagen)
+                .HasMaxLength(500);
+
+            entity.HasOne(d => d.User)
+                .WithMany(p => p.Posts)
                 .HasForeignKey(d => d.UserId)
                 .OnDelete(DeleteBehavior.ClientSetNull)
                 .HasConstraintName("FK_Post_User");
