@@ -10,11 +10,11 @@ namespace SocialMedia.Api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class commentController : ControllerBase
+    public class CommentController : ControllerBase
     {
         private readonly ICommentRepository _commentRepository;
         private readonly IMapper _mapper;
-        public commentController(IMapper mapper, ICommentRepository commentRepository)
+        public CommentController(IMapper mapper, ICommentRepository commentRepository)
         {
             _commentRepository = commentRepository;
             _mapper = mapper;
@@ -22,35 +22,35 @@ namespace SocialMedia.Api.Controllers
 
         #region Sin DTOs
         [HttpGet]
-        public async Task<IActionResult> Getcomment()
+        public async Task<IActionResult> GetComment()
         {
             var comments = await _commentRepository.GetAllCommentsAsync();
             return Ok(comments);
         }
 
         [HttpGet("{id}")]
-        public async Task<IActionResult> GetcommentById(int id)
+        public async Task<IActionResult> GetCommentById(int id)
         {
             var comment = await _commentRepository.GetCommentByIDAsync(id);
             return Ok(comment);
         }
 
         [HttpPost]
-        public async Task<IActionResult> Insertcomment(Comment newcomment)
+        public async Task<IActionResult> InsertComment(Comment newcomment)
         {
             await _commentRepository.InsertComment(newcomment);
             return Created($"api/comment/{newcomment.Id}", newcomment);
         }
 
         [HttpPut]
-        public async Task<IActionResult> Updatecomment(Comment comment)
+        public async Task<IActionResult> UpdateComment(Comment comment)
         {
             await _commentRepository.UpdateComment(comment);
             return NoContent();
         }
 
         [HttpDelete]
-        public async Task<IActionResult> Deletecomment(Comment comment)
+        public async Task<IActionResult> DeleteComment(Comment comment)
         {
             await _commentRepository.DeleteComment(comment);
             return NoContent();
@@ -59,7 +59,7 @@ namespace SocialMedia.Api.Controllers
 
         #region Con DTOs
         [HttpGet("dto")]
-        public async Task<IActionResult> GetcommentDto()
+        public async Task<IActionResult> GetCommentDto()
         {
 
             var comments = await _commentRepository.GetAllCommentsAsync();
@@ -77,7 +77,7 @@ namespace SocialMedia.Api.Controllers
         }
 
         [HttpGet("dto/{id}")]
-        public async Task<IActionResult> GetcommentByIdDto(int id)
+        public async Task<IActionResult> GetCommentByIdDto(int id)
         {
             var comment = await _commentRepository.GetCommentByIDAsync(id);
             var commentDto = new CommentDto
@@ -93,7 +93,7 @@ namespace SocialMedia.Api.Controllers
         }
 
         [HttpPost("dto")]
-        public async Task<IActionResult> InsertcommentDto(Comment newComment)
+        public async Task<IActionResult> InsertCommentDto(Comment newComment)
         {
             var comment = new Comment
             {
@@ -109,7 +109,7 @@ namespace SocialMedia.Api.Controllers
         }
 
         [HttpPut("dto")]
-        public async Task<IActionResult> UpdatecommentDto(int id, [FromBody] CommentDto commentDto)
+        public async Task<IActionResult> UpdateCommentDto(int id, [FromBody] CommentDto commentDto)
         {
             if (id != commentDto.Id)
                 return BadRequest("El ide del comment no coincide");
@@ -131,7 +131,7 @@ namespace SocialMedia.Api.Controllers
         }
 
         [HttpDelete("dto/{id}")]
-        public async Task<IActionResult> DeletecommentDto(int id)
+        public async Task<IActionResult> DeleteCommentDto(int id)
         {
             var comment = await _commentRepository.GetCommentByIDAsync(id);
             if (comment == null)
@@ -144,7 +144,7 @@ namespace SocialMedia.Api.Controllers
         #endregion
         #region Dto-AutoMapper
         [HttpGet("dto/mapper")]
-        public async Task<IActionResult> GetcommentsDtoMapper()
+        public async Task<IActionResult> GetCommentsDtoMapper()
         {
             var comments = await _commentRepository.GetAllCommentsAsync();
             var commentDto = _mapper.Map<IEnumerable<CommentDto>>(comments);
@@ -159,7 +159,7 @@ namespace SocialMedia.Api.Controllers
             return Ok(commentDto);
         }
 
-        public async Task<IActionResult> GetcommentsByIdDtoMapper(int id)
+        public async Task<IActionResult> GetCommentsByIdDtoMapper(int id)
         {
             var comment = await _commentRepository.GetCommentByIDAsync(id);
             var commentDto = _mapper.Map<CommentDto>(comment);
