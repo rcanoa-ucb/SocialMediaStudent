@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\DANIEL\\Documents\\SocialMediaStudent\\SocialMedia.Api\\SocialMedia.Api.csproj": {}
+    "C:\\Users\\DANIEL\\Documents\\TecWeb\\ultimo\\SocialMediaStudent\\SocialMedia.Api\\SocialMedia.Api.csproj": {}
   },
   "projects": {
-    "C:\\Users\\DANIEL\\Documents\\SocialMediaStudent\\SocialMedia.Api\\SocialMedia.Api.csproj": {
+    "C:\\Users\\DANIEL\\Documents\\TecWeb\\ultimo\\SocialMediaStudent\\SocialMedia.Api\\SocialMedia.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\DANIEL\\Documents\\SocialMediaStudent\\SocialMedia.Api\\SocialMedia.Api.csproj",
+        "projectUniqueName": "C:\\Users\\DANIEL\\Documents\\TecWeb\\ultimo\\SocialMediaStudent\\SocialMedia.Api\\SocialMedia.Api.csproj",
         "projectName": "SocialMedia.Api",
-        "projectPath": "C:\\Users\\DANIEL\\Documents\\SocialMediaStudent\\SocialMedia.Api\\SocialMedia.Api.csproj",
+        "projectPath": "C:\\Users\\DANIEL\\Documents\\TecWeb\\ultimo\\SocialMediaStudent\\SocialMedia.Api\\SocialMedia.Api.csproj",
         "packagesPath": "C:\\Users\\DANIEL\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\DANIEL\\Documents\\SocialMediaStudent\\SocialMedia.Api\\obj\\",
+        "outputPath": "C:\\Users\\DANIEL\\Documents\\TecWeb\\ultimo\\SocialMediaStudent\\SocialMedia.Api\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -33,11 +33,11 @@
             "framework": "net10.0",
             "targetAlias": "net10.0",
             "projectReferences": {
-              "C:\\Users\\DANIEL\\Documents\\SocialMediaStudent\\SocialMedia.Core\\SocialMedia.Core.csproj": {
-                "projectPath": "C:\\Users\\DANIEL\\Documents\\SocialMediaStudent\\SocialMedia.Core\\SocialMedia.Core.csproj"
+              "C:\\Users\\DANIEL\\Documents\\TecWeb\\ultimo\\SocialMediaStudent\\SocialMedia.Core\\SocialMedia.Core.csproj": {
+                "projectPath": "C:\\Users\\DANIEL\\Documents\\TecWeb\\ultimo\\SocialMediaStudent\\SocialMedia.Core\\SocialMedia.Core.csproj"
               },
-              "C:\\Users\\DANIEL\\Documents\\SocialMediaStudent\\SocialMedia.Infrastructure\\SocialMedia.Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\DANIEL\\Documents\\SocialMediaStudent\\SocialMedia.Infrastructure\\SocialMedia.Infrastructure.csproj"
+              "C:\\Users\\DANIEL\\Documents\\TecWeb\\ultimo\\SocialMediaStudent\\SocialMedia.Infrastructure\\SocialMedia.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\DANIEL\\Documents\\TecWeb\\ultimo\\SocialMediaStudent\\SocialMedia.Infrastructure\\SocialMedia.Infrastructure.csproj"
               }
             }
           }
@@ -501,14 +501,14 @@
         }
       }
     },
-    "C:\\Users\\DANIEL\\Documents\\SocialMediaStudent\\SocialMedia.Core\\SocialMedia.Core.csproj": {
+    "C:\\Users\\DANIEL\\Documents\\TecWeb\\ultimo\\SocialMediaStudent\\SocialMedia.Core\\SocialMedia.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\DANIEL\\Documents\\SocialMediaStudent\\SocialMedia.Core\\SocialMedia.Core.csproj",
+        "projectUniqueName": "C:\\Users\\DANIEL\\Documents\\TecWeb\\ultimo\\SocialMediaStudent\\SocialMedia.Core\\SocialMedia.Core.csproj",
         "projectName": "SocialMedia.Core",
-        "projectPath": "C:\\Users\\DANIEL\\Documents\\SocialMediaStudent\\SocialMedia.Core\\SocialMedia.Core.csproj",
+        "projectPath": "C:\\Users\\DANIEL\\Documents\\TecWeb\\ultimo\\SocialMediaStudent\\SocialMedia.Core\\SocialMedia.Core.csproj",
         "packagesPath": "C:\\Users\\DANIEL\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\DANIEL\\Documents\\SocialMediaStudent\\SocialMedia.Core\\obj\\",
+        "outputPath": "C:\\Users\\DANIEL\\Documents\\TecWeb\\ultimo\\SocialMediaStudent\\SocialMedia.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -842,14 +842,14 @@
         }
       }
     },
-    "C:\\Users\\DANIEL\\Documents\\SocialMediaStudent\\SocialMedia.Infrastructure\\SocialMedia.Infrastructure.csproj": {
+    "C:\\Users\\DANIEL\\Documents\\TecWeb\\ultimo\\SocialMediaStudent\\SocialMedia.Infrastructure\\SocialMedia.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\DANIEL\\Documents\\SocialMediaStudent\\SocialMedia.Infrastructure\\SocialMedia.Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\DANIEL\\Documents\\TecWeb\\ultimo\\SocialMediaStudent\\SocialMedia.Infrastructure\\SocialMedia.Infrastructure.csproj",
         "projectName": "SocialMedia.Infrastructure",
-        "projectPath": "C:\\Users\\DANIEL\\Documents\\SocialMediaStudent\\SocialMedia.Infrastructure\\SocialMedia.Infrastructure.csproj",
+        "projectPath": "C:\\Users\\DANIEL\\Documents\\TecWeb\\ultimo\\SocialMediaStudent\\SocialMedia.Infrastructure\\SocialMedia.Infrastructure.csproj",
         "packagesPath": "C:\\Users\\DANIEL\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\DANIEL\\Documents\\SocialMediaStudent\\SocialMedia.Infrastructure\\obj\\",
+        "outputPath": "C:\\Users\\DANIEL\\Documents\\TecWeb\\ultimo\\SocialMediaStudent\\SocialMedia.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -871,8 +871,8 @@
             "framework": "net10.0",
             "targetAlias": "net10.0",
             "projectReferences": {
-              "C:\\Users\\DANIEL\\Documents\\SocialMediaStudent\\SocialMedia.Core\\SocialMedia.Core.csproj": {
-                "projectPath": "C:\\Users\\DANIEL\\Documents\\SocialMediaStudent\\SocialMedia.Core\\SocialMedia.Core.csproj"
+              "C:\\Users\\DANIEL\\Documents\\TecWeb\\ultimo\\SocialMediaStudent\\SocialMedia.Core\\SocialMedia.Core.csproj": {
+                "projectPath": "C:\\Users\\DANIEL\\Documents\\TecWeb\\ultimo\\SocialMediaStudent\\SocialMedia.Core\\SocialMedia.Core.csproj"
               }
             }
           }
@@ -894,6 +894,10 @@
           "framework": "net10.0",
           "targetAlias": "net10.0",
           "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[9.0.20, )"
@@ -904,9 +908,17 @@
               "target": "Package",
               "version": "[9.0.20, )"
             },
+            "Microsoft.EntityFrameworkCore.Relational": {
+              "target": "Package",
+              "version": "[9.0.20, )"
+            },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.20, )"
+            },
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
               "target": "Package",
               "version": "[9.0.20, )"
             },

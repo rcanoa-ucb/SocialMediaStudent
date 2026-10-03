@@ -1,4 +1,10 @@
 ﻿using SocialMedia.Core.Entities;
+<<<<<<< HEAD
+=======
+using System;
+using System.Collections.Generic;
+using System.Text;
+>>>>>>> main
 
 namespace SocialMedia.Core.Interfaces
 {
@@ -10,4 +16,8 @@ namespace SocialMedia.Core.Interfaces
         Task UpdateComment(Comment comment);
         Task DeleteComment(Comment comment);
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> main
