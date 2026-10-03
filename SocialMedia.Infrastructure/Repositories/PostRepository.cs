@@ -9,25 +9,24 @@ using System.Text;
 namespace SocialMedia.Infrastructure.Repositories
 {
     public class PostRepository : IPostRepository
-    {
-        // INI Inyeccion dependencia
-        private readonly SocialMediaContext _socialMediaContext; //Parece que esto permite la conexion la BD
+    {   
+        private readonly SocialMediaContext _socialMediaContext;
 
         public PostRepository(SocialMediaContext socialMediaContext)
         {
             _socialMediaContext = socialMediaContext;
         }
-        // FIN Inyeccion dependencia
-
-        public async Task<IEnumerable<Post>> GetAllPostsAsync() // Async: Proceso Asyncrono, en otro lado se espera el resultado (siempre usar "await")
+                
+        public async Task<IEnumerable<Post>> GetAllPostsAsync()
         {
-            var posts = await _socialMediaContext.Posts.ToListAsync(); // Muestra todo (SELECT * FROM)
+            var posts = await _socialMediaContext.Posts.ToListAsync();
             return posts;
         }
 
         public async Task<Post> GetPostByIdAsync(int id)
         {
-            var post = await _socialMediaContext.Posts.FirstOrDefaultAsync(x => x.Id == id); // Muestra 1 (SELECT * FROM WHERE id =)
+            var post = await _socialMediaContext.Posts.
+                FirstOrDefaultAsync(x => x.Id == id);
             return post;
         }
 
