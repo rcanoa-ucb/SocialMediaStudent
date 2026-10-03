@@ -1,16 +1,9 @@
-
 using Microsoft.EntityFrameworkCore;
 using SocialMedia.Core.Interfaces;
 using SocialMedia.Infrastructure.Data;
-<<<<<<< HEAD
-using SocialMedia.Core.Interfaces;
-using SocialMedia.Infrastructure.Repositories;  
-
-
-=======
-using SocialMedia.Infrastructure.Mappings;
 using SocialMedia.Infrastructure.Repositories;
->>>>>>> main
+using SocialMedia.Infrastructure.Mappings;
+
 namespace SocialMedia.Api
 {
     public class Program

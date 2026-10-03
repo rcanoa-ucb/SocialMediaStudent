@@ -4,6 +4,10 @@
   "Documents": [
     {
 <<<<<<< HEAD
+      "AbsoluteMoniker": "D:0:0:{1B087032-18E0-426B-F231-576BAD73AC2B}|SocialMedia.Core\\SocialMedia.Core.csproj|c:\\users\\daniel\\documents\\socialmediastudent\\socialmedia.core\\interfaces\\icommentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B087032-18E0-426B-F231-576BAD73AC2B}|SocialMedia.Core\\SocialMedia.Core.csproj|solutionrelative:socialmedia.core\\interfaces\\icommentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{20DE5FD1-E331-7142-A93A-F6E553560140}|SocialMedia.Api\\SocialMedia.Api.csproj|c:\\users\\daniel\\documents\\socialmediastudent\\socialmedia.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{20DE5FD1-E331-7142-A93A-F6E553560140}|SocialMedia.Api\\SocialMedia.Api.csproj|solutionrelative:socialmedia.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
 =======
@@ -14,10 +18,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{08E8FC0D-B3CB-C9BF-1FDE-B0B7B0A7000D}|SocialMedia.Infrastructure\\SocialMedia.Infrastructure.csproj|c:\\users\\daniel\\documents\\socialmediastudent\\socialmedia.infrastructure\\repositories\\commentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{08E8FC0D-B3CB-C9BF-1FDE-B0B7B0A7000D}|SocialMedia.Infrastructure\\SocialMedia.Infrastructure.csproj|solutionrelative:socialmedia.infrastructure\\repositories\\commentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1B087032-18E0-426B-F231-576BAD73AC2B}|SocialMedia.Core\\SocialMedia.Core.csproj|c:\\users\\daniel\\documents\\socialmediastudent\\socialmedia.core\\interfaces\\icommentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B087032-18E0-426B-F231-576BAD73AC2B}|SocialMedia.Core\\SocialMedia.Core.csproj|solutionrelative:socialmedia.core\\interfaces\\icommentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{08E8FC0D-B3CB-C9BF-1FDE-B0B7B0A7000D}|SocialMedia.Infrastructure\\SocialMedia.Infrastructure.csproj|c:\\users\\daniel\\documents\\socialmediastudent\\socialmedia.infrastructure\\repositories\\postrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -131,20 +131,16 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-<<<<<<< HEAD
-          "SelectedChildIndex": 6,
-=======
           "SelectedChildIndex": 2,
->>>>>>> main
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
-<<<<<<< HEAD
               "$type": "Document",
-              "DocumentIndex": 1,
+<<<<<<< HEAD
+              "DocumentIndex": 2,
               "Title": "CommentRepository.cs",
               "DocumentMoniker": "C:\\Users\\DANIEL\\Documents\\SocialMediaStudent\\SocialMedia.Infrastructure\\Repositories\\CommentRepository.cs",
               "RelativeDocumentMoniker": "SocialMedia.Infrastructure\\Repositories\\CommentRepository.cs",
@@ -154,7 +150,6 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-09-26T04:27:46.433Z",
 =======
-              "$type": "Document",
               "DocumentIndex": 11,
               "Title": "SocialMediaContext.cs",
               "DocumentMoniker": "C:\\Desarrollo\\2026\\SocialMedia-Est\\SocialMedia.Infrastructure\\Data\\SocialMediaContext.cs",
@@ -164,11 +159,22 @@
               "ViewState": "AgIAAB0AAAAAAAAAAAAUwCAAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-09-23T17:47:58.526Z",
+>>>>>>> main
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+<<<<<<< HEAD
+              "Title": "ICommentRepository.cs",
+              "DocumentMoniker": "C:\\Users\\DANIEL\\Documents\\SocialMediaStudent\\SocialMedia.Core\\Interfaces\\ICommentRepository.cs",
+              "RelativeDocumentMoniker": "SocialMedia.Core\\Interfaces\\ICommentRepository.cs",
+              "ToolTip": "C:\\Users\\DANIEL\\Documents\\SocialMediaStudent\\SocialMedia.Core\\Interfaces\\ICommentRepository.cs",
+              "RelativeToolTip": "SocialMedia.Core\\Interfaces\\ICommentRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-26T04:26:27.7Z",
+=======
               "Title": "PostController.cs",
               "DocumentMoniker": "C:\\Desarrollo\\2026\\SocialMedia-Est\\SocialMedia.Api\\Controllers\\PostController.cs",
               "RelativeDocumentMoniker": "SocialMedia.Api\\Controllers\\PostController.cs",
@@ -177,22 +183,11 @@
               "ViewState": "AgIAAJ0AAAAAAAAAAAAgwKMAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-09-25T20:59:25.467Z",
->>>>>>> main
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-<<<<<<< HEAD
-              "Title": "ICommentRepository.cs",
-              "DocumentMoniker": "C:\\Users\\DANIEL\\Documents\\SocialMediaStudent\\SocialMedia.Core\\Interfaces\\ICommentRepository.cs",
-              "RelativeDocumentMoniker": "SocialMedia.Core\\Interfaces\\ICommentRepository.cs",
-              "ToolTip": "C:\\Users\\DANIEL\\Documents\\SocialMediaStudent\\SocialMedia.Core\\Interfaces\\ICommentRepository.cs",
-              "RelativeToolTip": "SocialMedia.Core\\Interfaces\\ICommentRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-26T04:26:27.7Z",
-=======
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Desarrollo\\2026\\SocialMedia-Est\\SocialMedia.Api\\Program.cs",
               "RelativeDocumentMoniker": "SocialMedia.Api\\Program.cs",
@@ -338,7 +333,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\DANIEL\\Documents\\SocialMediaStudent\\SocialMedia.Api\\Program.cs",
               "RelativeDocumentMoniker": "SocialMedia.Api\\Program.cs",
