@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "dnV01irKeUo=",
+  "dgSpecHash": "5TVf7WEuroo=",
   "success": true,
-  "projectFilePath": "E:\\Documentos\\Alejandro Reyes\\SocialMediaStudent-Alejandro\\SocialMedia.Infrastructure\\SocialMedia.Infrastructure.csproj",
+  "projectFilePath": "E:\\Documentos\\Alejandro Reyes\\SocialMediaStudent\\SocialMedia.Infrastructure\\SocialMedia.Infrastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\AlejandroIRD\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\AlejandroIRD\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\7.0.0\\microsoft.bcl.asyncinterfaces.7.0.0.nupkg.sha512",

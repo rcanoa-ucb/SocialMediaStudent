@@ -313,11 +313,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Documentos\\Alejandro Reyes\\SocialMediaStudent-Alejandro\\SocialMedia.Api\\SocialMedia.Api.csproj",
+      "projectUniqueName": "E:\\Documentos\\Alejandro Reyes\\SocialMediaStudent\\SocialMedia.Api\\SocialMedia.Api.csproj",
       "projectName": "SocialMedia.Api",
-      "projectPath": "E:\\Documentos\\Alejandro Reyes\\SocialMediaStudent-Alejandro\\SocialMedia.Api\\SocialMedia.Api.csproj",
+      "projectPath": "E:\\Documentos\\Alejandro Reyes\\SocialMediaStudent\\SocialMedia.Api\\SocialMedia.Api.csproj",
       "packagesPath": "C:\\Users\\AlejandroIRD\\.nuget\\packages\\",
-      "outputPath": "E:\\Documentos\\Alejandro Reyes\\SocialMediaStudent-Alejandro\\SocialMedia.Api\\obj\\",
+      "outputPath": "E:\\Documentos\\Alejandro Reyes\\SocialMediaStudent\\SocialMedia.Api\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -340,11 +340,11 @@
           "framework": "net10.0",
           "targetAlias": "net10.0",
           "projectReferences": {
-            "E:\\Documentos\\Alejandro Reyes\\SocialMediaStudent-Alejandro\\SocialMedia.Core\\SocialMedia.Core.csproj": {
-              "projectPath": "E:\\Documentos\\Alejandro Reyes\\SocialMediaStudent-Alejandro\\SocialMedia.Core\\SocialMedia.Core.csproj"
+            "E:\\Documentos\\Alejandro Reyes\\SocialMediaStudent\\SocialMedia.Core\\SocialMedia.Core.csproj": {
+              "projectPath": "E:\\Documentos\\Alejandro Reyes\\SocialMediaStudent\\SocialMedia.Core\\SocialMedia.Core.csproj"
             },
-            "E:\\Documentos\\Alejandro Reyes\\SocialMediaStudent-Alejandro\\SocialMedia.Infrastructure\\SocialMedia.Infrastructure.csproj": {
-              "projectPath": "E:\\Documentos\\Alejandro Reyes\\SocialMediaStudent-Alejandro\\SocialMedia.Infrastructure\\SocialMedia.Infrastructure.csproj"
+            "E:\\Documentos\\Alejandro Reyes\\SocialMediaStudent\\SocialMedia.Infrastructure\\SocialMedia.Infrastructure.csproj": {
+              "projectPath": "E:\\Documentos\\Alejandro Reyes\\SocialMediaStudent\\SocialMedia.Infrastructure\\SocialMedia.Infrastructure.csproj"
             }
           }
         }
@@ -390,7 +390,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.400/PortableRuntimeIdentifierGraph.json",
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.401/PortableRuntimeIdentifierGraph.json",
         "packagesToPrune": {
           "Microsoft.AspNetCore": "(,10.0.32767]",
           "Microsoft.AspNetCore.Antiforgery": "(,10.0.32767]",
