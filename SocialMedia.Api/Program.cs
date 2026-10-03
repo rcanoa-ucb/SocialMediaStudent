@@ -1,11 +1,9 @@
 
 using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Query;
-using Microsoft.Extensions.Options;
 using SocialMedia.Core.Interfaces;
 using SocialMedia.Infrastructure.Data;
+using SocialMedia.Infrastructure.Mappings;
 using SocialMedia.Infrastructure.Repositories;
-
 namespace SocialMedia.Api
 {
     public class Program
@@ -21,14 +19,14 @@ namespace SocialMedia.Api
             #endregion
 
             // Add services to the container.
-
-            // insertar donde usamos inyeccion de depnedecia
-            builder.Services.AddTransient<IPostRepository, PostRepository>();  //inyectar repositoriao
+            builder.Services.AddTransient<IPostRepository, PostRepository>();
             builder.Services.AddTransient<ICommentRepository, CommentRepository>();
 
             builder.Services.AddControllers();
             // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
             builder.Services.AddOpenApi();
+
+            builder.Services.AddAutoMapper(typeof(PostProfile).Assembly);
 
             var app = builder.Build();
 

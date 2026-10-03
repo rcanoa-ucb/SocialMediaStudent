@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿
+using Microsoft.EntityFrameworkCore;
 using SocialMedia.Core.Entities;
 using SocialMedia.Core.Interfaces;
 using SocialMedia.Infrastructure.Data;
@@ -12,12 +13,12 @@ namespace SocialMedia.Infrastructure.Repositories
     {
         private readonly SocialMediaContext _socialMediaContext; // empieza en minuscula inyectar con _
 
-        public CommentRepository(SocialMediaContext socialMediaContext)  
+        public CommentRepository(SocialMediaContext socialMediaContext)
         {
             _socialMediaContext = socialMediaContext;
         }
 
-        public async Task<IEnumerable<Comment>> GetAllCommentsAsync() // task es un proceso asincrono 
+        public async Task<IEnumerable<Comment>> GetAllCommentsAsync() // task es un proceso asincrono
         {
             // variable significativa // llamara a la base de datos y a la tabla
             var comments = await _socialMediaContext.Comments.ToListAsync(); // var acepta cualquier tipo de dato
@@ -25,17 +26,19 @@ namespace SocialMedia.Infrastructure.Repositories
         }
 
         public async Task<Comment> GetCommentByIdAsync(int id)
-        {                                             // primer valor que se muestra en la condicion 
-            var comment = await _socialMediaContext.Comments.FirstOrDefaultAsync
-                (x => x.Id == id); // variable temporal (x) expresion lambda    
+        {
+            // primer valor que se muestra en la condicion
+            var comment = await _socialMediaContext.Comments
+                .FirstOrDefaultAsync(x => x.Id == id); // variable temporal (x) expresion lambda
+
             return comment;
         }
 
-        public async Task InsertComment(Comment comment) // task sin <> es void no devuelve nada 
+        public async Task InsertComment(Comment comment) // task sin <> es void no devuelve nada
         {
             _socialMediaContext.Comments.Add(comment); // transaccion es todo procedimiento que afecta a la base de datos o cambia la estructura
             await _socialMediaContext.SaveChangesAsync(); // SaveChangesAsync sinonimo de commit
-        }   // await esperar a que termine una operación asíncrona antes de continuar con la siguiente línea
+        } // await esperar a que termine una operación asíncrona antes de continuar con la siguiente línea
 
         public async Task UpdateComment(Comment comment) // siempre async antes del metodo
         {
@@ -50,3 +53,4 @@ namespace SocialMedia.Infrastructure.Repositories
         }
     }
 }
+
