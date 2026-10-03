@@ -42,3 +42,15 @@ C:\Desarrollo\2026\SocialMedia-Est\SocialMedia.Api\obj\Debug\net10.0\SocialMedia
 C:\Desarrollo\2026\SocialMedia-Est\SocialMedia.Api\obj\Debug\net10.0\SocialMedia.Api.genruntimeconfig.cache
 C:\Desarrollo\2026\SocialMedia-Est\SocialMedia.Api\obj\Debug\net10.0\ref\SocialMedia.Api.dll
 C:\Desarrollo\2026\SocialMedia-Est\SocialMedia.Api\obj\Debug\net10.0\SocialMedia.Api.sourcelink.json
+E:\Documentos\Alejandro Reyes\SocialMediaStudent\SocialMedia.Api\obj\Debug\net10.0\SocialMedia.Api.csproj.AssemblyReference.cache
+E:\Documentos\Alejandro Reyes\SocialMediaStudent\SocialMedia.Api\obj\Debug\net10.0\rpswa.dswa.cache.json
+E:\Documentos\Alejandro Reyes\SocialMediaStudent\SocialMedia.Api\obj\Debug\net10.0\SocialMedia.Api.GeneratedMSBuildEditorConfig.editorconfig
+E:\Documentos\Alejandro Reyes\SocialMediaStudent\SocialMedia.Api\obj\Debug\net10.0\SocialMedia.Api.AssemblyInfoInputs.cache
+E:\Documentos\Alejandro Reyes\SocialMediaStudent\SocialMedia.Api\obj\Debug\net10.0\SocialMedia.Api.AssemblyInfo.cs
+E:\Documentos\Alejandro Reyes\SocialMediaStudent\SocialMedia.Api\obj\Debug\net10.0\SocialMedia.Api.csproj.CoreCompileInputs.cache
+E:\Documentos\Alejandro Reyes\SocialMediaStudent\SocialMedia.Api\obj\Debug\net10.0\SocialMedia.Api.MvcApplicationPartsAssemblyInfo.cs
+E:\Documentos\Alejandro Reyes\SocialMediaStudent\SocialMedia.Api\obj\Debug\net10.0\SocialMedia.Api.MvcApplicationPartsAssemblyInfo.cache
+E:\Documentos\Alejandro Reyes\SocialMediaStudent\SocialMedia.Api\obj\Debug\net10.0\SocialMedia.Api.sourcelink.json
+E:\Documentos\Alejandro Reyes\SocialMediaStudent\SocialMedia.Api\obj\Debug\net10.0\SocialMedia.Api.dll
+E:\Documentos\Alejandro Reyes\SocialMediaStudent\SocialMedia.Api\obj\Debug\net10.0\refint\SocialMedia.Api.dll
+E:\Documentos\Alejandro Reyes\SocialMediaStudent\SocialMedia.Api\obj\Debug\net10.0\SocialMedia.Api.pdb

@@ -10,3 +10,16 @@ C:\Desarrollo\2026\SocialMedia-Est\SocialMedia.Core\obj\Debug\net10.0\refint\Soc
 C:\Desarrollo\2026\SocialMedia-Est\SocialMedia.Core\obj\Debug\net10.0\SocialMedia.Core.pdb
 C:\Desarrollo\2026\SocialMedia-Est\SocialMedia.Core\obj\Debug\net10.0\ref\SocialMedia.Core.dll
 C:\Desarrollo\2026\SocialMedia-Est\SocialMedia.Core\obj\Debug\net10.0\SocialMedia.Core.sourcelink.json
+E:\Documentos\Alejandro Reyes\SocialMediaStudent\SocialMedia.Core\bin\Debug\net10.0\SocialMedia.Core.deps.json
+E:\Documentos\Alejandro Reyes\SocialMediaStudent\SocialMedia.Core\bin\Debug\net10.0\SocialMedia.Core.dll
+E:\Documentos\Alejandro Reyes\SocialMediaStudent\SocialMedia.Core\bin\Debug\net10.0\SocialMedia.Core.pdb
+E:\Documentos\Alejandro Reyes\SocialMediaStudent\SocialMedia.Core\obj\Debug\net10.0\SocialMedia.Core.GeneratedMSBuildEditorConfig.editorconfig
+E:\Documentos\Alejandro Reyes\SocialMediaStudent\SocialMedia.Core\obj\Debug\net10.0\SocialMedia.Core.AssemblyInfoInputs.cache
+E:\Documentos\Alejandro Reyes\SocialMediaStudent\SocialMedia.Core\obj\Debug\net10.0\SocialMedia.Core.AssemblyInfo.cs
+E:\Documentos\Alejandro Reyes\SocialMediaStudent\SocialMedia.Core\obj\Debug\net10.0\SocialMedia.Core.csproj.CoreCompileInputs.cache
+E:\Documentos\Alejandro Reyes\SocialMediaStudent\SocialMedia.Core\obj\Debug\net10.0\SocialMedia.Core.sourcelink.json
+E:\Documentos\Alejandro Reyes\SocialMediaStudent\SocialMedia.Core\obj\Debug\net10.0\SocialMedia.Core.dll
+E:\Documentos\Alejandro Reyes\SocialMediaStudent\SocialMedia.Core\obj\Debug\net10.0\refint\SocialMedia.Core.dll
+E:\Documentos\Alejandro Reyes\SocialMediaStudent\SocialMedia.Core\obj\Debug\net10.0\SocialMedia.Core.pdb
+E:\Documentos\Alejandro Reyes\SocialMediaStudent\SocialMedia.Core\obj\Debug\net10.0\ref\SocialMedia.Core.dll
+E:\Documentos\Alejandro Reyes\SocialMediaStudent\SocialMedia.Core\obj\Debug\net10.0\SocialMe.C39D1699.Up2Date
