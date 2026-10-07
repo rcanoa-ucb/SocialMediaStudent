@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Tec Web\\SocialMediaStudent\\SocialMedia.Core\\SocialMedia.Core.csproj",
+      "projectUniqueName": "C:\\Tec Web\\SocialMediaStudent\\SocialMediaStudent\\SocialMedia.Core\\SocialMedia.Core.csproj",
       "projectName": "SocialMedia.Core",
-      "projectPath": "C:\\Tec Web\\SocialMediaStudent\\SocialMedia.Core\\SocialMedia.Core.csproj",
+      "projectPath": "C:\\Tec Web\\SocialMediaStudent\\SocialMediaStudent\\SocialMedia.Core\\SocialMedia.Core.csproj",
       "packagesPath": "C:\\Users\\LENOVO\\.nuget\\packages\\",
-      "outputPath": "C:\\Tec Web\\SocialMediaStudent\\SocialMedia.Core\\obj\\",
+      "outputPath": "C:\\Tec Web\\SocialMediaStudent\\SocialMediaStudent\\SocialMedia.Core\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

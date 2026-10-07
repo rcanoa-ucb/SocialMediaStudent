@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "vsPVi5CCha8=",
+  "dgSpecHash": "OXHsHEXR2tM=",
   "success": true,
-  "projectFilePath": "C:\\Tec Web\\SocialMediaStudent\\SocialMedia.Api\\SocialMedia.Api.csproj",
+  "projectFilePath": "C:\\Tec Web\\SocialMediaStudent\\SocialMediaStudent\\SocialMedia.Api\\SocialMedia.Api.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\LENOVO\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\LENOVO\\.nuget\\packages\\microsoft.aspnetcore.openapi\\10.0.10\\microsoft.aspnetcore.openapi.10.0.10.nupkg.sha512",
     "C:\\Users\\LENOVO\\.nuget\\packages\\microsoft.entityframeworkcore\\9.0.20\\microsoft.entityframeworkcore.9.0.20.nupkg.sha512",
     "C:\\Users\\LENOVO\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\9.0.20\\microsoft.entityframeworkcore.abstractions.9.0.20.nupkg.sha512",
@@ -17,10 +18,22 @@
     {
       "code": "NU1903",
       "level": "Warning",
-      "message": "Package 'Microsoft.OpenApi' 2.0.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-v5pm-xwqc-g5wc",
-      "projectPath": "C:\\Tec Web\\SocialMediaStudent\\SocialMedia.Api\\SocialMedia.Api.csproj",
+      "message": "Package 'AutoMapper' 13.0.1 has a known high severity vulnerability, https://github.com/advisories/GHSA-rvv3-g6hj-g44x",
+      "projectPath": "C:\\Tec Web\\SocialMediaStudent\\SocialMediaStudent\\SocialMedia.Api\\SocialMedia.Api.csproj",
       "warningLevel": 1,
-      "filePath": "C:\\Tec Web\\SocialMediaStudent\\SocialMedia.Api\\SocialMedia.Api.csproj",
+      "filePath": "C:\\Tec Web\\SocialMediaStudent\\SocialMediaStudent\\SocialMedia.Api\\SocialMedia.Api.csproj",
+      "libraryId": "AutoMapper",
+      "targetGraphs": [
+        "net10.0"
+      ]
+    },
+    {
+      "code": "NU1903",
+      "level": "Warning",
+      "message": "Package 'Microsoft.OpenApi' 2.0.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-v5pm-xwqc-g5wc",
+      "projectPath": "C:\\Tec Web\\SocialMediaStudent\\SocialMediaStudent\\SocialMedia.Api\\SocialMedia.Api.csproj",
+      "warningLevel": 1,
+      "filePath": "C:\\Tec Web\\SocialMediaStudent\\SocialMediaStudent\\SocialMedia.Api\\SocialMedia.Api.csproj",
       "libraryId": "Microsoft.OpenApi",
       "targetGraphs": [
         "net10.0"
