@@ -23,7 +23,7 @@ namespace SocialMedia.Infrastructure.Repositories
             return comments;
         }
 
-        public async Task<Comment> GetCommentByIdAsync(int id)
+        public async Task<Comment?> GetCommentByIdAsync(int id)
         {
             var comment = await _socialMediaContext.Comments
                 .FirstOrDefaultAsync(x => x.Id == id);
