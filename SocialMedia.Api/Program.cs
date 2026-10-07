@@ -27,6 +27,7 @@ namespace SocialMedia.Api
             builder.Services.AddOpenApi();
 
             builder.Services.AddAutoMapper(typeof(PostProfile).Assembly);
+            builder.Services.AddAutoMapper(typeof(CommentProfile).Assembly);
 
             var app = builder.Build();
 
