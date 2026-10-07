@@ -150,7 +150,7 @@ namespace SocialMedia.Api.Controllers
         public async Task<IActionResult> GetCommentsDtoMapper()//IActionResult tiene los estados http
         {
             var comments = await _commentRepository.GetAllCommentsAsync();
-            var commentsDto = _mapper.Map<IEnumerable<Comment>>(comments);
+            var commentsDto = _mapper.Map<IEnumerable<CommentDto>>(comments);
             //var commentsDto = comments.Select(c => new CommentDto //p pertenecfe a comment
             //{
             //    Id = c.Id,
