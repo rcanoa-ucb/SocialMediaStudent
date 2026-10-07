@@ -21,13 +21,9 @@ namespace SocialMedia.Api.Controllers
             _mapper = mapper;
         }
 
-        // =========================================================
-        // CRUD SIN DTO
-        // =========================================================
-
+ 
         #region Sin DTOs
 
-        // GET: api/post
         [HttpGet]
         public async Task<ActionResult> GetPosts()
         {
@@ -36,7 +32,6 @@ namespace SocialMedia.Api.Controllers
             return Ok(posts);
         }
 
-        // GET: api/post/1
         [HttpGet("{id}")]
         public async Task<ActionResult> GetPostsById(int id)
         {
@@ -50,7 +45,6 @@ namespace SocialMedia.Api.Controllers
             return Ok(post);
         }
 
-        // POST: api/post
         [HttpPost]
         public async Task<IActionResult> InsertPost(Post newPost)
         {
@@ -62,18 +56,16 @@ namespace SocialMedia.Api.Controllers
             );
         }
 
-        // PUT: api/post
+       
         [HttpPut]
         public async Task<IActionResult> UpdatePost(Post post)
         {
-            // CORREGIDO:
-            // Antes estaba llamando InsertPost(post)
+            
             await _postRepository.UpdatePost(post);
 
             return NoContent();
         }
 
-        // DELETE: api/post
         [HttpDelete]
         public async Task<IActionResult> DeletePost(Post post)
         {
@@ -85,13 +77,9 @@ namespace SocialMedia.Api.Controllers
         #endregion
 
 
-        // =========================================================
-        // CRUD CON DTO
-        // =========================================================
-
+  
         #region Con DTOs
 
-        // GET: api/post/dto
         [HttpGet("dto")]
         public async Task<IActionResult> GetPostsDto()
         {
@@ -110,7 +98,6 @@ namespace SocialMedia.Api.Controllers
             return Ok(postDto);
         }
 
-        // GET: api/post/dto/1
         [HttpGet("dto/{id}")]
         public async Task<IActionResult> GetPostByIdDto(int id)
         {
@@ -131,12 +118,10 @@ namespace SocialMedia.Api.Controllers
                 Imagen = post.Imagen
             };
 
-            // CORREGIDO:
-            // Antes decía return Ok(post);
+            
             return Ok(postDto);
         }
 
-        // POST: api/post/dto
         [HttpPost("dto")]
         public async Task<IActionResult> InsertPostDto(
             PostDto newPost)
@@ -158,7 +143,6 @@ namespace SocialMedia.Api.Controllers
             );
         }
 
-        // PUT: api/post/dto?id=1
         [HttpPut("dto")]
         public async Task<IActionResult> UpdatePostDto(
             int id,
@@ -181,8 +165,7 @@ namespace SocialMedia.Api.Controllers
                 );
             }
 
-            // Mapear los valores del DTO
-            // hacia la entidad Post
+           
             post.UserId = postDto.UserId;
             post.Date = postDto.Date;
             post.Description = postDto.Description;
@@ -193,7 +176,6 @@ namespace SocialMedia.Api.Controllers
             return Ok(post);
         }
 
-        // DELETE: api/post/dto/1
         [HttpDelete("dto/{id}")]
         public async Task<IActionResult> DeletePostDto(int id)
         {
@@ -215,13 +197,9 @@ namespace SocialMedia.Api.Controllers
         #endregion
 
 
-        // =========================================================
-        // DTO UTILIZANDO AUTOMAPPER
-        // =========================================================
-
+    
         #region Dto-AutoMapper
 
-        // GET: api/post/dto/mapper
         [HttpGet("dto/mapper")]
         public async Task<IActionResult>
             GetPostsDtoMapper()
@@ -235,7 +213,6 @@ namespace SocialMedia.Api.Controllers
             return Ok(postDto);
         }
 
-        // GET: api/post/dto/mapper/1
         [HttpGet("dto/mapper/{id}")]
         public async Task<IActionResult>
             GetPostByIdDtoMapper(int id)
@@ -253,8 +230,6 @@ namespace SocialMedia.Api.Controllers
             var postDto =
                 _mapper.Map<PostDto>(post);
 
-            // CORREGIDO:
-            // Antes decía return Ok(post);
             return Ok(postDto);
         }
 

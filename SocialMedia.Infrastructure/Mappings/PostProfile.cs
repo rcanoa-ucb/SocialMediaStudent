@@ -11,7 +11,7 @@ namespace SocialMedia.Infrastructure.Mappings
     {
         public PostProfile()
         {
-            CreateMap<Post, PostDto>(); //.ReverseMap();
+            CreateMap<Post, PostDto>();
             CreateMap<PostDto, Post>();
         }
     }
