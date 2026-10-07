@@ -7,11 +7,11 @@ using System.Text;
 
 namespace SocialMedia.Infrastructure.Data.Configurations
 {
-    public class CommentConfiguration :
-        IEntityTypeConfiguration<Post>
-    {
-        public void Configure(EntityTypeBuilder<Post> entity)
+    public class PostConfiguration : IEntityTypeConfiguration<Post>
+
         {
+            public void Configure(EntityTypeBuilder<Post> entity)
+            {
             entity.HasKey(e => e.Id).HasName("PRIMARY");
 
             entity.ToTable("post");
