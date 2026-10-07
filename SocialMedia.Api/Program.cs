@@ -25,6 +25,8 @@ namespace SocialMedia.Api
             // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
             builder.Services.AddOpenApi();
 
+            builder.Services.AddAutoMapper(typeof(PostProfile).Assembly);
+
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
