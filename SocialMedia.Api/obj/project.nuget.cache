@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "uC9DbGmHqic=",
+  "dgSpecHash": "O5YVntP+ErA=",
   "success": true,
-  "projectFilePath": "d:\\Users\\Usuario\\Documents\\tecnoWeb1\\SocialMediaStudent\\SocialMedia.Api\\SocialMedia.Api.csproj",
+  "projectFilePath": "d:\\Users\\Usuario\\Downloads\\SocialMediaStudent\\SocialMedia.Api\\SocialMedia.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.aspnetcore.openapi\\10.0.10\\microsoft.aspnetcore.openapi.10.0.10.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.entityframeworkcore\\9.0.20\\microsoft.entityframeworkcore.9.0.20.nupkg.sha512",
@@ -18,9 +18,9 @@
       "code": "NU1903",
       "level": "Warning",
       "message": "Package 'Microsoft.OpenApi' 2.0.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-v5pm-xwqc-g5wc",
-      "projectPath": "d:\\Users\\Usuario\\Documents\\tecnoWeb1\\SocialMediaStudent\\SocialMedia.Api\\SocialMedia.Api.csproj",
+      "projectPath": "d:\\Users\\Usuario\\Downloads\\SocialMediaStudent\\SocialMedia.Api\\SocialMedia.Api.csproj",
       "warningLevel": 1,
-      "filePath": "d:\\Users\\Usuario\\Documents\\tecnoWeb1\\SocialMediaStudent\\SocialMedia.Api\\SocialMedia.Api.csproj",
+      "filePath": "d:\\Users\\Usuario\\Downloads\\SocialMediaStudent\\SocialMedia.Api\\SocialMedia.Api.csproj",
       "libraryId": "Microsoft.OpenApi",
       "targetGraphs": [
         "net10.0"
