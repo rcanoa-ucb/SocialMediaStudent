@@ -3,7 +3,6 @@ using Microsoft.AspNetCore.Mvc;
 using SocialMedia.Core.DTOs;
 using SocialMedia.Core.Entities;
 using SocialMedia.Core.Interfaces;
-using SocialMedia.Infrastructure.Repositories;
 using AutoMapper;
 
 namespace SocialMedia.Api.Controllers
@@ -65,11 +64,9 @@ namespace SocialMedia.Api.Controllers
             var commentDto = comments.Select(c => new CommentDto
             {
                 Id = c.Id,
-                PostId = c.PostId,
                 UserId = c.UserId,
                 Description = c.Description,
                 Date = c.Date,
-                IsActive = c.IsActive
             });
             return Ok(commentDto);
         }
@@ -84,11 +81,9 @@ namespace SocialMedia.Api.Controllers
             var commentDto = new CommentDto
             {
                 Id = comment.Id,
-                PostId = comment.PostId,
                 UserId = comment.UserId,
                 Description = comment.Description,
                 Date = comment.Date,
-                IsActive = comment.IsActive
             };
             return Ok(commentDto);
         }
@@ -102,7 +97,6 @@ namespace SocialMedia.Api.Controllers
                 UserId = newCommentDto.UserId,
                 Description = newCommentDto.Description,
                 Date = newCommentDto.Date,
-                Imagen = newCommentDto.Imagen
             };
 
             await _commentRepository.InsertComment(comment);
@@ -126,7 +120,6 @@ namespace SocialMedia.Api.Controllers
             comment.UserId = commentDto.UserId;
             comment.Description = commentDto.Description;
             comment.Date = commentDto.Date;
-            comment.Imagen = commentDto.Imagen;
 
             await _commentRepository.UpdateComment(comment);
             return Ok(comment);
@@ -167,3 +160,4 @@ namespace SocialMedia.Api.Controllers
         #endregion
 
     }
+}
