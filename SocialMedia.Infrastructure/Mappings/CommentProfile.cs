@@ -1,10 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using AutoMapper;
+using SocialMedia.Core.DTOs;
+using SocialMedia.Core.Entities;
 
 namespace SocialMedia.Infrastructure.Mappings
 {
-    internal class CommentProfile
+    public class CommentProfile : Profile
     {
+        public CommentProfile()
+        {
+            CreateMap<Comment, CommentDto>();
+            CreateMap<CommentDto, Comment>();
+        }
     }
 }
