@@ -43,7 +43,7 @@ namespace SocialMedia.Api.Controllers
         [HttpPut]
         public async Task<IActionResult> UpdateComment(Comment Comment)
         {
-            await _commentRepository.InsertComment(Comment);
+            await _commentRepository.UpdateComment(Comment);
             return NoContent();
         }
 
@@ -85,7 +85,7 @@ namespace SocialMedia.Api.Controllers
                 Description = comment.Description,
                 IsActive = comment.IsActive
             };
-            return Ok(comment);
+            return Ok(commentDto);
         }
 
         [HttpPost("dto")]
