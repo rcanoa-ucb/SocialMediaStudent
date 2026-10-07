@@ -7,12 +7,12 @@ using System.Text;
 
 namespace SocialMedia.Infrastructure.Mappings
 {
-    public class PostProfile : Profile
+    public class CommentProfile : Profile
     {
-        public PostProfile()
+        public CommentProfile()
         {
-            CreateMap<Post, PostDto>();
-            CreateMap<PostDto, Post>();
+            CreateMap<Comment, CommentDto>();
+            CreateMap<CommentDto, Comment>();
         }
     }
 }

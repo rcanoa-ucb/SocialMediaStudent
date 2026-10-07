@@ -9,24 +9,22 @@ using System.Text;
 namespace SocialMedia.Infrastructure.Repositories
 {
     public class PostRepository : IPostRepository
-    {   
+    {
         private readonly SocialMediaContext _socialMediaContext;
 
         public PostRepository(SocialMediaContext socialMediaContext)
         {
             _socialMediaContext = socialMediaContext;
         }
-                
         public async Task<IEnumerable<Post>> GetAllPostsAsync()
         {
             var posts = await _socialMediaContext.Posts.ToListAsync();
             return posts;
         }
 
-        public async Task<Post> GetPostByIdAsync(int id)
+        public async Task<Post> GetPostByIDAsync(int id)
         {
-            var post = await _socialMediaContext.Posts.
-                FirstOrDefaultAsync(x => x.Id == id);
+            var post = await _socialMediaContext.Posts.FirstOrDefaultAsync(x => x.Id == id);
             return post;
         }
 
@@ -41,6 +39,7 @@ namespace SocialMedia.Infrastructure.Repositories
             _socialMediaContext.Posts.Update(post);
             await _socialMediaContext.SaveChangesAsync();
         }
+
         public async Task DeletePost(Post post)
         {
             _socialMediaContext.Posts.Remove(post);

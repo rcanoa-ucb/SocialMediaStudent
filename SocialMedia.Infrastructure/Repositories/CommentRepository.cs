@@ -10,24 +10,22 @@ namespace SocialMedia.Infrastructure.Repositories
 {
     public class CommentRepository : ICommentRepository
     {
+
         private readonly SocialMediaContext _socialMediaContext;
 
         public CommentRepository(SocialMediaContext socialMediaContext)
         {
             _socialMediaContext = socialMediaContext;
         }
-
         public async Task<IEnumerable<Comment>> GetAllCommentsAsync()
         {
             var comments = await _socialMediaContext.Comments.ToListAsync();
             return comments;
         }
 
-        public async Task<Comment> GetCommentByIdAsync(int id)
+        public async Task<Comment> GetCommentByIDAsync(int id)
         {
-            var comment = await _socialMediaContext.Comments
-                .FirstOrDefaultAsync(x => x.Id == id);
-
+            var comment = await _socialMediaContext.Comments.FirstOrDefaultAsync(x => x.Id == id);
             return comment;
         }
 
