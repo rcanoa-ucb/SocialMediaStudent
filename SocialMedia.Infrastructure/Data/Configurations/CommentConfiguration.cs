@@ -1,36 +1,33 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using SocialMedia.Core.Entities;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace SocialMedia.Infrastructure.Data.Configurations
 {
-    public class PostConfiguration :
-        IEntityTypeConfiguration<Comment>
+    public class CommentConfiguration : IEntityTypeConfiguration<Comment>
     {
-        public void Configure(EntityTypeBuilder<Comment> entity)
+        public void Configure(EntityTypeBuilder<Comment> builder)
         {
-            entity.HasKey(e => e.Id).HasName("PRIMARY");
+            builder.ToTable("comment");
 
-            entity.ToTable("comment");
+            builder.HasKey(e => e.Id).HasName("PRIMARY");
 
-            entity.HasIndex(e => e.PostId, "FK_Comment_Post");
+            builder.HasIndex(e => e.PostId, "FK_Comment_Post");
+            builder.HasIndex(e => e.UserId, "FK_Comment_User");
 
-            entity.HasIndex(e => e.UserId, "FK_Comment_User");
+            builder.Property(e => e.Id).ValueGeneratedNever();
+            builder.Property(e => e.Date).HasColumnType("datetime");
+            builder.Property(e => e.Description).HasMaxLength(500);
+            builder.Property(e => e.IsActive).HasColumnType("bit(1)");
 
-            entity.Property(e => e.Id).ValueGeneratedNever();
-            entity.Property(e => e.Date).HasColumnType("datetime");
-            entity.Property(e => e.Description).HasMaxLength(500);
-            entity.Property(e => e.IsActive).HasColumnType("bit(1)");
-
-            entity.HasOne(d => d.Post).WithMany(p => p.Comments)
+            builder.HasOne(d => d.Post)
+                .WithMany(p => p.Comments)
                 .HasForeignKey(d => d.PostId)
                 .OnDelete(DeleteBehavior.ClientSetNull)
                 .HasConstraintName("FK_Comment_Post");
 
-            entity.HasOne(d => d.User).WithMany(p => p.Comments)
+            builder.HasOne(d => d.User)
+                .WithMany(p => p.Comments)
                 .HasForeignKey(d => d.UserId)
                 .OnDelete(DeleteBehavior.ClientSetNull)
                 .HasConstraintName("FK_Comment_User");

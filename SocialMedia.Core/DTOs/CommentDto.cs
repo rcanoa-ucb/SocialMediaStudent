@@ -14,6 +14,5 @@ namespace SocialMedia.Core.DTOs
 
         public string Description { get; set; } = null!;
 
-        public string? Imagen { get; set; }
     }
 }

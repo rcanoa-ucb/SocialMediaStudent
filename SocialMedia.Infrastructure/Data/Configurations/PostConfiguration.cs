@@ -7,7 +7,7 @@ using System.Text;
 
 namespace SocialMedia.Infrastructure.Data.Configurations
 {
-    public class CommentConfiguration :
+    public class PostConfiguration :
         IEntityTypeConfiguration<Post>
     {
         public void Configure(EntityTypeBuilder<Post> entity)
