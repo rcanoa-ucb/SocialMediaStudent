@@ -4,7 +4,7 @@ using SocialMedia.Core.Interfaces;
 using SocialMedia.Infrastructure.Data;
 using SocialMedia.Infrastructure.Mappings;
 using SocialMedia.Infrastructure.Repositories;
-using SocialMedia.Infrastructure.Mappings;
+
 
 namespace SocialMedia.Api
 {

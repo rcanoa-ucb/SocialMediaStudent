@@ -1,8 +1,8 @@
-﻿using AutoMapper;
+using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
-using SocialMedia.Core.Interfaces;
-using SocialMedia.Infrastructure.Repositories;
+using SocialMedia.Core.DTOs;
 using SocialMedia.Core.Entities;
+using SocialMedia.Core.Interfaces;
 
 namespace SocialMedia.Api.Controllers
 {
@@ -13,11 +13,13 @@ namespace SocialMedia.Api.Controllers
         private readonly IPostRepository _postRepository;
         private readonly IMapper _mapper;
 
-        public PostController(IMapper mapper,IPostRepository postRepository)
+        public PostController(IMapper mapper, IPostRepository postRepository)
         {
             _postRepository = postRepository;
             _mapper = mapper;
         }
+
+        #region SinDtos
 
         [HttpGet]
         public async Task<ActionResult> GetPosts()
@@ -25,6 +27,7 @@ namespace SocialMedia.Api.Controllers
             var posts = await _postRepository.GetAllPostsAsync();
             return Ok(posts);
         }
+
         [HttpGet("{id}")]
         public async Task<ActionResult> GetPostsById(int id)
         {
@@ -42,7 +45,7 @@ namespace SocialMedia.Api.Controllers
         [HttpPut]
         public async Task<IActionResult> UpdatePost(Post Post)
         {
-            await _postRepository.InsertPost(Post);
+            await _postRepository.UpdatePost(Post);
             return NoContent();
         }
 
@@ -52,9 +55,12 @@ namespace SocialMedia.Api.Controllers
             await _postRepository.DeletePost(Post);
             return NoContent();
         }
+
         #endregion
 
+
         #region Con DTOs
+
         [HttpGet("dto")]
         public async Task<IActionResult> GetPostsDto()
         {
@@ -67,6 +73,7 @@ namespace SocialMedia.Api.Controllers
                 Description = p.Description,
                 Imagen = p.Imagen
             });
+
             return Ok(postDto);
         }
 
@@ -74,6 +81,10 @@ namespace SocialMedia.Api.Controllers
         public async Task<IActionResult> GetPostByIdDto(int id)
         {
             var post = await _postRepository.GetPostByIdAsync(id);
+
+            if (post == null)
+                return NotFound("Post no encontrado");
+
             var postDto = new PostDto
             {
                 Id = post.Id,
@@ -82,7 +93,8 @@ namespace SocialMedia.Api.Controllers
                 Description = post.Description,
                 Imagen = post.Imagen
             };
-            return Ok(post);
+
+            return Ok(postDto);
         }
 
         [HttpPost("dto")]
@@ -102,15 +114,17 @@ namespace SocialMedia.Api.Controllers
         }
 
         [HttpPut("dto")]
-        public async Task<IActionResult> UpdatePostDto(int id, [FromBody]PostDto postDto)
+        public async Task<IActionResult> UpdatePostDto(
+            int id,
+            [FromBody] PostDto postDto)
         {
             if (id != postDto.Id)
                 return BadRequest("El id del post no coincide");
 
             var post = await _postRepository.GetPostByIdAsync(id);
+
             if (post == null)
                 return NotFound("Post no encontrado");
-
 
 
             //Mapear valor dto en la entidad
@@ -118,7 +132,6 @@ namespace SocialMedia.Api.Controllers
             post.Date = postDto.Date;
             post.Description = postDto.Description;
             post.Imagen = postDto.Imagen;
-
 
 
             await _postRepository.UpdatePost(post);
@@ -129,6 +142,7 @@ namespace SocialMedia.Api.Controllers
         public async Task<IActionResult> DeletePostDto(int id)
         {
             var post = await _postRepository.GetPostByIdAsync(id);
+
             if (post == null)
                 return NotFound("Post no encontrado.");
 
@@ -136,17 +150,19 @@ namespace SocialMedia.Api.Controllers
 
             return NoContent(); // 204 sin contenido
         }
+
         #endregion
 
 
         #region Dto-AutoMapper
+
         [HttpGet("dto/mapper")]
         public async Task<IActionResult> GetPostsDtoMapper()
         {
             var posts = await _postRepository.GetAllPostsAsync();
             var postDto = _mapper.Map<IEnumerable<PostDto>>(posts);
 
-            
+
             //var postDto = posts.Select(p => new PostDto
             //{
             //    Id = p.Id,
@@ -155,7 +171,7 @@ namespace SocialMedia.Api.Controllers
             //    Description = p.Description,
             //    Imagen = p.Imagen
             //});
-            
+
             return Ok(postDto);
         }
 
@@ -163,7 +179,12 @@ namespace SocialMedia.Api.Controllers
         public async Task<IActionResult> GetPostByIdDtoMapper(int id)
         {
             var post = await _postRepository.GetPostByIdAsync(id);
+
+            if (post == null)
+                return NotFound("Post no encontrado");
+
             var postDto = _mapper.Map<PostDto>(post);
+
 
             //var postDto = new PostDto
             //{
@@ -173,9 +194,9 @@ namespace SocialMedia.Api.Controllers
             //    Description = post.Description,
             //    Imagen = post.Imagen
             //};
-            return Ok(post);
-        }
 
+            return Ok(postDto);
+        }
 
         #endregion
     }

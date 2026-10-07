@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "YmFnDl8XSmU=",
+  "dgSpecHash": "JNHZL0Czz5U=",
   "success": true,
   "projectFilePath": "d:\\Users\\Usuario\\Downloads\\SocialMediaStudent\\SocialMedia.Api\\SocialMedia.Api.csproj",
   "expectedPackageFiles": [
@@ -22,7 +22,6 @@
     "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.entityframeworkcore.design\\9.0.20\\microsoft.entityframeworkcore.design.9.0.20.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\9.0.20\\microsoft.entityframeworkcore.relational.9.0.20.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\9.0.20\\microsoft.entityframeworkcore.tools.9.0.20.nupkg.sha512",
-    "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\9.0.20\\microsoft.extensions.dependencyinjection.abstractions.9.0.20.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.extensions.dependencymodel\\9.0.20\\microsoft.extensions.dependencymodel.9.0.20.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.openapi\\2.0.0\\microsoft.openapi.2.0.0.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\mono.texttemplating\\3.0.0\\mono.texttemplating.3.0.0.nupkg.sha512",
@@ -37,18 +36,6 @@
     "C:\\Users\\Usuario\\.nuget\\packages\\system.composition.typedparts\\7.0.0\\system.composition.typedparts.7.0.0.nupkg.sha512"
   ],
   "logs": [
-    {
-      "code": "NU1510",
-      "level": "Warning",
-      "message": "PackageReference Microsoft.Extensions.DependencyInjection.Abstractions will not be pruned. This package is automatically available and does not need to be referenced explicitly. Remove the PackageReference item.",
-      "projectPath": "d:\\Users\\Usuario\\Downloads\\SocialMediaStudent\\SocialMedia.Api\\SocialMedia.Api.csproj",
-      "warningLevel": 1,
-      "filePath": "d:\\Users\\Usuario\\Downloads\\SocialMediaStudent\\SocialMedia.Api\\SocialMedia.Api.csproj",
-      "libraryId": "Microsoft.Extensions.DependencyInjection.Abstractions",
-      "targetGraphs": [
-        "net10.0"
-      ]
-    },
     {
       "code": "NU1903",
       "level": "Warning",
