@@ -2,7 +2,10 @@
 using Microsoft.EntityFrameworkCore;
 using SocialMedia.Core.Interfaces;
 using SocialMedia.Infrastructure.Data;
+using SocialMedia.Infrastructure.Mappings;
 using SocialMedia.Infrastructure.Repositories;
+using SocialMedia.Infrastructure.Mappings;
+
 namespace SocialMedia.Api
 {
     public class Program
@@ -27,7 +30,10 @@ namespace SocialMedia.Api
 
             builder.Services.AddAutoMapper(typeof(PostProfile).Assembly);
 
+            builder.Services.AddAutoMapper(typeof(CommentProfile).Assembly);
+
             var app = builder.Build();
+
 
             // Configure the HTTP request pipeline.
             if (app.Environment.IsDevelopment())
