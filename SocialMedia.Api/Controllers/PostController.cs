@@ -97,7 +97,7 @@ namespace SocialMedia.Api.Controllers
                 Description = newPost.Description,
                 Imagen = newPost.Imagen
             };
-            
+
             await _postRepository.InsertPost(post);
             return Created($"api/post/{newPost.Id}", newPost);
         }
