@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SocialMedia.Core")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ab1a081e7d5963eebc7cd2068c4a0303431c4da5")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ce3f1e8f8762152135cc514e506d0750459aa9c3")]
 [assembly: System.Reflection.AssemblyProductAttribute("SocialMedia.Core")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SocialMedia.Core")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

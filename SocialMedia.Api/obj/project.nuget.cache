@@ -1,10 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "QGq0xx782Tc=",
+  "dgSpecHash": "8o6Xub7fo2M=",
   "success": true,
   "projectFilePath": "C:\\Users\\HP\\source\\repos\\Github\\SocialMediaStudent\\SocialMedia.Api\\SocialMedia.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\HP\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
+    "C:\\Users\\HP\\.nuget\\packages\\fluentvalidation\\11.12.0\\fluentvalidation.11.12.0.nupkg.sha512",
+    "C:\\Users\\HP\\.nuget\\packages\\fluentvalidation.aspnetcore\\11.3.1\\fluentvalidation.aspnetcore.11.3.1.nupkg.sha512",
+    "C:\\Users\\HP\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.12.0\\fluentvalidation.dependencyinjectionextensions.11.12.0.nupkg.sha512",
     "C:\\Users\\HP\\.nuget\\packages\\microsoft.aspnetcore.openapi\\9.0.20\\microsoft.aspnetcore.openapi.9.0.20.nupkg.sha512",
     "C:\\Users\\HP\\.nuget\\packages\\microsoft.entityframeworkcore\\9.0.20\\microsoft.entityframeworkcore.9.0.20.nupkg.sha512",
     "C:\\Users\\HP\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\9.0.20\\microsoft.entityframeworkcore.abstractions.9.0.20.nupkg.sha512",
