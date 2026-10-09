@@ -64,9 +64,9 @@ namespace SocialMedia.Api.Controllers
             {
                 Id = p.Id,
                 UserId = p.UserId,
-                Date = p.Date,
+                Date = p.Date.ToString("dd-mm-yyyy"),
                 Description = p.Description,
-                Imagen = p.Imagen
+                Imagen = p.Image
             });
             return Ok(postDto);
         }
@@ -79,9 +79,9 @@ namespace SocialMedia.Api.Controllers
             {
                 Id = post.Id,
                 UserId = post.UserId,
-                Date = post.Date,
+                Date = post.Date.ToString("dd-mm-yyyy"),
                 Description = post.Description,
-                Imagen = post.Imagen
+                Imagen = post.Image
             };
             return Ok(post);
         }
@@ -93,9 +93,9 @@ namespace SocialMedia.Api.Controllers
             {
                 Id = newPost.Id,
                 UserId = newPost.UserId,
-                Date = newPost.Date,
+                Date = Convert.ToDateTime(newPost.Date),
                 Description = newPost.Description,
-                Imagen = newPost.Imagen
+                Image = newPost.Imagen
             };
             
             await _postRepository.InsertPost(post);
@@ -117,9 +117,9 @@ namespace SocialMedia.Api.Controllers
 
             //Mapear valor DTO en la entidad
             post.UserId = postDto.UserId;
-            post.Date = postDto.Date;
+            post.Date = Convert.ToDateTime(postDto.Date);
             post.Description = postDto.Description;
-            post.Imagen = postDto.Imagen;
+            post.Image = postDto.Imagen;
 
             await _postRepository.UpdatePost(post);
             return Ok(post);
@@ -170,6 +170,45 @@ namespace SocialMedia.Api.Controllers
             //};
             return Ok(post);
         }
+
+        [HttpPost("dto/mapper/")]
+        public async Task<IActionResult> InsertPostDtoMapper(PostDto postDto)
+        {
+            var post = _mapper.Map<Post>(postDto);
+            await _postRepository.InsertPost(post);
+            return Ok(post);
+        }
+
+        [HttpPut("dto/mapper/{id}")]
+        public async Task<IActionResult> UpdatePostDtoMapper(int id, 
+            [FromBody] PostDto postDto)
+        {
+            if (id != postDto.Id)
+                return BadRequest("El ID del post no coincide.");
+
+            var post = await _postRepository.GetPostByIdAsync(id);
+            if (post == null)
+                return NotFound("Post no encontrado.");
+
+            _mapper.Map(postDto, post);
+
+            await _postRepository.UpdatePost(post);
+
+            return Ok(post);
+        }
+
+        [HttpDelete("dto/mapper/{id}")]
+        public async Task<IActionResult> DeletePostDtoMapper(int id)
+        {
+            var post = await _postRepository.GetPostByIdAsync(id);
+            if (post == null)
+                return NotFound("Post no encontrado.");
+
+            await _postRepository.DeletePost(post);
+
+            return NoContent(); // 204 sin contenido
+        }
+
         #endregion
     }
 }
