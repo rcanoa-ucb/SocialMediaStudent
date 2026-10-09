@@ -9,10 +9,10 @@ namespace SocialMedia.Infrastructure.Mappings
 {
     public class PostProfile : Profile
     {
-            public PostProfile()
-            {
-                CreateMap<Post, PostDto>();
-                CreateMap<PostDto, Post>();
-            }
+        public PostProfile()
+        {
+            CreateMap<Post, PostDto>(); //.ReverseMap();
+            CreateMap<PostDto, Post>();
+        }
     }
 }
