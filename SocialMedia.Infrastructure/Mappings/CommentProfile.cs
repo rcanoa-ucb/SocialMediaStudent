@@ -11,8 +11,8 @@ namespace SocialMedia.Infrastructure.Mappings
     {
         public CommentProfile()
         { // PAQUETO AUTO MAPER CREATE MAP
-            CreateMap<Comment, CommentDto>(); //conversion automatica de post a posDto // REVERSE MAP()
-            CreateMap<CommentDto, Post>(); //conversion automatica de posDto a post
+            CreateMap<Comment, CommentDto>(); //conversion automatica de comment a commentDto// REVERSE MAP()
+            CreateMap<CommentDto, Comment>(); //conversion automatica de commentDto a comment
         }
     }
 }
