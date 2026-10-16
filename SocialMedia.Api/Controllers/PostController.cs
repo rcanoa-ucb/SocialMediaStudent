@@ -170,6 +170,42 @@ namespace SocialMedia.Api.Controllers
             //};
             return Ok(post);
         }
+        [HttpPost("dto/mapper/")]
+ public async Task<IActionResult> InsertPostDtoMapper(PostDto postDto)
+ {
+     var post = _mapper.Map<Post>(postDto);
+     await _postRepository.InsertPost(post);
+     return Ok(post);
+ }
+
+ [HttpPut("dto/mapper/{id}")]
+ public async Task<IActionResult> UpdatePostDtoMapper(int id, [FromBody] PostDto postDto)
+ {
+     if (id != postDto.Id)
+         return BadRequest("El ID del post no coincide.");
+
+     var post = await _postRepository.GetPostByIdAsync(id);
+     if (post == null)
+         return NotFound("Post no encontrado.");
+
+     _mapper.Map(postDto, post);
+
+     await _postRepository.UpdatePost(post);
+
+     return Ok(post);
+ }
+
+ [HttpDelete("dto/mapper/{id}")]
+ public async Task<IActionResult> DeletePostDtoMapper(int id)
+ {
+     var post = await _postRepository.GetPostByIdAsync(id);
+     if (post == null)
+         return NotFound("Post no encontrado.");
+
+     await _postRepository.DeletePost(post);
+
+     return NoContent(); // 204 sin contenido
+ }
         #endregion
     }
 }
