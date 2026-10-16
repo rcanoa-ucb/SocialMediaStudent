@@ -1,11 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Globalization;
-using System.Text;
-using AutoMapper;
+﻿using AutoMapper;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using SocialMedia.Core.DTOs;
 using SocialMedia.Core.Entities;
+using System;
+using System.Collections.Generic;
+using System.Globalization;
+using System.Text;
 
 namespace SocialMedia.Infrastructure.Mappings
 {
@@ -13,16 +13,20 @@ namespace SocialMedia.Infrastructure.Mappings
     {
         public PostProfile()
         {
-            CreateMap<Post, PostDto>();
             CreateMap<Post, PostDto>()
-                   .ForMember(dest => dest.Date,
-                       opt => opt.ConvertUsing<DateTimeToStringConverter, DateTime>());
+                .ForMember(dest => dest.Imagen, 
+                opt => opt.MapFrom(src => src.Image))
+                .ForMember(dest => dest.Date,
+                    opt => opt.ConvertUsing<DateTimeToStringConverter, DateTime>());
 
-            CreateMap<PostDto, Post>();
-               
-           
+            CreateMap<PostDto, Post>()
+                .ForMember(dest => dest.Image, 
+                opt => opt.MapFrom(src => src.Imagen))
+                .ForMember(dest => dest.Date,
+                    opt => opt.ConvertUsing<StringToDateTimeConverter, string>());
         }
     }
+
     public class DateTimeToStringConverter : IValueConverter<DateTime, string>
     {
         public string Convert(DateTime source, ResolutionContext context)
@@ -31,6 +35,7 @@ namespace SocialMedia.Infrastructure.Mappings
             return source.ToString("dd-MM-yyyy HH:mm:ss", CultureInfo.InvariantCulture);
         }
     }
+
     public class StringToDateTimeConverter : IValueConverter<string, DateTime>
     {
         public DateTime Convert(string source, ResolutionContext context)

@@ -9,32 +9,31 @@ using System.Text;
 namespace SocialMedia.Infrastructure.Repositories
 {
     public class PostRepository : IPostRepository
-    {
-        private readonly SocialMediaContext  _socialMediaContext;
+    {   
+        private readonly SocialMediaContext _socialMediaContext;
 
-        //se puede acceder a los metodos de _socialMediaConetxt
-        public PostRepository(SocialMediaContext socialMediaContext)  
+        public PostRepository(SocialMediaContext socialMediaContext)
         {
-            _socialMediaContext = socialMediaContext;   
-
+            _socialMediaContext = socialMediaContext;
         }
-        // task proceso asincrono debe existir una palabra await
-        public async Task<IEnumerable<Post>> GetAllPostsAsync()   //recuperar todos los registros de la tablas post
+                
+        public async Task<IEnumerable<Post>> GetAllPostsAsync()
         {
-            var posts = await _socialMediaContext.Posts.ToListAsync(); //select * post from en este caso posts
+            var posts = await _socialMediaContext.Posts.ToListAsync();
             return posts;
         }
 
         public async Task<Post> GetPostByIdAsync(int id)
         {
-            var post = await _socialMediaContext.Posts.FirstOrDefaultAsync(x=>x.Id==id); //la primera coincidencia que se encuentre devolveme el dato o nulo
+            var post = await _socialMediaContext.Posts.
+                FirstOrDefaultAsync(x => x.Id == id);
             return post;
         }
 
-        public async Task InsertPost(Post post)  //task<> sin eso es void 
+        public async Task InsertPost(Post post)
         {
-            _socialMediaContext.Posts.Add(post);     //transaccion metodos que afectan a bd
-            await _socialMediaContext.SaveChangesAsync(); //commit        
+            _socialMediaContext.Posts.Add(post);
+            await _socialMediaContext.SaveChangesAsync();
         }
 
         public async Task UpdatePost(Post post)

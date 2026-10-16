@@ -4,30 +4,28 @@ using SocialMedia.Core.Interfaces;
 using SocialMedia.Infrastructure.Data;
 using SocialMedia.Infrastructure.Mappings;
 using SocialMedia.Infrastructure.Repositories;
-
 namespace SocialMedia.Api
 {
     public class Program
     {
         public static void Main(string[] args)
         {
-            var builder = WebApplication.CreateBuilder(args); 
+            var builder = WebApplication.CreateBuilder(args);
 
-            #region ConfigurarlaBDMySql
+            #region Configurar la BD MySql
             var connectionString = builder.Configuration.GetConnectionString("ConnectionMySql");
             builder.Services.AddDbContext<SocialMediaContext>(options =>
                 options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString)));
             #endregion
 
-
-
             // Add services to the container.
-            //inyeccion por dependencia en el main
             builder.Services.AddTransient<IPostRepository, PostRepository>();
+            builder.Services.AddTransient<ICommentRepository, CommentRepository>();
 
             builder.Services.AddControllers();
             // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
             builder.Services.AddOpenApi();
+
             builder.Services.AddAutoMapper(typeof(PostProfile).Assembly);
 
             var app = builder.Build();
