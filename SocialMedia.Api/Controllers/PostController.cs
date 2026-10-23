@@ -6,6 +6,7 @@ using SocialMedia.Core.DTOs;
 using SocialMedia.Core.Entities;
 using SocialMedia.Core.Interfaces;
 using SocialMedia.Infrastructure.Repositories;
+using SocialMedia.Services.Interfaces;
 using SocialMedia.Services.Validators.Post;
 
 namespace SocialMedia.Api.Controllers
@@ -14,14 +15,14 @@ namespace SocialMedia.Api.Controllers
     [ApiController]
     public class PostController : ControllerBase
     {
-        private readonly IPostRepository _postRepository;
+        private readonly IPostService _postService;
         private readonly IMapper _mapper;
         private readonly CrearPostDtoValidator _crearValidator;
         private readonly ActualizarPostDtoValidator _actualizarValidator;
-        public PostController(IMapper mapper, IPostRepository postRepository,
+        public PostController(IMapper mapper, IPostService postService,
             CrearPostDtoValidator crearValidator, ActualizarPostDtoValidator actualizarValidator)
         {
-            _postRepository = postRepository;
+            _postService = postService;
             _mapper = mapper;
             _crearValidator = crearValidator;
             _actualizarValidator = actualizarValidator;
@@ -31,45 +32,45 @@ namespace SocialMedia.Api.Controllers
         [HttpGet]
         public async Task<IActionResult> GetPost()
         {
-            var posts = await _postRepository.GetAllPostsAsync();
+            var posts = await _postService.GetAllPostsAsync();
             return Ok(posts);
         }
 
         [HttpGet("{id}")]
         public async Task<IActionResult> GetPostById(int id)
         {
-            var post = await _postRepository.GetPostByIDAsync(id);
+            var post = await _postService.GetPostsByIdAsync(id);
             return Ok(post);
         }
 
         [HttpPost]
         public async Task<IActionResult> InsertPost(Post newPost)
         {
-            await _postRepository.InsertPost(newPost);
+            await _postService.InsertPost(newPost);
             return Created($"api/post/{newPost.Id}", newPost);
         }
 
         [HttpPut]
         public async Task<IActionResult> UpdatePost(Post post)
         {
-            await _postRepository.UpdatePost(post);
+            await _postService.UpdatePost(post);
             return NoContent();
         }
 
         [HttpDelete]
         public async Task<IActionResult> DeletePost(Post post)
         {
-            await _postRepository.DeletePost(post);
+            await _postService.DeletePost(post);
             return NoContent();
         }
         #endregion
-
+        /*
         #region Con DTOs
         [HttpGet("dto")]
         public async Task<IActionResult> GetPostDto()
         {
 
-            var posts = await _postRepository.GetAllPostsAsync();
+            var posts = await _postService.GetAllPostsAsync();
             var postDto = posts.Select(p => new PostDto
             {
                 Id = p.Id,
@@ -84,7 +85,7 @@ namespace SocialMedia.Api.Controllers
         [HttpGet("dto/{id}")]
         public async Task<IActionResult> GetPostByIdDto(int id)
         {
-            var post = await _postRepository.GetPostByIDAsync(id);
+            var post = await _postService.GetPostByIDAsync(id);
             var postDto = new PostDto
             {
                 Id = post.Id,
@@ -107,7 +108,7 @@ namespace SocialMedia.Api.Controllers
                 Description = newPost.Description,
                 Image = newPost.Image
             };
-            await _postRepository.InsertPost(newPost);
+            await _postService.InsertPost(newPost);
             return Created($"api/post/{newPost.Id}", newPost);
         }
 
@@ -117,7 +118,7 @@ namespace SocialMedia.Api.Controllers
             if (id != postDto.Id)
                 return BadRequest("El ide del post no coincide");
 
-            var post = await _postRepository.GetPostByIDAsync(id);
+            var post = await _postService.GetPostByIDAsync(id);
             if (post == null)
                 return NotFound("Post no encontrado");
 
@@ -128,28 +129,29 @@ namespace SocialMedia.Api.Controllers
             post.Description = postDto.Description;
             post.Image = postDto.Imagen;
 
-            await _postRepository.UpdatePost(post);
+            await _postService.UpdatePost(post);
             return Ok(post);
         }
 
         [HttpDelete("dto/{id}")]
         public async Task<IActionResult> DeletePostDto(int id)
         {
-            var post = await _postRepository.GetPostByIDAsync(id);
+            var post = await _postService.GetPostByIDAsync(id);
             if (post == null)
                 return NotFound("Post no encontrado.");
 
-            await _postRepository.DeletePost(post);
+            await _postService.DeletePost(post);
 
             return NoContent(); // 204 sin contenido
         }
         #endregion
+        */
 
         #region Dto-AutoMapper
         [HttpGet("dto/mapper")]
         public async Task<IActionResult> GetPostsDtoMapper()
         {
-            var posts = await _postRepository.GetAllPostsAsync();
+            var posts = await _postService.GetAllPostsAsync();
             var postDto = _mapper.Map<IEnumerable<PostDto>>(posts);
             //var postDto = posts.Select(p => new PostDto
             //{
@@ -168,7 +170,7 @@ namespace SocialMedia.Api.Controllers
         [HttpGet("dto/mapper/{id}")]
         public async Task<IActionResult> GetPostsByIdDtoMapper(int id)
         {
-            var post = await _postRepository.GetPostByIDAsync(id);
+            var post = await _postService.GetPostsByIdAsync(id);
             var postDto = _mapper.Map<PostDto>(post);
             var response = new ApiResponse<PostDto>(postDto);
 
@@ -196,7 +198,7 @@ namespace SocialMedia.Api.Controllers
             try
             {
                 var post = _mapper.Map<Post>(postDto);
-                await _postRepository.InsertPost(post);
+                await _postService.InsertPost(post);
 
                 var resultDto = _mapper.Map<PostDto>(post);
 
@@ -231,14 +233,14 @@ namespace SocialMedia.Api.Controllers
                 });
             }
 
-            var post = await _postRepository.GetPostByIDAsync(id);
+            var post = await _postService.GetPostsByIdAsync(id);
             if (post == null)
                 return NotFound(new { message = "Post no encontrado." });
 
             try
             {
                 _mapper.Map(postDto, post);
-                await _postRepository.UpdatePost(post);
+                await _postService.UpdatePost(post);
 
                 var resultDto = _mapper.Map<PostDto>(post);
                 return Ok(resultDto);
@@ -256,13 +258,13 @@ namespace SocialMedia.Api.Controllers
             if (id <= 0)
                 return BadRequest(new { message = "El ID debe ser mayor que cero." });
 
-            var post = await _postRepository.GetPostByIDAsync(id);
+            var post = await _postService.GetPostsByIdAsync(id);
             if (post == null)
                 return NotFound(new { message = "Post no encontrado." });
 
             try
             {
-                await _postRepository.DeletePost(post);
+                await _postService.DeletePost(post);
                 return NoContent(); // 204 sin contenido
             }
             catch (Exception ex)
