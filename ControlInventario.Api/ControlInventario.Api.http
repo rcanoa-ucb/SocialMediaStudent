@@ -1,0 +1,15 @@
+@ControlInventario_Api_HostAddress = https://localhost:7247
+
+### CU-03 - Registrar Entrada de Mercadería
+
+POST {{ControlInventario_Api_HostAddress}}/api/inventory/inbound
+Content-Type: application/json
+
+{
+  "productoId": 1,
+  "usuarioId": 1,
+  "cantidad": 10,
+  "observacion": "Compra recibida del proveedor"
+}
+
+###
