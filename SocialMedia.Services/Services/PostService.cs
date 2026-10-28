@@ -1,56 +1,62 @@
-﻿using Microsoft.AspNetCore.Mvc.Formatters;
-using SocialMedia.Core.Entities;
+﻿using SocialMedia.Core.Entities;
+using SocialMedia.Core.Exceptions;
 using SocialMedia.Core.Interfaces;
 using SocialMedia.Services.Interfaces;
-using System;
-using System.Collections.Generic;
-using System.Text;
+using System.Net;
 
 namespace SocialMedia.Services.Services
 {
     public class PostService : IPostService
     {
-        public readonly IPostRepository _postRepository;
-        public readonly IUserRepository _userRepository;
+        //public readonly IPostRepository _postRepository;
+        //public readonly IUserRepository _userRepository;
 
-        public PostService(IPostRepository postRepository,
-            IUserRepository userRepository)
+        public readonly IBaseRepository<Post> _postRepository;
+        public readonly IBaseRepository<User> _userRepository;
+
+        public PostService(
+            //IPostRepository postRepository,
+            //IUserRepository userRepository
+            IBaseRepository<Post> postRepository,
+            IBaseRepository<User> userRepository)
         {
             _postRepository = postRepository;
             _userRepository = userRepository;
         }
         public async Task<IEnumerable<Post>> GetAllPostsAsync()
         {
-            return await _postRepository.GetAllPostsAsync();
+            return await _postRepository.GetAll();
         }
 
         public async Task<Post> GetPostsByIdAsync(int id)
         {
-            return await _postRepository.GetPostByIdAsync(id);
+            return await _postRepository.GetById(id);
         }
 
         public async Task InsertPost(Post post)
         {
             //1. Solo se permite registrar publicaciones a usuarios previamente registrados
-            var user = await _userRepository.GetUserByIdAsync(post.UserId);
+            var user = await _userRepository.GetById(post.UserId);
             if (user == null)
-                throw new Exception("El usuario no existe");
+                throw new BussinesException("El usuario no existe",
+                    HttpStatusCode.BadRequest);
 
             //2. No es permitido publicar información o texto que contenga palabras inapropiadas o de concepto ofensivo.
             if (ContainsForbiddenContent(post.Description))
-                throw new Exception("El contenido no es permitido");
+                throw new BussinesException("El contenido no es permitido",
+                    HttpStatusCode.BadRequest);
             
-            await _postRepository.InsertPost(post);
+            await _postRepository.Add(post);
         }
 
         public async Task UpdatePost(Post post)
         {
-            await _postRepository.UpdatePost(post);
+            await _postRepository.Update(post);
         }
 
-        public async Task DeletePost(Post post)
+        public async Task DeletePost(int id)
         {
-            await _postRepository.DeletePost(post);
+            await _postRepository.Delete(id);
         }
 
         // Lista de palabras o expresiones no permitidas

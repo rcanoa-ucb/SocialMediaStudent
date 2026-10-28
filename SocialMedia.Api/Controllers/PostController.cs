@@ -213,10 +213,7 @@ namespace SocialMedia.Api.Controllers
 
                 var resultDto = _mapper.Map<PostDto>(post);
 
-                var response = new ApiResponse
-                    <Post>(post);
-
-                return Ok(response);
+                return Ok(resultDto);
             }
             catch (Exception ex)
             {
@@ -267,17 +264,13 @@ namespace SocialMedia.Api.Controllers
         [HttpDelete("dto/mapper/{id}")]
         public async Task<IActionResult> DeletePostDtoMapper(int id)
         {
-            // Validar que el ID sea válido
-            if (id <= 0)
-                return BadRequest(new { message = "El ID debe ser mayor que cero." });
-
-            var post = await _postService.GetPostsByIdAsync(id);
-            if (post == null)
-                return NotFound(new { message = "Post no encontrado." });
+            //// Validar que el ID sea válido
+            //if (id <= 0)
+            //    return BadRequest(new { message = "El ID debe ser mayor que cero." });
 
             try
             {
-                await _postService.DeletePost(post);
+                await _postService.DeletePost(id);
                 return NoContent(); // 204 sin contenido
             }
             catch (Exception ex)

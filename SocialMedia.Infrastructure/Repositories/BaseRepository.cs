@@ -11,8 +11,8 @@ namespace SocialMedia.Infrastructure.Repositories
     public class BaseRepository<T> : IBaseRepository<T>
         where T : BaseEntity
     {
-        private readonly SocialMediaContext _context;
-        private readonly DbSet<T> _entities;
+        private readonly SocialMediaContext _context; //Base de datos
+        private readonly DbSet<T> _entities; //Tablas
 
         public BaseRepository(SocialMediaContext context)
         {
@@ -25,23 +25,27 @@ namespace SocialMedia.Infrastructure.Repositories
             return await _entities.ToListAsync();
         }
 
-        public Task<T> GetById(int id)
+        public async Task<T> GetById(int id)
         {
-            throw new NotImplementedException();
+            return await _entities.FindAsync(id);
         }
-        public Task Add(T entity)
+        public async Task Add(T entity)
         {
-            throw new NotImplementedException();
-        }
-
-        public Task Update(T entity)
-        {
-            throw new NotImplementedException();
+            _entities.Add(entity); //Insert
+            await _context.SaveChangesAsync(); //Commit
         }
 
-        public Task Delete(int id)
+        public async Task Update(T entity)
         {
-            throw new NotImplementedException();
+            _entities.Update(entity);
+            await _context.SaveChangesAsync(); //Commit
+        }
+
+        public async Task Delete(int id)
+        {
+            T entity = await GetById(id);
+            _entities.Remove(entity);
+            await _context.SaveChangesAsync(); //Commit
         }
     }
 }

@@ -11,6 +11,6 @@ namespace SocialMedia.Services.Interfaces
         Task<Post> GetPostsByIdAsync(int id);
         Task InsertPost(Post post);
         Task UpdatePost(Post post);
-        Task DeletePost(Post post);
+        Task DeletePost(int id);
     }
 }
