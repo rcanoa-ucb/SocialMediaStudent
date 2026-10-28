@@ -212,11 +212,7 @@ namespace SocialMedia.Api.Controllers
                 await _postService.InsertPost(post);
 
                 var resultDto = _mapper.Map<PostDto>(post);
-
-                var response = new ApiResponse
-                    <Post>(post);
-
-                return Ok(response);
+                return CreatedAtAction(nameof(GetPostByIdDtoMapper), new { id = post.Id }, resultDto);
             }
             catch (Exception ex)
             {
