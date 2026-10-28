@@ -27,14 +27,15 @@ namespace SocialMedia.Infrastructure.Repositories
             throw new NotImplementedException();
         }
 
-        public Task<User> GetUserByIDAsync(int id)
+        public async Task<User> GetUserByIDAsync(int id)
         {
-            throw new NotImplementedException();
+            var user = await _socialMediaContext.Users.FirstOrDefaultAsync(x=> x.Id == id);
+            return user;
         }
 
         public Task InsertUser(User user)
         {
-            throw new Exception("No existe el user");
+            throw new NotImplementedException();
         }
 
         public Task UpdateUser(User user)
