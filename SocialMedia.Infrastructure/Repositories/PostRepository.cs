@@ -45,5 +45,10 @@ namespace SocialMedia.Infrastructure.Repositories
             _socialMediaContext.Posts.Remove(post);
             await _socialMediaContext.SaveChangesAsync();
         }
+
+        public Task<Post> GetPostsByIdAsync(int id)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

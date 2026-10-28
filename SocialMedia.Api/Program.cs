@@ -4,6 +4,8 @@ using SocialMedia.Core.Interfaces;
 using SocialMedia.Infrastructure.Data;
 using SocialMedia.Infrastructure.Mappings;
 using SocialMedia.Infrastructure.Repositories;
+using SocialMedia.Services.Interfaces;
+using SocialMedia.Services.Services;
 namespace SocialMedia.Api
 {
     public class Program
@@ -21,12 +23,20 @@ namespace SocialMedia.Api
             // Add services to the container.
             builder.Services.AddTransient<IPostRepository, PostRepository>();
             builder.Services.AddTransient<ICommentRepository, CommentRepository>();
+            //inyecion pro depencias en program
+            builder.Services.AddTransient<IPostService, PostService>();
+            builder.Services.AddTransient<IUserRepository, UserRepository>();
 
             builder.Services.AddControllers();
             // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
             builder.Services.AddOpenApi();
 
             builder.Services.AddAutoMapper(typeof(PostProfile).Assembly);
+
+            // registrar validatorres de FluentValidator
+            builder.Services.AddScoped<PostDtoValidator>();
+            builder.Services.AddScoped<CrearPostDtoValidator>();
+            builder.Services.AddScoped<ActualizarPostDtoValidator>();
 
             var app = builder.Build();
 

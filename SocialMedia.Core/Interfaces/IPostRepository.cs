@@ -12,5 +12,6 @@ namespace SocialMedia.Core.Interfaces
         Task InsertPost(Post post); //isnertar
         Task UpdatePost(Post post);
         Task DeletePost(Post post);
+        Task<Post> GetPostsByIdAsync(int id);
     }
 }
