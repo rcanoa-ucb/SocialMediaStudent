@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "D:\\Training\\UCB\\2-2026\\SocialMediaStudent\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A6A2D43B-1C50-41AA-AFBF-2E2D0E4B101A}|SocialMedia.Services\\SocialMedia.Services.csproj|d:\\training\\ucb\\2-2026\\socialmediastudent\\socialmedia.services\\services\\postservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A6A2D43B-1C50-41AA-AFBF-2E2D0E4B101A}|SocialMedia.Services\\SocialMedia.Services.csproj|solutionrelative:socialmedia.services\\services\\postservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{20DE5FD1-E331-7142-A93A-F6E553560140}|SocialMedia.Api\\SocialMedia.Api.csproj|d:\\training\\ucb\\2-2026\\socialmediastudent\\socialmedia.api\\controllers\\postcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{20DE5FD1-E331-7142-A93A-F6E553560140}|SocialMedia.Api\\SocialMedia.Api.csproj|solutionrelative:socialmedia.api\\controllers\\postcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -37,10 +41,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{08E8FC0D-B3CB-C9BF-1FDE-B0B7B0A7000D}|SocialMedia.Infrastructure\\SocialMedia.Infrastructure.csproj|d:\\training\\ucb\\2-2026\\socialmediastudent\\socialmedia.infrastructure\\mappings\\postprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{08E8FC0D-B3CB-C9BF-1FDE-B0B7B0A7000D}|SocialMedia.Infrastructure\\SocialMedia.Infrastructure.csproj|solutionrelative:socialmedia.infrastructure\\mappings\\postprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A6A2D43B-1C50-41AA-AFBF-2E2D0E4B101A}|SocialMedia.Services\\SocialMedia.Services.csproj|d:\\training\\ucb\\2-2026\\socialmediastudent\\socialmedia.services\\services\\postservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A6A2D43B-1C50-41AA-AFBF-2E2D0E4B101A}|SocialMedia.Services\\SocialMedia.Services.csproj|solutionrelative:socialmedia.services\\services\\postservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{08E8FC0D-B3CB-C9BF-1FDE-B0B7B0A7000D}|SocialMedia.Infrastructure\\SocialMedia.Infrastructure.csproj|d:\\training\\ucb\\2-2026\\socialmediastudent\\socialmedia.infrastructure\\repositories\\postrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -179,19 +179,6 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Comment.cs",
-              "DocumentMoniker": "D:\\Training\\UCB\\2-2026\\SocialMediaStudent\\SocialMedia.Core\\Entities\\Comment.cs",
-              "RelativeDocumentMoniker": "SocialMedia.Core\\Entities\\Comment.cs",
-              "ToolTip": "D:\\Training\\UCB\\2-2026\\SocialMediaStudent\\SocialMedia.Core\\Entities\\Comment.cs",
-              "RelativeToolTip": "SocialMedia.Core\\Entities\\Comment.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-23T20:22:42.239Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "BaseEntity.cs",
               "DocumentMoniker": "D:\\Training\\UCB\\2-2026\\SocialMediaStudent\\SocialMedia.Core\\Entities\\BaseEntity.cs",
               "RelativeDocumentMoniker": "SocialMedia.Core\\Entities\\BaseEntity.cs",
@@ -204,7 +191,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "User.cs",
               "DocumentMoniker": "D:\\Training\\UCB\\2-2026\\SocialMediaStudent\\SocialMedia.Core\\Entities\\User.cs",
               "RelativeDocumentMoniker": "SocialMedia.Core\\Entities\\User.cs",
@@ -217,7 +204,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Post.cs",
               "DocumentMoniker": "D:\\Training\\UCB\\2-2026\\SocialMediaStudent\\SocialMedia.Core\\Entities\\Post.cs",
               "RelativeDocumentMoniker": "SocialMedia.Core\\Entities\\Post.cs",
@@ -230,7 +217,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "PostProfile.cs",
               "DocumentMoniker": "D:\\Training\\UCB\\2-2026\\SocialMediaStudent\\SocialMedia.Infrastructure\\Mappings\\PostProfile.cs",
               "RelativeDocumentMoniker": "SocialMedia.Infrastructure\\Mappings\\PostProfile.cs",
@@ -243,7 +230,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "PostConfiguration.cs",
               "DocumentMoniker": "D:\\Training\\UCB\\2-2026\\SocialMediaStudent\\SocialMedia.Infrastructure\\Data\\Configurations\\PostConfiguration.cs",
               "RelativeDocumentMoniker": "SocialMedia.Infrastructure\\Data\\Configurations\\PostConfiguration.cs",
@@ -256,7 +243,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "PostDto.cs",
               "DocumentMoniker": "D:\\Training\\UCB\\2-2026\\SocialMediaStudent\\SocialMedia.Core\\DTOs\\PostDto.cs",
               "RelativeDocumentMoniker": "SocialMedia.Core\\DTOs\\PostDto.cs",
@@ -269,7 +256,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "ActualizarPostDtoValidator.cs",
               "DocumentMoniker": "D:\\Training\\UCB\\2-2026\\SocialMediaStudent\\SocialMedia.Services\\Validators\\ActualizarPostDtoValidator.cs",
               "RelativeDocumentMoniker": "SocialMedia.Services\\Validators\\ActualizarPostDtoValidator.cs",
@@ -282,28 +269,41 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "PostController.cs",
               "DocumentMoniker": "D:\\Training\\UCB\\2-2026\\SocialMediaStudent\\SocialMedia.Api\\Controllers\\PostController.cs",
               "RelativeDocumentMoniker": "SocialMedia.Api\\Controllers\\PostController.cs",
               "ToolTip": "D:\\Training\\UCB\\2-2026\\SocialMediaStudent\\SocialMedia.Api\\Controllers\\PostController.cs",
               "RelativeToolTip": "SocialMedia.Api\\Controllers\\PostController.cs",
-              "ViewState": "AgIAAL0AAAAAAAAAAAAwwM8AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAOAAAAAAAAAAAAAcwM0AAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-09-25T20:59:25.467Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 0,
               "Title": "PostService.cs",
               "DocumentMoniker": "D:\\Training\\UCB\\2-2026\\SocialMediaStudent\\SocialMedia.Services\\Services\\PostService.cs",
               "RelativeDocumentMoniker": "SocialMedia.Services\\Services\\PostService.cs",
               "ToolTip": "D:\\Training\\UCB\\2-2026\\SocialMediaStudent\\SocialMedia.Services\\Services\\PostService.cs",
               "RelativeToolTip": "SocialMedia.Services\\Services\\PostService.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAMwDEAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABYAAAAAAAAAAAAMwDMAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-23T20:41:16.559Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Comment.cs",
+              "DocumentMoniker": "D:\\Training\\UCB\\2-2026\\SocialMediaStudent\\SocialMedia.Core\\Entities\\Comment.cs",
+              "RelativeDocumentMoniker": "SocialMedia.Core\\Entities\\Comment.cs",
+              "ToolTip": "D:\\Training\\UCB\\2-2026\\SocialMediaStudent\\SocialMedia.Core\\Entities\\Comment.cs",
+              "RelativeToolTip": "SocialMedia.Core\\Entities\\Comment.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-23T20:22:42.239Z",
               "EditorCaption": ""
             },
             {
