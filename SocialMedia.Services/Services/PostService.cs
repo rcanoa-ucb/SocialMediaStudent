@@ -38,14 +38,15 @@ namespace SocialMedia.Services.Services
             //1. Solo se permite registrar publicaciones a usuarios previamente registrados
             var user = await _userRepository.GetById(post.UserId);
             if (user == null)
-                throw new BussinesException("El usuario no existe",
-                    HttpStatusCode.BadRequest);
+            {
+                throw new BusinessException("El usuario no existe");
+            }
 
-            //2. No es permitido publicar información o texto que contenga palabras inapropiadas o de concepto ofensivo.
             if (ContainsForbiddenContent(post.Description))
-                throw new BussinesException("El contenido no es permitido",
-                    HttpStatusCode.BadRequest);
-            
+            {
+                throw new BusinessException("El contenido no es permitido");
+            }
+
             await _postRepository.Add(post);
         }
 

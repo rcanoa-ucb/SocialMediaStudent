@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using SocialMedia.Api.Response;
 using SocialMedia.Core.DTOs;
 using SocialMedia.Core.Entities;
-using SocialMedia.Core.Interfaces;
+using SocialMedia.Core.Exceptions;
 using SocialMedia.Services.Interfaces;
 using SocialMedia.Services.Validators;
 
@@ -195,15 +195,20 @@ namespace SocialMedia.Api.Controllers
             var validationResult = await _crearValidator.ValidateAsync(postDto);
             if (!validationResult.IsValid)
             {
-                return BadRequest(new
+                throw new BusinessException(message: "Error de validación", details: validationResult.Errors.Select(e => new
                 {
-                    message = "Error de validación",
-                    errors = validationResult.Errors.Select(e => new
-                    {
-                        field = e.PropertyName,
-                        error = e.ErrorMessage
-                    })
-                });
+                    field = e.PropertyName,
+                    error = e.ErrorMessage
+                }));
+                //return BadRequest(new
+                //{
+                //    message = "Error de validación",
+                //    errors = validationResult.Errors.Select(e => new
+                //    {
+                //        field = e.PropertyName,
+                //        error = e.ErrorMessage
+                //    })
+                //});
             }
 
             try
@@ -212,8 +217,12 @@ namespace SocialMedia.Api.Controllers
                 await _postService.InsertPost(post);
 
                 var resultDto = _mapper.Map<PostDto>(post);
-
-                return Ok(resultDto);
+                return CreatedAtAction(nameof(GetPostByIdDtoMapper), new { id = post.Id }, resultDto);
+            }
+            catch (BusinessException)
+            {
+                // Re-lanzamos para que el Middleware genere la respuesta estructurada
+                throw;
             }
             catch (Exception ex)
             {
@@ -264,9 +273,13 @@ namespace SocialMedia.Api.Controllers
         [HttpDelete("dto/mapper/{id}")]
         public async Task<IActionResult> DeletePostDtoMapper(int id)
         {
-            //// Validar que el ID sea válido
-            //if (id <= 0)
-            //    return BadRequest(new { message = "El ID debe ser mayor que cero." });
+            // Validar que el ID sea válido
+            if (id <= 0)
+                return BadRequest(new { message = "El ID debe ser mayor que cero." });
+
+            var post = await _postService.GetPostsByIdAsync(id);
+            if (post == null)
+                return NotFound(new { message = "Post no encontrado." });
 
             try
             {

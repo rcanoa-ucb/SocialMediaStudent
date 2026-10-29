@@ -27,10 +27,14 @@ namespace SocialMedia.Api
             //builder.Services.AddTransient<ICommentRepository, CommentRepository>();
             builder.Services.AddTransient<IPostService, PostService>();
             //builder.Services.AddTransient<IUserRepository, UserRepository>();
-            builder.Services.AddScoped(typeof(IBaseRepository<>),
-                typeof(BaseRepository<>));
+            builder.Services.AddScoped(typeof(IBaseRepository<>), typeof(BaseRepository<>));
 
-            builder.Services.AddControllers();
+            builder.Services.AddControllers().ConfigureApiBehaviorOptions(options =>
+            {
+                options.SuppressModelStateInvalidFilter = true;
+            });
+
+
             // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
             builder.Services.AddOpenApi();
 

@@ -39,7 +39,7 @@ namespace SocialMedia.Api.Filters
 
             switch (exception)
             {
-                case BussinesException bizEx:
+                case BusinessException bizEx:
                     code = bizEx.StatusCode;
                     message = bizEx.Message;
                     errors = bizEx.Details;
