@@ -1,8 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Desarrollo\\2026\\SocialMedia-Est\\",
+  "WorkspaceRootPath": "D:\\Training\\UCB\\2-2026\\SocialMediaStudent\\",
   "Documents": [
     {
+<<<<<<< HEAD
       "AbsoluteMoniker": "D:0:0:{A6A2D43B-1C50-41AA-AFBF-2E2D0E4B101A}|SocialMedia.Services\\SocialMedia.Services.csproj|c:\\desarrollo\\2026\\socialmedia-est\\socialmedia.services\\services\\postservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A6A2D43B-1C50-41AA-AFBF-2E2D0E4B101A}|SocialMedia.Services\\SocialMedia.Services.csproj|solutionrelative:socialmedia.services\\services\\postservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -88,58 +89,141 @@
     },
     {
       "AbsoluteMoniker": "D:0:0:{A6A2D43B-1C50-41AA-AFBF-2E2D0E4B101A}|SocialMedia.Services\\SocialMedia.Services.csproj|c:\\desarrollo\\2026\\socialmedia-est\\socialmedia.services\\validators\\actualizarpostdtovalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+=======
+      "AbsoluteMoniker": "D:0:0:{A6A2D43B-1C50-41AA-AFBF-2E2D0E4B101A}|SocialMedia.Services\\SocialMedia.Services.csproj|d:\\training\\ucb\\2-2026\\socialmediastudent\\socialmedia.services\\services\\postservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A6A2D43B-1C50-41AA-AFBF-2E2D0E4B101A}|SocialMedia.Services\\SocialMedia.Services.csproj|solutionrelative:socialmedia.services\\services\\postservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20DE5FD1-E331-7142-A93A-F6E553560140}|SocialMedia.Api\\SocialMedia.Api.csproj|d:\\training\\ucb\\2-2026\\socialmediastudent\\socialmedia.api\\controllers\\postcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20DE5FD1-E331-7142-A93A-F6E553560140}|SocialMedia.Api\\SocialMedia.Api.csproj|solutionrelative:socialmedia.api\\controllers\\postcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B087032-18E0-426B-F231-576BAD73AC2B}|SocialMedia.Core\\SocialMedia.Core.csproj|d:\\training\\ucb\\2-2026\\socialmediastudent\\socialmedia.core\\entities\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B087032-18E0-426B-F231-576BAD73AC2B}|SocialMedia.Core\\SocialMedia.Core.csproj|solutionrelative:socialmedia.core\\entities\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B087032-18E0-426B-F231-576BAD73AC2B}|SocialMedia.Core\\SocialMedia.Core.csproj|d:\\training\\ucb\\2-2026\\socialmediastudent\\socialmedia.core\\entities\\comment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B087032-18E0-426B-F231-576BAD73AC2B}|SocialMedia.Core\\SocialMedia.Core.csproj|solutionrelative:socialmedia.core\\entities\\comment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B087032-18E0-426B-F231-576BAD73AC2B}|SocialMedia.Core\\SocialMedia.Core.csproj|d:\\training\\ucb\\2-2026\\socialmediastudent\\socialmedia.core\\entities\\post.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B087032-18E0-426B-F231-576BAD73AC2B}|SocialMedia.Core\\SocialMedia.Core.csproj|solutionrelative:socialmedia.core\\entities\\post.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B087032-18E0-426B-F231-576BAD73AC2B}|SocialMedia.Core\\SocialMedia.Core.csproj|d:\\training\\ucb\\2-2026\\socialmediastudent\\socialmedia.core\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B087032-18E0-426B-F231-576BAD73AC2B}|SocialMedia.Core\\SocialMedia.Core.csproj|solutionrelative:socialmedia.core\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6A2D43B-1C50-41AA-AFBF-2E2D0E4B101A}|SocialMedia.Services\\SocialMedia.Services.csproj|d:\\training\\ucb\\2-2026\\socialmediastudent\\socialmedia.services\\validators\\actualizarpostdtovalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+>>>>>>> fc64b04d9b8f5daead2fbe2e9690086efbf37475
       "RelativeMoniker": "D:0:0:{A6A2D43B-1C50-41AA-AFBF-2E2D0E4B101A}|SocialMedia.Services\\SocialMedia.Services.csproj|solutionrelative:socialmedia.services\\validators\\actualizarpostdtovalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A6A2D43B-1C50-41AA-AFBF-2E2D0E4B101A}|SocialMedia.Services\\SocialMedia.Services.csproj|c:\\desarrollo\\2026\\socialmedia-est\\socialmedia.services\\validators\\postdtovalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A6A2D43B-1C50-41AA-AFBF-2E2D0E4B101A}|SocialMedia.Services\\SocialMedia.Services.csproj|solutionrelative:socialmedia.services\\validators\\postdtovalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A6A2D43B-1C50-41AA-AFBF-2E2D0E4B101A}|SocialMedia.Services\\SocialMedia.Services.csproj|c:\\desarrollo\\2026\\socialmedia-est\\socialmedia.services\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A6A2D43B-1C50-41AA-AFBF-2E2D0E4B101A}|SocialMedia.Services\\SocialMedia.Services.csproj|solutionrelative:socialmedia.services\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{08E8FC0D-B3CB-C9BF-1FDE-B0B7B0A7000D}|SocialMedia.Infrastructure\\SocialMedia.Infrastructure.csproj|c:\\desarrollo\\2026\\socialmedia-est\\socialmedia.infrastructure\\mappings\\postprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{08E8FC0D-B3CB-C9BF-1FDE-B0B7B0A7000D}|SocialMedia.Infrastructure\\SocialMedia.Infrastructure.csproj|solutionrelative:socialmedia.infrastructure\\mappings\\postprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1B087032-18E0-426B-F231-576BAD73AC2B}|SocialMedia.Core\\SocialMedia.Core.csproj|c:\\desarrollo\\2026\\socialmedia-est\\socialmedia.core\\dtos\\postdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1B087032-18E0-426B-F231-576BAD73AC2B}|SocialMedia.Core\\SocialMedia.Core.csproj|d:\\training\\ucb\\2-2026\\socialmediastudent\\socialmedia.core\\dtos\\postdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1B087032-18E0-426B-F231-576BAD73AC2B}|SocialMedia.Core\\SocialMedia.Core.csproj|solutionrelative:socialmedia.core\\dtos\\postdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{08E8FC0D-B3CB-C9BF-1FDE-B0B7B0A7000D}|SocialMedia.Infrastructure\\SocialMedia.Infrastructure.csproj|c:\\desarrollo\\2026\\socialmedia-est\\socialmedia.infrastructure\\data\\socialmediacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{08E8FC0D-B3CB-C9BF-1FDE-B0B7B0A7000D}|SocialMedia.Infrastructure\\SocialMedia.Infrastructure.csproj|solutionrelative:socialmedia.infrastructure\\data\\socialmediacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{08E8FC0D-B3CB-C9BF-1FDE-B0B7B0A7000D}|SocialMedia.Infrastructure\\SocialMedia.Infrastructure.csproj|c:\\desarrollo\\2026\\socialmedia-est\\socialmedia.infrastructure\\data\\configurations\\postconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{08E8FC0D-B3CB-C9BF-1FDE-B0B7B0A7000D}|SocialMedia.Infrastructure\\SocialMedia.Infrastructure.csproj|d:\\training\\ucb\\2-2026\\socialmediastudent\\socialmedia.infrastructure\\data\\configurations\\postconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{08E8FC0D-B3CB-C9BF-1FDE-B0B7B0A7000D}|SocialMedia.Infrastructure\\SocialMedia.Infrastructure.csproj|solutionrelative:socialmedia.infrastructure\\data\\configurations\\postconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{20DE5FD1-E331-7142-A93A-F6E553560140}|SocialMedia.Api\\SocialMedia.Api.csproj|c:\\desarrollo\\2026\\socialmedia-est\\socialmedia.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{08E8FC0D-B3CB-C9BF-1FDE-B0B7B0A7000D}|SocialMedia.Infrastructure\\SocialMedia.Infrastructure.csproj|d:\\training\\ucb\\2-2026\\socialmediastudent\\socialmedia.infrastructure\\mappings\\postprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08E8FC0D-B3CB-C9BF-1FDE-B0B7B0A7000D}|SocialMedia.Infrastructure\\SocialMedia.Infrastructure.csproj|solutionrelative:socialmedia.infrastructure\\mappings\\postprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08E8FC0D-B3CB-C9BF-1FDE-B0B7B0A7000D}|SocialMedia.Infrastructure\\SocialMedia.Infrastructure.csproj|d:\\training\\ucb\\2-2026\\socialmediastudent\\socialmedia.infrastructure\\repositories\\postrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08E8FC0D-B3CB-C9BF-1FDE-B0B7B0A7000D}|SocialMedia.Infrastructure\\SocialMedia.Infrastructure.csproj|solutionrelative:socialmedia.infrastructure\\repositories\\postrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20DE5FD1-E331-7142-A93A-F6E553560140}|SocialMedia.Api\\SocialMedia.Api.csproj|d:\\training\\ucb\\2-2026\\socialmediastudent\\socialmedia.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20DE5FD1-E331-7142-A93A-F6E553560140}|SocialMedia.Api\\SocialMedia.Api.csproj|solutionrelative:socialmedia.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20DE5FD1-E331-7142-A93A-F6E553560140}|SocialMedia.Api\\SocialMedia.Api.csproj|d:\\training\\ucb\\2-2026\\socialmediastudent\\socialmedia.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{20DE5FD1-E331-7142-A93A-F6E553560140}|SocialMedia.Api\\SocialMedia.Api.csproj|solutionrelative:socialmedia.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{08E8FC0D-B3CB-C9BF-1FDE-B0B7B0A7000D}|SocialMedia.Infrastructure\\SocialMedia.Infrastructure.csproj|c:\\desarrollo\\2026\\socialmedia-est\\socialmedia.infrastructure\\socialmedia.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "AbsoluteMoniker": "D:0:0:{08E8FC0D-B3CB-C9BF-1FDE-B0B7B0A7000D}|SocialMedia.Infrastructure\\SocialMedia.Infrastructure.csproj|d:\\training\\ucb\\2-2026\\socialmediastudent\\socialmedia.infrastructure\\repositories\\baserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08E8FC0D-B3CB-C9BF-1FDE-B0B7B0A7000D}|SocialMedia.Infrastructure\\SocialMedia.Infrastructure.csproj|solutionrelative:socialmedia.infrastructure\\repositories\\baserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B087032-18E0-426B-F231-576BAD73AC2B}|SocialMedia.Core\\SocialMedia.Core.csproj|d:\\training\\ucb\\2-2026\\socialmediastudent\\socialmedia.core\\interfaces\\ibaserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B087032-18E0-426B-F231-576BAD73AC2B}|SocialMedia.Core\\SocialMedia.Core.csproj|solutionrelative:socialmedia.core\\interfaces\\ibaserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20DE5FD1-E331-7142-A93A-F6E553560140}|SocialMedia.Api\\SocialMedia.Api.csproj|d:\\training\\ucb\\2-2026\\socialmediastudent\\socialmedia.api\\response\\apiresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20DE5FD1-E331-7142-A93A-F6E553560140}|SocialMedia.Api\\SocialMedia.Api.csproj|solutionrelative:socialmedia.api\\response\\apiresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08E8FC0D-B3CB-C9BF-1FDE-B0B7B0A7000D}|SocialMedia.Infrastructure\\SocialMedia.Infrastructure.csproj|d:\\training\\ucb\\2-2026\\socialmediastudent\\socialmedia.infrastructure\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08E8FC0D-B3CB-C9BF-1FDE-B0B7B0A7000D}|SocialMedia.Infrastructure\\SocialMedia.Infrastructure.csproj|solutionrelative:socialmedia.infrastructure\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08E8FC0D-B3CB-C9BF-1FDE-B0B7B0A7000D}|SocialMedia.Infrastructure\\SocialMedia.Infrastructure.csproj|d:\\training\\ucb\\2-2026\\socialmediastudent\\socialmedia.infrastructure\\repositories\\commentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08E8FC0D-B3CB-C9BF-1FDE-B0B7B0A7000D}|SocialMedia.Infrastructure\\SocialMedia.Infrastructure.csproj|solutionrelative:socialmedia.infrastructure\\repositories\\commentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6A2D43B-1C50-41AA-AFBF-2E2D0E4B101A}|SocialMedia.Services\\SocialMedia.Services.csproj|d:\\training\\ucb\\2-2026\\socialmediastudent\\socialmedia.services\\interfaces\\ipostservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A6A2D43B-1C50-41AA-AFBF-2E2D0E4B101A}|SocialMedia.Services\\SocialMedia.Services.csproj|solutionrelative:socialmedia.services\\interfaces\\ipostservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B087032-18E0-426B-F231-576BAD73AC2B}|SocialMedia.Core\\SocialMedia.Core.csproj|d:\\training\\ucb\\2-2026\\socialmediastudent\\socialmedia.core\\interfaces\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B087032-18E0-426B-F231-576BAD73AC2B}|SocialMedia.Core\\SocialMedia.Core.csproj|solutionrelative:socialmedia.core\\interfaces\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20DE5FD1-E331-7142-A93A-F6E553560140}|SocialMedia.Api\\SocialMedia.Api.csproj|d:\\training\\ucb\\2-2026\\socialmediastudent\\socialmedia.api\\controllers\\commentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20DE5FD1-E331-7142-A93A-F6E553560140}|SocialMedia.Api\\SocialMedia.Api.csproj|solutionrelative:socialmedia.api\\controllers\\commentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6A2D43B-1C50-41AA-AFBF-2E2D0E4B101A}|SocialMedia.Services\\SocialMedia.Services.csproj|d:\\training\\ucb\\2-2026\\socialmediastudent\\socialmedia.services\\socialmedia.services.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{A6A2D43B-1C50-41AA-AFBF-2E2D0E4B101A}|SocialMedia.Services\\SocialMedia.Services.csproj|solutionrelative:socialmedia.services\\socialmedia.services.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6A2D43B-1C50-41AA-AFBF-2E2D0E4B101A}|SocialMedia.Services\\SocialMedia.Services.csproj|d:\\training\\ucb\\2-2026\\socialmediastudent\\socialmedia.services\\validators\\crearpostdtovalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A6A2D43B-1C50-41AA-AFBF-2E2D0E4B101A}|SocialMedia.Services\\SocialMedia.Services.csproj|solutionrelative:socialmedia.services\\validators\\crearpostdtovalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6A2D43B-1C50-41AA-AFBF-2E2D0E4B101A}|SocialMedia.Services\\SocialMedia.Services.csproj|d:\\training\\ucb\\2-2026\\socialmediastudent\\socialmedia.services\\validators\\postdtovalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A6A2D43B-1C50-41AA-AFBF-2E2D0E4B101A}|SocialMedia.Services\\SocialMedia.Services.csproj|solutionrelative:socialmedia.services\\validators\\postdtovalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6A2D43B-1C50-41AA-AFBF-2E2D0E4B101A}|SocialMedia.Services\\SocialMedia.Services.csproj|d:\\training\\ucb\\2-2026\\socialmediastudent\\socialmedia.services\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A6A2D43B-1C50-41AA-AFBF-2E2D0E4B101A}|SocialMedia.Services\\SocialMedia.Services.csproj|solutionrelative:socialmedia.services\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08E8FC0D-B3CB-C9BF-1FDE-B0B7B0A7000D}|SocialMedia.Infrastructure\\SocialMedia.Infrastructure.csproj|d:\\training\\ucb\\2-2026\\socialmediastudent\\socialmedia.infrastructure\\data\\socialmediacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08E8FC0D-B3CB-C9BF-1FDE-B0B7B0A7000D}|SocialMedia.Infrastructure\\SocialMedia.Infrastructure.csproj|solutionrelative:socialmedia.infrastructure\\data\\socialmediacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08E8FC0D-B3CB-C9BF-1FDE-B0B7B0A7000D}|SocialMedia.Infrastructure\\SocialMedia.Infrastructure.csproj|d:\\training\\ucb\\2-2026\\socialmediastudent\\socialmedia.infrastructure\\socialmedia.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{08E8FC0D-B3CB-C9BF-1FDE-B0B7B0A7000D}|SocialMedia.Infrastructure\\SocialMedia.Infrastructure.csproj|solutionrelative:socialmedia.infrastructure\\socialmedia.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
+<<<<<<< HEAD
       "AbsoluteMoniker": "D:0:0:{1B087032-18E0-426B-F231-576BAD73AC2B}|SocialMedia.Core\\SocialMedia.Core.csproj|c:\\desarrollo\\2026\\socialmedia-est\\socialmedia.core\\socialmedia.core.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+=======
+      "AbsoluteMoniker": "D:0:0:{1B087032-18E0-426B-F231-576BAD73AC2B}|SocialMedia.Core\\SocialMedia.Core.csproj|d:\\training\\ucb\\2-2026\\socialmediastudent\\socialmedia.core\\interfaces\\ipostrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B087032-18E0-426B-F231-576BAD73AC2B}|SocialMedia.Core\\SocialMedia.Core.csproj|solutionrelative:socialmedia.core\\interfaces\\ipostrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B087032-18E0-426B-F231-576BAD73AC2B}|SocialMedia.Core\\SocialMedia.Core.csproj|d:\\training\\ucb\\2-2026\\socialmediastudent\\socialmedia.core\\socialmedia.core.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+>>>>>>> fc64b04d9b8f5daead2fbe2e9690086efbf37475
       "RelativeMoniker": "D:0:0:{1B087032-18E0-426B-F231-576BAD73AC2B}|SocialMedia.Core\\SocialMedia.Core.csproj|solutionrelative:socialmedia.core\\socialmedia.core.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{08E8FC0D-B3CB-C9BF-1FDE-B0B7B0A7000D}|SocialMedia.Infrastructure\\SocialMedia.Infrastructure.csproj|c:\\desarrollo\\2026\\socialmedia-est\\socialmedia.infrastructure\\data\\configurations\\userconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{08E8FC0D-B3CB-C9BF-1FDE-B0B7B0A7000D}|SocialMedia.Infrastructure\\SocialMedia.Infrastructure.csproj|d:\\training\\ucb\\2-2026\\socialmediastudent\\socialmedia.infrastructure\\data\\configurations\\userconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{08E8FC0D-B3CB-C9BF-1FDE-B0B7B0A7000D}|SocialMedia.Infrastructure\\SocialMedia.Infrastructure.csproj|solutionrelative:socialmedia.infrastructure\\data\\configurations\\userconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{08E8FC0D-B3CB-C9BF-1FDE-B0B7B0A7000D}|SocialMedia.Infrastructure\\SocialMedia.Infrastructure.csproj|c:\\desarrollo\\2026\\socialmedia-est\\socialmedia.infrastructure\\data\\configurations\\commentconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{08E8FC0D-B3CB-C9BF-1FDE-B0B7B0A7000D}|SocialMedia.Infrastructure\\SocialMedia.Infrastructure.csproj|d:\\training\\ucb\\2-2026\\socialmediastudent\\socialmedia.infrastructure\\data\\configurations\\commentconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{08E8FC0D-B3CB-C9BF-1FDE-B0B7B0A7000D}|SocialMedia.Infrastructure\\SocialMedia.Infrastructure.csproj|solutionrelative:socialmedia.infrastructure\\data\\configurations\\commentconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1B087032-18E0-426B-F231-576BAD73AC2B}|SocialMedia.Core\\SocialMedia.Core.csproj|c:\\desarrollo\\2026\\socialmedia-est\\socialmedia.core\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1B087032-18E0-426B-F231-576BAD73AC2B}|SocialMedia.Core\\SocialMedia.Core.csproj|d:\\training\\ucb\\2-2026\\socialmediastudent\\socialmedia.core\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1B087032-18E0-426B-F231-576BAD73AC2B}|SocialMedia.Core\\SocialMedia.Core.csproj|solutionrelative:socialmedia.core\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{08E8FC0D-B3CB-C9BF-1FDE-B0B7B0A7000D}|SocialMedia.Infrastructure\\SocialMedia.Infrastructure.csproj|c:\\desarrollo\\2026\\socialmedia-est\\socialmedia.infrastructure\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{08E8FC0D-B3CB-C9BF-1FDE-B0B7B0A7000D}|SocialMedia.Infrastructure\\SocialMedia.Infrastructure.csproj|d:\\training\\ucb\\2-2026\\socialmediastudent\\socialmedia.infrastructure\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{08E8FC0D-B3CB-C9BF-1FDE-B0B7B0A7000D}|SocialMedia.Infrastructure\\SocialMedia.Infrastructure.csproj|solutionrelative:socialmedia.infrastructure\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -150,14 +234,49 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
+<<<<<<< HEAD
           "SelectedChildIndex": 7,
           "Children": [
             {
+=======
+          "SelectedChildIndex": 16,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:133:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+>>>>>>> fc64b04d9b8f5daead2fbe2e9690086efbf37475
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 5,
               "Title": "ErrorResponse.cs",
               "DocumentMoniker": "C:\\Desarrollo\\2026\\SocialMedia-Est\\SocialMedia.Core\\CustomEntities\\ErrorResponse.cs",
@@ -402,17 +521,21 @@
             {
               "$type": "Document",
               "DocumentIndex": 19,
+=======
+              "DocumentIndex": 2,
+>>>>>>> fc64b04d9b8f5daead2fbe2e9690086efbf37475
               "Title": "BaseEntity.cs",
-              "DocumentMoniker": "C:\\Desarrollo\\2026\\SocialMedia-Est\\SocialMedia.Core\\Entities\\BaseEntity.cs",
+              "DocumentMoniker": "D:\\Training\\UCB\\2-2026\\SocialMediaStudent\\SocialMedia.Core\\Entities\\BaseEntity.cs",
               "RelativeDocumentMoniker": "SocialMedia.Core\\Entities\\BaseEntity.cs",
-              "ToolTip": "C:\\Desarrollo\\2026\\SocialMedia-Est\\SocialMedia.Core\\Entities\\BaseEntity.cs",
+              "ToolTip": "D:\\Training\\UCB\\2-2026\\SocialMediaStudent\\SocialMedia.Core\\Entities\\BaseEntity.cs",
               "RelativeToolTip": "SocialMedia.Core\\Entities\\BaseEntity.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-23T21:57:39.017Z"
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 20,
               "Title": "SocialMedia.Services.csproj",
               "DocumentMoniker": "C:\\Desarrollo\\2026\\SocialMedia-Est\\SocialMedia.Services\\SocialMedia.Services.csproj",
@@ -422,15 +545,282 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
               "WhenOpened": "2026-10-23T20:36:40.116Z",
+=======
+              "DocumentIndex": 5,
+              "Title": "User.cs",
+              "DocumentMoniker": "D:\\Training\\UCB\\2-2026\\SocialMediaStudent\\SocialMedia.Core\\Entities\\User.cs",
+              "RelativeDocumentMoniker": "SocialMedia.Core\\Entities\\User.cs",
+              "ToolTip": "D:\\Training\\UCB\\2-2026\\SocialMediaStudent\\SocialMedia.Core\\Entities\\User.cs",
+              "RelativeToolTip": "SocialMedia.Core\\Entities\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-23T21:56:31.218Z",
+>>>>>>> fc64b04d9b8f5daead2fbe2e9690086efbf37475
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 22,
+=======
+              "DocumentIndex": 4,
+              "Title": "Post.cs",
+              "DocumentMoniker": "D:\\Training\\UCB\\2-2026\\SocialMediaStudent\\SocialMedia.Core\\Entities\\Post.cs",
+              "RelativeDocumentMoniker": "SocialMedia.Core\\Entities\\Post.cs",
+              "ToolTip": "D:\\Training\\UCB\\2-2026\\SocialMediaStudent\\SocialMedia.Core\\Entities\\Post.cs",
+              "RelativeToolTip": "SocialMedia.Core\\Entities\\Post.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-23T20:23:42.61Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "PostProfile.cs",
+              "DocumentMoniker": "D:\\Training\\UCB\\2-2026\\SocialMediaStudent\\SocialMedia.Infrastructure\\Mappings\\PostProfile.cs",
+              "RelativeDocumentMoniker": "SocialMedia.Infrastructure\\Mappings\\PostProfile.cs",
+              "ToolTip": "D:\\Training\\UCB\\2-2026\\SocialMediaStudent\\SocialMedia.Infrastructure\\Mappings\\PostProfile.cs",
+              "RelativeToolTip": "SocialMedia.Infrastructure\\Mappings\\PostProfile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-02T21:32:27.3Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "PostConfiguration.cs",
+              "DocumentMoniker": "D:\\Training\\UCB\\2-2026\\SocialMediaStudent\\SocialMedia.Infrastructure\\Data\\Configurations\\PostConfiguration.cs",
+              "RelativeDocumentMoniker": "SocialMedia.Infrastructure\\Data\\Configurations\\PostConfiguration.cs",
+              "ToolTip": "D:\\Training\\UCB\\2-2026\\SocialMediaStudent\\SocialMedia.Infrastructure\\Data\\Configurations\\PostConfiguration.cs",
+              "RelativeToolTip": "SocialMedia.Infrastructure\\Data\\Configurations\\PostConfiguration.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAqwBYAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-23T20:30:28.766Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "PostDto.cs",
+              "DocumentMoniker": "D:\\Training\\UCB\\2-2026\\SocialMediaStudent\\SocialMedia.Core\\DTOs\\PostDto.cs",
+              "RelativeDocumentMoniker": "SocialMedia.Core\\DTOs\\PostDto.cs",
+              "ToolTip": "D:\\Training\\UCB\\2-2026\\SocialMediaStudent\\SocialMedia.Core\\DTOs\\PostDto.cs",
+              "RelativeToolTip": "SocialMedia.Core\\DTOs\\PostDto.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAASwAwAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-30T20:50:36.393Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ActualizarPostDtoValidator.cs",
+              "DocumentMoniker": "D:\\Training\\UCB\\2-2026\\SocialMediaStudent\\SocialMedia.Services\\Validators\\ActualizarPostDtoValidator.cs",
+              "RelativeDocumentMoniker": "SocialMedia.Services\\Validators\\ActualizarPostDtoValidator.cs",
+              "ToolTip": "D:\\Training\\UCB\\2-2026\\SocialMediaStudent\\SocialMedia.Services\\Validators\\ActualizarPostDtoValidator.cs",
+              "RelativeToolTip": "SocialMedia.Services\\Validators\\ActualizarPostDtoValidator.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAgwCgAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-16T20:33:58.133Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PostController.cs",
+              "DocumentMoniker": "D:\\Training\\UCB\\2-2026\\SocialMediaStudent\\SocialMedia.Api\\Controllers\\PostController.cs",
+              "RelativeDocumentMoniker": "SocialMedia.Api\\Controllers\\PostController.cs",
+              "ToolTip": "D:\\Training\\UCB\\2-2026\\SocialMediaStudent\\SocialMedia.Api\\Controllers\\PostController.cs",
+              "RelativeToolTip": "SocialMedia.Api\\Controllers\\PostController.cs",
+              "ViewState": "AgIAAOAAAAAAAAAAAAAcwM0AAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-25T20:59:25.467Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PostService.cs",
+              "DocumentMoniker": "D:\\Training\\UCB\\2-2026\\SocialMediaStudent\\SocialMedia.Services\\Services\\PostService.cs",
+              "RelativeDocumentMoniker": "SocialMedia.Services\\Services\\PostService.cs",
+              "ToolTip": "D:\\Training\\UCB\\2-2026\\SocialMediaStudent\\SocialMedia.Services\\Services\\PostService.cs",
+              "RelativeToolTip": "SocialMedia.Services\\Services\\PostService.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAMwDMAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-23T20:41:16.559Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Comment.cs",
+              "DocumentMoniker": "D:\\Training\\UCB\\2-2026\\SocialMediaStudent\\SocialMedia.Core\\Entities\\Comment.cs",
+              "RelativeDocumentMoniker": "SocialMedia.Core\\Entities\\Comment.cs",
+              "ToolTip": "D:\\Training\\UCB\\2-2026\\SocialMediaStudent\\SocialMedia.Core\\Entities\\Comment.cs",
+              "RelativeToolTip": "SocialMedia.Core\\Entities\\Comment.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-23T20:22:42.239Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "PostRepository.cs",
+              "DocumentMoniker": "D:\\Training\\UCB\\2-2026\\SocialMediaStudent\\SocialMedia.Infrastructure\\Repositories\\PostRepository.cs",
+              "RelativeDocumentMoniker": "SocialMedia.Infrastructure\\Repositories\\PostRepository.cs",
+              "ToolTip": "D:\\Training\\UCB\\2-2026\\SocialMediaStudent\\SocialMedia.Infrastructure\\Repositories\\PostRepository.cs",
+              "RelativeToolTip": "SocialMedia.Infrastructure\\Repositories\\PostRepository.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAMwBEAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-23T21:27:58.406Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Training\\UCB\\2-2026\\SocialMediaStudent\\SocialMedia.Api\\Program.cs",
+              "RelativeDocumentMoniker": "SocialMedia.Api\\Program.cs",
+              "ToolTip": "D:\\Training\\UCB\\2-2026\\SocialMediaStudent\\SocialMedia.Api\\Program.cs",
+              "RelativeToolTip": "SocialMedia.Api\\Program.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAAMwDcAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-23T17:53:22.855Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Training\\UCB\\2-2026\\SocialMediaStudent\\SocialMedia.Api\\appsettings.json",
+              "RelativeDocumentMoniker": "SocialMedia.Api\\appsettings.json",
+              "ToolTip": "D:\\Training\\UCB\\2-2026\\SocialMediaStudent\\SocialMedia.Api\\appsettings.json",
+              "RelativeToolTip": "SocialMedia.Api\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-09-23T20:16:00.713Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ApiResponse.cs",
+              "DocumentMoniker": "D:\\Training\\UCB\\2-2026\\SocialMediaStudent\\SocialMedia.Api\\Response\\ApiResponse.cs",
+              "RelativeDocumentMoniker": "SocialMedia.Api\\Response\\ApiResponse.cs",
+              "ToolTip": "D:\\Training\\UCB\\2-2026\\SocialMediaStudent\\SocialMedia.Api\\Response\\ApiResponse.cs",
+              "RelativeToolTip": "SocialMedia.Api\\Response\\ApiResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-16T21:11:20.594Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "IUserRepository.cs",
+              "DocumentMoniker": "D:\\Training\\UCB\\2-2026\\SocialMediaStudent\\SocialMedia.Core\\Interfaces\\IUserRepository.cs",
+              "RelativeDocumentMoniker": "SocialMedia.Core\\Interfaces\\IUserRepository.cs",
+              "ToolTip": "D:\\Training\\UCB\\2-2026\\SocialMediaStudent\\SocialMedia.Core\\Interfaces\\IUserRepository.cs",
+              "RelativeToolTip": "SocialMedia.Core\\Interfaces\\IUserRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-23T21:03:33.109Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "CommentRepository.cs",
+              "DocumentMoniker": "D:\\Training\\UCB\\2-2026\\SocialMediaStudent\\SocialMedia.Infrastructure\\Repositories\\CommentRepository.cs",
+              "RelativeDocumentMoniker": "SocialMedia.Infrastructure\\Repositories\\CommentRepository.cs",
+              "ToolTip": "D:\\Training\\UCB\\2-2026\\SocialMediaStudent\\SocialMedia.Infrastructure\\Repositories\\CommentRepository.cs",
+              "RelativeToolTip": "SocialMedia.Infrastructure\\Repositories\\CommentRepository.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAA7wC0AAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-23T21:56:18.222Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "D:\\Training\\UCB\\2-2026\\SocialMediaStudent\\SocialMedia.Infrastructure\\Repositories\\UserRepository.cs",
+              "RelativeDocumentMoniker": "SocialMedia.Infrastructure\\Repositories\\UserRepository.cs",
+              "ToolTip": "D:\\Training\\UCB\\2-2026\\SocialMediaStudent\\SocialMedia.Infrastructure\\Repositories\\UserRepository.cs",
+              "RelativeToolTip": "SocialMedia.Infrastructure\\Repositories\\UserRepository.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwBQAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-23T22:06:31.115Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "BaseRepository.cs",
+              "DocumentMoniker": "D:\\Training\\UCB\\2-2026\\SocialMediaStudent\\SocialMedia.Infrastructure\\Repositories\\BaseRepository.cs",
+              "RelativeDocumentMoniker": "SocialMedia.Infrastructure\\Repositories\\BaseRepository.cs",
+              "ToolTip": "D:\\Training\\UCB\\2-2026\\SocialMediaStudent\\SocialMedia.Infrastructure\\Repositories\\BaseRepository.cs",
+              "RelativeToolTip": "SocialMedia.Infrastructure\\Repositories\\BaseRepository.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABsAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-23T22:14:32.317Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "CommentController.cs",
+              "DocumentMoniker": "D:\\Training\\UCB\\2-2026\\SocialMediaStudent\\SocialMedia.Api\\Controllers\\CommentController.cs",
+              "RelativeDocumentMoniker": "SocialMedia.Api\\Controllers\\CommentController.cs",
+              "ToolTip": "D:\\Training\\UCB\\2-2026\\SocialMediaStudent\\SocialMedia.Api\\Controllers\\CommentController.cs",
+              "RelativeToolTip": "SocialMedia.Api\\Controllers\\CommentController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADIAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-02T20:50:22.731Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "IPostService.cs",
+              "DocumentMoniker": "D:\\Training\\UCB\\2-2026\\SocialMediaStudent\\SocialMedia.Services\\Interfaces\\IPostService.cs",
+              "RelativeDocumentMoniker": "SocialMedia.Services\\Interfaces\\IPostService.cs",
+              "ToolTip": "D:\\Training\\UCB\\2-2026\\SocialMediaStudent\\SocialMedia.Services\\Interfaces\\IPostService.cs",
+              "RelativeToolTip": "SocialMedia.Services\\Interfaces\\IPostService.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA0AAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-23T20:38:23.034Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "IBaseRepository.cs",
+              "DocumentMoniker": "D:\\Training\\UCB\\2-2026\\SocialMediaStudent\\SocialMedia.Core\\Interfaces\\IBaseRepository.cs",
+              "RelativeDocumentMoniker": "SocialMedia.Core\\Interfaces\\IBaseRepository.cs",
+              "ToolTip": "D:\\Training\\UCB\\2-2026\\SocialMediaStudent\\SocialMedia.Core\\Interfaces\\IBaseRepository.cs",
+              "RelativeToolTip": "SocialMedia.Core\\Interfaces\\IBaseRepository.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAcAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-23T22:07:51.742Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "SocialMedia.Services.csproj",
+              "DocumentMoniker": "D:\\Training\\UCB\\2-2026\\SocialMediaStudent\\SocialMedia.Services\\SocialMedia.Services.csproj",
+              "RelativeDocumentMoniker": "SocialMedia.Services\\SocialMedia.Services.csproj",
+              "ToolTip": "D:\\Training\\UCB\\2-2026\\SocialMediaStudent\\SocialMedia.Services\\SocialMedia.Services.csproj",
+              "RelativeToolTip": "SocialMedia.Services\\SocialMedia.Services.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-10-23T20:36:40.116Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+>>>>>>> fc64b04d9b8f5daead2fbe2e9690086efbf37475
               "Title": "PostDtoValidator.cs",
-              "DocumentMoniker": "C:\\Desarrollo\\2026\\SocialMedia-Est\\SocialMedia.Services\\Validators\\PostDtoValidator.cs",
+              "DocumentMoniker": "D:\\Training\\UCB\\2-2026\\SocialMediaStudent\\SocialMedia.Services\\Validators\\PostDtoValidator.cs",
               "RelativeDocumentMoniker": "SocialMedia.Services\\Validators\\PostDtoValidator.cs",
-              "ToolTip": "C:\\Desarrollo\\2026\\SocialMedia-Est\\SocialMedia.Services\\Validators\\PostDtoValidator.cs",
+              "ToolTip": "D:\\Training\\UCB\\2-2026\\SocialMediaStudent\\SocialMedia.Services\\Validators\\PostDtoValidator.cs",
               "RelativeToolTip": "SocialMedia.Services\\Validators\\PostDtoValidator.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -438,11 +828,27 @@
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 26,
+=======
+              "DocumentIndex": 22,
+              "Title": "CrearPostDtoValidator.cs",
+              "DocumentMoniker": "D:\\Training\\UCB\\2-2026\\SocialMediaStudent\\SocialMedia.Services\\Validators\\CrearPostDtoValidator.cs",
+              "RelativeDocumentMoniker": "SocialMedia.Services\\Validators\\CrearPostDtoValidator.cs",
+              "ToolTip": "D:\\Training\\UCB\\2-2026\\SocialMediaStudent\\SocialMedia.Services\\Validators\\CrearPostDtoValidator.cs",
+              "RelativeToolTip": "SocialMedia.Services\\Validators\\CrearPostDtoValidator.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAYwA4AAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-16T20:31:08.087Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+>>>>>>> fc64b04d9b8f5daead2fbe2e9690086efbf37475
               "Title": "SocialMediaContext.cs",
-              "DocumentMoniker": "C:\\Desarrollo\\2026\\SocialMedia-Est\\SocialMedia.Infrastructure\\Data\\SocialMediaContext.cs",
+              "DocumentMoniker": "D:\\Training\\UCB\\2-2026\\SocialMediaStudent\\SocialMedia.Infrastructure\\Data\\SocialMediaContext.cs",
               "RelativeDocumentMoniker": "SocialMedia.Infrastructure\\Data\\SocialMediaContext.cs",
-              "ToolTip": "C:\\Desarrollo\\2026\\SocialMedia-Est\\SocialMedia.Infrastructure\\Data\\SocialMediaContext.cs",
+              "ToolTip": "D:\\Training\\UCB\\2-2026\\SocialMediaStudent\\SocialMedia.Infrastructure\\Data\\SocialMediaContext.cs",
               "RelativeToolTip": "SocialMedia.Infrastructure\\Data\\SocialMediaContext.cs",
               "ViewState": "AgIAAA0AAAAAAAAAAAASwBYAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -450,6 +856,7 @@
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 25,
               "Title": "PostDto.cs",
               "DocumentMoniker": "C:\\Desarrollo\\2026\\SocialMedia-Est\\SocialMedia.Core\\DTOs\\PostDto.cs",
@@ -487,10 +894,13 @@
             {
               "$type": "Document",
               "DocumentIndex": 23,
+=======
+              "DocumentIndex": 24,
+>>>>>>> fc64b04d9b8f5daead2fbe2e9690086efbf37475
               "Title": "Class1.cs",
-              "DocumentMoniker": "C:\\Desarrollo\\2026\\SocialMedia-Est\\SocialMedia.Services\\Class1.cs",
+              "DocumentMoniker": "D:\\Training\\UCB\\2-2026\\SocialMediaStudent\\SocialMedia.Services\\Class1.cs",
               "RelativeDocumentMoniker": "SocialMedia.Services\\Class1.cs",
-              "ToolTip": "C:\\Desarrollo\\2026\\SocialMedia-Est\\SocialMedia.Services\\Class1.cs",
+              "ToolTip": "D:\\Training\\UCB\\2-2026\\SocialMediaStudent\\SocialMedia.Services\\Class1.cs",
               "RelativeToolTip": "SocialMedia.Services\\Class1.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -498,6 +908,7 @@
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 27,
               "Title": "PostConfiguration.cs",
               "DocumentMoniker": "C:\\Desarrollo\\2026\\SocialMedia-Est\\SocialMedia.Infrastructure\\Data\\Configurations\\PostConfiguration.cs",
@@ -523,23 +934,25 @@
             {
               "$type": "Document",
               "DocumentIndex": 29,
+=======
+              "DocumentIndex": 26,
+>>>>>>> fc64b04d9b8f5daead2fbe2e9690086efbf37475
               "Title": "SocialMedia.Infrastructure.csproj",
-              "DocumentMoniker": "C:\\Desarrollo\\2026\\SocialMedia-Est\\SocialMedia.Infrastructure\\SocialMedia.Infrastructure.csproj",
+              "DocumentMoniker": "D:\\Training\\UCB\\2-2026\\SocialMediaStudent\\SocialMedia.Infrastructure\\SocialMedia.Infrastructure.csproj",
               "RelativeDocumentMoniker": "SocialMedia.Infrastructure\\SocialMedia.Infrastructure.csproj",
-              "ToolTip": "C:\\Desarrollo\\2026\\SocialMedia-Est\\SocialMedia.Infrastructure\\SocialMedia.Infrastructure.csproj",
+              "ToolTip": "D:\\Training\\UCB\\2-2026\\SocialMediaStudent\\SocialMedia.Infrastructure\\SocialMedia.Infrastructure.csproj",
               "RelativeToolTip": "SocialMedia.Infrastructure\\SocialMedia.Infrastructure.csproj",
               "ViewState": "AgIAAAoAAAAAAAAAAABBwAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-10-02T21:24:47.166Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-02T21:24:47.166Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 31,
               "Title": "UserConfiguration.cs",
-              "DocumentMoniker": "C:\\Desarrollo\\2026\\SocialMedia-Est\\SocialMedia.Infrastructure\\Data\\Configurations\\UserConfiguration.cs",
+              "DocumentMoniker": "D:\\Training\\UCB\\2-2026\\SocialMediaStudent\\SocialMedia.Infrastructure\\Data\\Configurations\\UserConfiguration.cs",
               "RelativeDocumentMoniker": "SocialMedia.Infrastructure\\Data\\Configurations\\UserConfiguration.cs",
-              "ToolTip": "C:\\Desarrollo\\2026\\SocialMedia-Est\\SocialMedia.Infrastructure\\Data\\Configurations\\UserConfiguration.cs",
+              "ToolTip": "D:\\Training\\UCB\\2-2026\\SocialMediaStudent\\SocialMedia.Infrastructure\\Data\\Configurations\\UserConfiguration.cs",
               "RelativeToolTip": "SocialMedia.Infrastructure\\Data\\Configurations\\UserConfiguration.cs",
               "ViewState": "AgIAAAcAAAAAAAAAAAAYwBIAAAA7AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -549,22 +962,37 @@
               "$type": "Document",
               "DocumentIndex": 30,
               "Title": "SocialMedia.Core.csproj",
-              "DocumentMoniker": "C:\\Desarrollo\\2026\\SocialMedia-Est\\SocialMedia.Core\\SocialMedia.Core.csproj",
+              "DocumentMoniker": "D:\\Training\\UCB\\2-2026\\SocialMediaStudent\\SocialMedia.Core\\SocialMedia.Core.csproj",
               "RelativeDocumentMoniker": "SocialMedia.Core\\SocialMedia.Core.csproj",
-              "ToolTip": "C:\\Desarrollo\\2026\\SocialMedia-Est\\SocialMedia.Core\\SocialMedia.Core.csproj",
+              "ToolTip": "D:\\Training\\UCB\\2-2026\\SocialMediaStudent\\SocialMedia.Core\\SocialMedia.Core.csproj",
               "RelativeToolTip": "SocialMedia.Core\\SocialMedia.Core.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-09-23T21:16:25.368Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-23T21:16:25.368Z"
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 32,
+=======
+              "DocumentIndex": 27,
+              "Title": "IPostRepository.cs",
+              "DocumentMoniker": "D:\\Training\\UCB\\2-2026\\SocialMediaStudent\\SocialMedia.Core\\Interfaces\\IPostRepository.cs",
+              "RelativeDocumentMoniker": "SocialMedia.Core\\Interfaces\\IPostRepository.cs",
+              "ToolTip": "D:\\Training\\UCB\\2-2026\\SocialMediaStudent\\SocialMedia.Core\\Interfaces\\IPostRepository.cs",
+              "RelativeToolTip": "SocialMedia.Core\\Interfaces\\IPostRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-23T21:18:46.976Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+>>>>>>> fc64b04d9b8f5daead2fbe2e9690086efbf37475
               "Title": "CommentConfiguration.cs",
-              "DocumentMoniker": "C:\\Desarrollo\\2026\\SocialMedia-Est\\SocialMedia.Infrastructure\\Data\\Configurations\\CommentConfiguration.cs",
+              "DocumentMoniker": "D:\\Training\\UCB\\2-2026\\SocialMediaStudent\\SocialMedia.Infrastructure\\Data\\Configurations\\CommentConfiguration.cs",
               "RelativeDocumentMoniker": "SocialMedia.Infrastructure\\Data\\Configurations\\CommentConfiguration.cs",
-              "ToolTip": "C:\\Desarrollo\\2026\\SocialMedia-Est\\SocialMedia.Infrastructure\\Data\\Configurations\\CommentConfiguration.cs",
+              "ToolTip": "D:\\Training\\UCB\\2-2026\\SocialMediaStudent\\SocialMedia.Infrastructure\\Data\\Configurations\\CommentConfiguration.cs",
               "RelativeToolTip": "SocialMedia.Infrastructure\\Data\\Configurations\\CommentConfiguration.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -574,9 +1002,9 @@
               "$type": "Document",
               "DocumentIndex": 33,
               "Title": "Class1.cs",
-              "DocumentMoniker": "C:\\Desarrollo\\2026\\SocialMedia-Est\\SocialMedia.Core\\Class1.cs",
+              "DocumentMoniker": "D:\\Training\\UCB\\2-2026\\SocialMediaStudent\\SocialMedia.Core\\Class1.cs",
               "RelativeDocumentMoniker": "SocialMedia.Core\\Class1.cs",
-              "ToolTip": "C:\\Desarrollo\\2026\\SocialMedia-Est\\SocialMedia.Core\\Class1.cs",
+              "ToolTip": "D:\\Training\\UCB\\2-2026\\SocialMediaStudent\\SocialMedia.Core\\Class1.cs",
               "RelativeToolTip": "SocialMedia.Core\\Class1.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -586,9 +1014,9 @@
               "$type": "Document",
               "DocumentIndex": 34,
               "Title": "Class1.cs",
-              "DocumentMoniker": "C:\\Desarrollo\\2026\\SocialMedia-Est\\SocialMedia.Infrastructure\\Class1.cs",
+              "DocumentMoniker": "D:\\Training\\UCB\\2-2026\\SocialMediaStudent\\SocialMedia.Infrastructure\\Class1.cs",
               "RelativeDocumentMoniker": "SocialMedia.Infrastructure\\Class1.cs",
-              "ToolTip": "C:\\Desarrollo\\2026\\SocialMedia-Est\\SocialMedia.Infrastructure\\Class1.cs",
+              "ToolTip": "D:\\Training\\UCB\\2-2026\\SocialMediaStudent\\SocialMedia.Infrastructure\\Class1.cs",
               "RelativeToolTip": "SocialMedia.Infrastructure\\Class1.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
