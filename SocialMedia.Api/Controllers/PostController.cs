@@ -4,6 +4,7 @@ using SocialMedia.Api.Response;
 using SocialMedia.Core.DTOs;
 using SocialMedia.Core.Entities;
 using SocialMedia.Core.Exceptions;
+using SocialMedia.Core.QueryFilters;
 using SocialMedia.Services.Interfaces;
 using SocialMedia.Services.Validators;
 
@@ -149,9 +150,10 @@ namespace SocialMedia.Api.Controllers
 
         #region Dto-AutoMapper
         [HttpGet("dto/mapper")]
-        public async Task<IActionResult> GetPostsDtoMapper()
+        public async Task<IActionResult> GetPostsDtoMapper(
+            [FromQuery] PostQueryFilters? filters)
         {
-            var posts = await _postService.GetAllPostsAsync();
+            var posts = await _postService.GetAllPostsAsync(filters);
             var postDto = _mapper.Map<IEnumerable<PostDto>>(posts);
             //var postDto = posts.Select(p => new PostDto
             //{
