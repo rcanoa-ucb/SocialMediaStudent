@@ -28,7 +28,7 @@ namespace SocialMedia.Infrastructure.Repositories
         }
 
         public IPostRepository PostRepository =>
-            _postRespository ?? new PostRepository(_context);
+            _postRespository ?? new PostRepository(_context, _dapper);
 
         public IBaseRepository<User> UserRespository =>
              _userRespository ?? new BaseRepository<User>(_context);
