@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "8o6Xub7fo2M=",
+  "dgSpecHash": "hTLUAXn0i7k=",
   "success": true,
-  "projectFilePath": "C:\\Users\\HP\\source\\repos\\Github\\SocialMediaStudent\\SocialMedia.Api\\SocialMedia.Api.csproj",
+  "projectFilePath": "C:\\Users\\HP\\Desktop\\Tec Web corregido magister 2\\SocialMediaStudent\\SocialMedia.Api\\SocialMedia.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\HP\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\HP\\.nuget\\packages\\fluentvalidation\\11.12.0\\fluentvalidation.11.12.0.nupkg.sha512",
@@ -22,10 +22,22 @@
       "code": "NU1903",
       "level": "Warning",
       "message": "El paquete \"AutoMapper\" 13.0.1 tiene una vulnerabilidad de gravedad alta conocida, https://github.com/advisories/GHSA-rvv3-g6hj-g44x",
-      "projectPath": "C:\\Users\\HP\\source\\repos\\Github\\SocialMediaStudent\\SocialMedia.Api\\SocialMedia.Api.csproj",
+      "projectPath": "C:\\Users\\HP\\Desktop\\Tec Web corregido magister 2\\SocialMediaStudent\\SocialMedia.Api\\SocialMedia.Api.csproj",
       "warningLevel": 1,
-      "filePath": "C:\\Users\\HP\\source\\repos\\Github\\SocialMediaStudent\\SocialMedia.Api\\SocialMedia.Api.csproj",
+      "filePath": "C:\\Users\\HP\\Desktop\\Tec Web corregido magister 2\\SocialMediaStudent\\SocialMedia.Api\\SocialMedia.Api.csproj",
       "libraryId": "AutoMapper",
+      "targetGraphs": [
+        "net10.0"
+      ]
+    },
+    {
+      "code": "NU1902",
+      "level": "Warning",
+      "message": "El paquete \"MySqlConnector\" 2.4.0 tiene una vulnerabilidad de gravedad moderada conocida, https://github.com/advisories/GHSA-473q-m89c-ghf8",
+      "projectPath": "C:\\Users\\HP\\Desktop\\Tec Web corregido magister 2\\SocialMediaStudent\\SocialMedia.Api\\SocialMedia.Api.csproj",
+      "warningLevel": 1,
+      "filePath": "C:\\Users\\HP\\Desktop\\Tec Web corregido magister 2\\SocialMediaStudent\\SocialMedia.Api\\SocialMedia.Api.csproj",
+      "libraryId": "MySqlConnector",
       "targetGraphs": [
         "net10.0"
       ]
