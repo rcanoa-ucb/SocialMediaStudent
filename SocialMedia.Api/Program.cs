@@ -31,6 +31,8 @@ namespace SocialMedia.Api
             builder.Services.AddTransient<IUnitOfWork, UnitOfWork>();
             builder.Services.AddSingleton<IDbConnectionFactory, DbConnectionFactory>();
             builder.Services.AddScoped<IDapperContext, DapperContext>();
+            builder.Services.AddTransient<IReportesService, ReportesService>();
+            builder.Services.AddTransient<IReportesRepository, ReportesRepository>();
 
             builder.Services.AddControllers().ConfigureApiBehaviorOptions(options =>
             {
