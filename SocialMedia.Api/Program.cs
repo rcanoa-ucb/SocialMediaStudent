@@ -18,6 +18,15 @@ namespace SocialMedia.Api
                 options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString)));
             #endregion
 
+
+
+
+
+
+
+
+
+
             // Add services to the container.
             builder.Services.AddTransient<IPostRepository, PostRepository>();
             builder.Services.AddTransient<ICommentRepository, CommentRepository>();
