@@ -151,7 +151,76 @@
               "RelativeToolTip": "SocialMedia.Infrastructure\\Repositories\\UnitOfWork.cs",
               "ViewState": "AgIAAAkAAAAAAAAAAAAAAAwAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+<<<<<<< Updated upstream
               "WhenOpened": "2026-11-13T21:17:12.368Z",
+=======
+              "WhenOpened": "2026-10-30T21:54:32.925Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PostService.cs",
+              "DocumentMoniker": "C:\\Desarrollo\\2026\\SocialMedia-Est\\SocialMedia.Services\\Services\\PostService.cs",
+              "RelativeDocumentMoniker": "SocialMedia.Services\\Services\\PostService.cs",
+              "ToolTip": "C:\\Desarrollo\\2026\\SocialMedia-Est\\SocialMedia.Services\\Services\\PostService.cs",
+              "RelativeToolTip": "SocialMedia.Services\\Services\\PostService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-23T20:41:16.559Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PostController.cs",
+              "DocumentMoniker": "C:\\Desarrollo\\2026\\SocialMedia-Est\\SocialMedia.Api\\Controllers\\PostController.cs",
+              "RelativeDocumentMoniker": "SocialMedia.Api\\Controllers\\PostController.cs",
+              "ToolTip": "C:\\Desarrollo\\2026\\SocialMedia-Est\\SocialMedia.Api\\Controllers\\PostController.cs",
+              "RelativeToolTip": "SocialMedia.Api\\Controllers\\PostController.cs",
+              "ViewState": "AgIAAKgAAAAAAAAAAAAQwLQAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-25T20:59:25.467Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "DapperContext.cs",
+              "DocumentMoniker": "C:\\Desarrollo\\2026\\SocialMedia-Est\\SocialMedia.Infrastructure\\Data\\DapperContext.cs",
+              "RelativeDocumentMoniker": "SocialMedia.Infrastructure\\Data\\DapperContext.cs",
+              "ToolTip": "C:\\Desarrollo\\2026\\SocialMedia-Est\\SocialMedia.Infrastructure\\Data\\DapperContext.cs",
+              "RelativeToolTip": "SocialMedia.Infrastructure\\Data\\DapperContext.cs",
+              "ViewState": "AgIAAKEAAAAAAAAAAAAuwKUAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-06T21:50:30.51Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "PostRepository.cs",
+              "DocumentMoniker": "C:\\Desarrollo\\2026\\SocialMedia-Est\\SocialMedia.Infrastructure\\Repositories\\PostRepository.cs",
+              "RelativeDocumentMoniker": "SocialMedia.Infrastructure\\Repositories\\PostRepository.cs",
+              "ToolTip": "C:\\Desarrollo\\2026\\SocialMedia-Est\\SocialMedia.Infrastructure\\Repositories\\PostRepository.cs",
+              "RelativeToolTip": "SocialMedia.Infrastructure\\Repositories\\PostRepository.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAwAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-23T21:27:58.406Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "IDapperContext.cs",
+              "DocumentMoniker": "C:\\Desarrollo\\2026\\SocialMedia-Est\\SocialMedia.Core\\Interfaces\\IDapperContext.cs",
+              "RelativeDocumentMoniker": "SocialMedia.Core\\Interfaces\\IDapperContext.cs",
+              "ToolTip": "C:\\Desarrollo\\2026\\SocialMedia-Est\\SocialMedia.Core\\Interfaces\\IDapperContext.cs",
+              "RelativeToolTip": "SocialMedia.Core\\Interfaces\\IDapperContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-06T21:12:07.988Z",
+>>>>>>> Stashed changes
               "EditorCaption": ""
             },
             {
