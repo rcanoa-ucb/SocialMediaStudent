@@ -1,9 +1,13 @@
 
 using Microsoft.EntityFrameworkCore;
+using SocialMedia.Api.Filters;
 using SocialMedia.Core.Interfaces;
 using SocialMedia.Infrastructure.Data;
 using SocialMedia.Infrastructure.Mappings;
 using SocialMedia.Infrastructure.Repositories;
+using SocialMedia.Services.Interfaces;
+using SocialMedia.Services.Services;
+using SocialMedia.Services.Validators;
 namespace SocialMedia.Api
 {
     public class Program
@@ -19,16 +23,34 @@ namespace SocialMedia.Api
             #endregion
 
             // Add services to the container.
-            builder.Services.AddTransient<IPostRepository, PostRepository>();
-            builder.Services.AddTransient<ICommentRepository, CommentRepository>();
+            //builder.Services.AddTransient<IPostRepository, PostRepository>();
+            //builder.Services.AddTransient<ICommentRepository, CommentRepository>();
+            builder.Services.AddTransient<IPostService, PostService>();
+            //builder.Services.AddTransient<IUserRepository, UserRepository>();
+            builder.Services.AddScoped(typeof(IBaseRepository<>), typeof(BaseRepository<>));
+            builder.Services.AddTransient<IUnitOfWork, UnitOfWork>();
+            builder.Services.AddSingleton<IDbConnectionFactory, DbConnectionFactory>();
+            builder.Services.AddScoped<IDapperContext, DapperContext>();
 
-            builder.Services.AddControllers();
+            builder.Services.AddControllers().ConfigureApiBehaviorOptions(options =>
+            {
+                options.SuppressModelStateInvalidFilter = true;
+            });
+
+
             // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
             builder.Services.AddOpenApi();
 
             builder.Services.AddAutoMapper(typeof(PostProfile).Assembly);
 
+            //Registrar Validadores de FluentValidator
+            builder.Services.AddScoped<PostDtoValidator>();
+            builder.Services.AddScoped<CrearPostDtoValidator>();
+            builder.Services.AddScoped<ActualizarPostDtoValidator>();
+
             var app = builder.Build();
+
+            app.UseMiddleware<ExceptionHandlingMiddleware>();
 
             // Configure the HTTP request pipeline.
             if (app.Environment.IsDevelopment())
