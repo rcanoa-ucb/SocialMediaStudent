@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "lFzkgTKunfM=",
+  "dgSpecHash": "eZxIesDEA1s=",
   "success": true,
   "projectFilePath": "C:\\Users\\LENOVO\\source\\repos\\SocialMediaStudent\\SocialMedia.Infrastructure\\SocialMedia.Infrastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\LENOVO\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
+    "C:\\Users\\LENOVO\\.nuget\\packages\\dapper\\2.1.72\\dapper.2.1.72.nupkg.sha512",
     "C:\\Users\\LENOVO\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\LENOVO\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\7.0.0\\microsoft.bcl.asyncinterfaces.7.0.0.nupkg.sha512",
     "C:\\Users\\LENOVO\\.nuget\\packages\\microsoft.build.framework\\17.8.43\\microsoft.build.framework.17.8.43.nupkg.sha512",
@@ -51,6 +52,18 @@
       "warningLevel": 1,
       "filePath": "C:\\Users\\LENOVO\\source\\repos\\SocialMediaStudent\\SocialMedia.Infrastructure\\SocialMedia.Infrastructure.csproj",
       "libraryId": "AutoMapper",
+      "targetGraphs": [
+        "net10.0"
+      ]
+    },
+    {
+      "code": "NU1902",
+      "level": "Warning",
+      "message": "El paquete \"MySqlConnector\" 2.4.0 tiene una vulnerabilidad de gravedad moderada conocida, https://github.com/advisories/GHSA-473q-m89c-ghf8",
+      "projectPath": "C:\\Users\\LENOVO\\source\\repos\\SocialMediaStudent\\SocialMedia.Infrastructure\\SocialMedia.Infrastructure.csproj",
+      "warningLevel": 1,
+      "filePath": "C:\\Users\\LENOVO\\source\\repos\\SocialMediaStudent\\SocialMedia.Infrastructure\\SocialMedia.Infrastructure.csproj",
+      "libraryId": "MySqlConnector",
       "targetGraphs": [
         "net10.0"
       ]

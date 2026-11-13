@@ -1,8 +1,9 @@
 ﻿using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
+using SocialMedia.Api.Response;
 using SocialMedia.Core.DTOs;
-using SocialMedia.Core.Interfaces;
 using SocialMedia.Core.Entities;
+using SocialMedia.Services.Interfaces;
 
 namespace SocialMedia.Api.Controllers
 {
@@ -10,194 +11,112 @@ namespace SocialMedia.Api.Controllers
     [ApiController]
     public class CommentController : ControllerBase
     {
-        private readonly ICommentRepository _commentRepository;
+        private readonly ICommentService _commentService;
         private readonly IMapper _mapper;
 
-        public CommentController(IMapper mapper, ICommentRepository commentRepository)
+        public CommentController(IMapper mapper, ICommentService commentService)
         {
-            _commentRepository = commentRepository;
+            _commentService = commentService;
             _mapper = mapper;
         }
-
-        #region Sin DTOs
-
-        [HttpGet]
-        public async Task<ActionResult> GetComments()
-        {
-            var comments = await _commentRepository.GetAllCommentsAsync();
-            return Ok(comments);
-        }
-
-        [HttpGet("{id}")]
-        public async Task<ActionResult> GetCommentById(int id)
-        {
-            var comment = await _commentRepository.GetCommentByIdAsync(id);
-            return Ok(comment);
-        }
-
-        [HttpPost]
-        public async Task<IActionResult> InsertComment(Comment newComment)
-        {
-            await _commentRepository.InsertComment(newComment);
-
-            return Created(
-                $"api/comment/{newComment.Id}",
-                newComment);
-        }
-
-        [HttpPut]
-        public async Task<IActionResult> UpdateComment(Comment comment)
-        {
-            await _commentRepository.UpdateComment(comment);
-            return NoContent();
-        }
-
-        [HttpDelete]
-        public async Task<IActionResult> DeleteComment(Comment comment)
-        {
-            await _commentRepository.DeleteComment(comment);
-            return NoContent();
-        }
-
-        #endregion
-
-
-        #region Con DTOs
-
-        [HttpGet("dto")]
-        public async Task<IActionResult> GetCommentsDto()
-        {
-            var comments =
-                await _commentRepository.GetAllCommentsAsync();
-
-            var commentsDto = comments.Select(c => new CommentDto
-            {
-                Id = c.Id,
-                PostId = c.PostId,
-                UserId = c.UserId,
-                Description = c.Description,
-                Date = c.Date,
-                IsActive = c.IsActive
-            });
-
-            return Ok(commentsDto);
-        }
-
-        [HttpGet("dto/{id}")]
-        public async Task<IActionResult> GetCommentByIdDto(int id)
-        {
-            var comment =
-                await _commentRepository.GetCommentByIdAsync(id);
-
-            if (comment == null)
-                return NotFound("Comment no encontrado.");
-
-            var commentDto = new CommentDto
-            {
-                Id = comment.Id,
-                PostId = comment.PostId,
-                UserId = comment.UserId,
-                Description = comment.Description,
-                Date = comment.Date,
-                IsActive = comment.IsActive
-            };
-
-            return Ok(commentDto);
-        }
-
-        [HttpPost("dto")]
-        public async Task<IActionResult> InsertCommentDto(
-            CommentDto newComment)
-        {
-            var comment = new Comment
-            {
-                Id = newComment.Id,
-                PostId = newComment.PostId,
-                UserId = newComment.UserId,
-                Description = newComment.Description,
-                Date = newComment.Date,
-                IsActive = newComment.IsActive
-            };
-
-            await _commentRepository.InsertComment(comment);
-
-            return Created(
-                $"api/comment/{newComment.Id}",
-                newComment);
-        }
-
-        [HttpPut("dto")]
-        public async Task<IActionResult> UpdateCommentDto(
-            int id,
-            [FromBody] CommentDto commentDto)
-        {
-            if (id != commentDto.Id)
-            {
-                return BadRequest(
-                    "El id del comentario no coincide");
-            }
-
-            var comment =
-                await _commentRepository.GetCommentByIdAsync(id);
-
-            if (comment == null)
-                return NotFound("Comment no encontrado.");
-
-            comment.PostId = commentDto.PostId;
-            comment.UserId = commentDto.UserId;
-            comment.Description = commentDto.Description;
-            comment.Date = commentDto.Date;
-            comment.IsActive = commentDto.IsActive;
-
-            await _commentRepository.UpdateComment(comment);
-
-            return Ok(comment);
-        }
-
-        [HttpDelete("dto/{id}")]
-        public async Task<IActionResult> DeleteCommentDto(int id)
-        {
-            var comment =
-                await _commentRepository.GetCommentByIdAsync(id);
-
-            if (comment == null)
-                return NotFound("Comment no encontrado.");
-
-            await _commentRepository.DeleteComment(comment);
-
-            return NoContent();
-        }
-
-        #endregion
-
 
         #region Dto-AutoMapper
 
         [HttpGet("dto/mapper")]
         public async Task<IActionResult> GetCommentsDtoMapper()
         {
-            var comments =
-                await _commentRepository.GetAllCommentsAsync();
+            var comments = await _commentService.GetAllComments();
+            var commentsDto = _mapper.Map<IEnumerable<CommentDto>>(comments);
+            var response = new ApiResponse<IEnumerable<CommentDto>>(commentsDto);
 
-            var commentsDto =
-                _mapper.Map<IEnumerable<CommentDto>>(comments);
+            return Ok(response);
+        }
 
-            return Ok(commentsDto);
+        [HttpGet("dto/mapper/dapper")]
+        public async Task<IActionResult> GetCommentsDtoMapperDapper([FromQuery] int limit = 10)
+        {
+            var comments = await _commentService.GetAllCommentsDapperAsync(limit);
+            var commentsDto = _mapper.Map<IEnumerable<CommentDto>>(comments);
+            var response = new ApiResponse<IEnumerable<CommentDto>>(commentsDto);
+
+            return Ok(response);
         }
 
         [HttpGet("dto/mapper/{id}")]
         public async Task<IActionResult> GetCommentByIdDtoMapper(int id)
         {
-            var comment =
-                await _commentRepository.GetCommentByIdAsync(id);
-
+            var comment = await _commentService.GetComment(id);
             if (comment == null)
-                return NotFound("Comment no encontrado.");
+                return NotFound(new { message = "Comment no encontrado." });
 
-            var commentDto =
-                _mapper.Map<CommentDto>(comment);
+            var commentDto = _mapper.Map<CommentDto>(comment);
+            var response = new ApiResponse<CommentDto>(commentDto);
 
-            return Ok(commentDto);
+            return Ok(response);
+        }
+
+        [HttpPost("dto/mapper")]
+        public async Task<IActionResult> InsertCommentDtoMapper(CommentDto commentDto)
+        {
+            try
+            {
+                var comment = _mapper.Map<Comment>(commentDto);
+                await _commentService.InsertComment(comment);
+
+                var resultDto = _mapper.Map<CommentDto>(comment);
+                return CreatedAtAction(nameof(GetCommentByIdDtoMapper),
+                    new { id = comment.Id }, resultDto);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { message = "Error al crear el comment", error = ex.Message });
+            }
+        }
+
+        [HttpPut("dto/mapper/{id}")]
+        public async Task<IActionResult> UpdateCommentDtoMapper(int id,
+            [FromBody] CommentDto commentDto)
+        {
+            if (id != commentDto.Id)
+                return BadRequest("El ID del comment no coincide.");
+
+            var comment = await _commentService.GetComment(id);
+            if (comment == null)
+                return NotFound(new { message = "Comment no encontrado." });
+
+            try
+            {
+                _mapper.Map(commentDto, comment);
+                await _commentService.UpdateComment(comment);
+
+                var resultDto = _mapper.Map<CommentDto>(comment);
+                return Ok(resultDto);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { message = "Error al actualizar el comment", error = ex.Message });
+            }
+        }
+
+        [HttpDelete("dto/mapper/{id}")]
+        public async Task<IActionResult> DeleteCommentDtoMapper(int id)
+        {
+            if (id <= 0)
+                return BadRequest(new { message = "El ID debe ser mayor que cero." });
+
+            var comment = await _commentService.GetComment(id);
+            if (comment == null)
+                return NotFound(new { message = "Comment no encontrado." });
+
+            try
+            {
+                await _commentService.DeleteComment(id);
+                return NoContent();
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { message = "Error al eliminar el comment", error = ex.Message });
+            }
         }
 
         #endregion
