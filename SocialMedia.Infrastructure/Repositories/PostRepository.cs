@@ -2,6 +2,7 @@
 using SocialMedia.Core.Entities;
 using SocialMedia.Core.Interfaces;
 using SocialMedia.Infrastructure.Data;
+using SocialMedia.Infrastructure.Queries;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -9,19 +10,16 @@ using System.Threading.Tasks;
 
 namespace SocialMedia.Infrastructure.Repositories
 {
-    public class PostRepository : IPostRepository
-    {   
-        private readonly SocialMediaContext _socialMediaContext;
-
-        public PostRepository(SocialMediaContext socialMediaContext)
+    public class PostRepository : 
+        BaseRepository<Post>, IPostRepository
+    {
+        private readonly IDapperContext _dapper;
+        //private readonly SocialMediaContext _socialMediaContext;
+        public PostRepository(SocialMediaContext context, 
+            IDapperContext dapper)
+            : base(context)
         {
-            _socialMediaContext = socialMediaContext;
-        }
-                
-        public async Task<IEnumerable<Post>> GetAllPostsAsync()
-        {
-            var posts = await _socialMediaContext.Posts.ToListAsync();
-            return posts;
+            _dapper = dapper;
         }
         public async Task<Post> GetPostByIdAsync(int id)
         {
@@ -29,10 +27,18 @@ namespace SocialMedia.Infrastructure.Repositories
             return post;
         }
 
-        public async Task InsertPost(Post post)
+        public async Task<IEnumerable<Post>> 
+            GetAllPostsDapperAsync(int limit = 10)
         {
-            _socialMediaContext.Posts.Add(post);
-            await _socialMediaContext.SaveChangesAsync();
+            try
+            {
+                return await _dapper.QueryAsync<Post>
+                    (Primero.unoMySql, new { Limit = limit });
+            }
+            catch (Exception err)
+            {
+                throw new Exception(err.Message);
+            }
         }
         public async Task UpdatePost(Post post)
         {
