@@ -2,27 +2,43 @@
 using SocialMedia.Core.Entities;
 using SocialMedia.Core.Interfaces;
 using SocialMedia.Infrastructure.Data;
+using SocialMedia.Infrastructure.Queries;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace SocialMedia.Infrastructure.Repositories
 {
-    public class CommentRepository : ICommentRepository
+    public class CommentRepository : BaseRepository<Comment>, ICommentRepository
     {
-        private readonly SocialMediaContext _socialMediaContext;
+        private readonly IDapperContext _dapper;
+        //private readonly SocialMediaContext _socialMediaContext;
 
-        public CommentRepository(SocialMediaContext socialMediaContext)
+        public CommentRepository(SocialMediaContext context, IDapperContext dapper)
+            : base(context)
         {
-            _socialMediaContext = socialMediaContext;
+            _dapper = dapper;
         }
-
+        /*
         public async Task<IEnumerable<Comment>> GetAllCommentsAsync()
         {
-            var comments = await _socialMediaContext.Comments.ToListAsync();
+            var comments = await _entities.Comments.ToListAsync();
             return comments;
         }
-
+        */
+        public async Task<IEnumerable<Comment>> GetAllCommentsDapperAsync(int limit = 10)
+        {
+            try
+            {
+                return await _dapper.QueryAsync<Comment>
+                    (Primero.dosMySql, new { Limit = limit });
+            }
+            catch (Exception err)
+            {
+                throw new Exception(err.Message);
+            }
+        }
+        /*
         public async Task<Comment> GetCommentByIdAsync(int id)
         {
             var comment = await _socialMediaContext.Comments
@@ -48,5 +64,6 @@ namespace SocialMedia.Infrastructure.Repositories
             _socialMediaContext.Comments.Remove(comment);
             await _socialMediaContext.SaveChangesAsync();
         }
+        */
     }
 }

@@ -11,5 +11,10 @@ namespace SocialMedia.Infrastructure.Queries
         from Post
         order by Date desc
         limit @Limit";
+        public static string dosMySql = @"
+        Select Id, UserId, Date
+        from Comment
+        order by Date desc
+        limit @Limit";
     }
 }

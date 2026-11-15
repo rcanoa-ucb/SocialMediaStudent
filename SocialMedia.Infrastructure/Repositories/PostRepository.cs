@@ -9,8 +9,7 @@ using System.Text;
 
 namespace SocialMedia.Infrastructure.Repositories
 {
-    public class PostRepository : 
-        BaseRepository<Post>, IPostRepository
+    public class PostRepository : BaseRepository<Post>, IPostRepository
     {
         private readonly IDapperContext _dapper;
         //private readonly SocialMediaContext _socialMediaContext;
