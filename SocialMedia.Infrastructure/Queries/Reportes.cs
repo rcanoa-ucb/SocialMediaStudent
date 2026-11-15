@@ -20,5 +20,16 @@ namespace SocialMedia.Infrastructure.Queries
             GROUP BY u.Id, u.FirstName, u.LastName, u.Email
             ORDER BY ComentariosPropios DESC, u.Id ASC
             LIMIT @Limit;";
-    }
+        public static string rankingPostsComentadosMySql = @"
+         SELECT p.Id AS PostId,p.UserId AS UserId,
+        p.Description AS Descripcion,
+        COUNT(c.Id) AS CantidadComentarios
+        FROM [dbo].[Post] p
+        INNER JOIN [dbo].[Comment] c ON c.PostId = p.Id
+        WHERE c.IsActive = 1
+        GROUP BY p.Id, p.UserId, p.Description
+        ORDER BY CantidadComentarios DESC, p.Id ASC";
+    
+}
+  
 }

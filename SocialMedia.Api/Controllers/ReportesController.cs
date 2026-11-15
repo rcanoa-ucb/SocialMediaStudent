@@ -31,6 +31,20 @@ namespace SocialMedia.Api.Controllers
 
             return Ok(response);
         }
+        [HttpGet("ranking-posts-comentados")]
+        public async Task<IActionResult> GetRankingPostsComentados()
+        {
+            try
+            {
+                var resultado = await _reportesService.GetRankingPostsComentadosAsync();
+                var dto = _mapper.Map<IEnumerable<PostComentadoDto>>(resultado);
+                return Ok(dto);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, ex.Message);
+            }
+        }
 
     }
 }

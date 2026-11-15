@@ -24,5 +24,17 @@ namespace SocialMedia.Infrastructure.Repositories
                 throw new Exception(ex.Message);
             }
         }
+        public async Task<IEnumerable<PostComentado>> GetRankingPostsComentadosAsync()
+        {
+            try
+            {
+                return await _dapper.QueryAsync<PostComentado>(
+                    Reportes.rankingPostsComentadosMySql);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
     }
 }
