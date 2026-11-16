@@ -8,6 +8,7 @@ using SocialMedia.Infrastructure.Repositories;
 using SocialMedia.Services.Interfaces;
 using SocialMedia.Services.Services;
 using SocialMedia.Services.Validators;
+
 namespace SocialMedia.Api
 {
     public class Program
@@ -18,6 +19,7 @@ namespace SocialMedia.Api
 
             #region Configurar la BD MySql
             var connectionString = builder.Configuration.GetConnectionString("ConnectionMySql");
+
             builder.Services.AddDbContext<SocialMediaContext>(options =>
                 options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString)));
             #endregion
@@ -25,12 +27,19 @@ namespace SocialMedia.Api
             // Add services to the container.
             //builder.Services.AddTransient<IPostRepository, PostRepository>();
             //builder.Services.AddTransient<ICommentRepository, CommentRepository>();
+
             builder.Services.AddTransient<IPostService, PostService>();
+
             //builder.Services.AddTransient<IUserRepository, UserRepository>();
+
             builder.Services.AddScoped(typeof(IBaseRepository<>), typeof(BaseRepository<>));
             builder.Services.AddTransient<IUnitOfWork, UnitOfWork>();
+
+            // Configuración de Dapper
             builder.Services.AddSingleton<IDbConnectionFactory, DbConnectionFactory>();
             builder.Services.AddScoped<IDapperContext, DapperContext>();
+
+            // Servicios de reportes
             builder.Services.AddTransient<IReportesService, ReportesService>();
             builder.Services.AddTransient<IReportesRepository, ReportesRepository>();
 
@@ -39,13 +48,13 @@ namespace SocialMedia.Api
                 options.SuppressModelStateInvalidFilter = true;
             });
 
-
-            // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
+            // OpenAPI
             builder.Services.AddOpenApi();
 
+            // AutoMapper
             builder.Services.AddAutoMapper(typeof(PostProfile).Assembly);
 
-            //Registrar Validadores de FluentValidator
+            // Validadores de FluentValidation
             builder.Services.AddScoped<PostDtoValidator>();
             builder.Services.AddScoped<CrearPostDtoValidator>();
             builder.Services.AddScoped<ActualizarPostDtoValidator>();
@@ -54,7 +63,6 @@ namespace SocialMedia.Api
 
             app.UseMiddleware<ExceptionHandlingMiddleware>();
 
-            // Configure the HTTP request pipeline.
             if (app.Environment.IsDevelopment())
             {
                 app.MapOpenApi();
@@ -63,7 +71,6 @@ namespace SocialMedia.Api
             app.UseHttpsRedirection();
 
             app.UseAuthorization();
-
 
             app.MapControllers();
 
