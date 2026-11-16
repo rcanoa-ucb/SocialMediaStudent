@@ -24,5 +24,20 @@ namespace SocialMedia.Infrastructure.Repositories
                 throw new Exception(ex.Message);
             }
         }
+
+        public async Task<IEnumerable<RankingPostUsuario>> GetRankingPostPorUsuarioAsync(int top = 3)
+        {
+            try
+            {
+                return await _dapper.QueryAsync<RankingPostUsuario>(
+                    Reportes.rankingPostPorUsuarioMySql,
+                    new { Top = top }
+                );
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
     }
 }

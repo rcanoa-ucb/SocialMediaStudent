@@ -7,11 +7,12 @@ using System.Text;
 
 namespace SocialMedia.Infrastructure.Mappings
 {
-    public class ReportesProfile : Profile
+    public class ReportesProfileProfile : Profile
     {
-        public ReportesProfile()
+        public ReportesProfileProfile()
         {
             CreateMap<AutoComentarista, AutoComentaristaDto>().ReverseMap();
+            CreateMap<RankingPostUsuario, RankingPostUsuarioDto>().ReverseMap();
         }
     }
 
