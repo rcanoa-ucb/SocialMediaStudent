@@ -19,5 +19,10 @@ namespace SocialMedia.Services.Services
         {
             return await _unitOfWork.ReportesRepository.GetAutoComentaristasAsync(limit);
         }
+
+        public async Task<IEnumerable<PostRankingUsuario>> GetTop3PostsPorUsuarioAsync(int limit = 3)
+        {
+            return await _unitOfWork.ReportesRepository.GetTop3PostsPorUsuarioAsync(limit);
+        }
     }
 }

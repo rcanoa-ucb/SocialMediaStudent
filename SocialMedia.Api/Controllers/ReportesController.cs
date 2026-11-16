@@ -30,6 +30,19 @@ namespace SocialMedia.Api.Controllers
             var response = new ApiResponse<IEnumerable<AutoComentaristaDto>>(autoComentaristasResult);
 
             return Ok(response);
+
+        }
+
+        [HttpGet("dapper/top-posts-usuario")]
+        public async Task<IActionResult> GetTop3PostsPorUsuario([FromQuery] int limit = 3)
+        {
+            var data = await _reportesService.GetTop3PostsPorUsuarioAsync(limit);
+
+            var result = _mapper.Map<IEnumerable<PostRankingUsuarioDto>>(data);
+
+            var response = new ApiResponse<IEnumerable<PostRankingUsuarioDto>>(result);
+
+            return Ok(response);
         }
 
     }
