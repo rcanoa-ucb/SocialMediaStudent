@@ -1,4 +1,4 @@
-﻿using AutoMapper;
+using AutoMapper;
 using SocialMedia.Core.CustomEntities.Reporteria;
 using SocialMedia.Core.DTOs.Reporteria;
 using System;
@@ -11,6 +11,7 @@ namespace SocialMedia.Infrastructure.Mappings
     {
         public ReportesProfile()
         {
+            CreateMap<TopPostUsuario, TopPostUsuarioDto>();
             CreateMap<AutoComentarista, AutoComentaristaDto>().ReverseMap();
         }
     }

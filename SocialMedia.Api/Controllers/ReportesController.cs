@@ -1,4 +1,4 @@
-﻿using AutoMapper;
+using AutoMapper;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using SocialMedia.Api.Response;
@@ -18,6 +18,14 @@ namespace SocialMedia.Api.Controllers
         {
             _reportesService = reportesService;
             _mapper = mapper;
+        }
+
+        [HttpGet("dapper/top-posts-por-usuario")]
+        public async Task<IActionResult> GetTopPostsPorUsuario()
+        {
+            var posts = await _reportesService.GetTopPostsPorUsuarioAsync();
+            var result = _mapper.Map<IEnumerable<TopPostUsuarioDto>>(posts);
+            return Ok(new ApiResponse<IEnumerable<TopPostUsuarioDto>>(result));
         }
 
         [HttpGet("dapper/auto-comentaristas")]

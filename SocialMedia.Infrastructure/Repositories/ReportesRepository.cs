@@ -1,4 +1,4 @@
-﻿using SocialMedia.Core.CustomEntities.Reporteria;
+using SocialMedia.Core.CustomEntities.Reporteria;
 using SocialMedia.Core.Interfaces;
 using SocialMedia.Infrastructure.Queries;
 
@@ -10,6 +10,11 @@ namespace SocialMedia.Infrastructure.Repositories
         public ReportesRepository(IDapperContext dapper)
         {
             _dapper = dapper;
+        }
+
+        public async Task<IEnumerable<TopPostUsuario>> GetTopPostsPorUsuarioAsync()
+        {
+            return await _dapper.QueryAsync<TopPostUsuario>(Reportes.topPostsPorUsuarioMySql);
         }
 
         public async Task<IEnumerable<AutoComentarista>> GetAutoComentaristasAsync(int limit = 10)

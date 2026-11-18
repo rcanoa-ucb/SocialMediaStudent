@@ -1,4 +1,4 @@
-﻿using SocialMedia.Core.CustomEntities.Reporteria;
+using SocialMedia.Core.CustomEntities.Reporteria;
 using SocialMedia.Core.Interfaces;
 using SocialMedia.Services.Interfaces;
 using System;
@@ -13,6 +13,11 @@ namespace SocialMedia.Services.Services
         public ReportesService(IUnitOfWork unitOfWork)
         {
             _unitOfWork = unitOfWork;
+        }
+
+        public async Task<IEnumerable<TopPostUsuario>> GetTopPostsPorUsuarioAsync()
+        {
+            return await _unitOfWork.ReportesRepository.GetTopPostsPorUsuarioAsync();
         }
 
         public async Task<IEnumerable<AutoComentarista>> GetAutoComentaristasAsync(int limit = 10)
