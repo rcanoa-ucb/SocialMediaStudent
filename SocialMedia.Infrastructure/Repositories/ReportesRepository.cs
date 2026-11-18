@@ -1,16 +1,12 @@
 ﻿using SocialMedia.Core.CustomEntities.Reporteria;
 using SocialMedia.Core.Interfaces;
 using SocialMedia.Infrastructure.Queries;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace SocialMedia.Infrastructure.Repositories
 {
     public class ReportesRepository : IReportesRepository
     {
         private readonly IDapperContext _dapper;
-        
         public ReportesRepository(IDapperContext dapper)
         {
             _dapper = dapper;
@@ -21,14 +17,12 @@ namespace SocialMedia.Infrastructure.Repositories
             try
             {
                 return await _dapper.QueryAsync<AutoComentarista>(
-                   Reportes.autoComentaristasMySql, new { Limit = limit });
+                    Reportes.autoComentaristasMySql, new { Limit = limit });
             }
             catch (Exception ex)
             {
-                // Log the exception
                 throw new Exception(ex.Message);
             }
         }
     }
 }
-

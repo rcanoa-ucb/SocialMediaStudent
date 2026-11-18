@@ -9,6 +9,7 @@ namespace SocialMedia.Core.DTOs.Reporteria
         public string NombreCompleto { get; set; } = string.Empty;
         public string Email { get; set; } = string.Empty;
         public int ComentariosPropios { get; set; }
-        public int PostAfectados { get; set; }
+        public int PostsAfectados { get; set; }
     }
+
 }

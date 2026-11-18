@@ -16,6 +16,7 @@ namespace SocialMedia.Infrastructure.Repositories
         public readonly IPostRepository? _postRespository;
         public readonly IBaseRepository<User>? _userRespository;
         public readonly IBaseRepository<Comment>? _commentRespository;
+        public readonly IReportesRepository? _reportesRespository;
 
         //Dapper
         private readonly IDapperContext _dapper;
@@ -35,6 +36,9 @@ namespace SocialMedia.Infrastructure.Repositories
 
         public IBaseRepository<Comment> CommentRepository =>
             _commentRespository ?? new BaseRepository<Comment>(_context);
+
+        public IReportesRepository ReportesRepository =>
+            _reportesRespository ?? new ReportesRepository(_dapper);
 
         public void Dispose()
         {

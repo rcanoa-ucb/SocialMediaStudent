@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace SocialMedia.Core.CustomEntities.Reporteria
+﻿namespace SocialMedia.Core.CustomEntities.Reporteria
 {
     public class AutoComentarista
     {
@@ -10,7 +6,6 @@ namespace SocialMedia.Core.CustomEntities.Reporteria
         public string NombreCompleto { get; set; } = string.Empty;
         public string Email { get; set; } = string.Empty;
         public int ComentariosPropios { get; set; }
-        public int PostAfectados { get; set; }
-
+        public int PostsAfectados { get; set; }
     }
 }

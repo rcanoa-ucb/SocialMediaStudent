@@ -7,7 +7,7 @@ using System.Text;
 
 namespace SocialMedia.Services.Services
 {
-    public class ReportesService : IReporteService
+    public class ReportesService : IReportesService
     {
         private readonly IUnitOfWork _unitOfWork;
         public ReportesService(IUnitOfWork unitOfWork)
@@ -19,6 +19,5 @@ namespace SocialMedia.Services.Services
         {
             return await _unitOfWork.ReportesRepository.GetAutoComentaristasAsync(limit);
         }
-
     }
 }

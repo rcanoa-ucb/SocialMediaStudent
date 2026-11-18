@@ -11,23 +11,26 @@ namespace SocialMedia.Api.Controllers
     [ApiController]
     public class ReportesController : ControllerBase
     {
-        private readonly IReporteService _reporteService;
+        private readonly IReportesService _reportesService;
         private readonly IMapper _mapper;
-        public ReportesController(IReporteService reporteService, IMapper mapper)
+        public ReportesController(IReportesService reportesService,
+            IMapper mapper)
         {
-            _reporteService = reporteService;
+            _reportesService = reportesService;
             _mapper = mapper;
         }
 
         [HttpGet("dapper/auto-comentaristas")]
-        public async Task<IActionResult> GetAutoComentaristas(int limit = 10)
+        public async Task<IActionResult> GetAutoComentaristas([FromQuery] int limit = 10)
         {
-            var autoComentaristas = await _reporteService.GetAutoComentaristasAsync(limit);
+            var autoComentaristas = await _reportesService.GetAutoComentaristasAsync(limit);
+
             var autoComentaristasResult = _mapper.Map<IEnumerable<AutoComentaristaDto>>(autoComentaristas);
+
             var response = new ApiResponse<IEnumerable<AutoComentaristaDto>>(autoComentaristasResult);
+
             return Ok(response);
         }
-
 
     }
 }
