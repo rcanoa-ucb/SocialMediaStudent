@@ -26,6 +26,8 @@ namespace SocialMedia.Api
             //builder.Services.AddTransient<IPostRepository, PostRepository>();
             //builder.Services.AddTransient<ICommentRepository, CommentRepository>();
             builder.Services.AddTransient<IPostService, PostService>();
+            builder.Services.AddTransient<IReportesService, ReportesService>();
+            builder.Services.AddTransient<IReportesRepository, ReportesRepository>();
             //builder.Services.AddTransient<IUserRepository, UserRepository>();
             builder.Services.AddScoped(typeof(IBaseRepository<>), typeof(BaseRepository<>));
             builder.Services.AddTransient<IUnitOfWork, UnitOfWork>();
@@ -42,6 +44,7 @@ namespace SocialMedia.Api
             builder.Services.AddOpenApi();
 
             builder.Services.AddAutoMapper(typeof(PostProfile).Assembly);
+            builder.Services.AddAutoMapper(typeof(ReportesProfile).Assembly);
 
             //Registrar Validadores de FluentValidator
             builder.Services.AddScoped<PostDtoValidator>();
