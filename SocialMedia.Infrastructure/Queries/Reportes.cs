@@ -20,5 +20,58 @@ namespace SocialMedia.Infrastructure.Queries
             GROUP BY u.Id, u.FirstName, u.LastName, u.Email
             ORDER BY ComentariosPropios DESC, u.Id ASC
             LIMIT @Limit;";
+
+
+        public static string rankingPostsPorUsuarioMySql = @"
+    WITH PostsConComentarios AS
+    (
+        SELECT
+            u.Id AS UserId,
+            CONCAT(u.FirstName, ' ', u.LastName) AS NombreUsuario,
+            p.Id AS PostId,
+            p.Description AS DescripcionPost,
+            p.`Date` AS FechaPublicacion,
+            COUNT(c.Id) AS TotalComentarios
+        FROM `user` u
+        INNER JOIN post p
+            ON p.UserId = u.Id
+        INNER JOIN comment c
+            ON c.PostId = p.Id
+        WHERE c.IsActive = 1
+        GROUP BY
+            u.Id,
+            u.FirstName,
+            u.LastName,
+            p.Id,
+            p.Description,
+            p.`Date`
+    ),
+    RankingPosts AS
+    (
+        SELECT
+            UserId,
+            NombreUsuario,
+            PostId,
+            DescripcionPost,
+            FechaPublicacion,
+            TotalComentarios,
+            ROW_NUMBER() OVER (
+                PARTITION BY UserId
+                ORDER BY TotalComentarios DESC, PostId ASC
+            ) AS PosicionEnUsuario
+        FROM PostsConComentarios
+    )
+    SELECT
+        UserId,
+        NombreUsuario,
+        PostId,
+        DescripcionPost,
+        FechaPublicacion,
+        TotalComentarios,
+        PosicionEnUsuario
+    FROM RankingPosts
+    WHERE PosicionEnUsuario <= 3
+    ORDER BY UserId, PosicionEnUsuario;";
+
     }
 }
