@@ -22,14 +22,28 @@ namespace SocialMedia.Infrastructure.Queries
             LIMIT @Limit;";
 
         public static string RankingPostUsuario = @"
-            SELECT u.FirstName AS  Nombre , u.Id AS IdUser, COUNT(c.Id) AS Total_Comentarios , p.Id AS IdPost
-FROM user u
-INNER JOIN post p ON p.UserId = u.Id
-INNER JOIN comment c ON c.PostId = p.Id
-WHERE u.id= 1
-GROUP BY p.Id
-ORDER BY TOTAL_Comentarios DESC
-LIMIT 3";
+           SELECT *
+FROM (
+    SELECT
+        u.Id AS UserId,
+        CONCAT(u.FirstName, ' ', u.LastName) AS NombreCompleto,
+        p.Id AS PostId,
+        COUNT(c.Id) AS TotalComentarios,
+
+        ROW_NUMBER() OVER (
+            PARTITION BY u.Id
+            ORDER BY COUNT(c.Id) DESC
+        ) AS PosicionEnUsuario
+
+    FROM user u
+    INNER JOIN post p ON p.UserId = u.Id
+    INNER JOIN comment c ON c.PostId = p.Id
+
+    GROUP BY u.Id, u.FirstName, u.LastName, p.Id
+) AS Ranking
+
+WHERE PosicionEnUsuario <= 3
+ORDER BY UserId, PosicionEnUsuario;";
 
     }
 }
