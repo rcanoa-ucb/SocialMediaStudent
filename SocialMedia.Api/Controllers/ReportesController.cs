@@ -1,10 +1,8 @@
 ﻿using AutoMapper;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using SocialMedia.Api.Response;
 using SocialMedia.Core.DTOs.Reporteria;
 using SocialMedia.Services.Interfaces;
-
 namespace SocialMedia.Api.Controllers
 {
     [Route("api/[controller]")]
@@ -28,6 +26,22 @@ namespace SocialMedia.Api.Controllers
             var autoComentaristasResult = _mapper.Map<IEnumerable<AutoComentaristaDto>>(autoComentaristas);
 
             var response = new ApiResponse<IEnumerable<AutoComentaristaDto>>(autoComentaristasResult);
+
+            return Ok(response);
+        }
+
+        [HttpGet("dapper/ranking-posts-usuario")]
+        public async Task<IActionResult> GetRankingPostsUsuario(
+    [FromQuery] int limit = 3)
+        {
+            var ranking = await _reportesService
+                .GetRankingPostsUsuarioAsync(limit);
+
+            var rankingDto = _mapper
+                .Map<IEnumerable<RankingPostUsuarioDto>>(ranking);
+
+            var response =
+                new ApiResponse<IEnumerable<RankingPostUsuarioDto>>(rankingDto);
 
             return Ok(response);
         }
