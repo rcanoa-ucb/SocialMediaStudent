@@ -31,6 +31,15 @@ namespace SocialMedia.Api.Controllers
 
             return Ok(response);
         }
+        [HttpGet("dapper/ranking-posts-por-usuario")]
+        public async Task<IActionResult> GetRankingPostsPorUsuario()
+        {
+            var ranking = await _reportesService.GetRankingPostsPorUsuarioAsync();
+
+            var resultado = _mapper.Map<IEnumerable<RankingPostUsuarioDto>>(ranking);
+
+            return Ok(new ApiResponse<IEnumerable<RankingPostUsuarioDto>>(resultado));
+        }
 
     }
 }
