@@ -3,6 +3,54 @@
   "WorkspaceRootPath": "C:\\Desarrollo\\2026\\SocialMedia-Est\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{08E8FC0D-B3CB-C9BF-1FDE-B0B7B0A7000D}|SocialMedia.Infrastructure\\SocialMedia.Infrastructure.csproj|c:\\desarrollo\\2026\\socialmedia-est\\socialmedia.infrastructure\\repositories\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08E8FC0D-B3CB-C9BF-1FDE-B0B7B0A7000D}|SocialMedia.Infrastructure\\SocialMedia.Infrastructure.csproj|solutionrelative:socialmedia.infrastructure\\repositories\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B087032-18E0-426B-F231-576BAD73AC2B}|SocialMedia.Core\\SocialMedia.Core.csproj|c:\\desarrollo\\2026\\socialmedia-est\\socialmedia.core\\interfaces\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B087032-18E0-426B-F231-576BAD73AC2B}|SocialMedia.Core\\SocialMedia.Core.csproj|solutionrelative:socialmedia.core\\interfaces\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08E8FC0D-B3CB-C9BF-1FDE-B0B7B0A7000D}|SocialMedia.Infrastructure\\SocialMedia.Infrastructure.csproj|c:\\desarrollo\\2026\\socialmedia-est\\socialmedia.infrastructure\\repositories\\securityrespository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08E8FC0D-B3CB-C9BF-1FDE-B0B7B0A7000D}|SocialMedia.Infrastructure\\SocialMedia.Infrastructure.csproj|solutionrelative:socialmedia.infrastructure\\repositories\\securityrespository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B087032-18E0-426B-F231-576BAD73AC2B}|SocialMedia.Core\\SocialMedia.Core.csproj|c:\\desarrollo\\2026\\socialmedia-est\\socialmedia.core\\interfaces\\isecurityrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B087032-18E0-426B-F231-576BAD73AC2B}|SocialMedia.Core\\SocialMedia.Core.csproj|solutionrelative:socialmedia.core\\interfaces\\isecurityrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08E8FC0D-B3CB-C9BF-1FDE-B0B7B0A7000D}|SocialMedia.Infrastructure\\SocialMedia.Infrastructure.csproj|c:\\desarrollo\\2026\\socialmedia-est\\socialmedia.infrastructure\\data\\socialmediacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08E8FC0D-B3CB-C9BF-1FDE-B0B7B0A7000D}|SocialMedia.Infrastructure\\SocialMedia.Infrastructure.csproj|solutionrelative:socialmedia.infrastructure\\data\\socialmediacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08E8FC0D-B3CB-C9BF-1FDE-B0B7B0A7000D}|SocialMedia.Infrastructure\\SocialMedia.Infrastructure.csproj|c:\\desarrollo\\2026\\socialmedia-est\\socialmedia.infrastructure\\data\\configurations\\securityconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08E8FC0D-B3CB-C9BF-1FDE-B0B7B0A7000D}|SocialMedia.Infrastructure\\SocialMedia.Infrastructure.csproj|solutionrelative:socialmedia.infrastructure\\data\\configurations\\securityconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B087032-18E0-426B-F231-576BAD73AC2B}|SocialMedia.Core\\SocialMedia.Core.csproj|c:\\desarrollo\\2026\\socialmedia-est\\socialmedia.core\\entities\\security.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B087032-18E0-426B-F231-576BAD73AC2B}|SocialMedia.Core\\SocialMedia.Core.csproj|solutionrelative:socialmedia.core\\entities\\security.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B087032-18E0-426B-F231-576BAD73AC2B}|SocialMedia.Core\\SocialMedia.Core.csproj|c:\\desarrollo\\2026\\socialmedia-est\\socialmedia.core\\enums\\roletype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B087032-18E0-426B-F231-576BAD73AC2B}|SocialMedia.Core\\SocialMedia.Core.csproj|solutionrelative:socialmedia.core\\enums\\roletype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20DE5FD1-E331-7142-A93A-F6E553560140}|SocialMedia.Api\\SocialMedia.Api.csproj|c:\\desarrollo\\2026\\socialmedia-est\\socialmedia.api\\controllers\\tokencontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20DE5FD1-E331-7142-A93A-F6E553560140}|SocialMedia.Api\\SocialMedia.Api.csproj|solutionrelative:socialmedia.api\\controllers\\tokencontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20DE5FD1-E331-7142-A93A-F6E553560140}|SocialMedia.Api\\SocialMedia.Api.csproj|c:\\desarrollo\\2026\\socialmedia-est\\socialmedia.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{20DE5FD1-E331-7142-A93A-F6E553560140}|SocialMedia.Api\\SocialMedia.Api.csproj|solutionrelative:socialmedia.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B087032-18E0-426B-F231-576BAD73AC2B}|SocialMedia.Core\\SocialMedia.Core.csproj|c:\\desarrollo\\2026\\socialmedia-est\\socialmedia.core\\entities\\userlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B087032-18E0-426B-F231-576BAD73AC2B}|SocialMedia.Core\\SocialMedia.Core.csproj|solutionrelative:socialmedia.core\\entities\\userlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20DE5FD1-E331-7142-A93A-F6E553560140}|SocialMedia.Api\\SocialMedia.Api.csproj|c:\\desarrollo\\2026\\socialmedia-est\\socialmedia.api\\controllers\\postcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20DE5FD1-E331-7142-A93A-F6E553560140}|SocialMedia.Api\\SocialMedia.Api.csproj|solutionrelative:socialmedia.api\\controllers\\postcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{20DE5FD1-E331-7142-A93A-F6E553560140}|SocialMedia.Api\\SocialMedia.Api.csproj|c:\\desarrollo\\2026\\socialmedia-est\\socialmedia.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{20DE5FD1-E331-7142-A93A-F6E553560140}|SocialMedia.Api\\SocialMedia.Api.csproj|solutionrelative:socialmedia.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -11,56 +59,12 @@
       "RelativeMoniker": "D:0:0:{20DE5FD1-E331-7142-A93A-F6E553560140}|SocialMedia.Api\\SocialMedia.Api.csproj|solutionrelative:socialmedia.api\\controllers\\reportescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{08E8FC0D-B3CB-C9BF-1FDE-B0B7B0A7000D}|SocialMedia.Infrastructure\\SocialMedia.Infrastructure.csproj|c:\\desarrollo\\2026\\socialmedia-est\\socialmedia.infrastructure\\mappings\\reportesprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{08E8FC0D-B3CB-C9BF-1FDE-B0B7B0A7000D}|SocialMedia.Infrastructure\\SocialMedia.Infrastructure.csproj|solutionrelative:socialmedia.infrastructure\\mappings\\reportesprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1B087032-18E0-426B-F231-576BAD73AC2B}|SocialMedia.Core\\SocialMedia.Core.csproj|c:\\desarrollo\\2026\\socialmedia-est\\socialmedia.core\\dtos\\reporteria\\autocomentaristadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B087032-18E0-426B-F231-576BAD73AC2B}|SocialMedia.Core\\SocialMedia.Core.csproj|solutionrelative:socialmedia.core\\dtos\\reporteria\\autocomentaristadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1B087032-18E0-426B-F231-576BAD73AC2B}|SocialMedia.Core\\SocialMedia.Core.csproj|c:\\desarrollo\\2026\\socialmedia-est\\socialmedia.core\\customentities\\reporteria\\autocomentarista.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B087032-18E0-426B-F231-576BAD73AC2B}|SocialMedia.Core\\SocialMedia.Core.csproj|solutionrelative:socialmedia.core\\customentities\\reporteria\\autocomentarista.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{1B087032-18E0-426B-F231-576BAD73AC2B}|SocialMedia.Core\\SocialMedia.Core.csproj|c:\\desarrollo\\2026\\socialmedia-est\\socialmedia.core\\entities\\post.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1B087032-18E0-426B-F231-576BAD73AC2B}|SocialMedia.Core\\SocialMedia.Core.csproj|solutionrelative:socialmedia.core\\entities\\post.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A6A2D43B-1C50-41AA-AFBF-2E2D0E4B101A}|SocialMedia.Services\\SocialMedia.Services.csproj|c:\\desarrollo\\2026\\socialmedia-est\\socialmedia.services\\services\\reportesservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A6A2D43B-1C50-41AA-AFBF-2E2D0E4B101A}|SocialMedia.Services\\SocialMedia.Services.csproj|solutionrelative:socialmedia.services\\services\\reportesservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A6A2D43B-1C50-41AA-AFBF-2E2D0E4B101A}|SocialMedia.Services\\SocialMedia.Services.csproj|c:\\desarrollo\\2026\\socialmedia-est\\socialmedia.services\\interfaces\\ireportesservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A6A2D43B-1C50-41AA-AFBF-2E2D0E4B101A}|SocialMedia.Services\\SocialMedia.Services.csproj|solutionrelative:socialmedia.services\\interfaces\\ireportesservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1B087032-18E0-426B-F231-576BAD73AC2B}|SocialMedia.Core\\SocialMedia.Core.csproj|c:\\desarrollo\\2026\\socialmedia-est\\socialmedia.core\\interfaces\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B087032-18E0-426B-F231-576BAD73AC2B}|SocialMedia.Core\\SocialMedia.Core.csproj|solutionrelative:socialmedia.core\\interfaces\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{08E8FC0D-B3CB-C9BF-1FDE-B0B7B0A7000D}|SocialMedia.Infrastructure\\SocialMedia.Infrastructure.csproj|c:\\desarrollo\\2026\\socialmedia-est\\socialmedia.infrastructure\\repositories\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{08E8FC0D-B3CB-C9BF-1FDE-B0B7B0A7000D}|SocialMedia.Infrastructure\\SocialMedia.Infrastructure.csproj|solutionrelative:socialmedia.infrastructure\\repositories\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{08E8FC0D-B3CB-C9BF-1FDE-B0B7B0A7000D}|SocialMedia.Infrastructure\\SocialMedia.Infrastructure.csproj|c:\\desarrollo\\2026\\socialmedia-est\\socialmedia.infrastructure\\repositories\\reportesrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{08E8FC0D-B3CB-C9BF-1FDE-B0B7B0A7000D}|SocialMedia.Infrastructure\\SocialMedia.Infrastructure.csproj|solutionrelative:socialmedia.infrastructure\\repositories\\reportesrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1B087032-18E0-426B-F231-576BAD73AC2B}|SocialMedia.Core\\SocialMedia.Core.csproj|c:\\desarrollo\\2026\\socialmedia-est\\socialmedia.core\\interfaces\\ireportesrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B087032-18E0-426B-F231-576BAD73AC2B}|SocialMedia.Core\\SocialMedia.Core.csproj|solutionrelative:socialmedia.core\\interfaces\\ireportesrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{08E8FC0D-B3CB-C9BF-1FDE-B0B7B0A7000D}|SocialMedia.Infrastructure\\SocialMedia.Infrastructure.csproj|c:\\desarrollo\\2026\\socialmedia-est\\socialmedia.infrastructure\\queries\\reportes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{08E8FC0D-B3CB-C9BF-1FDE-B0B7B0A7000D}|SocialMedia.Infrastructure\\SocialMedia.Infrastructure.csproj|solutionrelative:socialmedia.infrastructure\\queries\\reportes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{08E8FC0D-B3CB-C9BF-1FDE-B0B7B0A7000D}|SocialMedia.Infrastructure\\SocialMedia.Infrastructure.csproj|c:\\desarrollo\\2026\\socialmedia-est\\socialmedia.infrastructure\\queries\\primero.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{08E8FC0D-B3CB-C9BF-1FDE-B0B7B0A7000D}|SocialMedia.Infrastructure\\SocialMedia.Infrastructure.csproj|solutionrelative:socialmedia.infrastructure\\queries\\primero.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{20DE5FD1-E331-7142-A93A-F6E553560140}|SocialMedia.Api\\SocialMedia.Api.csproj|c:\\desarrollo\\2026\\socialmedia-est\\socialmedia.api\\controllers\\postcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{20DE5FD1-E331-7142-A93A-F6E553560140}|SocialMedia.Api\\SocialMedia.Api.csproj|solutionrelative:socialmedia.api\\controllers\\postcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -70,50 +74,184 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 8,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ISecurityRepository.cs",
+              "DocumentMoniker": "C:\\Desarrollo\\2026\\SocialMedia-Est\\SocialMedia.Core\\Interfaces\\ISecurityRepository.cs",
+              "RelativeDocumentMoniker": "SocialMedia.Core\\Interfaces\\ISecurityRepository.cs",
+              "ToolTip": "C:\\Desarrollo\\2026\\SocialMedia-Est\\SocialMedia.Core\\Interfaces\\ISecurityRepository.cs",
+              "RelativeToolTip": "SocialMedia.Core\\Interfaces\\ISecurityRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-18T21:24:03.687Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SecurityRespository.cs",
+              "DocumentMoniker": "C:\\Desarrollo\\2026\\SocialMedia-Est\\SocialMedia.Infrastructure\\Repositories\\SecurityRespository.cs",
+              "RelativeDocumentMoniker": "SocialMedia.Infrastructure\\Repositories\\SecurityRespository.cs",
+              "ToolTip": "C:\\Desarrollo\\2026\\SocialMedia-Est\\SocialMedia.Infrastructure\\Repositories\\SecurityRespository.cs",
+              "RelativeToolTip": "SocialMedia.Infrastructure\\Repositories\\SecurityRespository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-18T21:22:32.695Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "SocialMediaContext.cs",
+              "DocumentMoniker": "C:\\Desarrollo\\2026\\SocialMedia-Est\\SocialMedia.Infrastructure\\Data\\SocialMediaContext.cs",
+              "RelativeDocumentMoniker": "SocialMedia.Infrastructure\\Data\\SocialMediaContext.cs",
+              "ToolTip": "C:\\Desarrollo\\2026\\SocialMedia-Est\\SocialMedia.Infrastructure\\Data\\SocialMediaContext.cs",
+              "RelativeToolTip": "SocialMedia.Infrastructure\\Data\\SocialMediaContext.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAA5wCEAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-18T21:21:28.179Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "SecurityConfiguration.cs",
+              "DocumentMoniker": "C:\\Desarrollo\\2026\\SocialMedia-Est\\SocialMedia.Infrastructure\\Data\\Configurations\\SecurityConfiguration.cs",
+              "RelativeDocumentMoniker": "SocialMedia.Infrastructure\\Data\\Configurations\\SecurityConfiguration.cs",
+              "ToolTip": "C:\\Desarrollo\\2026\\SocialMedia-Est\\SocialMedia.Infrastructure\\Data\\Configurations\\SecurityConfiguration.cs",
+              "RelativeToolTip": "SocialMedia.Infrastructure\\Data\\Configurations\\SecurityConfiguration.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwBcAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-18T21:20:16.153Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Security.cs",
+              "DocumentMoniker": "C:\\Desarrollo\\2026\\SocialMedia-Est\\SocialMedia.Core\\Entities\\Security.cs",
+              "RelativeDocumentMoniker": "SocialMedia.Core\\Entities\\Security.cs",
+              "ToolTip": "C:\\Desarrollo\\2026\\SocialMedia-Est\\SocialMedia.Core\\Entities\\Security.cs",
+              "RelativeToolTip": "SocialMedia.Core\\Entities\\Security.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-18T21:19:24.331Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "RoleType.cs",
+              "DocumentMoniker": "C:\\Desarrollo\\2026\\SocialMedia-Est\\SocialMedia.Core\\Enums\\RoleType.cs",
+              "RelativeDocumentMoniker": "SocialMedia.Core\\Enums\\RoleType.cs",
+              "ToolTip": "C:\\Desarrollo\\2026\\SocialMedia-Est\\SocialMedia.Core\\Enums\\RoleType.cs",
+              "RelativeToolTip": "SocialMedia.Core\\Enums\\RoleType.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-18T21:18:07.261Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "IUnitOfWork.cs",
+              "DocumentMoniker": "C:\\Desarrollo\\2026\\SocialMedia-Est\\SocialMedia.Core\\Interfaces\\IUnitOfWork.cs",
+              "RelativeDocumentMoniker": "SocialMedia.Core\\Interfaces\\IUnitOfWork.cs",
+              "ToolTip": "C:\\Desarrollo\\2026\\SocialMedia-Est\\SocialMedia.Core\\Interfaces\\IUnitOfWork.cs",
+              "RelativeToolTip": "SocialMedia.Core\\Interfaces\\IUnitOfWork.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-13T21:54:56.598Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "UnitOfWork.cs",
+              "DocumentMoniker": "C:\\Desarrollo\\2026\\SocialMedia-Est\\SocialMedia.Infrastructure\\Repositories\\UnitOfWork.cs",
+              "RelativeDocumentMoniker": "SocialMedia.Infrastructure\\Repositories\\UnitOfWork.cs",
+              "ToolTip": "C:\\Desarrollo\\2026\\SocialMedia-Est\\SocialMedia.Infrastructure\\Repositories\\UnitOfWork.cs",
+              "RelativeToolTip": "SocialMedia.Infrastructure\\Repositories\\UnitOfWork.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAQwCcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-13T21:17:12.368Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "TokenController.cs",
+              "DocumentMoniker": "C:\\Desarrollo\\2026\\SocialMedia-Est\\SocialMedia.Api\\Controllers\\TokenController.cs",
+              "RelativeDocumentMoniker": "SocialMedia.Api\\Controllers\\TokenController.cs",
+              "ToolTip": "C:\\Desarrollo\\2026\\SocialMedia-Est\\SocialMedia.Api\\Controllers\\TokenController.cs",
+              "RelativeToolTip": "SocialMedia.Api\\Controllers\\TokenController.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAA0wBgAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-18T20:48:07.408Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "UserLogin.cs",
+              "DocumentMoniker": "C:\\Desarrollo\\2026\\SocialMedia-Est\\SocialMedia.Core\\Entities\\UserLogin.cs",
+              "RelativeDocumentMoniker": "SocialMedia.Core\\Entities\\UserLogin.cs",
+              "ToolTip": "C:\\Desarrollo\\2026\\SocialMedia-Est\\SocialMedia.Core\\Entities\\UserLogin.cs",
+              "RelativeToolTip": "SocialMedia.Core\\Entities\\UserLogin.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-18T20:46:15.494Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Desarrollo\\2026\\SocialMedia-Est\\SocialMedia.Api\\appsettings.json",
+              "RelativeDocumentMoniker": "SocialMedia.Api\\appsettings.json",
+              "ToolTip": "C:\\Desarrollo\\2026\\SocialMedia-Est\\SocialMedia.Api\\appsettings.json",
+              "RelativeToolTip": "SocialMedia.Api\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-11-18T20:29:38.164Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ReportesController.cs",
+              "DocumentMoniker": "C:\\Desarrollo\\2026\\SocialMedia-Est\\SocialMedia.Api\\Controllers\\ReportesController.cs",
+              "RelativeDocumentMoniker": "SocialMedia.Api\\Controllers\\ReportesController.cs",
+              "ToolTip": "C:\\Desarrollo\\2026\\SocialMedia-Est\\SocialMedia.Api\\Controllers\\ReportesController.cs",
+              "RelativeToolTip": "SocialMedia.Api\\Controllers\\ReportesController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-13T22:48:30.899Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Desarrollo\\2026\\SocialMedia-Est\\SocialMedia.Api\\Program.cs",
               "RelativeDocumentMoniker": "SocialMedia.Api\\Program.cs",
               "ToolTip": "C:\\Desarrollo\\2026\\SocialMedia-Est\\SocialMedia.Api\\Program.cs",
               "RelativeToolTip": "SocialMedia.Api\\Program.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAACIAAABVAAAAAAAAAA==",
+              "ViewState": "AgIAAGMAAAAAAAAAAAAgwGwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-11-13T22:10:30.64Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ReportesProfile.cs",
-              "DocumentMoniker": "C:\\Desarrollo\\2026\\SocialMedia-Est\\SocialMedia.Infrastructure\\Mappings\\ReportesProfile.cs",
-              "RelativeDocumentMoniker": "SocialMedia.Infrastructure\\Mappings\\ReportesProfile.cs",
-              "ToolTip": "C:\\Desarrollo\\2026\\SocialMedia-Est\\SocialMedia.Infrastructure\\Mappings\\ReportesProfile.cs",
-              "RelativeToolTip": "SocialMedia.Infrastructure\\Mappings\\ReportesProfile.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAABMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-13T22:03:40.122Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "AutoComentaristaDto.cs",
-              "DocumentMoniker": "C:\\Desarrollo\\2026\\SocialMedia-Est\\SocialMedia.Core\\DTOs\\Reporteria\\AutoComentaristaDto.cs",
-              "RelativeDocumentMoniker": "SocialMedia.Core\\DTOs\\Reporteria\\AutoComentaristaDto.cs",
-              "ToolTip": "C:\\Desarrollo\\2026\\SocialMedia-Est\\SocialMedia.Core\\DTOs\\Reporteria\\AutoComentaristaDto.cs",
-              "RelativeToolTip": "SocialMedia.Core\\DTOs\\Reporteria\\AutoComentaristaDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-13T22:00:35.222Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 14,
               "Title": "Post.cs",
               "DocumentMoniker": "C:\\Desarrollo\\2026\\SocialMedia-Est\\SocialMedia.Core\\Entities\\Post.cs",
               "RelativeDocumentMoniker": "SocialMedia.Core\\Entities\\Post.cs",
@@ -126,128 +264,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "IUnitOfWork.cs",
-              "DocumentMoniker": "C:\\Desarrollo\\2026\\SocialMedia-Est\\SocialMedia.Core\\Interfaces\\IUnitOfWork.cs",
-              "RelativeDocumentMoniker": "SocialMedia.Core\\Interfaces\\IUnitOfWork.cs",
-              "ToolTip": "C:\\Desarrollo\\2026\\SocialMedia-Est\\SocialMedia.Core\\Interfaces\\IUnitOfWork.cs",
-              "RelativeToolTip": "SocialMedia.Core\\Interfaces\\IUnitOfWork.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-13T21:54:56.598Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "UnitOfWork.cs",
-              "DocumentMoniker": "C:\\Desarrollo\\2026\\SocialMedia-Est\\SocialMedia.Infrastructure\\Repositories\\UnitOfWork.cs",
-              "RelativeDocumentMoniker": "SocialMedia.Infrastructure\\Repositories\\UnitOfWork.cs",
-              "ToolTip": "C:\\Desarrollo\\2026\\SocialMedia-Est\\SocialMedia.Infrastructure\\Repositories\\UnitOfWork.cs",
-              "RelativeToolTip": "SocialMedia.Infrastructure\\Repositories\\UnitOfWork.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAwAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-13T21:17:12.368Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "AutoComentarista.cs",
-              "DocumentMoniker": "C:\\Desarrollo\\2026\\SocialMedia-Est\\SocialMedia.Core\\CustomEntities\\Reporteria\\AutoComentarista.cs",
-              "RelativeDocumentMoniker": "SocialMedia.Core\\CustomEntities\\Reporteria\\AutoComentarista.cs",
-              "ToolTip": "C:\\Desarrollo\\2026\\SocialMedia-Est\\SocialMedia.Core\\CustomEntities\\Reporteria\\AutoComentarista.cs",
-              "RelativeToolTip": "SocialMedia.Core\\CustomEntities\\Reporteria\\AutoComentarista.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-13T21:11:04.815Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "IReportesRepository.cs",
-              "DocumentMoniker": "C:\\Desarrollo\\2026\\SocialMedia-Est\\SocialMedia.Core\\Interfaces\\IReportesRepository.cs",
-              "RelativeDocumentMoniker": "SocialMedia.Core\\Interfaces\\IReportesRepository.cs",
-              "ToolTip": "C:\\Desarrollo\\2026\\SocialMedia-Est\\SocialMedia.Core\\Interfaces\\IReportesRepository.cs",
-              "RelativeToolTip": "SocialMedia.Core\\Interfaces\\IReportesRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-13T20:39:49.788Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ReportesController.cs",
-              "DocumentMoniker": "C:\\Desarrollo\\2026\\SocialMedia-Est\\SocialMedia.Api\\Controllers\\ReportesController.cs",
-              "RelativeDocumentMoniker": "SocialMedia.Api\\Controllers\\ReportesController.cs",
-              "ToolTip": "C:\\Desarrollo\\2026\\SocialMedia-Est\\SocialMedia.Api\\Controllers\\ReportesController.cs",
-              "RelativeToolTip": "SocialMedia.Api\\Controllers\\ReportesController.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAkwCAAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-13T20:35:28.351Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Reportes.cs",
-              "DocumentMoniker": "C:\\Desarrollo\\2026\\SocialMedia-Est\\SocialMedia.Infrastructure\\Queries\\Reportes.cs",
-              "RelativeDocumentMoniker": "SocialMedia.Infrastructure\\Queries\\Reportes.cs",
-              "ToolTip": "C:\\Desarrollo\\2026\\SocialMedia-Est\\SocialMedia.Infrastructure\\Queries\\Reportes.cs",
-              "RelativeToolTip": "SocialMedia.Infrastructure\\Queries\\Reportes.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-13T20:40:45.609Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "ReportesRepository.cs",
-              "DocumentMoniker": "C:\\Desarrollo\\2026\\SocialMedia-Est\\SocialMedia.Infrastructure\\Repositories\\ReportesRepository.cs",
-              "RelativeDocumentMoniker": "SocialMedia.Infrastructure\\Repositories\\ReportesRepository.cs",
-              "ToolTip": "C:\\Desarrollo\\2026\\SocialMedia-Est\\SocialMedia.Infrastructure\\Repositories\\ReportesRepository.cs",
-              "RelativeToolTip": "SocialMedia.Infrastructure\\Repositories\\ReportesRepository.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABUAAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-13T20:38:43.681Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "IReportesService.cs",
-              "DocumentMoniker": "C:\\Desarrollo\\2026\\SocialMedia-Est\\SocialMedia.Services\\Interfaces\\IReportesService.cs",
-              "RelativeDocumentMoniker": "SocialMedia.Services\\Interfaces\\IReportesService.cs",
-              "ToolTip": "C:\\Desarrollo\\2026\\SocialMedia-Est\\SocialMedia.Services\\Interfaces\\IReportesService.cs",
-              "RelativeToolTip": "SocialMedia.Services\\Interfaces\\IReportesService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-13T20:37:14.997Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ReportesService.cs",
-              "DocumentMoniker": "C:\\Desarrollo\\2026\\SocialMedia-Est\\SocialMedia.Services\\Services\\ReportesService.cs",
-              "RelativeDocumentMoniker": "SocialMedia.Services\\Services\\ReportesService.cs",
-              "ToolTip": "C:\\Desarrollo\\2026\\SocialMedia-Est\\SocialMedia.Services\\Services\\ReportesService.cs",
-              "RelativeToolTip": "SocialMedia.Services\\Services\\ReportesService.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-13T20:36:33.615Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 15,
               "Title": "Primero.cs",
               "DocumentMoniker": "C:\\Desarrollo\\2026\\SocialMedia-Est\\SocialMedia.Infrastructure\\Queries\\Primero.cs",
               "RelativeDocumentMoniker": "SocialMedia.Infrastructure\\Queries\\Primero.cs",
@@ -260,13 +277,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 11,
               "Title": "PostController.cs",
               "DocumentMoniker": "C:\\Desarrollo\\2026\\SocialMedia-Est\\SocialMedia.Api\\Controllers\\PostController.cs",
               "RelativeDocumentMoniker": "SocialMedia.Api\\Controllers\\PostController.cs",
               "ToolTip": "C:\\Desarrollo\\2026\\SocialMedia-Est\\SocialMedia.Api\\Controllers\\PostController.cs",
               "RelativeToolTip": "SocialMedia.Api\\Controllers\\PostController.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAxwB4AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAAABAAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-11-13T20:14:01.71Z",
               "EditorCaption": ""
