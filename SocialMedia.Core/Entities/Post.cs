@@ -6,7 +6,7 @@ namespace SocialMedia.Core.Entities;
 public partial class Post : BaseEntity
 {
     //public int Id { get; set; }
-
+    // no peude ser expuesta en api
     public int UserId { get; set; }
 
     public DateTime Date { get; set; }

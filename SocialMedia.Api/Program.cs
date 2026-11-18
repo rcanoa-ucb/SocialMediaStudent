@@ -8,6 +8,7 @@ using SocialMedia.Infrastructure.Repositories;
 using SocialMedia.Services.Interfaces;
 using SocialMedia.Services.Services;
 using SocialMedia.Services.Validators;
+using SocialMedia.Core.Interfaces;
 namespace SocialMedia.Api
 {
     public class Program
@@ -24,13 +25,16 @@ namespace SocialMedia.Api
 
             // Add services to the container.
             //builder.Services.AddTransient<IPostRepository, PostRepository>();
-            //builder.Services.AddTransient<ICommentRepository, CommentRepository>();
+            builder.Services.AddTransient<ICommentRepository, CommentRepository>();
             builder.Services.AddTransient<IPostService, PostService>();
+            builder.Services.AddTransient<ICommentService, CommentService>();
             //builder.Services.AddTransient<IUserRepository, UserRepository>();
             builder.Services.AddScoped(typeof(IBaseRepository<>), typeof(BaseRepository<>));
             builder.Services.AddTransient<IUnitOfWork, UnitOfWork>();
             builder.Services.AddSingleton<IDbConnectionFactory, DbConnectionFactory>();
             builder.Services.AddScoped<IDapperContext, DapperContext>();
+
+            // builder de inferfacer services y reporsitorio 
             builder.Services.AddTransient<IReportesService, ReportesService>();
             builder.Services.AddTransient<IReportesRepository, ReportesRepository>();
 

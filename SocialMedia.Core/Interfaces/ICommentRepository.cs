@@ -5,8 +5,9 @@ using System.Text;
 
 namespace SocialMedia.Core.Interfaces
 {
-    public interface ICommentRepository
+    public interface ICommentRepository : IBaseRepository<Comment>
     {
+        Task<IEnumerable<Comment>> GetAllCommentsDapperAsync(int limit = 10);
         Task<IEnumerable<Comment>> GetAllCommentsAsync();
         Task<Comment> GetCommentByIdAsync(int id);
         Task InsertComment(Comment comment);
