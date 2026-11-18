@@ -1,4 +1,8 @@
-﻿namespace SocialMedia.Core.CustomEntities.Reporteria
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace SocialMedia.Core.CustomEntities.Reporteria
 {
     public class AutoComentarista
     {

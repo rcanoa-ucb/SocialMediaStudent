@@ -7,12 +7,14 @@ using System.Text;
 
 namespace SocialMedia.Infrastructure.Mappings
 {
-    public class ReportesProfile : Profile
+    public class ReportesProfile: Profile
     {
         public ReportesProfile()
         {
-            CreateMap<AutoComentarista, AutoComentaristaDto>().ReverseMap();
+            CreateMap<AutoComentarista, AutoComentaristaDto>().ReverseMap(); //ReverseMap de dro al otro lado o del otro lado a Dto 
+            CreateMap<RankingPostUsuario, RankingPostUsuarioDto>().ReverseMap();
+            //CreateMap<AutoComentarista, AutoComentaristaDto>();
+            //CreateMap<AutoComentaristaDto, AutoComentarista>() // reversemao evita ahcer dos linea
         }
     }
-
 }
