@@ -11,7 +11,7 @@ namespace SocialMedia.Infrastructure.Mappings
     {
         public CommentProfile()
         {
-            CreateMap<Comment, CommentDto>(); //.ReverseMap();
+            CreateMap<Comment, CommentDto>();
             CreateMap<CommentDto, Comment>();
         }
     }

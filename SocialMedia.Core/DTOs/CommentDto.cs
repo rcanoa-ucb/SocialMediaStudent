@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SocialMedia.Core.Entities;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -6,7 +7,7 @@ namespace SocialMedia.Core.DTOs
 {
     public class CommentDto
     {
-        public int Id { get; set; }  
+        public int Id { get; set; }
 
         public int PostId { get; set; }
 
@@ -17,6 +18,5 @@ namespace SocialMedia.Core.DTOs
         public DateTime Date { get; set; }
 
         public ulong IsActive { get; set; }
-
     }
 }

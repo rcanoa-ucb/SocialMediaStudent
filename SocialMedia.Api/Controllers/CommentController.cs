@@ -1,7 +1,6 @@
 ﻿using AutoMapper;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.SignalR;
 using SocialMedia.Core.DTOs;
 using SocialMedia.Core.Entities;
 using SocialMedia.Core.Interfaces;
@@ -16,25 +15,21 @@ namespace SocialMedia.Api.Controllers
     {
         private readonly ICommentRepository _commentRepository;
         private readonly IMapper _mapper;
-
-
-        public CommentController(IMapper mapper,ICommentRepository commentRepository)
+        public CommentController(ICommentRepository commentRepository, IMapper mapper)
         {
             _commentRepository = commentRepository;
             _mapper = mapper;
         }
 
-        #region MyRegion Sin DTOs
-
+        #region Sin_DTOs
         [HttpGet]
-        public async Task<IActionResult> GetComment()
+        public async Task<IActionResult> GetComments()
         {
             var comments = await _commentRepository.GetAllCommentsAsync();
             return Ok(comments);
         }
 
         [HttpGet("{id}")]
-
         public async Task<IActionResult> GetCommentById(int id)
         {
             var comment = await _commentRepository.GetCommentByIdAsync(id);
@@ -42,11 +37,10 @@ namespace SocialMedia.Api.Controllers
         }
 
         [HttpPost]
-
-        public async Task<IActionResult> InsertComment(Comment newComment)
+        public async Task<IActionResult> InserComment(Comment newComment)
         {
             await _commentRepository.InsertComment(newComment);
-            return Created($"api/Comment/{newComment.Id}", newComment);
+            return Created($"api/comment/{newComment.Id}", newComment);
         }
 
         [HttpPut]
@@ -62,29 +56,26 @@ namespace SocialMedia.Api.Controllers
             await _commentRepository.DeleteComment(comment);
             return NoContent();
         }
-
         #endregion
 
-        #region Con DTOs
-
+        #region Con_DTOs
         [HttpGet("dto")]
-        public async Task<IActionResult> GetCommentDto()
+        public async Task<IActionResult> GetCommentsDto()
         {
-            var comment = await _commentRepository.GetAllCommentsAsync();
-            var commentDto = comment.Select(p => new CommentDto
+            var comments = await _commentRepository.GetAllCommentsAsync();
+            var commentDto = comments.Select(c => new CommentDto
             {
-                Id = p.Id,                   
-                PostId = p.PostId,
-                Description = p.Description,
-                Date = p.Date,
-                IsActive = p.IsActive
-
+                Id = c.Id,
+                PostId = c.PostId,
+                UserId = c.UserId,
+                Date = c.Date,
+                Description = c.Description,
+                IsActive = c.IsActive
             });
-            return Ok(comment);
+            return Ok(commentDto);
         }
 
         [HttpGet("dto/{id}")]
-
         public async Task<IActionResult> GetCommentByIdDto(int id)
         {
             var comment = await _commentRepository.GetCommentByIdAsync(id);
@@ -92,90 +83,83 @@ namespace SocialMedia.Api.Controllers
             {
                 Id = comment.Id,
                 PostId = comment.PostId,
-                Description = comment.Description,
+                UserId = comment.UserId,
                 Date = comment.Date,
+                Description = comment.Description,
                 IsActive = comment.IsActive
             };
             return Ok(comment);
         }
 
         [HttpPost("dto")]
-
-        public async Task<IActionResult> InsertCommentDto(CommentDto newComment)
+        public async Task<IActionResult> InserCommentDto(int id, [FromBody] CommentDto newComment)
         {
             var comment = new Comment
             {
                 Id = newComment.Id,
                 PostId = newComment.PostId,
-                Description = newComment.Description,
+                UserId = newComment.UserId,
                 Date = newComment.Date,
+                Description = newComment.Description,
                 IsActive = newComment.IsActive
-
             };
-
             await _commentRepository.InsertComment(comment);
             return Created($"api/comment/{newComment.Id}", newComment);
         }
 
         [HttpPut("dto")]
-        public async Task<IActionResult> UpdateCommentDto(
-            int id, [FromBody] CommentDto commentDto)
+        public async Task<IActionResult> UpdateCommentDto(int id, [FromBody] Comment commentDto)
         {
             if (id != commentDto.Id)
             {
-                return BadRequest("El id del Comment no coincide");
+                return BadRequest("el id del post no coincide");
             }
-
             var comment = await _commentRepository.GetCommentByIdAsync(id);
             if (comment == null)
             {
-                return NotFound("Comment no encontrado");
+                return NotFound();
             }
-
-            //Mapear valores DTO en la entidad
+            //mapeo
             comment.Id = commentDto.Id;
             comment.PostId = commentDto.PostId;
-            comment.Description = commentDto.Description;
+            comment.UserId = commentDto.UserId;
             comment.Date = commentDto.Date;
+            comment.Description = commentDto.Description;
             comment.IsActive = commentDto.IsActive;
 
             await _commentRepository.UpdateComment(comment);
             return Ok(comment);
         }
 
-        [HttpDelete("dto/{id}")]
+        [HttpDelete("dto")]
         public async Task<IActionResult> DeleteCommentDto(int id)
         {
             var comment = await _commentRepository.GetCommentByIdAsync(id);
             if (comment == null)
-                return NotFound("Comment no encontrado.");
-
+            {
+                return NotFound("comment no encontrado");
+            }
             await _commentRepository.DeleteComment(comment);
-
-            return NoContent(); // 204 sin contenido
+            return NoContent();
         }
-
         #endregion
 
         #region Dto-AutoMapper
-
         [HttpGet("dto/mapper")]
-        public async Task<IActionResult> GetCommentDtoMapper()
+        public async Task<IActionResult> GetCommentsDtoMapper()
         {
-            var comment = await _commentRepository.GetAllCommentsAsync();
-            var commentDto = _mapper.Map<CommentDto>(comment);
-            //var commentDot = _mapper.Map<IEnumerable<CommentDto>>(comment);
-            //var commentDto = comment.Select(p => new CommentDto
-            //{
-            //    Id = p.Id,
-            //    UserId = p.UserId,
-            //    Date = p.Date,
-            //    Description = p.Description,
-            //});
-            return Ok(comment);
+            var comments = await _commentRepository.GetAllCommentsAsync();
+            var commentDto = _mapper.Map<IEnumerable<CommentDto>>(comments);
+            return Ok(commentDto);
         }
 
+        [HttpGet("dto/mapper/[id]")]
+        public async Task<IActionResult> GetCommentByIdDtoMapper(int id)
+        {
+            var comment = await _commentRepository.GetCommentByIdAsync(id);
+            var commentDto = _mapper.Map<CommentDto>(comment);
+            return Ok(comment);
+        }
         #endregion
-
     }
 }
