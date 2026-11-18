@@ -187,5 +187,10 @@ namespace SocialMedia.Infrastructure.Data
                 }
             }
         }
+
+        public Task<IEnumerable<T>> QueryAsync<T>(object autoComentaristasMySql, object value)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

@@ -1,21 +1,29 @@
-﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 using SocialMedia.Core.Entities;
 using SocialMedia.Core.Interfaces;
 using SocialMedia.Infrastructure.Data;
+using SocialMedia.Infrastructure.Queries;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace SocialMedia.Infrastructure.Repositories
 {
-    public class CommentRepository : ICommentRepository
+    public class CommentRepository : BaseRepository<Comment>, ICommentRepository
     {
         private readonly SocialMediaContext _socialMediaContext;
 
-        public CommentRepository(SocialMediaContext socialMediaContext)
+        private readonly IDapperContext _dapper;
+
+        public CommentRepository(SocialMediaContext socialMediaContext, IDapperContext dapper)
+            : base(socialMediaContext)
         {
             _socialMediaContext = socialMediaContext;
+            _dapper = dapper;
         }
+
+        public Task<IEnumerable<Comment>> GetAllCommentsDapperAsync(int limit = 10) =>
+            _dapper.QueryAsync<Comment>(CommentQueries.List, new { Limit = limit });
 
         public async Task<IEnumerable<Comment>> GetAllCommentsAsync()
         {

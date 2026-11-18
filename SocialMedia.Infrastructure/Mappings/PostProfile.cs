@@ -18,7 +18,7 @@ namespace SocialMedia.Infrastructure.Mappings
                 opt => opt.MapFrom(src => src.Image))
                 .ForMember(dest => dest.Date,
                     opt => opt.ConvertUsing<DateTimeToStringConverter, DateTime>());
-
+            
             CreateMap<PostDto, Post>()
                 .ForMember(dest => dest.Image, 
                 opt => opt.MapFrom(src => src.Imagen))

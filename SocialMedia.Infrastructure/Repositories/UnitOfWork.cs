@@ -1,4 +1,4 @@
-﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Storage;
 using SocialMedia.Core.Entities;
 using SocialMedia.Core.Interfaces;
@@ -15,8 +15,9 @@ namespace SocialMedia.Infrastructure.Repositories
         private readonly SocialMediaContext _context;
         public readonly IPostRepository? _postRespository;
         public readonly IBaseRepository<User>? _userRespository;
-        public readonly IBaseRepository<Comment>? _commentRespository;
-
+        public readonly ICommentRepository? _commentRespository;
+        public readonly IReportesRepository? _reportesRepository;
+        public readonly IRankingUsuario? _rankingUsuario;
         //Dapper
         private readonly IDapperContext _dapper;
         private IDbContextTransaction? _efTransaction;
@@ -33,16 +34,15 @@ namespace SocialMedia.Infrastructure.Repositories
         public IBaseRepository<User> UserRespository =>
              _userRespository ?? new BaseRepository<User>(_context);
 
-        public IBaseRepository<Comment> CommentRepository =>
-            _commentRespository ?? new BaseRepository<Comment>(_context);
-
+        public ICommentRepository CommentRepository =>
+            _commentRespository ?? new CommentRepository(_context, _dapper);
+        public IReportesRepository ReportesRepository =>
+            _reportesRepository ?? new ReportesRepository( _dapper);
+        public IRankingUsuario RankingUsuario =>
+            _rankingUsuario ?? new RankingUsuarioRepository(_dapper);
         public void Dispose()
         {
-            if (_context != null)
-            {
-                _efTransaction?.Dispose();
-                _context.Dispose();
-            }
+            _context?.Dispose();
         }
 
         public void SaveChanges()

@@ -24,13 +24,16 @@ namespace SocialMedia.Api
 
             // Add services to the container.
             //builder.Services.AddTransient<IPostRepository, PostRepository>();
-            //builder.Services.AddTransient<ICommentRepository, CommentRepository>();
+            builder.Services.AddTransient<ICommentRepository, CommentRepository>();
+            builder.Services.AddTransient<ICommentService, CommentService>();
             builder.Services.AddTransient<IPostService, PostService>();
             //builder.Services.AddTransient<IUserRepository, UserRepository>();
             builder.Services.AddScoped(typeof(IBaseRepository<>), typeof(BaseRepository<>));
             builder.Services.AddTransient<IUnitOfWork, UnitOfWork>();
             builder.Services.AddSingleton<IDbConnectionFactory, DbConnectionFactory>();
             builder.Services.AddScoped<IDapperContext, DapperContext>();
+            builder.Services.AddTransient<IReportesRepository, ReportesRepository>();
+            builder.Services.AddTransient<IReportesService, ReportesService>();
 
             builder.Services.AddControllers().ConfigureApiBehaviorOptions(options =>
             {
