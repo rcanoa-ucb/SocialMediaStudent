@@ -21,40 +21,41 @@ namespace SocialMedia.Infrastructure.Queries
             ORDER BY ComentariosPropios DESC, u.Id ASC
             LIMIT @Limit;";
 
+
         public static string rankingPostsUsuarioMySql = @"
-            WITH RankingPosts AS (
-                SELECT
-                    u.Id AS UserId,
-                    CONCAT(u.FirstName, ' ', u.LastName) AS NombreCompleto,
-                    ROW_NUMBER() OVER (
-                        PARTITION BY u.Id
-                        ORDER BY COUNT(c.Id) DESC, p.Id ASC
-                    ) AS PosicionEnUsuario,
-                    p.Id AS PostId,
-                    p.Description,
-                    p.Date AS DatePost,
-                    COUNT(c.Id) AS Comentarios
-                FROM user u
-                INNER JOIN post p ON p.UserId = u.Id
-                INNER JOIN comment c ON c.PostId = p.Id
-                GROUP BY
-                    u.Id,
-                    u.FirstName,
-                    u.LastName,
-                    p.Id,
-                    p.Description,
-                    p.Date
-            )
+        WITH TotalComentarios AS (
             SELECT
-                UserId,
-                NombreCompleto,
-                PosicionEnUsuario,
-                PostId,
-                Description,
-                DatePost,
-                Comentarios
-            FROM RankingPosts
-            WHERE PosicionEnUsuario <= @Limit
-            ORDER BY UserId ASC, PosicionEnUsuario ASC;";
+                c.PostId,
+                COUNT(*) AS Comentarios
+            FROM comment c
+            GROUP BY c.PostId
+        ),
+        PostsOrdenados AS (
+            SELECT
+                u.Id AS UserId,
+                CONCAT(u.FirstName, ' ', u.LastName) AS NombreCompleto,
+                p.Id AS PostId,
+                p.Description,
+                p.Date AS DatePost,
+                tc.Comentarios,
+                ROW_NUMBER() OVER (
+                    PARTITION BY u.Id
+                    ORDER BY tc.Comentarios DESC, p.Id ASC
+                ) AS PosicionEnUsuario
+            FROM post p
+            INNER JOIN user u ON p.UserId = u.Id
+            INNER JOIN TotalComentarios tc ON tc.PostId = p.Id
+        )
+        SELECT
+            UserId,
+            NombreCompleto,
+            PosicionEnUsuario,
+            PostId,
+            Description,
+            DatePost,
+            Comentarios
+        FROM PostsOrdenados
+        WHERE PosicionEnUsuario <= @Limit
+        ORDER BY UserId ASC, PosicionEnUsuario ASC;";
     }
 }
