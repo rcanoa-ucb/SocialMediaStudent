@@ -7,7 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="Repositories\CommentRepository.cs" />
     <Compile Remove="Repositories\UserRepository.cs" />
   </ItemGroup>
 
@@ -17,10 +16,7 @@
 
   <ItemGroup>
     <PackageReference Include="AutoMapper" Version="13.0.1" />
-<<<<<<< HEAD
-=======
     <PackageReference Include="Dapper" Version="2.1.72" />
->>>>>>> main
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.20" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="9.0.20">
       <PrivateAssets>all</PrivateAssets>

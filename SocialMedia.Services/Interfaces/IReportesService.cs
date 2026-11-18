@@ -8,5 +8,8 @@ namespace SocialMedia.Services.Interfaces
     public interface IReportesService
     {
         Task<IEnumerable<AutoComentarista>> GetAutoComentaristasAsync(int limit = 10);
+
+        Task<IEnumerable<RankingPostUsuario>> GetRankingPostsUsuarioAsync();
+
     }
 }

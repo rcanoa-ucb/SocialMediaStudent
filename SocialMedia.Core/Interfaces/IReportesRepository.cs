@@ -5,5 +5,8 @@ namespace SocialMedia.Core.Interfaces
     public interface IReportesRepository
     {
         Task<IEnumerable<AutoComentarista>> GetAutoComentaristasAsync(int limit = 10);
+
+        Task<IEnumerable<RankingPostUsuario>> GetRankingPostsUsuarioAsync();
+
     }
 }
