@@ -23,5 +23,7 @@ namespace SocialMedia.Core.Interfaces
 
         IDbConnection? GetDbConnection();
         IDbTransaction? GetDbTransaction();
+        
+
     }
 }

@@ -20,5 +20,16 @@ namespace SocialMedia.Infrastructure.Queries
             GROUP BY u.Id, u.FirstName, u.LastName, u.Email
             ORDER BY ComentariosPropios DESC, u.Id ASC
             LIMIT @Limit;";
+
+        public static string RankingPostUsuario = @"
+            SELECT u.FirstName AS  Nombre , u.Id AS IdUser, COUNT(c.Id) AS Total_Comentarios , p.Id AS IdPost
+FROM user u
+INNER JOIN post p ON p.UserId = u.Id
+INNER JOIN comment c ON c.PostId = p.Id
+WHERE u.id= 1
+GROUP BY p.Id
+ORDER BY TOTAL_Comentarios DESC
+LIMIT 3";
+
     }
 }
