@@ -13,8 +13,8 @@ namespace SocialMedia.Api.Controllers
     {
         private readonly IReportesService _reportesService;
         private readonly IMapper _mapper;
-        public ReportesController(IReportesService reportesService,
-            IMapper mapper)
+
+        public ReportesController(IReportesService reportesService, IMapper mapper)
         {
             _reportesService = reportesService;
             _mapper = mapper;
@@ -22,15 +22,23 @@ namespace SocialMedia.Api.Controllers
 
         [HttpGet("dapper/auto-comentaristas")]
         public async Task<IActionResult> GetAutoComentaristas([FromQuery] int limit = 10)
-        {
-            var autoComentaristas = await _reportesService.GetAutoComentaristasAsync(limit);
-
+        {    var autoComentaristas = await _reportesService.GetAutoComentaristasAsync(limit);
             var autoComentaristasResult = _mapper.Map<IEnumerable<AutoComentaristaDto>>(autoComentaristas);
-
+           
             var response = new ApiResponse<IEnumerable<AutoComentaristaDto>>(autoComentaristasResult);
+            return Ok(response);
+        }
 
+        // NUEVO ENDPOINT PARA LA TAREA
+        [HttpGet("dapper/ranking-posts-por-usuario")]
+        public async Task<IActionResult> GetRankingPostsPorUsuario()
+        {
+            var ranking = await _reportesService.GetRankingPostsPorUsuarioAsync();
+            var rankingResult = _mapper.Map<IEnumerable<RankingPostDto>>(ranking);
+            var response = new ApiResponse<IEnumerable<RankingPostDto>>(rankingResult);
             return Ok(response);
         }
 
     }
+
 }

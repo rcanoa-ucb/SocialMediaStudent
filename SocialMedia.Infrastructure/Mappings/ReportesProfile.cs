@@ -12,7 +12,7 @@ namespace SocialMedia.Infrastructure.Mappings
         public ReportesProfile()
         {
             CreateMap<AutoComentarista, AutoComentaristaDto>().ReverseMap();
+            // El nuevo mapeo
+            CreateMap<RankingPost, RankingPostDto>().ReverseMap();
         }
-    }
-
-}
+    }}

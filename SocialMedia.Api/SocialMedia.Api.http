@@ -1,6 +1,6 @@
 @SocialMedia.Api_HostAddress = http://localhost:5233
 
-GET {{SocialMedia.Api_HostAddress}}/weatherforecast/
+GET {{SocialMedia.Api_HostAddress}}/api/Reportes/dapper/ranking-posts-por-usuario
 Accept: application/json
 
 ###
