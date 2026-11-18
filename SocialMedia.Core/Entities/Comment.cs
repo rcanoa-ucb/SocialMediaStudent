@@ -1,8 +1,11 @@
+﻿using System;
+using System.Collections.Generic;
+
 namespace SocialMedia.Core.Entities;
 
-public partial class Comment
+public partial class Comment : BaseEntity
 {
-    public int Id { get; set; }
+    //public int Id { get; set; }
 
     public int PostId { get; set; }
 
@@ -12,10 +15,9 @@ public partial class Comment
 
     public DateTime Date { get; set; }
 
-    public bool IsActive { get; set; }
+    public ulong IsActive { get; set; }
 
-    // Navegaciones nulables: si no, ASP.NET las exige como [Required] al recibir la entidad por JSON
-    public virtual Post? Post { get; set; }
+    public virtual Post Post { get; set; } = null!;
 
-    public virtual User? User { get; set; }
+    public virtual User User { get; set; } = null!;
 }

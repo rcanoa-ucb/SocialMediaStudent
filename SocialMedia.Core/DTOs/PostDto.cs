@@ -1,21 +1,23 @@
-using System.ComponentModel.DataAnnotations;
+﻿using SocialMedia.Core.Entities;
+using System;
+using System.Collections.Generic;
+using System.Text;
 
 namespace SocialMedia.Core.DTOs
 {
     public class PostDto
     {
-        public int Id { get; set; }
+       
+            public int Id { get; set; }
 
-        [Range(1, int.MaxValue, ErrorMessage = "UserId debe ser mayor a 0")]
-        public int UserId { get; set; }
+            public int UserId { get; set; }
 
-        public DateTime Date { get; set; }
+            public DateTime Date { get; set; }
 
-        [Required]
-        [StringLength(1000)]
-        public string Description { get; set; } = null!;
+            public string Description { get; set; } = null!;
 
-        [StringLength(500)]
-        public string? Imagen { get; set; }
+            public string? Imagen { get; set; }
+
+   
     }
 }

@@ -1,4 +1,7 @@
-using System.ComponentModel.DataAnnotations;
+﻿using SocialMedia.Core.Entities;
+using System;
+using System.Collections.Generic;
+using System.Text;
 
 namespace SocialMedia.Core.DTOs
 {
@@ -6,18 +9,18 @@ namespace SocialMedia.Core.DTOs
     {
         public int Id { get; set; }
 
-        [Range(1, int.MaxValue, ErrorMessage = "PostId debe ser mayor a 0")]
         public int PostId { get; set; }
 
-        [Range(1, int.MaxValue, ErrorMessage = "UserId debe ser mayor a 0")]
         public int UserId { get; set; }
 
-        [Required]
-        [StringLength(500)]
         public string Description { get; set; } = null!;
 
         public DateTime Date { get; set; }
 
-        public bool IsActive { get; set; } = true;
+        public ulong IsActive { get; set; }
+
+        public virtual Post Post { get; set; } = null!;
+
+        public virtual User User { get; set; } = null!;
     }
 }

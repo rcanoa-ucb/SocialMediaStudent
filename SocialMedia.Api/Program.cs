@@ -1,8 +1,11 @@
+
 using Microsoft.EntityFrameworkCore;
 using SocialMedia.Core.Interfaces;
 using SocialMedia.Infrastructure.Data;
 using SocialMedia.Infrastructure.Mappings;
 using SocialMedia.Infrastructure.Repositories;
+using SocialMedia.Services.Interfaces;
+using SocialMedia.Services.Services;
 
 namespace SocialMedia.Api
 {
@@ -13,19 +16,20 @@ namespace SocialMedia.Api
             var builder = WebApplication.CreateBuilder(args);
 
             #region Configurar la BD MySql
-            var connectionString = builder.Configuration.GetConnectionString("ConnectionMySql")
-                ?? throw new InvalidOperationException(
-                    "Falta la cadena de conexion 'ConnectionMySql' (appsettings.json o User Secrets).");
-
-            // Version fija: ServerVersion.AutoDetect abriria una conexion extra en cada DbContext
+            var connectionString = builder.Configuration.GetConnectionString("ConnectionMySql");
             builder.Services.AddDbContext<SocialMediaContext>(options =>
-                options.UseMySql(connectionString, ServerVersion.Parse("8.0.43-mysql")));
+                options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString)));
             #endregion
 
-            // Repositorios: Scoped, igual que el DbContext
-            builder.Services.AddScoped<IPostRepository, PostRepository>();
-            builder.Services.AddScoped<ICommentRepository, CommentRepository>();
-            builder.Services.AddScoped<IUserRepository, UserRepository>();
+            // Add services to the container.
+            builder.Services.AddTransient<IPostRepository, PostRepository>();
+            builder.Services.AddTransient<ICommentRepository, CommentRepository>();
+            builder.Services.AddScoped(typeof(IBaseRepository<>), typeof(BaseRepository<>));
+            builder.Services.AddTransient<IUnitOfWork, UnitOfWork>();
+            builder.Services.AddSingleton<IDbConnectionFactory, DbConnectionFactory>();
+            builder.Services.AddScoped<IDapperContext, DapperContext>();
+            builder.Services.AddTransient<IReportesService, ReportesService>();
+            builder.Services.AddTransient<IReportesRepository, ReportesRepository>();
 
             builder.Services.AddControllers();
             // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
@@ -44,6 +48,7 @@ namespace SocialMedia.Api
             app.UseHttpsRedirection();
 
             app.UseAuthorization();
+
 
             app.MapControllers();
 

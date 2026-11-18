@@ -1,8 +1,11 @@
-using AutoMapper;
+﻿using AutoMapper;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using SocialMedia.Core.DTOs;
 using SocialMedia.Core.Entities;
-using SocialMedia.Core.Interfaces;
+using SocialMedia.Core.Interfaces; // add this to have access to the interfaces
+using SocialMedia.Infrastructure.Repositories;
+using System.Net.WebSockets;
 
 namespace SocialMedia.Api.Controllers
 {
@@ -11,89 +14,17 @@ namespace SocialMedia.Api.Controllers
     public class PostController : ControllerBase
     {
         private readonly IPostRepository _postRepository;
-        private readonly IUserRepository _userRepository;
         private readonly IMapper _mapper;
 
-        public PostController(
-            IMapper mapper,
-            IPostRepository postRepository,
-            IUserRepository userRepository)
+        public PostController(IMapper mapper, IPostRepository postRepository)
         {
             _postRepository = postRepository;
-            _userRepository = userRepository;
             _mapper = mapper;
         }
 
-        #region Sin DTOs
-        [HttpGet]
-        public async Task<ActionResult> GetPosts()
-        {
-            var posts = await _postRepository.GetAllPostsAsync();
-            return Ok(posts);
-        }
-
-        [HttpGet("{id:int}")]
-        public async Task<ActionResult> GetPostsById(int id)
-        {
-            var post = await _postRepository.GetPostByIdAsync(id);
-            if (post == null)
-                return NotFound("Post no encontrado.");
-
-            return Ok(post);
-        }
-
-        [HttpPost]
-        public async Task<IActionResult> InsertPost(Post newPost)
-        {
-            if (await _userRepository.GetUserByIdAsync(newPost.UserId) == null)
-                return BadRequest($"El usuario {newPost.UserId} no existe.");
-
-            // El Id lo genera la BD; se ignoran navegaciones enviadas por el cliente
-            newPost.Id = 0;
-            newPost.User = null;
-            newPost.Comments = new List<Comment>();
-
-            await _postRepository.InsertPost(newPost);
-            return CreatedAtAction(nameof(GetPostsById), new { id = newPost.Id }, newPost);
-        }
-
-        [HttpPut("{id:int}")]
-        public async Task<IActionResult> UpdatePost(int id, Post postUpdate)
-        {
-            if (id != postUpdate.Id)
-                return BadRequest("El id del post no coincide.");
-
-            var post = await _postRepository.GetPostByIdAsync(id);
-            if (post == null)
-                return NotFound("Post no encontrado.");
-
-            if (await _userRepository.GetUserByIdAsync(postUpdate.UserId) == null)
-                return BadRequest($"El usuario {postUpdate.UserId} no existe.");
-
-            post.UserId = postUpdate.UserId;
-            post.Date = postUpdate.Date;
-            post.Description = postUpdate.Description;
-            post.Imagen = postUpdate.Imagen;
-
-            await _postRepository.UpdatePost(post);
-            return NoContent();
-        }
-
-        [HttpDelete("{id:int}")]
-        public async Task<IActionResult> DeletePost(int id)
-        {
-            var post = await _postRepository.GetPostByIdAsync(id);
-            if (post == null)
-                return NotFound("Post no encontrado.");
-
-            await _postRepository.DeletePost(post);
-            return NoContent();
-        }
-        #endregion
-
         #region Con DTOs
         [HttpGet("dto")]
-        public async Task<IActionResult> GetPostsDto()
+        public async Task<IActionResult> GetPostsDto()//action result give you back http codes
         {
             var posts = await _postRepository.GetAllPostsAsync();
             var postDto = posts.Select(p => new PostDto
@@ -107,13 +38,11 @@ namespace SocialMedia.Api.Controllers
             return Ok(postDto);
         }
 
-        [HttpGet("dto/{id:int}")]
-        public async Task<IActionResult> GetPostByIdDto(int id)
+        [HttpGet("dto/{id}")]
+        public async Task<IActionResult> GetPostsbyIdDto(int id)
         {
-            var post = await _postRepository.GetPostByIdAsync(id);
-            if (post == null)
-                return NotFound("Post no encontrado.");
 
+            var post = await _postRepository.GetPostByIdAsync(id);
             var postDto = new PostDto
             {
                 Id = post.Id,
@@ -122,96 +51,136 @@ namespace SocialMedia.Api.Controllers
                 Description = post.Description,
                 Imagen = post.Imagen
             };
-            return Ok(postDto);
+            return Ok(post);
         }
 
         [HttpPost("dto")]
-        public async Task<IActionResult> InsertPostDto(PostDto newPost)
+        public async Task<IActionResult> InsertPostDto(Post newPost)
         {
-            if (await _userRepository.GetUserByIdAsync(newPost.UserId) == null)
-                return BadRequest($"El usuario {newPost.UserId} no existe.");
-
             var post = new Post
             {
+                Id = newPost.Id,
                 UserId = newPost.UserId,
                 Date = newPost.Date,
                 Description = newPost.Description,
                 Imagen = newPost.Imagen
             };
-
-            await _postRepository.InsertPost(post);
-
-            newPost.Id = post.Id; // Id generado por la BD
-            return CreatedAtAction(nameof(GetPostByIdDto), new { id = post.Id }, newPost);
+            await _postRepository.InsertPost(newPost);
+            return Created($"api/post/{newPost.Id}", newPost);
         }
 
-        [HttpPut("dto/{id:int}")]
+        [HttpPut("dto")]
         public async Task<IActionResult> UpdatePostDto(int id, [FromBody] PostDto postDto)
         {
-            if (id != postDto.Id)
-                return BadRequest("El id del post no coincide.");
-
+            if(postDto.Id != id)
+            {
+                return BadRequest("ID de post no coincide");
+            }
             var post = await _postRepository.GetPostByIdAsync(id);
-            if (post == null)
-                return NotFound("Post no encontrado.");
+            if(post == null)
+            {
+                return NotFound("Post no encontrado");
+            }
 
-            if (await _userRepository.GetUserByIdAsync(postDto.UserId) == null)
-                return BadRequest($"El usuario {postDto.UserId} no existe.");
+            // mapear valores DTO en la entidad
 
-            // Mapear valores del DTO en la entidad
             post.UserId = postDto.UserId;
             post.Date = postDto.Date;
             post.Description = postDto.Description;
             post.Imagen = postDto.Imagen;
 
             await _postRepository.UpdatePost(post);
-            return Ok(postDto);
+            return Ok(post);
         }
 
-        [HttpDelete("dto/{id:int}")]
+        [HttpDelete("dto")]
         public async Task<IActionResult> DeletePostDto(int id)
         {
             var post = await _postRepository.GetPostByIdAsync(id);
-            if (post == null)
-                return NotFound("Post no encontrado.");
+            if(post == null)
+            {
+                return NotFound("Post not found");
+            }
 
+            await _postRepository.DeletePost(post);
+            return NoContent(); // 204 no content
+        }
+        #endregion
+
+        #region Sin DTOs
+        [HttpGet]
+        public async Task<IActionResult> GetPosts()//action result give you back http codes
+        {
+            var posts = await _postRepository.GetAllPostsAsync();
+            return Ok(posts);
+        }
+
+        [HttpGet("{id}")]
+        public async Task<IActionResult> GetPostsbyId(int id)
+        {
+            var post = await _postRepository.GetPostByIdAsync(id);
+            return Ok(post);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> InsertPost(Post newPost)
+        {
+            await _postRepository.InsertPost(newPost);
+            return Created($"api/post/{newPost.Id}", newPost);
+        }
+
+        [HttpPut]
+        public async Task<IActionResult> UpdatePost(Post newPost)
+        {
+            await _postRepository.InsertPost(newPost);
+            return Created($"api/post/{newPost.Id}", newPost);
+        }
+
+        [HttpDelete]
+        public async Task<IActionResult> DeletePost(Post post)
+        {
             await _postRepository.DeletePost(post);
             return NoContent();
         }
         #endregion
 
         #region Dto-AutoMapper
+
         [HttpGet("dto/mapper")]
         public async Task<IActionResult> GetPostsDtoMapper()
         {
             var posts = await _postRepository.GetAllPostsAsync();
             var postDto = _mapper.Map<IEnumerable<PostDto>>(posts);
+            //var postDto = posts.Select(p => new PostDto
+            //{
+            //    Id = p.Id,
+            //    UserId = p.UserId,
+            //    Date = p.Date,
+            //    Description = p.Description,
+            //    Imagen = p.Imagen
+            //});
             return Ok(postDto);
         }
 
-        [HttpGet("dto/mapper/{id:int}")]
-        public async Task<IActionResult> GetPostByIdDtoMapper(int id)
+        [HttpGet("dto/mapper/{id}")]
+        public async Task<IActionResult> GetPostsbyIdDtoMapper(int id)
         {
+
             var post = await _postRepository.GetPostByIdAsync(id);
-            if (post == null)
-                return NotFound("Post no encontrado.");
-
-            var postDto = _mapper.Map<PostDto>(post);
-            return Ok(postDto);
+            var postdto = _mapper.Map<PostDto>(post);
+            //var postDto = new PostDto
+            //{
+            //    Id = post.Id,
+            //    UserId = post.UserId,
+            //    Date = post.Date,
+            //    Description = post.Description,
+            //    Imagen = post.Imagen
+            //};
+            return Ok(post);
         }
 
-        [HttpPost("dto/mapper")]
-        public async Task<IActionResult> InsertPostDtoMapper(PostDto newPost)
-        {
-            if (await _userRepository.GetUserByIdAsync(newPost.UserId) == null)
-                return BadRequest($"El usuario {newPost.UserId} no existe.");
-
-            var post = _mapper.Map<Post>(newPost); // PostProfile ignora el Id
-            await _postRepository.InsertPost(post);
-
-            var postDto = _mapper.Map<PostDto>(post);
-            return CreatedAtAction(nameof(GetPostByIdDtoMapper), new { id = post.Id }, postDto);
-        }
         #endregion
+
+
     }
 }

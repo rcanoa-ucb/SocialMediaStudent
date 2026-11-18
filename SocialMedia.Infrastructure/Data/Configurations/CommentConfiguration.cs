@@ -1,10 +1,14 @@
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using SocialMedia.Core.Entities;
+using System;
+using System.Collections.Generic;
+using System.Text;
 
 namespace SocialMedia.Infrastructure.Data.Configurations
 {
-    public class CommentConfiguration : IEntityTypeConfiguration<Comment>
+    public class PostConfiguration :
+        IEntityTypeConfiguration<Comment>
     {
         public void Configure(EntityTypeBuilder<Comment> entity)
         {
@@ -16,7 +20,7 @@ namespace SocialMedia.Infrastructure.Data.Configurations
 
             entity.HasIndex(e => e.UserId, "FK_Comment_User");
 
-            // Id autogenerado (AUTO_INCREMENT) por la BD
+            entity.Property(e => e.Id).ValueGeneratedNever();
             entity.Property(e => e.Date).HasColumnType("datetime");
             entity.Property(e => e.Description).HasMaxLength(500);
             entity.Property(e => e.IsActive).HasColumnType("bit(1)");

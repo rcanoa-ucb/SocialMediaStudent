@@ -1,6 +1,9 @@
-using AutoMapper;
+﻿using AutoMapper;
 using SocialMedia.Core.DTOs;
 using SocialMedia.Core.Entities;
+using System;
+using System.Collections.Generic;
+using System.Text;
 
 namespace SocialMedia.Infrastructure.Mappings
 {
@@ -8,13 +11,8 @@ namespace SocialMedia.Infrastructure.Mappings
     {
         public PostProfile()
         {
-            CreateMap<Post, PostDto>();
-
-            // El Id nunca se copia desde el DTO: lo genera la BD (insert) o ya existe (update)
-            CreateMap<PostDto, Post>()
-                .ForMember(d => d.Id, o => o.Ignore())
-                .ForMember(d => d.User, o => o.Ignore())
-                .ForMember(d => d.Comments, o => o.Ignore());
+            CreateMap<Post, PostDto>().ReverseMap();
+            //CreateMap<PostDto, Post>();
         }
     }
 }

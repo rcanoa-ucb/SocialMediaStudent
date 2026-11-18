@@ -1,4 +1,5 @@
-using AutoMapper;
+﻿using AutoMapper;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using SocialMedia.Core.DTOs;
 using SocialMedia.Core.Entities;
@@ -10,96 +11,169 @@ namespace SocialMedia.Api.Controllers
     [ApiController]
     public class CommentController : ControllerBase
     {
-        private readonly ICommentRepository _commentRepository;
-        private readonly IPostRepository _postRepository;
-        private readonly IUserRepository _userRepository;
+        private readonly ICommentRepository _CommentRepository;
         private readonly IMapper _mapper;
 
-        public CommentController(
-            ICommentRepository commentRepository,
-            IPostRepository postRepository,
-            IUserRepository userRepository,
-            IMapper mapper)
+        public CommentController(IMapper mapper, ICommentRepository CommentRepository)
         {
-            _commentRepository = commentRepository;
-            _postRepository = postRepository;
-            _userRepository = userRepository;
+            _CommentRepository = CommentRepository;
             _mapper = mapper;
         }
 
-        [HttpGet]
-        public async Task<IActionResult> GetComments()
+        #region Con DTOs
+        [HttpGet("dto")]
+        public async Task<IActionResult> GetCommentsDto()//action result give you back http codes
         {
-            var comments = await _commentRepository.GetAllCommentsAsync();
-            return Ok(_mapper.Map<IEnumerable<CommentDto>>(comments));
+            var Comments = await _CommentRepository.GetAllCommentsAsync();
+            var CommentDto = Comments.Select(p => new CommentDto
+            {
+                Id = p.Id,
+                UserId = p.UserId,
+                Date = p.Date,
+                Description = p.Description,
+            });
+            return Ok(CommentDto);
         }
 
-        [HttpGet("{id:int}")]
-        public async Task<IActionResult> GetCommentById(int id)
+        [HttpGet("dto/{id}")]
+        public async Task<IActionResult> GetCommentsbyIdDto(int id)
         {
-            var comment = await _commentRepository.GetCommentByIdAsync(id);
-            if (comment == null)
-                return NotFound("Comentario no encontrado.");
 
-            return Ok(_mapper.Map<CommentDto>(comment));
+            var Comment = await _CommentRepository.GetCommentsById(id);
+            var CommentDto = new CommentDto
+            {
+                Id = Comment.Id,
+                UserId = Comment.UserId,
+                Date = Comment.Date,
+                Description = Comment.Description,
+            };
+            return Ok(Comment);
+        }
+
+        [HttpPost("dto")]
+        public async Task<IActionResult> InsertCommentDto(Comment newComment)
+        {
+            var Comment = new Comment
+            {
+                Id = newComment.Id,
+                UserId = newComment.UserId,
+                Date = newComment.Date,
+                Description = newComment.Description,
+            };
+            await _CommentRepository.InsertComment(newComment);
+            return Created($"api/Comment/{newComment.Id}", newComment);
+        }
+
+        [HttpPut("dto")]
+        public async Task<IActionResult> UpdateCommentDto(int id, [FromBody] CommentDto CommentDto)
+        {
+            if (CommentDto.Id != id)
+            {
+                return BadRequest("ID de Comment no coincide");
+            }
+            var Comment = await _CommentRepository.GetCommentsById(id);
+            if (Comment == null)
+            {
+                return NotFound("Comment no encontrado");
+            }
+
+            // mapear valores DTO en la entidad
+
+            Comment.UserId = CommentDto.UserId;
+            Comment.Date = CommentDto.Date;
+            Comment.Description = CommentDto.Description;
+
+            await _CommentRepository.UpdateComment(Comment);
+            return Ok(Comment);
+        }
+
+        [HttpDelete("dto/{id}")]
+        public async Task<IActionResult> DeleteCommentDto(int id)
+        {
+            var Comment = await _CommentRepository.GetCommentsById(id);
+            if (Comment == null)
+            {
+                return NotFound("Comment not found");
+            }
+
+            await _CommentRepository.DeleteComment(Comment);
+            return NoContent(); // 204 no content
+        }
+        #endregion
+
+        #region Sin DTOs
+        [HttpGet]
+        public async Task<IActionResult> GetComments()//action result give you back http codes
+        {
+            var Comments = await _CommentRepository.GetAllCommentsAsync();
+            return Ok(Comments);
+        }
+
+        [HttpGet("{id}")]
+        public async Task<IActionResult> GetCommentsbyId(int id)
+        {
+            var Comment = await _CommentRepository.GetCommentsById(id);
+            return Ok(Comment);
         }
 
         [HttpPost]
-        public async Task<IActionResult> InsertComment(CommentDto newComment)
+        public async Task<IActionResult> InsertComment(Comment newComment)
         {
-            var error = await ValidateReferencesAsync(newComment);
-            if (error != null)
-                return BadRequest(error);
-
-            var comment = _mapper.Map<Comment>(newComment); // CommentProfile ignora el Id
-            if (comment.Date == default)
-                comment.Date = DateTime.Now;
-
-            await _commentRepository.InsertComment(comment);
-
-            var result = _mapper.Map<CommentDto>(comment);
-            return CreatedAtAction(nameof(GetCommentById), new { id = comment.Id }, result);
+            await _CommentRepository.InsertComment(newComment);
+            return Created($"api/Comment/{newComment.Id}", newComment);
         }
 
-        [HttpPut("{id:int}")]
-        public async Task<IActionResult> UpdateComment(int id, CommentDto commentDto)
+        [HttpPut]
+        public async Task<IActionResult> UpdateComment(Comment newComment)
         {
-            if (id != commentDto.Id)
-                return BadRequest("El id del comentario no coincide.");
+            await _CommentRepository.InsertComment(newComment);
+            return Created($"api/Comment/{newComment.Id}", newComment);
+        }
 
-            var comment = await _commentRepository.GetCommentByIdAsync(id);
-            if (comment == null)
-                return NotFound("Comentario no encontrado.");
-
-            var error = await ValidateReferencesAsync(commentDto);
-            if (error != null)
-                return BadRequest(error);
-
-            _mapper.Map(commentDto, comment); // copia valores del DTO (sin tocar el Id)
-
-            await _commentRepository.UpdateComment(comment);
+        [HttpDelete]
+        public async Task<IActionResult> DeleteComment(Comment Comment)
+        {
+            await _CommentRepository.DeleteComment(Comment);
             return NoContent();
         }
+        #endregion
 
-        [HttpDelete("{id:int}")]
-        public async Task<IActionResult> DeleteComment(int id)
+        #region Dto-AutoMapper
+
+        [HttpGet("dto/mapper")]
+        public async Task<IActionResult> GetCommentsDtoMapper()
         {
-            var comment = await _commentRepository.GetCommentByIdAsync(id);
-            if (comment == null)
-                return NotFound("Comentario no encontrado.");
-
-            await _commentRepository.DeleteComment(comment);
-            return NoContent();
+            var Comments = await _CommentRepository.GetAllCommentsAsync();
+            var CommentDto = _mapper.Map<IEnumerable<CommentDto>>(Comments);
+            //var CommentDto = Comments.Select(p => new CommentDto
+            //{
+            //    Id = p.Id,
+            //    UserId = p.UserId,
+            //    Date = p.Date,
+            //    Description = p.Description,
+            //    Imagen = p.Imagen
+            //});
+            return Ok(CommentDto);
         }
 
-        // Evita errores 500 por FK: valida que el post y el usuario existan
-        private async Task<string?> ValidateReferencesAsync(CommentDto dto)
+        [HttpGet("dto/mapper/{id}")]
+        public async Task<IActionResult> GetCommentsbyIdDtoMapper(int id)
         {
-            if (await _postRepository.GetPostByIdAsync(dto.PostId) == null)
-                return $"El post {dto.PostId} no existe.";
-            if (await _userRepository.GetUserByIdAsync(dto.UserId) == null)
-                return $"El usuario {dto.UserId} no existe.";
-            return null;
+
+            var Comment = await _CommentRepository.GetCommentsById(id);
+            var CommentDto = _mapper.Map<CommentDto>(Comment);
+            //var CommentDto = new CommentDto
+            //{
+            //    Id = Comment.Id,
+            //    UserId = Comment.UserId,
+            //    Date = Comment.Date,
+            //    Description = Comment.Description,
+            //    Imagen = Comment.Imagen
+            //};
+            return Ok(Comment);
         }
+
+        #endregion
+
     }
 }

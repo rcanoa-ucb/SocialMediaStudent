@@ -1,49 +1,52 @@
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using SocialMedia.Core.Entities;
 using SocialMedia.Core.Interfaces;
 using SocialMedia.Infrastructure.Data;
+using System;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace SocialMedia.Infrastructure.Repositories
 {
-    public class PostRepository : IPostRepository
+    public class PostRepository : BaseRepository<Post>, IPostRepository
     {
-        private readonly SocialMediaContext _socialMediaContext;
+        private readonly IDapperContext? _dapper;
 
-        public PostRepository(SocialMediaContext socialMediaContext)
+        public PostRepository(SocialMediaContext context) : base(context)
         {
-            _socialMediaContext = socialMediaContext;
+        }
+
+        public PostRepository(SocialMediaContext context, IDapperContext dapper) : base(context)
+        {
+            _dapper = dapper;
         }
 
         public async Task<IEnumerable<Post>> GetAllPostsAsync()
         {
-            return await _socialMediaContext.Posts.AsNoTracking().ToListAsync();
+            return await _entities.ToListAsync();
         }
 
         public async Task<Post?> GetPostByIdAsync(int id)
         {
-            return await _socialMediaContext.Posts.FirstOrDefaultAsync(x => x.Id == id);
+            return await _entities.FirstOrDefaultAsync(x => x.Id == id);
         }
 
         public async Task InsertPost(Post post)
         {
-            _socialMediaContext.Posts.Add(post);
-            await _socialMediaContext.SaveChangesAsync();
-        }
-
-        public async Task UpdatePost(Post post)
-        {
-            _socialMediaContext.Posts.Update(post);
-            await _socialMediaContext.SaveChangesAsync();
+            _entities.Add(post);
+            await _context.SaveChangesAsync();
         }
 
         public async Task DeletePost(Post post)
         {
-            // La FK no tiene cascada: se borran primero los comentarios del post.
-            // Todo se guarda en un solo SaveChanges (una sola transacción).
-            var comments = _socialMediaContext.Comments.Where(c => c.PostId == post.Id);
-            _socialMediaContext.Comments.RemoveRange(comments);
-            _socialMediaContext.Posts.Remove(post);
-            await _socialMediaContext.SaveChangesAsync();
+            _entities.Remove(post);
+            await _context.SaveChangesAsync();
+        }
+
+        public async Task UpdatePost(Post post)
+        {
+            _entities.Update(post);
+            await _context.SaveChangesAsync();
         }
     }
 }

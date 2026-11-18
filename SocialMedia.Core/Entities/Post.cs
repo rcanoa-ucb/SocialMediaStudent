@@ -1,8 +1,11 @@
+﻿using System;
+using System.Collections.Generic;
+
 namespace SocialMedia.Core.Entities;
 
-public partial class Post
+public partial class Post : BaseEntity
 {
-    public int Id { get; set; }
+    //public int Id { get; set; }
 
     public int UserId { get; set; }
 
@@ -14,5 +17,5 @@ public partial class Post
 
     public virtual ICollection<Comment> Comments { get; set; } = new List<Comment>();
 
-    public virtual User? User { get; set; }
+    public virtual User? User { get; set; } = null!;
 }

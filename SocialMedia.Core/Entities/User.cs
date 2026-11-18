@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 
 namespace SocialMedia.Core.Entities;
-public partial class User
+public partial class User : BaseEntity
 {
-    public int Id { get; set; }
+    //public int Id { get; set; }
 
     public string FirstName { get; set; } = null!;
 
@@ -16,7 +16,7 @@ public partial class User
 
     public string? Telephone { get; set; }
 
-    public bool IsActive { get; set; }
+    public ulong IsActive { get; set; }
 
     public virtual ICollection<Comment> Comments { get; set; } = new List<Comment>();
 
