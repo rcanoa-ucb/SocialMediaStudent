@@ -96,6 +96,21 @@ namespace SocialMedia.Api.Controllers
         //    return Ok(post);
         //}
 
+        [HttpPost("dto")]
+        public async Task<IActionResult> InsertPostDto(PostDto newPost)
+        {
+            var post = new Post
+            {
+                Id = newPost.Id,
+                UserId = newPost.UserId,
+                Date = newPost.Date,
+                Description = newPost.Description,
+                Imagen = newPost.Imagen
+            };
+
+            await _postRepository.InsertPost(post);
+            return Created($"api/post/{newPost.Id}", newPost);
+        }
         //[HttpPost("dto")]
         //public async Task<IActionResult> InsertPostDto(PostDto newPost)
         //{
