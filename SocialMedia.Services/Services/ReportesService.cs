@@ -19,5 +19,10 @@ namespace SocialMedia.Services.Services
         {
             return await _unitOfWork.ReportesRepository.GetAutoComentaristasAsync(limit);
         }
+
+        public async Task<IEnumerable<MejorPostUsuario>> GetMejorPostUsuariosAsync(int limit = 10)
+        {
+            return await _unitOfWork.ReportesRepository.GetMejorPostUsuariosAsync(limit);
+        }
     }
 }

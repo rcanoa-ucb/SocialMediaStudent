@@ -24,5 +24,18 @@ namespace SocialMedia.Infrastructure.Repositories
                 throw new Exception(ex.Message);
             }
         }
+
+        public async Task<IEnumerable<MejorPostUsuario>> GetMejorPostUsuariosAsync(int limit = 10)
+        {
+            try
+            {
+                return await _dapper.QueryAsync<MejorPostUsuario>(
+                    Reportes.mejorPostUsuarioMySql, new { Limit = limit });
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
     }
 }

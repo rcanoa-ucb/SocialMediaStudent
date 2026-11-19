@@ -32,5 +32,16 @@ namespace SocialMedia.Api.Controllers
             return Ok(response);
         }
 
+        [HttpGet("dapper/ranking-interno")]
+        public async Task<IActionResult> GetRankingInterno([FromQuery] int limit = 10)
+        {
+            var mejorPostUsuario = await _reportesService.GetMejorPostUsuariosAsync(limit);
+
+            var mejorPostUsuarioResult = _mapper.Map<IEnumerable<MejorPostUsuarioDto>>(mejorPostUsuario);
+
+            var response = new ApiResponse<IEnumerable<MejorPostUsuarioDto>>(mejorPostUsuarioResult);
+
+            return Ok(response);
+        }
     }
 }

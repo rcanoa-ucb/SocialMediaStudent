@@ -20,5 +20,29 @@ namespace SocialMedia.Infrastructure.Queries
             GROUP BY u.Id, u.FirstName, u.LastName, u.Email
             ORDER BY ComentariosPropios DESC, u.Id ASC
             LIMIT @Limit;";
+        public static string mejorPostUsuarioMySql = @"
+            SELECT
+                UserId,
+                PostId,
+                Description,
+                TotalComentarios,
+                PosicionEnUsuario
+            FROM (
+                SELECT
+                    p.UserId,
+                    p.Id AS PostId,
+                    p.Description,
+                    COUNT(c.Id) AS TotalComentarios,
+                    ROW_NUMBER() OVER (
+                        PARTITION BY p.UserId
+                        ORDER BY COUNT(c.Id) DESC, p.Date DESC
+                    ) AS PosicionEnUsuario
+                FROM post p
+                INNER JOIN comment c ON c.PostId = p.Id
+                GROUP BY p.UserId, p.Id, p.Description, p.Date
+            ) ranking
+            WHERE PosicionEnUsuario <= 3
+            ORDER BY UserId, PosicionEnUsuario
+            LIMIT @Limit;";
     }
 }
