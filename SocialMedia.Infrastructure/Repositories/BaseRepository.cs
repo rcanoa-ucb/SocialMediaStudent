@@ -1,51 +1,15 @@
-﻿using Microsoft.EntityFrameworkCore;
-using SocialMedia.Core.Entities;
+using Microsoft.EntityFrameworkCore;
 using SocialMedia.Core.Interfaces;
 using SocialMedia.Infrastructure.Data;
-using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace SocialMedia.Infrastructure.Repositories
+namespace SocialMedia.Infrastructure.Repositories;
+public class BaseRepository<T> : IBaseRepository<T> where T : class
 {
-    public class BaseRepository<T> : IBaseRepository<T>
-        where T : BaseEntity
-    {
-        private readonly SocialMediaContext _context; //Base de datos
-        protected readonly DbSet<T> _entities; //Tablas
-
-        public BaseRepository(SocialMediaContext context)
-        {
-            _context = context;
-            _entities = context.Set<T>();
-        }
-
-        public async Task<IEnumerable<T>> GetAll()
-        {
-            return await _entities.ToListAsync();
-        }
-
-        public async Task<T> GetById(int id)
-        {
-            return await _entities.FindAsync(id);
-        }
-        public async Task Add(T entity)
-        {
-            _entities.Add(entity); //Insert
-            //await _context.SaveChangesAsync(); //Commit
-        }
-
-        public async Task Update(T entity)
-        {
-            _entities.Update(entity);
-            //await _context.SaveChangesAsync(); //Commit
-        }
-
-        public async Task Delete(int id)
-        {
-            T entity = await GetById(id);
-            _entities.Remove(entity);
-            //await _context.SaveChangesAsync(); //Commit
-        }
-    }
+    protected readonly SocialMediaContext Context;
+    protected readonly DbSet<T> Entities;
+    public BaseRepository(SocialMediaContext context) { Context = context; Entities = context.Set<T>(); }
+    public async Task<IEnumerable<T>> GetAllAsync() => await Entities.AsNoTracking().ToListAsync();
+    public async Task<T?> GetByIdAsync(int id) => await Entities.FindAsync(id);
+    public async Task AddAsync(T entity) => await Entities.AddAsync(entity);
+    public void Update(T entity) => Entities.Update(entity);
+    public void Delete(T entity) => Entities.Remove(entity);
 }

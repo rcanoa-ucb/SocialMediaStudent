@@ -1,28 +1,9 @@
-﻿using SocialMedia.Core.Entities;
-using System;
-using System.Collections.Generic;
-using System.Data;
-using System.Text;
-
-namespace SocialMedia.Core.Interfaces
+using SocialMedia.Core.Entities;
+namespace SocialMedia.Core.Interfaces;
+public interface IUnitOfWork : IDisposable
 {
-    public interface IUnitOfWork : IDisposable
-    {
-        IPostRepository PostRepository { get; }
-        IBaseRepository<User> UserRespository { get; }
-        IBaseRepository<Comment> CommentRepository { get; }
-        IReportesRepository ReportesRepository { get; }
-        ISecurityRepository SecurityRepository { get; }
-
-        void SaveChanges();
-        Task SaveChangesAsync();
-
-        //Dapper
-        Task BeginTransactionAsync();
-        Task CommitAsync();
-        Task RollbackAsync();
-
-        IDbConnection? GetDbConnection();
-        IDbTransaction? GetDbTransaction();
-    }
+    IBaseRepository<Post> Posts { get; }
+    IBaseRepository<User> Users { get; }
+    IBaseRepository<Comment> Comments { get; }
+    Task<int> SaveChangesAsync();
 }

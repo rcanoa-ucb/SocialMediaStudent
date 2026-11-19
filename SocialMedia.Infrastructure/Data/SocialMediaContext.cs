@@ -1,37 +1,36 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Reflection;
 using Microsoft.EntityFrameworkCore;
-using Pomelo.EntityFrameworkCore.MySql.Scaffolding.Internal;
 using SocialMedia.Core.Entities;
-
 namespace SocialMedia.Infrastructure.Data;
-
-public partial class SocialMediaContext : DbContext
+public class SocialMediaContext : DbContext
 {
-    public SocialMediaContext()
-    {
-    }
-
-    public SocialMediaContext(DbContextOptions<SocialMediaContext> options)
-        : base(options)
-    {
-    }
-
-    public virtual DbSet<Comment> Comments { get; set; }
-
-    public virtual DbSet<Post> Posts { get; set; }
-
-    public virtual DbSet<User> Users { get; set; }
-    public virtual DbSet<Security> Securities { get; set; }
-
-    //    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-    //#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see https://go.microsoft.com/fwlink/?LinkId=723263.
-    //        => optionsBuilder.UseMySql("server=localhost;port=3306;database=DbSocialMedia;uid=root;pwd=Ucb.2025", Microsoft.EntityFrameworkCore.ServerVersion.Parse("8.0.43-mysql"));
-
+    public SocialMediaContext(DbContextOptions<SocialMediaContext> options) : base(options) { }
+    public DbSet<User> Users => Set<User>();
+    public DbSet<Post> Posts => Set<Post>();
+    public DbSet<Comment> Comments => Set<Comment>();
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
-        modelBuilder.ApplyConfigurationsFromAssembly(
-            Assembly.GetExecutingAssembly());
+        modelBuilder.Entity<User>(b =>
+        {
+            b.ToTable("User"); b.HasKey(x => x.Id);
+            b.Property(x => x.FirstName).HasMaxLength(50).IsRequired();
+            b.Property(x => x.LastName).HasMaxLength(50).IsRequired();
+            b.Property(x => x.Email).HasMaxLength(100).IsRequired();
+            b.HasIndex(x => x.Email).IsUnique();
+            b.Property(x => x.Telephone).HasMaxLength(15);
+        });
+        modelBuilder.Entity<Post>(b =>
+        {
+            b.ToTable("Post"); b.HasKey(x => x.Id);
+            b.Property(x => x.Description).HasMaxLength(1000).IsRequired();
+            b.Property(x => x.Imagen).HasMaxLength(500);
+            b.HasOne(x => x.User).WithMany(x => x.Posts).HasForeignKey(x => x.UserId).OnDelete(DeleteBehavior.Restrict);
+        });
+        modelBuilder.Entity<Comment>(b =>
+        {
+            b.ToTable("Comment"); b.HasKey(x => x.Id);
+            b.Property(x => x.Description).HasMaxLength(500).IsRequired();
+            b.HasOne(x => x.Post).WithMany(x => x.Comments).HasForeignKey(x => x.PostId).OnDelete(DeleteBehavior.Restrict);
+            b.HasOne(x => x.User).WithMany(x => x.Comments).HasForeignKey(x => x.UserId).OnDelete(DeleteBehavior.Restrict);
+        });
     }
 }

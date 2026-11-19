@@ -1,17 +1,10 @@
-﻿using SocialMedia.Core.Entities;
-using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace SocialMedia.Core.Interfaces
+using System.Linq.Expressions;
+namespace SocialMedia.Core.Interfaces;
+public interface IBaseRepository<T> where T : class
 {
-    public interface IBaseRepository<T> 
-        where T : BaseEntity
-    {
-        Task<IEnumerable<T>> GetAll();
-        Task<T> GetById(int id);
-        Task Add(T entity);
-        Task Update(T entity);
-        Task Delete(int id);
-    }
+    Task<IEnumerable<T>> GetAllAsync();
+    Task<T?> GetByIdAsync(int id);
+    Task AddAsync(T entity);
+    void Update(T entity);
+    void Delete(T entity);
 }

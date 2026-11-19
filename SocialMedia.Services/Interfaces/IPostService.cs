@@ -1,18 +1,10 @@
-﻿using SocialMedia.Core.Entities;
-using SocialMedia.Core.QueryFilters;
-using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace SocialMedia.Services.Interfaces
+using SocialMedia.Core.DTOs;
+namespace SocialMedia.Services.Interfaces;
+public interface IPostService
 {
-    public interface IPostService
-    {
-        Task<IEnumerable<Post>> GetAllPostsAsync(PostQueryFilters? filters);
-        Task<IEnumerable<Post>> GetAllPostsDapperAsync(int limit = 10);
-        Task<Post> GetPostsByIdAsync(int id);
-        Task InsertPost(Post post);
-        Task UpdatePost(Post post);
-        Task DeletePost(int id);
-    }
+    Task<IEnumerable<PostDto>> GetAllAsync();
+    Task<PostDto?> GetByIdAsync(int id);
+    Task<PostDto> CreateAsync(PostDto dto);
+    Task<bool> UpdateAsync(int id, PostDto dto);
+    Task<bool> DeleteAsync(int id);
 }

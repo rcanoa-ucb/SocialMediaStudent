@@ -1,23 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-
 namespace SocialMedia.Core.Entities;
-
-public partial class Comment : BaseEntity
+public class Comment
 {
-    //public int Id { get; set; }
-
+    public int Id { get; set; }
     public int PostId { get; set; }
-
     public int UserId { get; set; }
-
-    public string Description { get; set; } = null!;
-
+    public string Description { get; set; } = string.Empty;
     public DateTime Date { get; set; }
-
-    public ulong IsActive { get; set; }
-
-    public virtual Post Post { get; set; } = null!;
-
-    public virtual User User { get; set; } = null!;
+    public bool IsActive { get; set; } = true;
+    public Post? Post { get; set; }
+    public User? User { get; set; }
 }
