@@ -7,11 +7,14 @@ using SocialMedia.Core.Exceptions;
 using SocialMedia.Core.QueryFilters;
 using SocialMedia.Services.Interfaces;
 using SocialMedia.Services.Validators;
-
+using Microsoft.AspNetCore.Authorization;
 namespace SocialMedia.Api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
+    [Produces("application/json")]
+    
     public class PostController : ControllerBase
     {
         private readonly IPostService _postService;

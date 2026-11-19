@@ -1,4 +1,5 @@
-
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
 using Microsoft.EntityFrameworkCore;
 using SocialMedia.Api.Filters;
 using SocialMedia.Core.Interfaces;
@@ -49,7 +50,26 @@ namespace SocialMedia.Api
             builder.Services.AddScoped<PostDtoValidator>();
             builder.Services.AddScoped<CrearPostDtoValidator>();
             builder.Services.AddScoped<ActualizarPostDtoValidator>();
-
+            //Configurar JWT
+            builder.Services.AddAuthentication(options =>
+            {
+                options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+                options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+            }).AddJwtBearer(options =>
+            {
+                options.TokenValidationParameters = new TokenValidationParameters
+                {
+                    ValidateIssuer = true,
+                    ValidateAudience = true,
+                    ValidateLifetime = true,
+                    ValidateIssuerSigningKey = true,
+                    ValidIssuer = builder.Configuration["Authentication:Issuer"],
+                    ValidAudience = builder.Configuration["Authentication:Audience"],
+                    IssuerSigningKey = new SymmetricSecurityKey(
+                        System.Text.Encoding.UTF8.GetBytes(
+                            builder.Configuration["Authentication:SecretKey"]))
+                };
+            });
             var app = builder.Build();
 
             app.UseMiddleware<ExceptionHandlingMiddleware>();
@@ -61,10 +81,8 @@ namespace SocialMedia.Api
             }
 
             app.UseHttpsRedirection();
-
+            app.UseAuthentication();
             app.UseAuthorization();
-
-
             app.MapControllers();
 
             app.Run();
