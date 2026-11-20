@@ -8,6 +8,7 @@ using SocialMedia.Infrastructure.Repositories;
 using SocialMedia.Services.Interfaces;
 using SocialMedia.Services.Services;
 using SocialMedia.Services.Validators;
+
 namespace SocialMedia.Api
 {
     public class Program
@@ -17,42 +18,78 @@ namespace SocialMedia.Api
             var builder = WebApplication.CreateBuilder(args);
 
             #region Configurar la BD MySql
-            var connectionString = builder.Configuration.GetConnectionString("ConnectionMySql");
+
+            var connectionString = builder.Configuration
+                .GetConnectionString("ConnectionMySql");
+
             builder.Services.AddDbContext<SocialMediaContext>(options =>
-                options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString)));
+                options.UseMySql(
+                    connectionString,
+                    ServerVersion.AutoDetect(connectionString)
+                ));
+
             #endregion
 
-            // Add services to the container.
-            //builder.Services.AddTransient<IPostRepository, PostRepository>();
-            //builder.Services.AddTransient<ICommentRepository, CommentRepository>();
+            #region Registrar Servicios
+
+            // Servicios
             builder.Services.AddTransient<IPostService, PostService>();
-            //builder.Services.AddTransient<IUserRepository, UserRepository>();
-            builder.Services.AddScoped(typeof(IBaseRepository<>), typeof(BaseRepository<>));
-            builder.Services.AddTransient<IUnitOfWork, UnitOfWork>();
+            builder.Services.AddScoped<IReportesService, ReportesService>();
+
+            #endregion
+
+            #region Registrar Repositorios
+
+            builder.Services.AddScoped(
+                typeof(IBaseRepository<>),
+                typeof(BaseRepository<>)
+            );
+
+            #endregion
+
+            #region UnitOfWork
+
+            builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
+
+            #endregion
+
+            #region Configurar Dapper
+
             builder.Services.AddSingleton<IDbConnectionFactory, DbConnectionFactory>();
             builder.Services.AddScoped<IDapperContext, DapperContext>();
 
-            builder.Services.AddControllers().ConfigureApiBehaviorOptions(options =>
-            {
-                options.SuppressModelStateInvalidFilter = true;
-            });
+            #endregion
 
+            #region Controllers
 
-            // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
+            builder.Services.AddControllers()
+                .ConfigureApiBehaviorOptions(options =>
+                {
+                    options.SuppressModelStateInvalidFilter = true;
+                });
+
+            #endregion
+
+            // OpenAPI
             builder.Services.AddOpenApi();
 
+            // AutoMapper
             builder.Services.AddAutoMapper(typeof(PostProfile).Assembly);
 
-            //Registrar Validadores de FluentValidator
+            #region Validadores
+
             builder.Services.AddScoped<PostDtoValidator>();
             builder.Services.AddScoped<CrearPostDtoValidator>();
             builder.Services.AddScoped<ActualizarPostDtoValidator>();
 
+            #endregion
+
             var app = builder.Build();
 
+            // Middleware de excepciones
             app.UseMiddleware<ExceptionHandlingMiddleware>();
 
-            // Configure the HTTP request pipeline.
+            // Configurar OpenAPI
             if (app.Environment.IsDevelopment())
             {
                 app.MapOpenApi();
@@ -61,7 +98,6 @@ namespace SocialMedia.Api
             app.UseHttpsRedirection();
 
             app.UseAuthorization();
-
 
             app.MapControllers();
 
