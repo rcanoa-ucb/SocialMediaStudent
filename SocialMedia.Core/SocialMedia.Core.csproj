@@ -8,7 +8,6 @@
 
   <ItemGroup>
     <Compile Remove="Interfaces\ICommentRepository.cs" />
-    <Compile Remove="Interfaces\IPostRepository.cs" />
     <Compile Remove="Interfaces\IUserRepository.cs" />
   </ItemGroup>
 
