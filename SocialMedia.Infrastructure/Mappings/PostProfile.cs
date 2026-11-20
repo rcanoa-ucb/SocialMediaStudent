@@ -24,6 +24,8 @@ namespace SocialMedia.Infrastructure.Mappings
                 opt => opt.MapFrom(src => src.Imagen))
                 .ForMember(dest => dest.Date,
                     opt => opt.ConvertUsing<StringToDateTimeConverter, string>());
+
+            CreateMap<Security, SecurityDto>().ReverseMap();
         }
     }
 

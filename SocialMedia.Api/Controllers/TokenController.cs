@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
 using SocialMedia.Core.Entities;
+using SocialMedia.Services.Interfaces;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
@@ -13,21 +14,38 @@ namespace SocialMedia.Api.Controllers
     public class TokenController : ControllerBase
     {
         private readonly IConfiguration _configuration;
+        private readonly ISecurityService _securityService;
 
-        public TokenController(IConfiguration configuration)
+        public TokenController(IConfiguration configuration,
+            ISecurityService securityService)
         {
             _configuration = configuration;
+            _securityService = securityService;
         }
 
         [HttpPost]
-        public IActionResult Authentication(UserLogin userLogin)
+        public async Task<IActionResult> Authentication(UserLogin userLogin)
         {
             //Si es un usuario válido
-            var token = GenerateToken(userLogin);
-            return Ok(new { token });
+            var validation = await IsValidUser(userLogin);
+            if (validation.Item1)
+            {
+                var token = GenerateToken(validation.Item2);
+                return Ok(new { token });
+            }
+
+            return Unauthorized();
+
         }
 
-        private string GenerateToken(UserLogin userLogin)
+        private async Task<(bool, Security)> IsValidUser(UserLogin login)
+        {
+            var user = await _securityService.GetLoginByCredentials(login);
+            return (user != null, user);
+        }
+
+
+        private string GenerateToken(Security security)
         {
             //HEADER
             /*
@@ -62,9 +80,9 @@ namespace SocialMedia.Api.Controllers
              */
             var claims = new[]
             {
-                new Claim("Name", "Juan Perez"),
-                new Claim(ClaimTypes.Email, "jperez@ucb.edu.bo"),
-                new Claim(ClaimTypes.Role, "Administrador"),
+                new Claim("Name", security.Name),
+                new Claim("Login", security.Login),
+                new Claim(ClaimTypes.Role, security.Role.ToString()),
             };
 
             //PAYLOAD
