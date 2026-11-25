@@ -11,7 +11,7 @@ using SocialMedia.Services.Validators;
 
 namespace SocialMedia.Api.Controllers
 {
-    [Authorize]
+    //[Authorize]
     [Route("api/[controller]")]
     [ApiController]
     public class PostController : ControllerBase
